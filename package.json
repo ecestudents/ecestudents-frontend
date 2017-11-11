@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "dev": "node_modules/.bin/ng serve --host $IP --port $PORT root_assets --disableHostCheck=true --public-host=https://$C9_PROJECT-$C9_USER.c9users.io",
+    "build": "node_modules/.bin/ng build --aot && cp src/root_assets/* dist/ -v -f -r",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
