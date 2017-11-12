@@ -11,7 +11,8 @@
     "test": "karma start ./karma.conf.js",
     "lint": "ng lint",
     "e2e": "protractor ./protractor.conf.js",
-    "build": "node_modules/.bin/webpack && cp src/root_assets/* dist/ -v -f -r",
+    "build": "node_modules/.bin/webpack",
+    //"build": "node_modules/.bin/webpack && cp src/root_assets/* dist/ -v -f -r",
     "pree2e": "webdriver-manager update --standalone false --gecko false --quiet"
   },
   "private": true,
