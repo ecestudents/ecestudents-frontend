@@ -919,8 +919,7 @@ module.exports = {
       "tsConfigPath": "src/tsconfig.app.json",
       "skipCodeGeneration": true,
       "compilerOptions": {
-        "genDir": "aot",
-        "skipMetadataEmit": true
+        "genDir": "aot"
       }
     })
   ],
