@@ -2,7 +2,14 @@
 
 //modules
 @import '../node_modules/foundation-sites/scss/foundation';
+@import '../node_modules/modularscale-sass/stylesheets/modularscale';
 
 //own stuff
 @import 'style_imports/colors';
 @import 'style_imports/breakpoints';
+
+//settings
+$modularscale: (
+  base: 1em,
+  ratio: $golden
+);

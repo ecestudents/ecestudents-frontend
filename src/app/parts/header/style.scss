@@ -6,14 +6,14 @@ a {
 }
 
 @include bp(small) {
-    li {
-        color: green;
+    a {
+        font-size: ms(0);
     }
 }
 
 
 @include bp(xlarge) {
-    li {
-        display: inline;
+    a {
+        font-size: ms(0);
     }
 }
