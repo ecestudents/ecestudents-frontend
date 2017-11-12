@@ -1,5 +1,19 @@
 @import 'mixins';
 
-li {
+a {
     @include button;
+
+}
+
+@include bp(small) {
+    li {
+        color: green;
+    }
+}
+
+
+@include bp(xlarge) {
+    li {
+        display: inline;
+    }
 }
