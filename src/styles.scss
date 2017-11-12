@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+//font awesome fonts
+
+@import '../node_modules/font-awesome-sass/assets/stylesheets/font-awesome/variables';
+@import '../node_modules/font-awesome-sass/assets/stylesheets/font-awesome-sprockets';
+$fa-font-path: '/font-awesome/';
+$fa-sass-asset-helper: false;
+@import '../node_modules/font-awesome-sass/assets/stylesheets/font-awesome/path';
+
+//mixins
+@import 'mixins';
+
+//global foundation styles
+@include foundation-global-styles;
+

@@ -1,0 +1,27 @@
+//get codes
+@import 'font_awesome_codes';
+
+//font awesome mixin
+@mixin fa($icon_name, $fontsize:"", $color:"") {
+    @if map-has-key($fa_icon_map, $icon_name) {
+        &:before {
+            font: normal normal normal ms(0)/1 FontAwesome;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content:'#{map-get($fa_icon_map, $icon_name)}';
+            margin-right: ms(-2);
+            @if $color  != "" {
+                color: $color;
+            }
+            @if $fontsize  != "" {
+                font-size: $fontsize;
+            }
+        }
+    }
+
+    @else {
+        @error "Check font awesome code in style_imports codes list`. "+"Please make sure it is defined in `$fa_icon_map` map.";
+    }
+}
+
