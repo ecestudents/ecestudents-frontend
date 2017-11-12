@@ -827,6 +827,11 @@ module.exports = {
         }
       },
       {
+        "context": "node_modules",
+        "to": "font-awesome",
+        "from": "font-awesome-sass/assets/fonts/font-awesome",
+      },
+      {
         "context": "src",
         "to": "",
         "from": {
