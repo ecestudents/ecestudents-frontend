@@ -1,3 +1,64 @@
 h1 {
-    color:red;
+    color: #e55625;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1.5em;
 }
+
+h2 {
+    color:#4887c7;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.5em;
+    float: right;
+} 
+
+h3 { 
+    color:#303030;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    float: right;
+}
+
+.marketing-site-hero {
+  background: url("/assets/rotterdamboat.jpg") top right no-repeat;
+  height: 90vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 40em) {
+    background-position: center center;
+  }
+}
+
+.marketing-site-hero-content {
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  @media screen and (min-width: 40em) {
+    padding-left: 50%;
+  }
+}
+
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    height:  38px;
+    line-height:  2em;
+    border:  2px solid black;
+    float:  none;
+    text-align:  center;
+    width:  12em;
+    padding:  1px;
+    margin: 1px;
+    font-size:  1em;
+    color:  black;
+ }
+
+button:hover  {
+     color: #4887c7;
+     background:  rgba(255, 255, 255, 0.2);
+ }
+
+

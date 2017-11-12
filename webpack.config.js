@@ -633,7 +633,7 @@ module.exports = {
             "options": {
               "sourceMap": false,
               "precision": 8,
-              "includePaths": []
+              "includePaths": [path.resolve(__dirname, 'src')]
             }
           }
         ]
@@ -827,10 +827,15 @@ module.exports = {
         }
       },
       {
+        "context": "node_modules",
+        "to": "font-awesome",
+        "from": "font-awesome-sass/assets/fonts/font-awesome",
+      },
+      {
         "context": "src",
         "to": "",
         "from": {
-          "glob": "favicon.ico",
+          "glob": "favicon.png",
           "dot": true
         }
       }
