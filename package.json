@@ -2,6 +2,9 @@
   "name": "ecestudents",
   "version": "0.0.0",
   "license": "MIT",
+  "engines" : { 
+    "node" : "9.1.0" 
+  },
   "scripts": {
     "ng": "ng",
     "dev": "node_modules/.bin/webpack-dev-server --host $IP --port $PORT --disableHostCheck=true",
