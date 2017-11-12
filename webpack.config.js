@@ -633,7 +633,7 @@ module.exports = {
             "options": {
               "sourceMap": false,
               "precision": 8,
-              "includePaths": []
+              "includePaths": [path.resolve(__dirname, 'src')]
             }
           }
         ]
