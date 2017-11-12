@@ -918,9 +918,7 @@ module.exports = {
       "sourceMap": true,
       "tsConfigPath": "src/tsconfig.app.json",
       "skipCodeGeneration": true,
-      "compilerOptions": {
-        "genDir": "aot"
-      }
+      "compilerOptions": {}
     })
   ],
   "node": {
