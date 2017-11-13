@@ -13,8 +13,7 @@
     "pug_w": "node_modules/.bin/pug src/app -P -w",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "nvmrc-check --node $(cat .nvmrc)"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
