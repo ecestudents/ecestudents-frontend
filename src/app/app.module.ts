@@ -29,7 +29,8 @@ const appRoutes: Routes = [
     HomepageComponent,
     ICComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    CloudinaryPipe
   ],
   imports: [
     BrowserModule,
