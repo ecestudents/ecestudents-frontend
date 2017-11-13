@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
-  templateUrl: './template.pug',
+  templateUrl: './template.html',
   styleUrls: ['./style.scss']
 })
                 
