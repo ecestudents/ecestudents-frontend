@@ -1,0 +1,48 @@
+@import 'mixins';
+
+.banner {
+    margin:ms(2) 0;
+    padding:ms(2) 0;
+    background-image: cd("parts/footer/annie-spratt-61561.jpg", "c_crop,h_1000,w_3300/c_scale,w_1900");
+    background-size: cover ;                     
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    
+    display: grid;
+    grid-template-areas: ". text . dates .";
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    
+    @include bp(medium){
+        grid-template-columns: 2fr auto 5fr auto 2fr;
+    }
+    
+    color: white;
+    
+    span {
+        color: $ece-orange;
+    }
+    
+    .text {
+        grid-area: text;
+        padding: ms(-1);
+        
+        .title {
+            font-size: ms(1);
+        }
+        
+        div {
+            margin-bottom: ms(0);
+        }
+    }
+    
+    .dates {
+        font-size: ms(1);
+        grid-area: dates;
+        padding: ms(-1);
+        text-align: center;
+        
+        .room {
+            color: $ece-blue;
+        }
+    }
+}

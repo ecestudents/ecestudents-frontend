@@ -1,0 +1,10 @@
+$cloudinary_base: "https://res.cloudinary.com/ece/image/upload/f_auto,q_auto";
+
+@function cd($id, $options:"") {
+    $result: $cloudinary_base;  
+    @if $options != "" {
+      $result: $result+','+$options;  
+    }
+    $result: $result+'/'+$id;  
+    @return url($result);
+}

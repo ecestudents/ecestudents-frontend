@@ -5,9 +5,9 @@
 @import '../node_modules/modularscale-sass/stylesheets/modularscale';
 
 //own stuff
-@import 'style_imports/colors';
 @import 'style_imports/breakpoints';
 @import 'style_imports/font_awesome';
+@import 'style_imports/cloudinary'; 
 
 //settings
 $modularscale: ( 
@@ -23,6 +23,11 @@ $breakpoints: (
     xxlarge: 1440px,
 );
 
+
+//colors
+$ece-orange: #e55625;
+$ece-blue: #4887c7;
+$ece-black: #303030;
 
 /*EXAMPLES
 
@@ -52,5 +57,11 @@ fa($icon_name, $fontsize:"", $color:"")
 a {
     @include fa(address-book);
 }
+
+//cloudinary
+upload images by hand of later via cms
+
+cd(id, options)
+background-image: cd("parts/footer/annie-spratt-61561.jpg", "c_crop,h_1000,w_3300/c_scale,w_1900");
 
 */
