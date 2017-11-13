@@ -1,0 +1,323 @@
+{
+  "tree": {
+    "core-js@2.5.1": {
+      "deps": {},
+      "name": "core-js",
+      "version": "2.5.1"
+    },
+    "zone.js@0.8.18": {
+      "deps": {},
+      "name": "zone.js",
+      "version": "0.8.18"
+    },
+    "fuse-box-css@0.0.1": {
+      "deps": {},
+      "name": "fuse-box-css",
+      "version": "0.0.1"
+    },
+    "@angular/platform-browser-dynamic@5.0.1": {
+      "deps": {
+        "@angular/compiler@5.0.1": {
+          "deps": {},
+          "name": "@angular/compiler",
+          "version": "5.0.1"
+        },
+        "@angular/core@5.0.1": {
+          "deps": {
+            "rxjs@5.5.2": {
+              "deps": {},
+              "name": "rxjs",
+              "version": "5.5.2"
+            }
+          },
+          "name": "@angular/core",
+          "version": "5.0.1"
+        },
+        "@angular/common@5.0.1": {
+          "deps": {},
+          "name": "@angular/common",
+          "version": "5.0.1"
+        },
+        "@angular/platform-browser@5.0.1": {
+          "deps": {
+            "@angular/animations@5.0.1": {
+              "deps": {
+                "process@0.0.0": {
+                  "deps": {},
+                  "name": "process",
+                  "version": "0.0.0"
+                }
+              },
+              "name": "@angular/animations",
+              "version": "5.0.1"
+            }
+          },
+          "name": "@angular/platform-browser",
+          "version": "5.0.1"
+        }
+      },
+      "name": "@angular/platform-browser-dynamic",
+      "version": "5.0.1"
+    },
+    "tslib@1.8.0": {
+      "deps": {},
+      "name": "tslib",
+      "version": "1.8.0"
+    },
+    "@angular/router@5.0.1": {
+      "deps": {},
+      "name": "@angular/router",
+      "version": "5.0.1"
+    }
+  },
+  "flat": {
+    "core-js@2.5.1": {
+      "name": "core-js",
+      "version": "2.5.1",
+      "files": [
+        "es7/reflect.js",
+        "modules/es7.reflect.define-metadata.js",
+        "modules/_metadata.js",
+        "modules/es6.map.js",
+        "modules/_collection-strong.js",
+        "modules/_object-dp.js",
+        "modules/_an-object.js",
+        "modules/_is-object.js",
+        "modules/_ie8-dom-define.js",
+        "modules/_descriptors.js",
+        "modules/_fails.js",
+        "modules/_dom-create.js",
+        "modules/_global.js",
+        "modules/_to-primitive.js",
+        "modules/_object-create.js",
+        "modules/_object-dps.js",
+        "modules/_object-keys.js",
+        "modules/_object-keys-internal.js",
+        "modules/_has.js",
+        "modules/_to-iobject.js",
+        "modules/_iobject.js",
+        "modules/_cof.js",
+        "modules/_defined.js",
+        "modules/_array-includes.js",
+        "modules/_to-length.js",
+        "modules/_to-integer.js",
+        "modules/_to-absolute-index.js",
+        "modules/_shared-key.js",
+        "modules/_shared.js",
+        "modules/_uid.js",
+        "modules/_enum-bug-keys.js",
+        "modules/_html.js",
+        "modules/_redefine-all.js",
+        "modules/_redefine.js",
+        "modules/_hide.js",
+        "modules/_property-desc.js",
+        "modules/_core.js",
+        "modules/_ctx.js",
+        "modules/_a-function.js",
+        "modules/_an-instance.js",
+        "modules/_for-of.js",
+        "modules/_iter-call.js",
+        "modules/_is-array-iter.js",
+        "modules/_iterators.js",
+        "modules/_wks.js",
+        "modules/core.get-iterator-method.js",
+        "modules/_classof.js",
+        "modules/_iter-define.js",
+        "modules/_library.js",
+        "modules/_export.js",
+        "modules/_iter-create.js",
+        "modules/_set-to-string-tag.js",
+        "modules/_object-gpo.js",
+        "modules/_to-object.js",
+        "modules/_iter-step.js",
+        "modules/_set-species.js",
+        "modules/_meta.js",
+        "modules/_validate-collection.js",
+        "modules/_collection.js",
+        "modules/_iter-detect.js",
+        "modules/_inherit-if-required.js",
+        "modules/_set-proto.js",
+        "modules/_object-gopd.js",
+        "modules/_object-pie.js",
+        "modules/es6.weak-map.js",
+        "modules/_array-methods.js",
+        "modules/_array-species-create.js",
+        "modules/_array-species-constructor.js",
+        "modules/_is-array.js",
+        "modules/_object-assign.js",
+        "modules/_object-gops.js",
+        "modules/_collection-weak.js",
+        "modules/es7.reflect.delete-metadata.js",
+        "modules/es7.reflect.get-metadata.js",
+        "modules/es7.reflect.get-metadata-keys.js",
+        "modules/es6.set.js",
+        "modules/_array-from-iterable.js",
+        "modules/es7.reflect.get-own-metadata.js",
+        "modules/es7.reflect.get-own-metadata-keys.js",
+        "modules/es7.reflect.has-metadata.js",
+        "modules/es7.reflect.has-own-metadata.js",
+        "modules/es7.reflect.metadata.js"
+      ]
+    },
+    "zone.js@0.8.18": {
+      "name": "zone.js",
+      "version": "0.8.18",
+      "files": [
+        "dist/zone.js"
+      ]
+    },
+    "fuse-box-css@0.0.1": {
+      "name": "fuse-box-css",
+      "version": "0.0.1",
+      "files": [
+        "index.js"
+      ]
+    },
+    "@angular/platform-browser-dynamic@5.0.1": {
+      "name": "@angular/platform-browser-dynamic",
+      "version": "5.0.1",
+      "files": [
+        "bundles/platform-browser-dynamic.umd.js"
+      ]
+    },
+    "@angular/compiler@5.0.1": {
+      "name": "@angular/compiler",
+      "version": "5.0.1",
+      "files": [
+        "bundles/compiler.umd.js"
+      ]
+    },
+    "@angular/core@5.0.1": {
+      "name": "@angular/core",
+      "version": "5.0.1",
+      "files": [
+        "bundles/core.umd.js"
+      ]
+    },
+    "rxjs@5.5.2": {
+      "name": "rxjs",
+      "version": "5.5.2",
+      "files": [
+        "Observable.js",
+        "util/root.js",
+        "util/toSubscriber.js",
+        "Subscriber.js",
+        "util/isFunction.js",
+        "Subscription.js",
+        "util/isArray.js",
+        "util/isObject.js",
+        "util/tryCatch.js",
+        "util/errorObject.js",
+        "util/UnsubscriptionError.js",
+        "Observer.js",
+        "symbol/rxSubscriber.js",
+        "symbol/observable.js",
+        "util/pipe.js",
+        "util/noop.js",
+        "observable/merge.js",
+        "operator/merge.js",
+        "operators/merge.js",
+        "observable/ArrayObservable.js",
+        "observable/ScalarObservable.js",
+        "observable/EmptyObservable.js",
+        "util/isScheduler.js",
+        "operators/mergeAll.js",
+        "operators/mergeMap.js",
+        "util/subscribeToResult.js",
+        "util/isArrayLike.js",
+        "util/isPromise.js",
+        "symbol/iterator.js",
+        "InnerSubscriber.js",
+        "OuterSubscriber.js",
+        "util/identity.js",
+        "operator/share.js",
+        "operators/share.js",
+        "operators/multicast.js",
+        "observable/ConnectableObservable.js",
+        "Subject.js",
+        "util/ObjectUnsubscribedError.js",
+        "SubjectSubscription.js",
+        "operators/refCount.js",
+        "BehaviorSubject.js",
+        "observable/of.js",
+        "operator/concatMap.js",
+        "operators/concatMap.js",
+        "operator/map.js",
+        "operators/map.js",
+        "operator/mergeMap.js",
+        "observable/from.js",
+        "observable/FromObservable.js",
+        "observable/PromiseObservable.js",
+        "observable/IteratorObservable.js",
+        "observable/ArrayLikeObservable.js",
+        "operators/observeOn.js",
+        "Notification.js",
+        "operator/catch.js",
+        "operators/catchError.js",
+        "operator/concatAll.js",
+        "operators/concatAll.js",
+        "operator/first.js",
+        "operators/first.js",
+        "util/EmptyError.js",
+        "observable/fromPromise.js",
+        "operator/every.js",
+        "operators/every.js",
+        "operator/last.js",
+        "operators/last.js",
+        "operator/mergeAll.js",
+        "operator/reduce.js",
+        "operators/reduce.js",
+        "operators/scan.js",
+        "operators/takeLast.js",
+        "util/ArgumentOutOfRangeError.js",
+        "operators/defaultIfEmpty.js",
+        "operator/filter.js",
+        "operators/filter.js"
+      ]
+    },
+    "@angular/common@5.0.1": {
+      "name": "@angular/common",
+      "version": "5.0.1",
+      "files": [
+        "bundles/common.umd.js"
+      ]
+    },
+    "@angular/platform-browser@5.0.1": {
+      "name": "@angular/platform-browser",
+      "version": "5.0.1",
+      "files": [
+        "bundles/platform-browser.umd.js",
+        "animations.js"
+      ]
+    },
+    "@angular/animations@5.0.1": {
+      "name": "@angular/animations",
+      "version": "5.0.1",
+      "files": [
+        "bundles/animations.umd.js",
+        "browser.js"
+      ]
+    },
+    "process@0.0.0": {
+      "name": "process",
+      "version": "0.0.0",
+      "files": [
+        "index.js"
+      ]
+    },
+    "tslib@1.8.0": {
+      "name": "tslib",
+      "version": "1.8.0",
+      "files": [
+        "tslib.js"
+      ]
+    },
+    "@angular/router@5.0.1": {
+      "name": "@angular/router",
+      "version": "5.0.1",
+      "files": [
+        "bundles/router.umd.js"
+      ]
+    }
+  }
+}
