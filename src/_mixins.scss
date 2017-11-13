@@ -54,6 +54,7 @@ mobile first, add breakpoint for larger behaviour
 
 //font awesome
 fa($icon_name, $fontsize:"", $color:"")
+fa_link($icon_name, $fontsize:"", $color:"") //for a tags
 a {
     @include fa(address-book);
 }

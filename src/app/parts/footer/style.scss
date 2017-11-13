@@ -53,13 +53,13 @@
 
 .bottom {
     display: grid;
-    grid-template: "social" auto "contact" auto;
+    grid-template: "contact" auto "social" auto;
     grid-gap: ms(-6);
     &>div {
         box-shadow: 0 0 0 ms(-6) $ece-black;
     }
 
-    @include bp(small) {
+    @include bp(medium) {
         grid-template: "social contact" auto /1fr 1fr;
     }
 
@@ -98,19 +98,19 @@
                     font-size: ms(1);
                 }
                 .fb {
-                    @include fa(facebook, ms(3), $ece-black);
+                    @include fa-link(facebook, ms(3), $ece-black);
                 }
 
                 .ln {
-                    @include fa(linkedin, ms(3), $ece-black);
+                    @include fa-link(linkedin, ms(3), $ece-black);
                 }
 
                 .twit {
-                    @include fa(twitter, ms(3), $ece-black);
+                    @include fa-link(twitter, ms(3), $ece-black);
                 }
 
                 .insta {
-                    @include fa(instagram, ms(3), $ece-black);
+                    @include fa-link(instagram, ms(3), $ece-black);
                 }
             }
         }
@@ -118,6 +118,35 @@
 
     .contact {
         grid-area: contact;
-        padding-bottom: ms(2);
+        padding: ms(3) ms(2);
+        display: grid;
+        grid-template-columns: 1fr auto ms(1.5) auto 1fr;
+        &>div {
+            //font-size: ms(0);
+            grid-column: 4;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .fa {
+            grid-column: 2;
+            width: 0;
+            &:before {
+                width: ms(1);
+                text-align: center;
+            }
+        }
+
+        .location {
+            @include fa(map-marker, ms(2));
+        }
+
+        .phone {
+            @include fa(mobile, ms(2));
+        }
+
+        .mail {
+            @include fa(envelope-o, ms(1));
+        }
     }
 }
