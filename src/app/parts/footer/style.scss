@@ -50,3 +50,74 @@
         }
     }
 }
+
+.bottom {
+    display: grid;
+    grid-template: "social" auto "contact" auto;
+    grid-gap: ms(-6);
+    &>div {
+        box-shadow: 0 0 0 ms(-6) $ece-black;
+    }
+
+    @include bp(small) {
+        grid-template: "social contact" auto /1fr 1fr;
+    }
+
+    .social {
+        padding: ms(0);
+        padding-bottom: ms(2);
+        @include bp(medium) {
+            padding: ms(1);
+        }
+
+
+        grid-area: social;
+        .follow {
+            color: $ece-blue;
+            font-size: ms(1);
+            @include bp(small) {
+                font-size: ms(2);
+            }
+
+            margin-bottom:ms(1);
+        }
+        ul {
+            @include menu-base;
+            margin: 0;
+            display: grid;
+
+            @include bp(large) {
+                margin: 0 ms(3);
+            }
+            grid-template-columns: repeat(4, 1fr);
+            li {
+                text-align: center;
+                .count {
+                    margin-top: ms(0);
+                    color: $ece-orange;
+                    font-size: ms(1);
+                }
+                .fb {
+                    @include fa(facebook, ms(3), $ece-black);
+                }
+
+                .ln {
+                    @include fa(linkedin, ms(3), $ece-black);
+                }
+
+                .twit {
+                    @include fa(twitter, ms(3), $ece-black);
+                }
+
+                .insta {
+                    @include fa(instagram, ms(3), $ece-black);
+                }
+            }
+        }
+    }
+
+    .contact {
+        grid-area: contact;
+        padding-bottom: ms(2);
+    }
+}
