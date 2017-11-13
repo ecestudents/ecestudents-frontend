@@ -3,9 +3,9 @@ import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.pug',
+  templateUrl: require('./app.component.html'),
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit {/*
   constructor(private router: Router) {} 
 
      ngOnInit() {
@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
              }
              document.body.scrollTop = 0;
          });
-     }
+     }*/
 }
  
  

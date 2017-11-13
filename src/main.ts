@@ -1,12 +1,15 @@
-import { enableProdMode } from '@angular/core';
+import 'core-js/es7/reflect';
+// Angular wants it
+import 'zone.js/dist/zone';
+// Styles
+import "./main.scss";
+
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
 import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+import { enableProdMode } from '@angular/core';
 
-if (environment.production) {
-  enableProdMode();
-}
+import '@angular/platform-browser/animations';
 
+//enableProdMode();
 platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.log(err));
+    .catch(err => console.log(err));
