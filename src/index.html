@@ -1,24 +1,198 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Ecestudents</title>
   <base href="/">
-
+  <meta name="theme-color" content="#e55625">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
-  
+
+  <meta name="keywords" content="Entrepreneurship, Rotterdam, Erasmus, University">
+  <meta name="description" content="ECE Students is a study association focused on fostering the entrepreneurial mindset of students on the campus of the Erasmus University Rotterdam.">
+
+
+
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KGLJDH4');</script>
-<!-- End Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KGLJDH4');
+  </script>
+  <!-- End Google Tag Manager -->
 </head>
+
 <body>
   <app-root>
-    loading...
+    <div class="lds-css ng-scope">
+      <div class="lds-spinner" style="100%;height:100%">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <style type="text/css">
+        .lds-css {
+          display: grid;
+          grid-template-columns: 1fr auto 1fr;
+          grid-template-rows: 1fr auto 1fr;
+          height: 100vh;
+        }
+
+        .lds-spinner {
+          grid-column: 2;
+          grid-row: 2;
+        }
+
+        @keyframes lds-spinner {
+          0% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+
+        @-webkit-keyframes lds-spinner {
+          0% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+
+        .lds-spinner {
+          position: relative;
+        }
+
+        .lds-spinner div {
+          left: 94px;
+          top: 48px;
+          position: absolute;
+          -webkit-animation: lds-spinner linear 0.7s infinite;
+          animation: lds-spinner linear 0.7s infinite;
+          background: #e55625;
+          width: 12px;
+          height: 24px;
+          border-radius: 40%;
+          -webkit-transform-origin: 6px 52px;
+          transform-origin: 6px 52px;
+        }
+
+        .lds-spinner div:nth-child(1) {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+          -webkit-animation-delay: -0.641666666666667s;
+          animation-delay: -0.641666666666667s;
+        }
+
+        .lds-spinner div:nth-child(2) {
+          -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+          -webkit-animation-delay: -0.583333333333333s;
+          animation-delay: -0.583333333333333s;
+        }
+
+        .lds-spinner div:nth-child(3) {
+          -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+          -webkit-animation-delay: -0.525s;
+          animation-delay: -0.525s;
+        }
+
+        .lds-spinner div:nth-child(4) {
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+          -webkit-animation-delay: -0.466666666666667s;
+          animation-delay: -0.466666666666667s;
+        }
+
+        .lds-spinner div:nth-child(5) {
+          -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+          -webkit-animation-delay: -0.408333333333333s;
+          animation-delay: -0.408333333333333s;
+        }
+
+        .lds-spinner div:nth-child(6) {
+          -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+          -webkit-animation-delay: -0.35s;
+          animation-delay: -0.35s;
+        }
+
+        .lds-spinner div:nth-child(7) {
+          -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+          -webkit-animation-delay: -0.291666666666667s;
+          animation-delay: -0.291666666666667s;
+        }
+
+        .lds-spinner div:nth-child(8) {
+          -webkit-transform: rotate(210deg);
+          transform: rotate(210deg);
+          -webkit-animation-delay: -0.233333333333333s;
+          animation-delay: -0.233333333333333s;
+        }
+
+        .lds-spinner div:nth-child(9) {
+          -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+          -webkit-animation-delay: -0.175s;
+          animation-delay: -0.175s;
+        }
+
+        .lds-spinner div:nth-child(10) {
+          -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+          -webkit-animation-delay: -0.116666666666667s;
+          animation-delay: -0.116666666666667s;
+        }
+
+        .lds-spinner div:nth-child(11) {
+          -webkit-transform: rotate(300deg);
+          transform: rotate(300deg);
+          -webkit-animation-delay: -0.058333333333333s;
+          animation-delay: -0.058333333333333s;
+        }
+
+        .lds-spinner div:nth-child(12) {
+          -webkit-transform: rotate(330deg);
+          transform: rotate(330deg);
+          -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+        }
+
+        .lds-spinner {
+          width: 104px !important;
+          height: 104px !important;
+          -webkit-transform: translate(-52px, -52px) scale(0.52) translate(52px, 52px);
+          transform: translate(-52px, -52px) scale(0.52) translate(52px, 52px);
+        }
+      </style>
+    </div>
   </app-root>
 </body>
+
 </html>

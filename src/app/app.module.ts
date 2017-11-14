@@ -10,6 +10,7 @@ import { ICComponent } from './pages/ic/component';
 
 //parts
 import { FooterComponent } from './parts/footer/component';
+import { MainMenuComponent } from './parts/main_menu/component';
 import { HeaderComponent } from './parts/header/component';
 
 //helpers
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
     HomepageComponent,
     ICComponent,
     FooterComponent,
+    MainMenuComponent,
     HeaderComponent,
     CloudinaryPipe
   ],

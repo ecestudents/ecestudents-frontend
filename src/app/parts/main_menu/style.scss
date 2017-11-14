@@ -1,0 +1,9 @@
+@import 'mixins';
+
+ul {
+    @include menu_base;
+
+    a {
+        color: $ece-black;
+    }
+}
