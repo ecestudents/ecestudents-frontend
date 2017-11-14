@@ -13,3 +13,7 @@ $fa-sass-asset-helper: false;
 //global foundation styles
 @include foundation-global-styles;
 
+body {
+    font-size: ms(0);
+    color:$ece-black;
+}
