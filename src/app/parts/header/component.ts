@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
 })
                 
 export class HeaderComponent {
-  menu = [  {label:"Home",path:""},
-            {label:"Innovation Challenge",path:"ic"} ];
 }
+ 
