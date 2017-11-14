@@ -5,23 +5,25 @@
 @mixin fa($icon_name, $fontsize:"", $color:"") {
     @if map-has-key($fa_icon_map, $icon_name) {
         &:before {
+            margin-right: ms(-2);
             font: normal normal normal ms(0)/1 FontAwesome;
             text-rendering: auto;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             content:'#{map-get($fa_icon_map, $icon_name)}';
-            margin-right: ms(-2);
-            @if $color  != "" {
+            @if $color !="" {
                 color: $color;
             }
-            @if $fontsize  != "" {
+            @if $fontsize !="" {
                 font-size: $fontsize;
             }
         }
     }
-
-    @else {
-        @error "Check font awesome code in style_imports codes list`. "+"Please make sure it is defined in `$fa_icon_map` map.";
-    }
 }
 
+
+
+@mixin fa-link($icon_name, $fontsize:"", $color:"") {
+    display:inline-block;
+    @include fa($icon_name, $fontsize, $color)
+}

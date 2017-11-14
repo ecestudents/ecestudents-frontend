@@ -11,6 +11,7 @@
     "build": "npm run pug && node_modules/.bin/ng build --aot -prod",
     "pug": "node_modules/.bin/pug src/app -P",
     "pug_w": "node_modules/.bin/pug src/app -P -w",
+    "fdblock": "node_modules/.bin/foundation blocks install",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
