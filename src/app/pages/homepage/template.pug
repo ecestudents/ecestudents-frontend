@@ -1,19 +1,27 @@
 //put the menu somewhere in the page
-app-main-menu
+//app-main-menu
 
 .shaping  
    
     .red
         p 1 
-        button
+        button For You
     .white 
-        p 2
-        .nav
-        img(src="assets/Logo_ECE_transparent.png")
-        img(src="assets/Bulb Icon.png")
+        li.nav
+            ul 
+                a(href='#') About
+            ul 
+                a(href='#') Events
+            ul 
+                a(href='#') Commitees
+            ul 
+                a(href='#') Career {{ url }}
+        img(src='{{ logo | cd:"w_350,c_fill" }}')
+        h1 Shaping Ideas
+        img(src='{{ bulb | cd:"w_200,c_fill" }}')
     .blue
         p 3
-        button 
+        button Events
 .erasmus 
 .innovation 
 .partners
