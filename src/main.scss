@@ -13,3 +13,20 @@ $fa-sass-asset-helper: false;
 //global foundation styles
 @include foundation-global-styles;
 
+body {
+    font-size: ms(0);
+    color:$ece-black;
+}
+
+::selection {
+  background: $ece-orange; /* WebKit/Blink Browsers */
+  color:white;
+}
+::-moz-selection {
+  background: $ece-orange; /* Gecko Browsers */
+  color:white;
+}
+
+::visited {
+            color: inherit;
+        }

@@ -5,24 +5,29 @@
 @import '../node_modules/modularscale-sass/stylesheets/modularscale';
 
 //own stuff
-@import 'style_imports/colors';
 @import 'style_imports/breakpoints';
 @import 'style_imports/font_awesome';
+@import 'style_imports/cloudinary'; 
 
 //settings
 $modularscale: ( 
-  base: 1rem,
+  base: 1rem, 
   ratio: $golden
 ); 
 
 $breakpoints: (  
-    small: 0,
+    small: 480px,
     medium: 640px,
     large: 1024px,
     xlarge: 1200px,
     xxlarge: 1440px,
 );
 
+
+//colors
+$ece-orange: #e55625;
+$ece-blue: #4887c7;
+$ece-black: #303030;
 
 /*EXAMPLES
 
@@ -49,8 +54,15 @@ mobile first, add breakpoint for larger behaviour
 
 //font awesome
 fa($icon_name, $fontsize:"", $color:"")
+fa_link($icon_name, $fontsize:"", $color:"") //for a tags
 a {
     @include fa(address-book);
 }
+
+//cloudinary
+upload images by hand of later via cms
+
+cd(id, options)
+background-image: cd("parts/footer/annie-spratt-61561.jpg", "c_crop,h_1000,w_3300/c_scale,w_1900");
 
 */
