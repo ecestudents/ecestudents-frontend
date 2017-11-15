@@ -1,5 +1,22 @@
 @import 'mixins';
 
+      :host /deep/ .nav {
+            &:before{
+                  content: none;
+            }
+            li {
+                  padding: 0 10px;
+                  a{
+                        font-size: ms(0);
+                        color: $ece-black;
+                        
+                        &:hover{
+                              color: lighten($ece-black, 20);
+                        }
+                  }
+            }
+      }
+
 .shaping {
       background: cd("pages/front/station.jpg", "c_crop,h_1800,w_4000/c_scale,w_1920") top right no-repeat;
       width: 100%;
@@ -66,21 +83,6 @@
             font-weight: 200;
             padding: ms(0) ms(2);
             margin-top: 500px;
-      }
-
-      .nav {
-            margin: ms(-1) ms(5) 0 ms(5);
-            li {
-                  padding: 0 10px;
-                  a{
-                        font-size: ms(0);
-                        color: $ece-black;
-                        
-                        &:hover{
-                              color: lighten($ece-black, 20);
-                        }
-                  }
-            }
       }
       
       .container-fluid {
