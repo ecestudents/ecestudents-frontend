@@ -1,23 +1,42 @@
 //put the menu somewhere in the page
-app-main-menu
-
+//app-main-menu
 .shaping  
    
     .red
-        p 1 
-        button
+      
+        button For You
     .white 
-        p 2
-        .nav
-        img(src="assets/Logo_ECE_transparent.png")
-        img(src="assets/Bulb Icon.png")
+        app-main-menu
+        img(src='{{ logo | cd:"w_350,c_fill" }}')
+        h1 Shaping Ideas
+        img(src='{{ bulb | cd:"w_200,c_fill" }}')
     .blue
-        p 3
-        button 
-.erasmus 
-.innovation 
-.partners
-.love
-.follow
+        p 
+        button Events
+#erasmus.container-fluid
+    .left
+        h1 
+            | ERASMUS
+            br
+            | CENTRE FOR 
+            br
+            | ENTREPRENEURSHIP
+        h2 Students
+    .right
+        h3 Who are we?
+        p ECE students is a group of international students that focuses on building an entrepeneurial spirit at Erasmus University Rotterdam. We organize events and competitions aimed to inspire, coach and help students in making their ideas a reality.
+        p We provide all the resources — coaching, network, working space — to help anyone bring their ideas into the real world. Do you feel ready? Because we are. 
+#innovation.container-fluid 
+    .left
+        img(src='{{ ic_logo | cd:"w_350,c_fill"}}')
+    .right
+        h1 Innovation Challenge
+        h2 It's about sustainability this time
+        a(routerLink='/ic') Apply now
+#partners.container-fluid
+    h1 Our Partners
+    img(src='{{ partners | cd:"w_1920,c_fill"}}')
+#love.container-fluid 
+#follow.container-fluid
     .social 
     .contact

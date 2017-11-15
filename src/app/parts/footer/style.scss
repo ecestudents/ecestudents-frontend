@@ -1,9 +1,10 @@
 @import 'mixins';
 
 .banner {
+    font-family: MuseoSans;
     margin: ms(2) 0;
-    padding: ms(2) 0;
-    background-image: cd("parts/footer/annie-spratt-61561.jpg", "c_crop,h_1000,w_3300/c_scale,w_1900");
+    padding: ms(3) 0;
+    background-image: cd("parts/footer/annie-spratt-61561.jpg", "w_1900,c_fill");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -23,15 +24,21 @@
     }
 
     .text {
+        
         grid-area: text;
         padding: ms(-1);
 
         .title {
             font-size: ms(1);
+            font-family: MuseoSans;
+            font-weight: 500;
         }
 
         div {
+            font-family: Aleo;
             margin-bottom: ms(0);
+            font-size: ms(.7);
+            font-weight: 300;
         }
     }
 
@@ -42,7 +49,8 @@
         text-align: center;
 
         @include bp(large) {
-            margin-top: ms(3);
+            margin-top: ms(5);
+            margin-bottom: ms(0);
         }
 
         .room {
@@ -55,9 +63,8 @@
     display: grid;
     grid-template: "contact" auto "social" auto;
     grid-gap: ms(-6);
-    &>div {
-        box-shadow: 0 0 0 ms(-6) $ece-black;
-    }
+    align-items: center;
+
 
     @include bp(medium) {
         grid-template: "social contact" auto /1fr 1fr;
@@ -67,7 +74,7 @@
         padding: ms(0);
         padding-bottom: ms(2);
         @include bp(medium) {
-            padding: ms(1);
+            padding: 0 ms(1);
         }
 
 
@@ -118,7 +125,7 @@
 
     .contact {
         grid-area: contact;
-        padding: ms(3) ms(2);
+        padding: 0 ms(2);
         display: grid;
         grid-template-columns: 1fr auto ms(1.5) auto 1fr;
         &>div {

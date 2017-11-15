@@ -5,4 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './template.html',
   styleUrls: ['./style.scss']
 })
-export class ICComponent {}
+export class ICComponent {
+    ic_logo = 'pages/ic/ic_logo.png'
+    svm_logo = 'pages/ic/svm.png'
+}

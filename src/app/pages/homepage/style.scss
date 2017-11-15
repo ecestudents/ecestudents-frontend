@@ -1,5 +1,194 @@
+@import 'mixins';
+
 .shaping {
-      background: url("/assets/station-547641.jpg") top right no-repeat;
+      background: cd("pages/front/station.jpg", "c_crop,h_1800,w_4000/c_scale,w_1920") top right no-repeat;
       width: 100%;
-      height: 500px;
+      height: $shaping-height;
+      font-family: MuseoSans;
+      display: grid;
+      grid-template-areas: "left text right";
+      grid-template-columns: 1fr auto 1fr;
+
+      .red {
+            grid-area: left;
+            height: $shaping-box-height;
+            position: relative;
+            text-align: center;
+            background: transparentize($ece-orange, 0.5);
+
+            &:after {
+                  content: '';
+                  position: absolute;
+                  bottom: -$triangle-height;
+                  left: 0;
+                  width: 100%;
+                  border-top: $triangle-height solid transparentize($ece-orange, 0.5);
+                  border-right: $triangle-height solid transparent;
+            }
+      }
+
+      .white {
+            grid-area: text;
+            display: grid;
+            grid-template-rows: repeat(4, auto);
+            grid-auto-flow: row;
+            justify-items: center;
+
+            h1 {
+                  color: white;
+                  font-weight: 200;
+                  font-size: ms(3);
+                  margin: ms(-2) ms(4) 0 ms(4);
+            }
+      }
+
+      .blue {
+            grid-area: right;
+            height: $shaping-box-height;
+            position: relative;
+            text-align: center;
+            background: transparentize($ece-blue, 0.5);
+            
+            &:after {
+                  content: '';
+                  position: absolute;
+                  bottom: -$triangle-height;
+                  left: 0;
+                  width: 100%;
+                  border-top: $triangle-height solid transparentize($ece-blue, 0.5);
+                  border-left: $triangle-height solid transparent;
+            }
+      }
+
+      button {
+            @include button @include button-hollow border-color: #fefefe;
+            font-size: ms(2);
+            font-weight: 200;
+            padding: ms(0) ms(2);
+            margin-top: 500px;
+      }
+
+      .nav {
+            margin: ms(-1) ms(5) 0 ms(5);
+            li {
+                  padding: 0 10px;
+                  a{
+                        font-size: ms(0);
+                        color: $ece-black;
+                        
+                        &:hover{
+                              color: lighten($ece-black, 20);
+                        }
+                  }
+            }
+      }
+      
+      .container-fluid {
+            height: 300px;
+            width: 100%;
+            float:left;
+      }
 }
+
+#erasmus{
+      width: 100%;
+      display:grid;
+      margin: ms(3) 0;
+      align-items: center;
+      grid-template-areas: ". left . right .";
+      grid-template-columns: ms(5) 1fr ms(4) 1fr ms(5);
+      
+      h1{
+            font-family: MuseoSans;
+            color: $ece-blue;
+            font-size: ms(2.5);
+            margin-bottom: 0;
+            margin-top: ms(1);
+      }
+      h2{
+            font-family: Aleo;
+            color: $ece-orange;
+            font-size: ms(3);
+            margin: 0;
+      }
+      h3{
+            font-family: MuseoSans;
+            color: $ece-orange;
+            font-size: ms(1);
+            font-weight: 300;
+            margin-top: ms(1);
+      }
+      p {
+            font-family: Aleo;
+            color: $ece-black;
+            font-size: ms(1);
+            font-weight: 300;
+      }
+      .left{
+            grid-area: left;
+      }
+      
+      .right{
+            grid-area: right;
+      }
+}
+
+#innovation{
+      background: cd("pages/front/pexels.jpg", "c_scale,w_1920") 50% 40% no-repeat;
+      width: 100%;
+      display:grid;
+      padding: ms(4) 0;
+      align-items: center;
+      grid-template-areas: ". left . right .";
+      grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5);
+      
+      h1{
+            font-family: MuseoSans;
+            line-height: 3.33019073rem;
+            color: $ic-blue;
+            font-size: ms(2.2);
+            margin-bottom: 0;
+            font-weight: 800;
+      }
+      h2{
+            font-family: MuseoSans;
+            color: $ece-black;
+            font-size: ms(2.5);
+            margin: 0;
+            font-weight: 200;
+      }
+      a{
+            @include button @include button-hollow border: 4px solid $ece-black;
+            color: $ece-black;
+            font-size: ms(2);
+            font-weight: 200;
+            margin: ms(1);
+            padding: ms(0) ms(2);
+            text-decoration: none;
+            
+            &:hover{
+                  color: $ic-blue;
+            }
+      }
+      .left{
+            grid-area: left;
+      }
+      
+      .right{
+            grid-area: right;
+            text-align: center;
+      }   
+}
+
+#partners{
+      width:100%;
+      margin: ms(3) ms(2);
+      h1 {
+            color: $ece-orange;
+            font-family: MuseoSans;
+            font-size: ms(1);
+      }
+}
+
+
+      
