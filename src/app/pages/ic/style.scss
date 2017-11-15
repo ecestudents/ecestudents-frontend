@@ -15,8 +15,8 @@
 
 
 .marketing-site-hero {
-  background: url("/assets/rotterdamboat.jpg") 50% 40% no-repeat;
-  height: 95vh;
+  background: cd("pages/ic/DSC_0385_3.jpg", "w_1920,c_fill") 50% 40% no-repeat;
+  height: 90vh;
   margin-top: -$nav-height ;
   display: flex;
   align-items: center;
@@ -53,7 +53,7 @@
   }
   h3{
       text-align: center;
-      color: $ece-black;
+      color: white;
       font-weight: 200;
       font-size: ms(2);
       margin: 0 0 ms(1) 0;
@@ -69,8 +69,8 @@
       font-weight: 300;
   }
   a {
-            @include button @include button-hollow border-color: $ece-black;
-            color: $ece-black;
+            @include button @include button-hollow border-color: white;
+            color: white;
             margin: 0 auto;
             font-size: ms(2);
             font-weight: 500;
