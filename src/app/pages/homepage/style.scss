@@ -157,13 +157,14 @@
             margin: 0;
             font-weight: 200;
       }
-      button{
+      a{
             @include button @include button-hollow border: 4px solid $ece-black;
             color: $ece-black;
             font-size: ms(2);
             font-weight: 200;
             margin: ms(1);
             padding: ms(0) ms(2);
+            text-decoration: none;
             
             &:hover{
                   color: $ic-blue;
