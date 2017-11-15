@@ -18,7 +18,6 @@
   background: url("/assets/rotterdamboat.jpg") 50% 40% no-repeat;
   height: 95vh;
   margin-top: -$nav-height ;
-  background-size: cover;
   display: flex;
   align-items: center;
 
@@ -49,6 +48,7 @@
       &.subheader{
           color: $ece-blue;
           margin: 0;
+          font-weight: 500;
       }
   }
   h3{

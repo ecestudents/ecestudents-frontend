@@ -4,7 +4,7 @@
    
     .red
       
-        button For You
+        a For You
     .white 
         app-main-menu
         img(src='{{ logo | cd:"w_350,c_fill" }}')
@@ -12,7 +12,11 @@
         img(src='{{ bulb | cd:"w_200,c_fill" }}')
     .blue
         p 
-        button Events
+        a(routerLink="/ic") Events
+        .icpop
+            img(src='{{ ic_logo | cd:"w_60,c_fill"}}')
+            | Innovation Challenge
+        
 #erasmus.container-fluid
     .left
         h1 
@@ -26,13 +30,20 @@
         h3 Who are we?
         p ECE students is a group of international students that focuses on building an entrepeneurial spirit at Erasmus University Rotterdam. We organize events and competitions aimed to inspire, coach and help students in making their ideas a reality.
         p We provide all the resources — coaching, network, working space — to help anyone bring their ideas into the real world. Do you feel ready? Because we are. 
+
+
 #innovation.container-fluid 
     .left
-        img(src='{{ ic_logo | cd:"w_350,c_fill"}}')
+        img(src='{{ ic_logo | cd:"w_351,c_fill"}}')
     .right
         h1 Innovation Challenge
         h2 It's about sustainability this time
         a(routerLink='/ic') Apply now
+        
+#commingsoon.container-fluid
+    h1 More content is coming soon
+    h2 Keep visiting our site to find out about our amazing projects
+
 #partners.container-fluid
     h1 Our Partners
     img(src='{{ partners | cd:"w_1920,c_fill"}}')
