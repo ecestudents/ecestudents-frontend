@@ -5,20 +5,35 @@ ul {
     
     padding: 0 ms(3);
     
-    a {
-        color: $ece-black;
-        font-family: MuseoSans;
-        font-weight: 200;
+    li + li:before{
+        content: "|";
+        padding: 0;
         font-size: ms(.6);
+        line-height: $nav-height;
+        float: left;
+        color: white;
     }
     
-    &:before{
-        content:'';
-        margin: $nav-icon-margin 0;
-        height:  $nav-icon-height;
-        width: $nav-icon-height;
-        background: cd("parts/menu/bulb_icon.png", "h_80,c_fill");
-        background-size: contain;
-        background-repeat: no-repeat;
+    a {
+        color: white;
+        font-family: MuseoSans;
+        font-weight: 500;
+        font-size: ms(.6);
+        transition: all 0.3s ease;
+                  &:hover {
+                        color: lighten($ece-black, 20)!important;
+                  }
+    }
+    
+    li.home{
+        margin: 0;
+        a {
+            padding: 0 ms(1) 0 0 !important;
+        }
+        
+        img{
+            height:  $nav-icon-height;
+            width: auto;
+        }
     }
 }

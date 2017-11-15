@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
                 
 export class MainMenuComponent {
-  menu = [  {label:"Home",path:""},
-            {label:"Innovation Challenge",path:"ic"} ];
+  bulbicon = 'parts/menu/bulb_icon.png'
+  
+  menu = [  {label:"Innovation Challenge",path:"ic"},
+            {label:"Job Portal",path:"#"},
+            {label:"Events",path:"#"}];
 }

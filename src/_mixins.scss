@@ -34,8 +34,8 @@ $nav-height: ms(2.5);
 $nav-icon-margin: ms(-1);
 $nav-icon-height: $nav-height - 2 * $nav-icon-margin;
 
-$shaping-height: 775px;
-$triangle-height: 200px;
+$shaping-height: 100vh;
+$triangle-height: 25vh;
 $shaping-box-height: $shaping-height - $triangle-height;
 
 /*EXAMPLES
