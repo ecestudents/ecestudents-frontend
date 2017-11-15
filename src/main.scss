@@ -38,17 +38,16 @@ $fa-sass-asset-helper: false;
   font-family: Aleo;
   src: url(assets/fonts/aleo/aleo-light.otf);
   font-weight: 200;
-  font-style: italic;
 }
 @font-face{
   font-family: MuseoSans;
   src: url(assets/fonts/museosans/museosans_100.otf);
-  font-weight: 100;
+  font-weight: 200;
 }
 @font-face{
   font-family: MuseoSans;
   src: url(assets/fonts/museosans/museosans_100_italic.otf);
-  font-weight: 100;
+  font-weight: 200;
   font-style: italic;
 }
 @font-face{
@@ -76,12 +75,12 @@ $fa-sass-asset-helper: false;
 @font-face{
   font-family: MuseoSans;
   src: url(assets/fonts/museosans/museosans_700.otf);
-  font-weight: 100;
+  font-weight: 700;
 }
 @font-face{
   font-family: MuseoSans;
   src: url(assets/fonts/museosans/museosans_700_italic.otf);
-  font-weight: 100;
+  font-weight: 700;
   font-style: italic;
 }
 
