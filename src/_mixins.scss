@@ -28,7 +28,11 @@ $breakpoints: (
 $ece-orange: #e55625;
 $ece-blue: #4887c7;
 $ece-black: #303030;
-$ic-blue: #4660fd;
+$ic-blue: #4961fa;
+
+$nav-height: ms(2.5);
+$nav-icon-margin: ms(-1);
+$nav-icon-height: $nav-height - 2 * $nav-icon-margin;
 
 $shaping-height: 775px;
 $triangle-height: 200px;

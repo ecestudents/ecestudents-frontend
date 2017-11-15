@@ -1,25 +1,23 @@
-h1 {
-    color: #e55625;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 1.5em;
+@import 'mixins';
+
+:host /deep/ .nav{
+    height: $nav-height;
+    background: transparentize($ic-blue, .1);
+    
+        li{
+            a{
+                line-height: $nav-height !important;
+                padding: 0 ms(1)!important;
+                color: white !important;
+            }
+        }
 }
 
-h2 {
-    color:#4887c7;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 1.5em;
-    float: right;
-} 
-
-h3 { 
-    color:#303030;
-    font-family: "Arial Narrow", Arial, sans-serif;
-    float: right;
-}
 
 .marketing-site-hero {
-  background: url("/assets/rotterdamboat.jpg") top right no-repeat;
-  height: 90vh;
+  background: url("/assets/rotterdamboat.jpg") 50% 40% no-repeat;
+  height: 95vh;
+  margin-top: -$nav-height ;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -30,35 +28,127 @@ h3 {
 }
 
 .marketing-site-hero-content {
+    align-items: center;
+    display: grid;
   margin: 0 auto;
   padding-left: 5%;
   padding-right: 5%;
+    font-family: museosans;
 
   @media screen and (min-width: 40em) {
-    padding-left: 50%;
+    padding-left: 40%;
   }
+  
+  h1{
+      color: $ece-orange;
+      font-weight: 300;
+      font-size: ms(2);
+      text-align: right;
+      margin: 10vh 0 0 0;
+      
+      &.subheader{
+          color: $ece-blue;
+          margin: 0;
+      }
+  }
+  h3{
+      text-align: center;
+      color: $ece-black;
+      font-weight: 200;
+      font-size: ms(2);
+      margin: 0 0 ms(1) 0;
+      &.bold{
+          font-weight: 700;
+          margin: ms(1) 0 0 0;
+      }
+  }
+  h4{
+      text-align: center;
+      color: $ece-orange;
+      font-size: ms(1.2);
+      font-weight: 300;
+  }
+  a {
+            @include button @include button-hollow border-color: $ece-black;
+            color: $ece-black;
+            margin: 0 auto;
+            font-size: ms(2);
+            font-weight: 500;
+            padding: ms(1) ms(3);
+            text-decoration: none;
+            
+            &:hover{
+                color: $ece-blue;
+            }
+      }
 }
 
-button {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    cursor:pointer;
-    overflow: hidden;
-    height:  38px;
-    line-height:  2em;
-    border:  2px solid black;
-    float:  none;
-    text-align:  center;
-    width:  12em;
-    padding:  1px;
-    margin: 1px;
-    font-size:  1em;
-    color:  black;
- }
+.panel-about{
+    width: 100%;
+      display:grid;
+      padding: ms(4) 0;
+      align-items: center;
+      grid-template-areas: ". left . right .";
+      grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5);
+      
+      h3{
+            font-family: MuseoSans;
+            color: $ece-orange;
+            font-size: ms(1);
+            font-weight: 300;
+            margin-top: ms(1);
+      }
+      p {
+            font-family: Aleo;
+            color: $ece-black;
+            font-size: ms(1);
+            font-weight: 300;
+      }
 
-button:hover  {
-     color: #4887c7;
-     background:  rgba(255, 255, 255, 0.2);
- }
+      .left{
+            grid-area: left;
+      }
+      
+      .right{
+            grid-area: right;
+            
+            .blue {
+                color: $ece-blue;
+                font-size: ms(1);
+                margin-right: ms(2);
+            }
+      }   
+}
 
-
+.panel-svm{
+    width: 100%;
+      display:grid;
+      padding: ms(4) 0;
+      align-items: center;
+      grid-template-areas: 
+          ". title title title ."
+          ". left . right .";
+      grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5);
+      grid-template-rows: auto auto;
+      
+      .title {
+          grid-area: title;
+          color: $ece-orange;
+            font-family: MuseoSans;
+            font-size: ms(1);
+      }
+      .left {
+          margin: ms(1) 0;
+          text-align: center;
+          grid-area: left;
+      }
+      
+      .right{
+          grid-area: right;
+          margin: ms(1) 0;
+          font-family: Aleo;
+            color: $ece-black;
+            font-size: ms(.8);
+            font-weight: 300;
+      }
+}
