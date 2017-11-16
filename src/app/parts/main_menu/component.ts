@@ -9,7 +9,10 @@ import { Component } from '@angular/core';
 export class MainMenuComponent {
   bulbicon = 'parts/menu/bulb_icon.png'
   
+  /*
   menu = [  {label:"Innovation Challenge",path:"ic"},
-            {label:"Job Portal",path:"#"},
-            {label:"Events",path:"#"}];
+            {label:"Job Portal",path:"http://jobportal.ecestudents.com"},
+            {label:"Events",path:"http://events.ecestudents.com"}];
+            
+            */
 }
