@@ -1,154 +1,157 @@
 @import 'mixins';
 
-:host /deep/ .nav{
+:host /deep/ .nav {
     height: $nav-height;
     background: transparentize($ic-blue, .1);
-    
-        li{
-            a{
-                line-height: $nav-height !important;
-                padding: 0 ms(1)!important;
-                color: white !important;
-            }
+
+    li {
+        a {
+            line-height: $nav-height !important;
+            padding: 0 ms(1)!important;
+            color: white !important;
         }
+    }
 }
 
 
 .marketing-site-hero {
-  background: url("/assets/rotterdamboat.jpg") 50% 40% no-repeat;
-  height: 95vh;
-  margin-top: -$nav-height ;
-  background-size: cover;
-  display: flex;
-  align-items: center;
+    background: cd("pages/ic/DSC_0385_3.jpg", "w_1920,c_fill") 50% 40% no-repeat;
+    height: 90vh;
+    margin-top: -$nav-height;
+    display: flex;
+    align-items: center;
 
-  @media screen and (min-width: 40em) {
-    background-position: center center;
-  }
+    @media screen and (min-width: 40em) {
+        background-position: center center;
+    }
 }
 
 .marketing-site-hero-content {
     align-items: center;
     display: grid;
-  margin: 0 auto;
-  padding-left: 5%;
-  padding-right: 5%;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
     font-family: museosans;
 
-  @media screen and (min-width: 40em) {
-    padding-left: 40%;
-  }
-  
-  h1{
-      color: $ece-orange;
-      font-weight: 300;
-      font-size: ms(2);
-      text-align: right;
-      margin: 10vh 0 0 0;
-      
-      &.subheader{
-          color: $ece-blue;
-          margin: 0;
-      }
-  }
-  h3{
-      text-align: center;
-      color: $ece-black;
-      font-weight: 200;
-      font-size: ms(2);
-      margin: 0 0 ms(1) 0;
-      &.bold{
-          font-weight: 700;
-          margin: ms(1) 0 0 0;
-      }
-  }
-  h4{
-      text-align: center;
-      color: $ece-orange;
-      font-size: ms(1.2);
-      font-weight: 300;
-  }
-  a {
-            @include button @include button-hollow border-color: $ece-black;
-            color: $ece-black;
-            margin: 0 auto;
-            font-size: ms(2);
-            font-weight: 500;
-            padding: ms(1) ms(3);
-            text-decoration: none;
-            
-            &:hover{
-                color: $ece-blue;
-            }
-      }
-}
+    @media screen and (min-width: 40em) {
+        padding-left: 40%;
+    }
 
-.panel-about{
-    width: 100%;
-      display:grid;
-      padding: ms(4) 0;
-      align-items: center;
-      grid-template-areas: ". left . right .";
-      grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5);
-      
-      h3{
-            font-family: MuseoSans;
-            color: $ece-orange;
-            font-size: ms(1);
-            font-weight: 300;
-            margin-top: ms(1);
-      }
-      p {
+    h1 {
+        color: $ece-orange;
+        font-weight: 300;
+        font-size: ms(2);
+        text-align: right;
+        margin: 10vh 0 0 0;
+
+
+        &.subheader {
+            color: $ece-blue;
             font-family: Aleo;
-            color: $ece-black;
-            font-size: ms(1);
-            font-weight: 300;
-      }
+            margin: 0;
+            font-weight: 500;
+        }
+    }
+    h3 {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        font-size: ms(2);
+        margin: 0 0 ms(1) 0;
+        &.sub {
+            margin: ms(1) 0 0 0;
+        }
+        .bold {
+            font-weight: 700;
 
-      .left{
-            grid-area: left;
-      }
-      
-      .right{
-            grid-area: right;
-            
-            .blue {
-                color: $ece-blue;
-                font-size: ms(1);
-                margin-right: ms(2);
-            }
-      }   
+        }
+    }
+    h4 {
+        text-align: center;
+        color: white;
+        font-size: ms(1.2);
+        font-weight: 500;
+    }
+    a {
+        @include button @include button-hollow border-width: 4px; border-color: white;
+        color: white;
+        margin: 0 auto;
+        font-size: ms(2);
+        font-weight: 500;
+        padding: ms(1) ms(3);
+        text-decoration: none;
+
+        &:hover {
+            color: $ic-blue;
+        }
+    }
 }
 
-.panel-svm{
+.panel-about {
     width: 100%;
-      display:grid;
-      padding: ms(4) 0;
-      align-items: center;
-      grid-template-areas: 
-          ". title title title ."
-          ". left . right .";
-      grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5);
-      grid-template-rows: auto auto;
-      
-      .title {
-          grid-area: title;
-          color: $ece-orange;
-            font-family: MuseoSans;
+    display: grid;
+    padding: ms(4) 0;
+    align-items: center;
+    grid-template-areas: ". left . right .";
+    grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5);
+
+    h3 {
+        font-family: MuseoSans;
+        color: $ece-orange;
+        font-size: ms(1);
+        font-weight: 300;
+        margin-top: ms(1);
+    }
+    p {
+        font-family: Aleo;
+        color: $ece-black;
+        font-size: ms(1);
+        font-weight: 300;
+    }
+
+    .left {
+        grid-area: left;
+    }
+
+    .right {
+        grid-area: right;
+
+        .blue {
+            color: $ece-blue;
             font-size: ms(1);
-      }
-      .left {
-          margin: ms(1) 0;
-          text-align: center;
-          grid-area: left;
-      }
-      
-      .right{
-          grid-area: right;
-          margin: ms(1) 0;
-          font-family: Aleo;
-            color: $ece-black;
-            font-size: ms(.8);
-            font-weight: 300;
-      }
+            margin-right: ms(2);
+        }
+    }
+}
+
+.panel-svm {
+    width: 100%;
+    display: grid;
+    padding: ms(4) 0;
+    align-items: center;
+    grid-template-areas: ". title title title ." ". left . right .";
+    grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5);
+    grid-template-rows: auto auto;
+
+    .title {
+        grid-area: title;
+        color: $ece-orange;
+        font-family: MuseoSans;
+        font-size: ms(1);
+    }
+    .left {
+        margin: ms(1) 0;
+        text-align: center;
+        grid-area: left;
+    }
+
+    .right {
+        grid-area: right;
+        margin: ms(1) 0;
+        font-family: Aleo;
+        color: $ece-black;
+        font-size: ms(.8);
+        font-weight: 300;
+    }
 }

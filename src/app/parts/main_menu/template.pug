@@ -1,3 +1,6 @@
 ul.nav
+    li.home
+        a(routerLink="/") 
+            img(src='{{ bulbicon | cd:"h_80,c_fill"}}')
     li(*ngFor="let link of menu")
-        a(routerLink="/{{ link.path }}") {{link.label}} 
+        a(routerLink="/{{ link.path }}") {{link.label}}  

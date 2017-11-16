@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./style.scss']
 })
 export class HomepageComponent {
-  logo = 'pages/front/Logo_ECE_transparent.jpg'
-  bulb = 'pages/front/Bulb_Icon.jpg'
+  logo = 'pages/front/Logo_ECE_transparent.png'
+  bulb = 'pages/front/Bulbicon.svg'
   ic_logo = 'pages/ic/ic_logo.png'
   partners = 'pages/front/sponsors.png'
 }

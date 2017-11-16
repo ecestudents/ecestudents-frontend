@@ -4,7 +4,7 @@
     font-family: MuseoSans;
     margin: ms(2) 0;
     padding: ms(3) 0;
-    background-image: cd("parts/footer/annie-spratt-61561.jpg", "w_1900,c_fill");
+    background-image: cd("parts/footer/annie-spratt-61561.jpg", "w_1920,c_fill");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -61,14 +61,26 @@
 
 .bottom {
     display: grid;
-    grid-template: "contact" auto "social" auto;
+    grid-template: "title" auto "contact" auto "social" auto;
     grid-gap: ms(-6);
     align-items: center;
 
 
     @include bp(medium) {
-        grid-template: "social contact" auto /1fr 1fr;
+        grid-template: "title title" auto "social contact" auto / 1fr 1fr;
     }
+
+        .follow {
+            grid-area: title;
+            color: $ece-blue;
+            font-size: ms(1);
+            @include bp(small) {
+                font-size: ms(2);
+                margin: 0 ms(5);
+            }
+
+            margin-bottom:ms(1);
+        }
 
     .social {
         padding: ms(0);
@@ -79,22 +91,14 @@
 
 
         grid-area: social;
-        .follow {
-            color: $ece-blue;
-            font-size: ms(1);
-            @include bp(small) {
-                font-size: ms(2);
-            }
 
-            margin-bottom:ms(1);
-        }
         ul {
             @include menu-base;
             margin: 0;
             display: grid;
 
             @include bp(large) {
-                margin: 0 ms(3);
+                margin: 0 ms(5);
             }
             grid-template-columns: repeat(4, 1fr);
             li {
@@ -127,12 +131,16 @@
         grid-area: contact;
         padding: 0 ms(2);
         display: grid;
-        grid-template-columns: 1fr auto ms(1.5) auto 1fr;
+        grid-template-columns: 1fr auto ms(2) auto 1fr;
+        align-items: center;
         &>div {
-            //font-size: ms(0);
+            font-size: ms(0);
+            font-family: MuseoSans;
+            font-weight: 500;
             grid-column: 4;
             display: inline-block;
             vertical-align: middle;
+            margin-bottom: ms(0);
         }
 
         .fa {
