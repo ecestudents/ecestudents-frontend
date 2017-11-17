@@ -88,6 +88,7 @@ $fa-sass-asset-helper: false;
 body {
     font-size: ms(0);
     color:$ece-black;
+    min-width:600px;
 }
 
 ::selection {

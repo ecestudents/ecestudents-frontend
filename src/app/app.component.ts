@@ -6,16 +6,16 @@ import { Router, NavigationEnd } from '@angular/router';
   templateUrl: './app.component.html',
 })
 export class AppComponent implements OnInit {
-  constructor(private router: Router) {} 
-
+  constructor(private router: Router) {
+      
+  } 
      ngOnInit() {
-         this.router.events.subscribe((evt) => {
-             if (!(evt instanceof NavigationEnd)) {
-                 return;
-             }
-             document.body.scrollTop = 0;
-         });
-     }
+         this.router.events.subscribe((event: NavigationEnd) => {
+            if(event instanceof NavigationEnd) {
+            window.scrollTo(0, 0);
+        }
+        })
+    }
 }
  
  
