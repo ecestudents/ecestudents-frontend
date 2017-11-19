@@ -38,7 +38,7 @@
       background: cd("pages/front/station.jpg", "c_crop,h_2000,w_4000/c_scale,w_1920") top right no-repeat;
       width: 100%;
       height: $shaping-height;
-      min-height: 750px;
+      //min-height: 750px;
       font-family: MuseoSans;
       display: grid;
       grid-template-areas: "left text right";
@@ -146,6 +146,14 @@
                   font-size: ms(2);
                   margin: ms(-4) ms(1) 0 ms(1);
             }
+            .logo{
+                  height: 50vh;
+                  width: auto;
+            }
+            .bulb{
+                  height: 20vh;
+                  width: auto;
+            }
       }
 
       .blue {
@@ -174,7 +182,7 @@
             font-size: ms(2);
             font-weight: 300;
             padding: ms(0) ms(2);
-            margin-top: 475px;
+            margin-top: 60vh;
             text-decoration: none;
       }
 
@@ -236,10 +244,12 @@
       }
       .left {
             grid-area: left;
+            overflow: hidden;
       }
 
       .right {
             grid-area: right;
+            overflow: hidden;
       }
 }
 
@@ -322,7 +332,32 @@
 @include bp(medium) {
       #erasmus {
             grid-template-areas: ". left . right .";
-            grid-template-columns: ms(5) 1fr ms(4) 1fr ms(5);
+            grid-template-columns: ms(5) 1fr ms(3) 1fr ms(5);
+            h1 {
+                  font-size: ms(2);
+            }
+            h2 {
+
+                  font-size: ms(2.5);
+            }
+            h3 {
+                  font-size: ms(.5);
+                  margin-top: ms(.5);
+            }
+            p {
+                  font-size: ms(.5);
+            }
+      }
+
+      #partners {
+            margin: ms(3) 0;
+            padding: 0 ms(2);
+      }
+
+}
+
+@include bp(xxlarge){
+      #erasmus {
             h1 {
                   font-size: ms(2.5);
             }
@@ -338,10 +373,4 @@
                   font-size: ms(1);
             }
       }
-
-      #partners {
-            margin: ms(3) 0;
-            padding: 0 ms(2);
-      }
-
 }
