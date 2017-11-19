@@ -106,7 +106,6 @@
     p {
         font-family: Aleo;
         color: $ece-black;
-        font-size: ms(1);
         font-weight: 300;
     }
 
@@ -151,7 +150,18 @@
         margin: ms(1) 0;
         font-family: Aleo;
         color: $ece-black;
-        font-size: ms(.8);
         font-weight: 300;
+    }
+}
+
+@include bp(medium) {
+    p {
+        font-size: ms(0.5);
+    }
+}
+
+@include bp(xxlarge){
+    p {
+        font-size: ms(.8);
     }
 }

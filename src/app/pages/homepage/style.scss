@@ -259,8 +259,13 @@
       display: grid;
       padding: ms(4) 0;
       align-items: center;
-      grid-template-areas: ". left . right .";
-      grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5);
+                  grid-template-areas: ". left . right .";
+            grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5);
+      @include bp(medium){
+            grid-template-areas: ". left . right .";
+            grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5); 
+      }
+
 
       h1 {
             font-family: MuseoSans;
@@ -330,6 +335,7 @@
 }
 
 @include bp(medium) {
+      
       #erasmus {
             grid-template-areas: ". left . right .";
             grid-template-columns: ms(5) 1fr ms(3) 1fr ms(5);
