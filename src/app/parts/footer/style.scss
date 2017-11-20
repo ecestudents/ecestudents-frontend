@@ -61,7 +61,7 @@
 
 .bottom {
     display: grid;
-    grid-template: "title" auto "contact" auto "social" auto;
+    grid-template: "contact" auto "title" auto "social" auto;
     grid-gap: ms(-6);
     align-items: center;
 
@@ -83,7 +83,7 @@
         }
 
     .social {
-        padding: ms(0);
+        padding: 0;
         padding-bottom: ms(2);
         @include bp(medium) {
             padding: 0 ms(1);

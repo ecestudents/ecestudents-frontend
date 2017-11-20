@@ -15,7 +15,8 @@ $modularscale: (
   ratio: $golden
 ); 
 
-$breakpoints: (  
+$breakpoints: (
+    init: 0,
     small: 480px,
     medium: 640px,
     large: 1024px,
