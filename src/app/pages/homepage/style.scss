@@ -1,6 +1,6 @@
 @import 'mixins';
 
-#construction{
+#construction {
       width: 100%;
       text-align: center;
       font-family: MuseoSans;
@@ -37,8 +37,7 @@
       margin-top: 24px;
       background: cd("pages/front/station.jpg", "c_crop,h_2000,w_4000/c_scale,w_1920") top right no-repeat;
       width: 100%;
-      height: $shaping-height;
-      //min-height: 750px;
+      height: $shaping-height; //min-height: 750px;
       font-family: MuseoSans;
       display: grid;
       grid-template-areas: "left text right";
@@ -113,20 +112,20 @@
                   border-top: $triangle-height solid transparentize($ece-orange, 0.5);
                   border-right: $triangle-height solid transparent;
             }
-            
-            .icpop{
-                  padding:0;
-                  div{
+
+            .icpop {
+                  padding: 0;
+                  div {
                         padding: ms(0);
                         margin: 0;
                         font-size: ms(0);
                         border-bottom: 1px solid $ece-orange;
-                        
-                        &:last-of-type{
+
+                        &:last-of-type {
                               border: 0px;
                         }
-                        
-                        &:hover{
+
+                        &:hover {
                               background-color: transparentize($ece-orange, 0.5);
                         }
                   }
@@ -146,11 +145,11 @@
                   font-size: ms(2);
                   margin: ms(-4) ms(1) 0 ms(1);
             }
-            .logo{
+            .logo {
                   height: 50vh;
                   width: auto;
             }
-            .bulb{
+            .bulb {
                   height: 20vh;
                   width: auto;
             }
@@ -212,6 +211,7 @@
       width: 100%;
       display: grid;
       margin: ms(3) 0;
+      padding: 0 ms(1);
       align-items: center;
       grid-template-areas: "left" "right";
       grid-template-rows: auto auto;
@@ -257,39 +257,57 @@
       background: cd("pages/front/pexels.jpg", "c_scale,w_1920") 50% 40% no-repeat;
       width: 100%;
       display: grid;
-      padding: ms(4) 0;
+      padding: ms(2) ms(1);
       align-items: center;
-                  grid-template-areas: ". left . right .";
-            grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5);
-      @include bp(medium){
-            grid-template-areas: ". left . right .";
-            grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5); 
+      grid-template-areas: "left" "right";
+      grid-template-rows: auto auto;
+
+      img {
+            max-width: 50%;
       }
+      @include bp(medium) {
+            padding: ms(4) 0;
+            grid-template-areas: ". left . right .";
+            grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5);
+            img {
+                  max-width: 100%;
+            }
+      }
+
 
 
       h1 {
             font-family: MuseoSans;
             line-height: 3.33019073rem;
             color: $ic-blue;
-            font-size: ms(2.2);
+            font-size: ms(1.2);
             margin-bottom: 0;
             font-weight: 800;
+            @include bp(medium) {
+                font-size: ms(2.2);  
+            }
       }
       h2 {
             font-family: MuseoSans;
             color: $ece-black;
-            font-size: ms(2.5);
+            font-size: ms(1.5);
             margin: 0;
             font-weight: 200;
+            @include bp(medium) {
+                  font-size: ms(2.5);
+            }
       }
       a {
             @include button @include button-hollow border: 4px solid $ece-black;
             color: $ece-black;
-            font-size: ms(2);
+            font-size: ms(1);
             font-weight: 200;
             margin: ms(1);
             padding: ms(0) ms(2);
             text-decoration: none;
+            @include bp(medium) {
+                font-size: ms(2);  
+            }
 
             &:hover {
                   color: $ic-blue;
@@ -297,6 +315,7 @@
       }
       .left {
             grid-area: left;
+            text-align: center;
       }
 
       .right {
@@ -335,8 +354,10 @@
 }
 
 @include bp(medium) {
-      
+
       #erasmus {
+            margin: ms(3) 0;
+            padding: 0;
             grid-template-areas: ". left . right .";
             grid-template-columns: ms(5) 1fr ms(3) 1fr ms(5);
             h1 {
@@ -362,7 +383,7 @@
 
 }
 
-@include bp(xxlarge){
+@include bp(xxlarge) {
       #erasmus {
             h1 {
                   font-size: ms(2.5);

@@ -1,28 +1,40 @@
 @import 'mixins';
 
-:host /deep/ .nav {
-    height: $nav-height;
-    background: transparentize($ic-blue, .1);
+a, p {
+    font-size: ms(1);
+}
 
-    li {
-        a {
-            line-height: $nav-height !important;
-            padding: 0 ms(1)!important;
-            color: white !important;
+:host /deep/ .nav {
+    a{
+        font-size: ms(1);
+    }
+}
+
+@include bp(medium) {
+    :host /deep/ .nav {
+        height: $nav-height;
+        background: transparentize($ic-blue, .1);
+
+        li {
+            a {
+                line-height: $nav-height !important;
+                padding: 0 ms(1)!important;
+                color: white !important;
+            }
         }
     }
 }
 
-
 .marketing-site-hero {
-    background: cd("pages/ic/DSC_0385_3.jpg", "w_1920,c_fill") 50% 40% no-repeat;
+    background: cd("pages/ic/DSC_0385_3.jpg", "w_1920,c_fill") 30% 80% no-repeat;
     height: 90vh;
-    margin-top: -$nav-height;
+
     display: flex;
     align-items: center;
 
-    @media screen and (min-width: 40em) {
-        background-position: center center;
+    @include bp(medium) {
+        background-position: 50% 40%;
+        margin-top: -$nav-height;
     }
 }
 
@@ -74,7 +86,8 @@
         font-weight: 500;
     }
     a {
-        @include button @include button-hollow border-width: 4px; border-color: white;
+        @include button @include button-hollow border-width: 4px;
+        border-color: white;
         color: white;
         margin: 0 auto;
         font-size: ms(2);
@@ -91,10 +104,23 @@
 .panel-about {
     width: 100%;
     display: grid;
-    padding: ms(4) 0;
+    padding: ms(2) ms(1);
     align-items: center;
-    grid-template-areas: ". left . right .";
-    grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5);
+    grid-template-areas: "left" "right";
+      grid-template-rows: auto auto;
+
+      img {
+            max-width: 50%;
+      }
+    
+          @include bp(medium) {
+            padding: ms(4) 0;
+            grid-template-areas: ". left . right .";
+            grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5);
+            img {
+                  max-width: 100%;
+            }
+      }
 
     h3 {
         font-family: MuseoSans;
@@ -111,6 +137,7 @@
 
     .left {
         grid-area: left;
+        text-align: center;
     }
 
     .right {
@@ -127,11 +154,20 @@
 .panel-svm {
     width: 100%;
     display: grid;
-    padding: ms(4) 0;
+    padding: ms(2) ms(1);
     align-items: center;
-    grid-template-areas: ". title title title ." ". left . right .";
-    grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5);
-    grid-template-rows: auto auto;
+    grid-template-areas: "title" "left" "right";
+    grid-template-rows: auto auto auto;
+    
+    @include bp(medium) {
+            padding: ms(4) 0;
+            grid-template-areas: ". title title title ." ". left . right .";
+            grid-template-columns: ms(5) 1fr ms(4) 2fr ms(5);
+            grid-template-rows: auto auto;
+            img {
+                  max-width: 100%;
+            }
+      }
 
     .title {
         grid-area: title;
@@ -160,7 +196,7 @@
     }
 }
 
-@include bp(xxlarge){
+@include bp(xxlarge) {
     p {
         font-size: ms(.8);
     }

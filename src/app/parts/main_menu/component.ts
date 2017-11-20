@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+declare var $:any
 
 @Component({
   selector: 'app-main-menu',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./style.scss']
 })
                 
-export class MainMenuComponent {
+export class MainMenuComponent implements OnInit {
   bulbicon = 'parts/menu/bulb_icon.png'
   
   /*
@@ -15,4 +16,8 @@ export class MainMenuComponent {
             {label:"Events",path:"http://events.ecestudents.com"}];
             
             */
+            
+  ngOnInit(){
+    $(document).foundation();
+  }
 }
