@@ -36,7 +36,6 @@
 
 .shaping {
       background: cd("pages/front/station.jpg", "c_crop,h_2000,w_4000/c_scale,w_1920") top right no-repeat;
-      width: 100%;
       height: $shaping-height; //min-height: 750px;
       font-family: MuseoSans;
       display: grid;
@@ -177,7 +176,8 @@
 
       a,
       button {
-            @include button @include button-hollow border-color: #fefefe;
+            @include button; 
+            @include button-hollow border-color: #fefefe;
             font-size: ms(2);
             font-weight: 300;
             padding: ms(0) ms(2);
@@ -192,7 +192,7 @@
       }
 
 
-      @include bp(medium) {
+      @include bp(large) {
             grid-template-columns: 1fr auto 1fr;
             .white {
                   h1 {
