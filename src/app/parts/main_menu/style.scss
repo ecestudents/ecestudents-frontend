@@ -6,7 +6,7 @@
 @include foundation-menu-icon;
 
 :host {
-    width:100%;
+    width: 100%;
 }
 
 .togglewrap {
@@ -55,6 +55,7 @@
         a {
             color: $ece-black;
         }
+
     }
 
     @include bp(medium) {
@@ -72,6 +73,10 @@
             background: none;
             border: 0px;
             text-align: left;
+
+            a {
+                color: white;
+            }
         }
     }
 }
