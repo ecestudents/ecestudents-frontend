@@ -5,6 +5,10 @@
 @include foundation-menu;
 @include foundation-menu-icon;
 
+:host {
+    width:100%;
+}
+
 .togglewrap {
     width: 100%;
     background: white;
@@ -35,7 +39,7 @@
 }
 
 #example-menu {
-
+    //width: 100%;
     .hometxt {
         display: block;
     }
@@ -78,7 +82,7 @@ ul {
     @include menu_base;
 
     @include bp(medium) {
-        
+
         padding: 0 ms(1);
 
         li+li:before {
@@ -113,9 +117,8 @@ ul {
             }
         }
     }
-    
+
     @include bp(large) {
         padding: 0 ms(3);
-        
     }
 }
