@@ -4,8 +4,9 @@
 @include foundation-responsive-embed;
 @include foundation-menu;
 @include foundation-menu-icon;
+
 :host {
-    width: 100%;
+    width:100%;
 }
 
 .togglewrap {
@@ -38,14 +39,12 @@
 }
 
 #example-menu {
-    position: absolute;
-    width: 100%;
-    
-    .hometxt{
+    //width: 100%;
+    .hometxt {
         display: block;
     }
-    .home{
-        display:none;
+    .home {
+        display: none;
     }
 
     li {
@@ -54,15 +53,13 @@
         background: transparentize(white, 0.3);
         border-bottom: 1px solid $ece-black;
         a {
-            color: $ece-black;
+            color: white;
         }
     }
-}
 
-@include bp(medium) {
-    #example-menu {
+    @include bp(medium) {
         position: relative;
-        
+
         .hometxt {
             display: none;
         }
@@ -79,25 +76,16 @@
     }
 }
 
+
+
 ul {
     @include menu_base;
 
     @include bp(medium) {
-        padding: 0 ms(3);
 
-
-
-        li+li:before {
-            content: "|";
-            padding: 0;
-            font-size: ms(.6);
-            line-height: $nav-height;
-            float: left;
-            color: white;
-        }
+        padding: 0 ms(1);
 
         a {
-            color: white;
             font-family: MuseoSans;
             font-weight: 500;
             font-size: ms(.6);
@@ -120,4 +108,7 @@ ul {
         }
     }
 
+    @include bp(large) {
+        padding: 0 ms(3);
+    }
 }

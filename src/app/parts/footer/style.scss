@@ -64,22 +64,24 @@
     grid-template: "contact" auto "title" auto "social" auto;
     grid-gap: ms(-6);
     align-items: center;
+    margin: ms(0);
 
 
     @include bp(medium) {
-        grid-template: "title title" auto "social contact" auto / 1fr 1fr;
+        grid-template: ". title title title ." auto 
+                        ". social . contact ." auto 
+                        / 3fr auto 2fr auto 3fr;
     }
 
         .follow {
             grid-area: title;
             color: $ece-blue;
-            font-size: ms(1);
-            @include bp(small) {
+            font-size: ms(2);
+            @include bp(medium) {
                 font-size: ms(2);
-                margin: 0 ms(5);
             }
 
-            margin-bottom:ms(1);
+            margin-bottom: ms(1);
         }
 
     .social {
@@ -96,10 +98,6 @@
             @include menu-base;
             margin: 0;
             display: grid;
-
-            @include bp(large) {
-                margin: 0 ms(5);
-            }
             grid-template-columns: repeat(4, 1fr);
             li {
                 text-align: center;
@@ -109,19 +107,19 @@
                     font-size: ms(1);
                 }
                 .fb {
-                    @include fa-link(facebook, ms(3), $ece-black);
+                    @include fa-link(facebook, ms(2.5), $ece-black);
                 }
 
                 .ln {
-                    @include fa-link(linkedin, ms(3), $ece-black);
+                    @include fa-link(linkedin, ms(2.5), $ece-black);
                 }
 
                 .twit {
-                    @include fa-link(twitter, ms(3), $ece-black);
+                    @include fa-link(twitter, ms(2.5), $ece-black);
                 }
 
                 .insta {
-                    @include fa-link(instagram, ms(3), $ece-black);
+                    @include fa-link(instagram, ms(2.5), $ece-black);
                 }
             }
         }
@@ -129,7 +127,6 @@
 
     .contact {
         grid-area: contact;
-        padding: 0 ms(2);
         display: grid;
         grid-template-columns: 1fr auto ms(2) auto 1fr;
         align-items: center;
@@ -141,6 +138,10 @@
             display: inline-block;
             vertical-align: middle;
             margin-bottom: ms(0);
+            
+            @include bp(large){
+                font-size: ms(1);
+            }
         }
 
         .fa {
