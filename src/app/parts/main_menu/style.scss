@@ -4,9 +4,6 @@
 @include foundation-responsive-embed;
 @include foundation-menu;
 @include foundation-menu-icon;
-:host {
-    width: 100%;
-}
 
 .togglewrap {
     width: 100%;
@@ -38,14 +35,12 @@
 }
 
 #example-menu {
-    position: absolute;
-    width: 100%;
-    
-    .hometxt{
+
+    .hometxt {
         display: block;
     }
-    .home{
-        display:none;
+    .home {
+        display: none;
     }
 
     li {
@@ -57,12 +52,10 @@
             color: $ece-black;
         }
     }
-}
 
-@include bp(medium) {
-    #example-menu {
+    @include bp(medium) {
         position: relative;
-        
+
         .hometxt {
             display: none;
         }
@@ -79,13 +72,14 @@
     }
 }
 
+
+
 ul {
     @include menu_base;
 
     @include bp(medium) {
-        padding: 0 ms(3);
-
-
+        
+        padding: 0 ms(1);
 
         li+li:before {
             content: "|";
@@ -119,5 +113,9 @@ ul {
             }
         }
     }
-
+    
+    @include bp(large) {
+        padding: 0 ms(3);
+        
+    }
 }
