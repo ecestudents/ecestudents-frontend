@@ -9,19 +9,20 @@
       font-weight: 500;
       text-align: center;
       background: $ece-blue;
-      position: fixed;
-      top: 0;
-      z-index: 2;
 }
 
 :host /deep/ .nav {
+      @include bp(medium) {
+            padding-top: ms(-1);
+      }
+      
       li:first-of-type,
       li:nth-of-type(2):before {
             display: none;
       }
       li+li:before {
             line-height: 47px !important;
-      }
+      } 
 
       li {
             padding: 0;
@@ -34,7 +35,6 @@
 }
 
 .shaping {
-      margin-top: 24px;
       background: cd("pages/front/station.jpg", "c_crop,h_2000,w_4000/c_scale,w_1920") top right no-repeat;
       width: 100%;
       height: $shaping-height; //min-height: 750px;
@@ -208,10 +208,8 @@
 }
 
 #erasmus {
-      width: 100%;
+      margin: ms(0);
       display: grid;
-      margin: ms(3) 0;
-      padding: 0 ms(1);
       align-items: center;
       grid-template-areas: "left" "right";
       grid-template-rows: auto auto;
@@ -219,14 +217,14 @@
       h1 {
             font-family: MuseoSans;
             color: $ece-blue;
-            font-size: ms(1.5);
+            font-size: ms(1);
             margin-bottom: 0;
             margin-top: ms(1);
       }
       h2 {
             font-family: Aleo;
             color: $ece-orange;
-            font-size: ms(2);
+            font-size: ms(1);
             margin: 0;
       }
       h3 {
@@ -234,7 +232,7 @@
             color: $ece-orange;
             font-size: ms(.5);
             font-weight: 300;
-            margin-top: ms(1);
+            //margin-top: ms(1);
       }
       p {
             font-family: Aleo;
@@ -325,7 +323,7 @@
 }
 
 #commingsoon {
-      width: 100%;
+      margin: ms(0);
       text-align: center;
       h1 {
             font-family: MuseoSans;
@@ -344,8 +342,7 @@
 }
 
 #partners {
-      width: 100%;
-      margin: ms(2) 0;
+      margin: ms(2) ms(0);
       h1 {
             color: $ece-orange;
             font-family: MuseoSans;
