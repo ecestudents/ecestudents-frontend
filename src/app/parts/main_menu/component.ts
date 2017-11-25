@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-declare var $:any
+import { ResponsiveToggle } from 'foundation-sites/js/foundation.responsiveToggle.js';
 
 @Component({
   selector: 'app-main-menu',
@@ -16,8 +16,9 @@ export class MainMenuComponent implements OnInit {
             {label:"Events",path:"http://events.ecestudents.com"}];
             
             */
-            
+           
   ngOnInit(){
-    $(document).foundation();
+    new ResponsiveToggle(".togglewrap")
   }
 }
+ 
