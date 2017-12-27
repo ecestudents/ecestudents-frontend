@@ -1,8 +1,17 @@
 @import 'mixins';
 
-#main {
-    .main {
+#menu {
+    ul {
         @include menu-base;
         @include menu-direction("vertical");
+
+        &.child {
+            @include menu-nested
+        }
     }
+
+    a {
+        color: $ece-black;
+    }
+
 }
