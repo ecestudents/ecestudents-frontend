@@ -116,6 +116,13 @@ mobile first, add breakpoint for larger behaviour
     }
 }
 
+//mixins
+@include wrapper;
+@include background_container("pages/front/station.jpg");
+@include margin_vertical;
+@include padding_vertical;
+@include text(MuseoSans, 1, $ic-blue, 800);
+
 
 //font awesome
 fa($icon_name, $fontsize:"", $color:"")
