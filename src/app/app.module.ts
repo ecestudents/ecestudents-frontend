@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './pages/homepage/component';
 import { ICComponent } from './pages/ic/component';
+import { IdeaLabComponent } from './pages/idealab/component';
 
 //parts
 import { FooterComponent } from './parts/footer/component';
@@ -21,6 +22,7 @@ import { CloudinaryPipe } from './helpers/cloudinary/pipe';
 const appRoutes: Routes = [
   { path: '',               component: HomepageComponent },
   { path: 'ic',             component: ICComponent },
+  { path: 'idealab',             component: IdeaLabComponent },
   { path: '**', redirectTo: '' }
 ];
 
@@ -29,6 +31,7 @@ const appRoutes: Routes = [
     AppComponent,
     HomepageComponent,
     ICComponent,
+    IdeaLabComponent,
     FooterComponent,
     MainMenuComponent,
     HeaderComponent,
