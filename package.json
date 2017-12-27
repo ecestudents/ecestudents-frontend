@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "engines": {
-    "node": "9.1.0"
+    "node": "6.12.0"
   },
   "scripts": {
     "ng": "ng",
-    "dev": "npm run pug_w & node_modules/.bin/ng serve --host $IP --port $PORT --disableHostCheck=true --public-host=https://$C9_PROJECT-$C9_USER.c9users.io",
+    "dev": "npm run pug_w & node_modules/.bin/ng serve --host $IP --port $PORT --disableHostCheck=true",
     "build": "npm run pug && node_modules/.bin/ng build --aot -prod",
     "pug": "node_modules/.bin/pug src/app -P",
     "pug_w": "node_modules/.bin/pug src/app -P -w",

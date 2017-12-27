@@ -1,26 +1,26 @@
 //ul.nav
     li.home
-        a(routerLink="/") 
+        a(routerLink="/")
             img(src='{{ bulbicon | cd:"h_80,c_fill"}}')
     //li(*ngFor="let link of menu")
         a(routerLink="/{{ link.path }}") {{link.label}}
     li
         a(routerLink="/ic") Innovation Challenge
     li
-        a(href="http://jobportal.ecestudents.com") Job Portal    
+        a(href="http://jobportal.ecestudents.com") Job Portal
     li
         a(href="http://events.ecestudents.com") Events
-        
+
 
 .togglewrap(data-responsive-toggle="example-menu", data-hide-for="medium")
     div(data-toggle="example-menu")#toggle
-        button(class="menu-icon", type="button")
+        button(class="menu-icon", type="button") ho
         .title-bar-title Menu
 
 #example-menu
   ul.nav
     li.home
-        a(routerLink="/") 
+        a(routerLink="/")
             img(src='{{ bulbicon | cd:"h_80,c_fill"}}')
     li.hometxt
         a(routerLink="/") Home
@@ -29,6 +29,6 @@
     li
         a(routerLink="/ic") Innovation Challenge
     //li
-        a(href="http://jobportal.ecestudents.com") Job Portal    
+        a(href="http://jobportal.ecestudents.com") Job Portal
     li
         a(href="http://events.ecestudents.com") Events
