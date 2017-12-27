@@ -10,6 +10,7 @@ import { ICComponent } from './pages/ic/component';
 import { IdeaLabComponent } from './pages/idealab/component';
 import { SEMComponent } from './pages/sem/component';
 import { HBGComponent } from './pages/24hbg/component';
+import { DCubeComponent } from './pages/dcube/component';
 
 //parts
 import { FooterComponent } from './parts/footer/component';
@@ -28,6 +29,7 @@ const appRoutes: Routes = [
   { path: 'sem',             component: SEMComponent },
   { path: 'sem',             component: SEMComponent },
   { path: '24hbg',             component: HBGComponent },
+  { path: 'dcube',             component: DCubeComponent
   { path: '**', redirectTo: '' }
 ];
 
@@ -39,6 +41,7 @@ const appRoutes: Routes = [
     IdeaLabComponent,
     SEMComponent,
     HBGComponent,
+    DCubeComponent,
     FooterComponent,
     MainMenuComponent,
     HeaderComponent,
