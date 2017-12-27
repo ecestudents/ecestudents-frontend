@@ -11,7 +11,6 @@ import { ICComponent } from './pages/ic/component';
 //parts
 import { FooterComponent } from './parts/footer/component';
 import { MainMenuComponent } from './parts/main_menu/component';
-import { HeaderComponent } from './parts/header/component';
 
 //helpers
 import { CloudinaryPipe } from './helpers/cloudinary/pipe';
@@ -31,7 +30,6 @@ const appRoutes: Routes = [
     ICComponent,
     FooterComponent,
     MainMenuComponent,
-    HeaderComponent,
     CloudinaryPipe
   ],
   imports: [
