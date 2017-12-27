@@ -62,11 +62,11 @@
             @include padding_vertical
             text-align: center;
             h1{
-                @include text(MuseoSans, 3, white, 600);
+                @include text(MuseoSans, 2, white, 600);
                 margin: 0;
             }
             h2, span{
-                  @include text(MuseoSans, 2, white, 600);
+                  @include text(MuseoSans, 1.5, white, 600);
                   margin: 0;
                   &.blue{
                         color: $ece-blue;
