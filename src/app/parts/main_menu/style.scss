@@ -10,7 +10,7 @@ nav {
             @include fa(list, ms(1), $ece-black);
         }
 
-        img {
+        a {
             grid-column: 3;
         }
 
@@ -18,9 +18,17 @@ nav {
             display: flex;
             justify-content: space-between;
         }
+
+        @include bp(medium) {
+            display: none;
+        }
     }
 
     #menu {
+        &.toggled {
+            display: none;
+        }
+
         ul {
             @include menu-base;
             @include menu-direction("vertical");
@@ -34,4 +42,11 @@ nav {
             color: $ece-black;
         }
     }
+
+    /*
+    @include bp(medium) {
+        #menu {
+            display: block !important;
+        }
+    }*/
 }

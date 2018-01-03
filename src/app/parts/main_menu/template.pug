@@ -1,13 +1,14 @@
 nav
-    .togglewrap(data-responsive-toggle="menu", data-hide-for="medium")
-        button(data-toggle="menu", class="menu-icon", type="button")#toggle
-        img(src="{{ 'parts/menu/logo_text' | cd:'h_80' }}")
+    .togglewrap()
+        button((click)="this.toggleMenu = !this.toggleMenu", type="button")
+        a((click)="this.toggleMenu = true", routerLink="")
+            img(src="{{ 'parts/menu/logo_text' | cd:'h_80' }}")
 
-    #menu
+    #menu([ngClass]="toggleMenu ? 'toggled' : 'untoggled'")
         ul.main
             li(*ngFor="let item of menu")
-                a(routerLink="{{item.path}}") {{item.label}}
+                a(routerLink="{{item.path}}", (click)="this.toggleMenu = true") {{item.label}}
 
                 ul(class="child", *ngIf="item.children")
                     li(*ngFor="let child of item.children")
-                        a(routerLink="{{child.path}}") {{child.label}}
+                        a(routerLink="{{child.path}}", (click)="this.toggleMenu = true") {{child.label}}

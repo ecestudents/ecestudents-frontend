@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ResponsiveToggle } from 'foundation-sites/js/foundation.responsiveToggle.js';
+import { Component, NgZone } from '@angular/core';
 
 @Component({
   selector: 'app-main-menu',
@@ -7,12 +6,13 @@ import { ResponsiveToggle } from 'foundation-sites/js/foundation.responsiveToggl
   styleUrls: ['./style.scss']
 })
 
-export class MainMenuComponent implements OnInit {
-  bulbicon = 'parts/menu/bulb_icon.png'
-
+export class MainMenuComponent {
+  constructor(ngZone:NgZone) {
+    this.breakpoint_switcher(window, ngZone)
+  }
 
   menu = [
-            { label:"Home",                   path:""}
+            { label:"Home",                   path:""},
             { label:"Events",                 path:"events", children: [
                   { label:"Innovation Challenge",   path:"ic"},
                   { label:"IdeaLab",                path:"idealab"},
@@ -29,8 +29,17 @@ export class MainMenuComponent implements OnInit {
             { label:"Job Portal",             path:"jobs" }
             ];
 
+  //toggle based on resize
+  toggleMenu = true;
+  breakpoint_switcher = (window, ngZone) => {
+      const breakpoint = 640; //medium breakpoint
+      if(window.innerWidth >= breakpoint) this.toggleMenu = false
 
-  ngOnInit(){
-    new ResponsiveToggle(".togglewrap")
+      let prev_size = breakpoint;
+      window.onresize = e => ngZone.run(() => {
+        if(window.innerWidth >= breakpoint) this.toggleMenu = false
+        if(window.innerWidth < breakpoint && prev_size >= breakpoint) this.toggleMenu = true
+        prev_size = window.innerWidth
+  })
   }
 }
