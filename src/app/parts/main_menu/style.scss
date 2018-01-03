@@ -1,17 +1,37 @@
 @import 'mixins';
 
-#menu {
-    ul {
-        @include menu-base;
-        @include menu-direction("vertical");
+nav {
+    @include wrapper;
+    .togglewrap {
+        display: grid;
+        grid-template-columns: ms(1) 1fr auto 1fr ms(1);
 
-        &.child {
-            @include menu-nested
+        button {
+            @include fa(list, ms(1), $ece-black);
+        }
+
+        img {
+            grid-column: 3;
+        }
+
+        @supports not (grid-template-areas: inherit) {
+            display: flex;
+            justify-content: space-between;
         }
     }
 
-    a {
-        color: $ece-black;
-    }
+    #menu {
+        ul {
+            @include menu-base;
+            @include menu-direction("vertical");
 
+            &.child {
+                @include menu-nested
+            }
+        }
+
+        a {
+            color: $ece-black;
+        }
+    }
 }

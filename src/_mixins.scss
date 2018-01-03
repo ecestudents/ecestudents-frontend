@@ -10,8 +10,7 @@
 @import 'style_imports/standarization';
 
 //settings
-$modularscale: ( base: 1rem,
-ratio: $golden);
+$modularscale: ( base: 1rem, ratio: $golden);
 
 $breakpoints: ( init: 0,
 small: 480px,
