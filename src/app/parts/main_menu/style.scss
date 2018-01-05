@@ -2,6 +2,11 @@
 
 nav {
     @include wrapper;
+    @include bp(medium) {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .togglewrap {
         display: grid;
         grid-template-columns: ms(1) 1fr auto 1fr ms(1);
@@ -24,6 +29,14 @@ nav {
         }
     }
 
+    .logo {
+        display: none;
+
+        @include bp(medium) {
+            display: block;
+        }
+    }
+
     #menu {
         &.toggled {
             display: none;
@@ -34,19 +47,21 @@ nav {
             @include menu-direction("vertical");
 
             &.child {
-                @include menu-nested
+                @include menu-nested;
             }
         }
 
         a {
             color: $ece-black;
         }
-    }
 
-    /*
-    @include bp(medium) {
-        #menu {
-            display: block !important;
+        @include bp(medium) {
+            &.toggled {
+                display: block;
+            }
+            ul.main {
+                @include menu-direction("horizontal"); // @include dropdown-menu-direction;
+            }
         }
-    }*/
+    }
 }

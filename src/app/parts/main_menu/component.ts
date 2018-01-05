@@ -1,4 +1,5 @@
-import { Component, NgZone } from '@angular/core';
+import { Component, OnInit,  NgZone } from '@angular/core';
+import { DropdownMenu } from 'foundation-sites/js/foundation.dropdownMenu';
 
 @Component({
   selector: 'app-main-menu',
@@ -6,7 +7,7 @@ import { Component, NgZone } from '@angular/core';
   styleUrls: ['./style.scss']
 })
 
-export class MainMenuComponent {
+export class MainMenuComponent implements OnInit {
   constructor(ngZone:NgZone) {
     this.breakpoint_switcher(window, ngZone)
   }
@@ -33,13 +34,15 @@ export class MainMenuComponent {
   toggleMenu = true;
   breakpoint_switcher = (window, ngZone) => {
       const breakpoint = 640; //medium breakpoint
-      if(window.innerWidth >= breakpoint) this.toggleMenu = false
 
       let prev_size = breakpoint;
       window.onresize = e => ngZone.run(() => {
-        if(window.innerWidth >= breakpoint) this.toggleMenu = false
         if(window.innerWidth < breakpoint && prev_size >= breakpoint) this.toggleMenu = true
         prev_size = window.innerWidth
-  })
+    })
+  }
+
+    ngOnInit() {
+      //new DropdownMenu("#menu");
   }
 }

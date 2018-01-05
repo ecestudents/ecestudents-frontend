@@ -1,9 +1,15 @@
 nav
-    .togglewrap()
+    //the mobile menu header
+    .togglewrap
         button((click)="this.toggleMenu = !this.toggleMenu", type="button")
         a((click)="this.toggleMenu = true", routerLink="")
             img(src="{{ 'parts/menu/logo_text' | cd:'h_80' }}")
 
+    //the desktop menu logo
+    a(class="logo", (click)="this.toggleMenu = true", routerLink="")
+        img(src="{{ 'parts/menu/logo_text' | cd:'h_150' }}")
+
+    //the menu
     #menu([ngClass]="toggleMenu ? 'toggled' : 'untoggled'")
         ul.main
             li(*ngFor="let item of menu")
