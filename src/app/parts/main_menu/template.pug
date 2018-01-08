@@ -1,7 +1,13 @@
 nav
     //the mobile menu header
     .togglewrap
-        button((click)="this.toggleMenu = !this.toggleMenu", type="button")
+        //button((click)="this.toggleMenu = !this.toggleMenu", type="button")
+        <div id="nav-icon3" (click)="this.toggleMenu = !this.toggleMenu" [ngClass]="toggleMenu ? 'untoggled' : 'open'">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         a((click)="this.toggleMenu = true", routerLink="")
             img(src="{{ 'parts/menu/logo_text1' | cd:'h_80' }}")
 
