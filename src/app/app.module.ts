@@ -42,7 +42,7 @@ const appRoutes: Routes = [
   { path: 'committees/sem',             component: SEMCommitteeComponent },
   { path: 'committees/24hbg',             component: HBGCommitteeComponent },
   { path: 'committees/dcube',             component: DCubeCommitteeComponent},
-  { path: 'committees',             component: CommitteesComponent},
+  { path: 'committees',             component: CommitteesComponent}, 
   { path: '**', redirectTo: '' }
 ];
 
