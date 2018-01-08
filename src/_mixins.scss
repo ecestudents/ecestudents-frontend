@@ -7,7 +7,7 @@
 @import 'style_imports/breakpoints';
 @import 'style_imports/font_awesome';
 @import 'style_imports/cloudinary';
-@import 'style_imports/standarization';
+//@import 'style_imports/standarization';
 
 //settings
 $modularscale: ( base: 1rem, ratio: $golden);
@@ -34,6 +34,61 @@ $nav-icon-height: $nav-height - 2 * $nav-icon-margin;
 $shaping-height: 100vh;
 $triangle-height: 25vh;
 $shaping-box-height: $shaping-height - $triangle-height;
+
+//mixins
+@mixin text ($font, $size, $color, $weight) {
+    font-family: $font;
+    color: $color;
+    font-size: ms($size);
+    font-weight: $weight;
+    @include bp(medium) {
+        font-size: ms($size + 1);  
+    }
+}
+
+@mixin margin_vertical {
+    margin-top: ms(0);
+    margin-bottom: ms(0);
+    
+    @include bp(medium) {
+        margin-top: ms(3);
+        margin-bottom: ms(3);
+    }
+}
+
+@mixin padding_vertical {
+    padding-top: ms(0);
+    padding-bottom: ms(0);
+    
+    @include bp(medium) {
+        padding-top: ms(3);
+        padding-bottom: ms(3);
+    }
+}
+
+@mixin background_container ($url){
+    width: 100%;
+    background: cd($url, "c_scale,w_1920") center center no-repeat;
+}
+
+@mixin wrapper {
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    width: 95%;
+    @include bp(medium) {
+        width: 600px;
+    }
+    @include bp(large) {
+        width: 800px;
+    }
+    @include bp(xlarge) {
+        width: 900px;
+    }
+    @include bp(xxlarge) {
+        width: 1000px;
+    }
+}
 
 /*EXAMPLES
 

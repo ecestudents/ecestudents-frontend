@@ -3,18 +3,20 @@ nav
     .togglewrap
         button((click)="this.toggleMenu = !this.toggleMenu", type="button")
         a((click)="this.toggleMenu = true", routerLink="")
-            img(src="{{ 'parts/menu/logo_text' | cd:'h_80' }}")
+            img(src="{{ 'parts/menu/logo_text1' | cd:'h_80' }}")
 
     //the desktop menu logo
     a(class="logo", (click)="this.toggleMenu = true", routerLink="")
-        img(src="{{ 'parts/menu/logo_text' | cd:'h_150' }}")
+        img(src="{{ 'parts/menu/logo_text1' | cd:'h_150' }}")
 
     //the menu
     #menu([ngClass]="toggleMenu ? 'toggled' : 'untoggled'")
         ul.main
-            li(*ngFor="let item of menu")
-                a(routerLink="{{item.path}}", (click)="this.toggleMenu = true") {{item.label}}
+            li.dropdown(*ngFor="let item of menu")
+                a.dropbtn(routerLink="{{item.path}}", (click)="this.toggleMenu = true") {{item.label}}
 
                 ul(class="child", *ngIf="item.children")
-                    li(*ngFor="let child of item.children")
-                        a(routerLink="{{child.path}}", (click)="this.toggleMenu = true") {{child.label}}
+                    div.dropdown-content
+                        li(*ngFor="let child of item.children")
+                            a(routerLink="{{child.path}}", (click)="this.toggleMenu = true") {{child.label}}
+    
