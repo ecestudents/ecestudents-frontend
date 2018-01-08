@@ -51,6 +51,7 @@ nav {
                 @include bp(medium) {
                     align-items: center;
                     justify-content: center;
+                    flex-wrap: nowrap !important;
                 }
             }
 
@@ -58,6 +59,18 @@ nav {
                 @include menu-nested;
                 @include bp(medium) {
                     margin-left: 0;
+                }
+            }
+            
+            a {
+                @include bp(medium){
+                    padding: 0.7rem 0.5rem;
+                }
+                @include bp(large){
+                    padding: 0.7rem 0.5rem;
+                }
+                @include bp(xlarge){
+                    padding: 0.7rem 1rem;
                 }
             }
         }
