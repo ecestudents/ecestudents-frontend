@@ -12,7 +12,7 @@ import { SEMComponent } from './pages/events/sem/component';
 import { HBGComponent } from './pages/events/24hbg/component';
 import { DCubeComponent } from './pages/events/dcube/component';
 import { EventsComponent } from './pages/events/events/component';
-import { ICCommitteeComponent } from './pages/committees/ic/component';
+import { ICCommitteeComponent } from './pages/committees/ic/component'; 
 import { IdeaLabCommitteeComponent } from './pages/committees/idealab/component';
 import { SEMCommitteeComponent } from './pages/committees/sem/component';
 import { HBGCommitteeComponent } from './pages/committees/24hbg/component';
