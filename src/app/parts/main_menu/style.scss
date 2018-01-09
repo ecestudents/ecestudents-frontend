@@ -5,6 +5,8 @@ nav {
     @include bp(medium) {
         display: flex;
         justify-content: space-between;
+        margin-bottom: -100px;
+        z-index: 2;
     }
 
     .togglewrap {
@@ -34,6 +36,7 @@ nav {
 
         @include bp(medium) {
             display: block;
+            filter: brightness(0) invert(1);
         }
     }
 
@@ -51,7 +54,6 @@ nav {
                 @include bp(medium) {
                     align-items: center;
                     justify-content: center;
-                    flex-wrap: nowrap !important;
                 }
             }
 
@@ -59,18 +61,6 @@ nav {
                 @include menu-nested;
                 @include bp(medium) {
                     margin-left: 0;
-                }
-            }
-            
-            a {
-                @include bp(medium){
-                    padding: 0.7rem 0.5rem;
-                }
-                @include bp(large){
-                    padding: 0.7rem 0.5rem;
-                }
-                @include bp(xlarge){
-                    padding: 0.7rem 1rem;
                 }
             }
         }
@@ -87,10 +77,11 @@ nav {
 }
  @include bp(medium) {
     .dropbtn {
-        color: $ece-orange;
-        font-weight: 600;
+        color: $white;
+        font-family: MuseoSans;
+        font-weight: 500;
         padding: 16px;
-        font-size: 19px;
+        font-size: 20px;
         border: none;
         cursor: pointer;
         -webkit-transition: all 0.3s ease;; /* Safari */

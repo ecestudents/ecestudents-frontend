@@ -59,7 +59,12 @@
       
       .wrapper{
             @include wrapper
-            @include padding_vertical
+            padding-top: ms(0);
+            padding-bottom: ms(0);
+            @include bp(medium){
+                  padding-top: ms(5);
+                  padding-bottom: ms(3);   
+            }
             text-align: center;
             h1{
                 @include text(MuseoSans, 2, white, 600);

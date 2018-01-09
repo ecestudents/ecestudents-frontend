@@ -13,7 +13,7 @@ nav
 
     //the desktop menu logo
     a(class="logo", (click)="this.toggleMenu = true", routerLink="")
-        img(src="{{ 'parts/menu/logo_text1' | cd:'h_150' }}")
+        img(src="{{ 'parts/menu/logo_text1' | cd:'h_100' }}")
 
     //the menu
     #menu([ngClass]="toggleMenu ? 'toggled' : 'untoggled'")
