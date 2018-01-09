@@ -15,18 +15,18 @@ export class MainMenuComponent implements OnInit {
   menu = [
             { label:"Home",                   path:""},
             { label:"Events",                 path:"events", children: [
-                  { label:"Innovation Challenge",   path:"ic"},
-                  { label:"IdeaLab",                path:"idealab"},
-                  { label:"SEM",                    path:"sem"},
-                  { label:"24 Hour Business Game",  path:"24hbg"},
-                  { label:"D Cube Summit",          path:"dcube"}]},
+                  { label:"Innovation Challenge",   path:"events/ic"},
+                  { label:"IdeaLab",                path:"events/idealab"},
+                  { label:"SEM",                    path:"events/sem"},
+                  { label:"24 Hour Business Game",  path:"events/24hbg"},
+                  { label:"D Cube Summit",          path:"events/dcube"}]},
             { label:"Calendar",               path:"calendar"},
             { label:"Committees",             path:"committees", children: [
-                  { label:"Innovation Challenge",   path:"ic"},
-                  { label:"IdeaLab",                path:"idealab"},
-                  { label:"SEM",                    path:"sem"},
-                  { label:"24 Hour Business Game",  path:"24hbg"},
-                  { label:"D Cube Summit",          path:"dcube"}]},
+                  { label:"Innovation Challenge",   path:"committees/ic"},
+                  { label:"IdeaLab",                path:"committees/idealab"},
+                  { label:"SEM",                    path:"committees/sem"},
+                  { label:"24 Hour Business Game",  path:"committees/24hbg"},
+                  { label:"D Cube Summit",          path:"committees/dcube"}]},
             { label:"Job Portal",             path:"jobs" }
             ];
 
