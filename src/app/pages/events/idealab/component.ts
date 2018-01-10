@@ -16,8 +16,6 @@ export class IdeaLabComponent {
         {number: 4, message:"Innovation Challenge helped me lose 20kg. I higly recommend it", person:"Tom, the sportief"},
         {number: 3, message:"Innovation Challenge helped me lose 20kg. I higly recommend it", person:"Tom, the sportief"}
       ];
-    
-    number = 3;
   
     agenda = [
             { time:"9:00 am - 9:05 am", event:"Opening Remarks"},
