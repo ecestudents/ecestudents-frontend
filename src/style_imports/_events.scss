@@ -27,6 +27,9 @@
 
         img {
             max-width: 100%;
+            @include bp(medium){
+                max-width: 600px;
+            }
         }
 
     }
