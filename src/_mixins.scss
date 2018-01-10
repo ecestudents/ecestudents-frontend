@@ -69,7 +69,7 @@ $shaping-box-height: $shaping-height - $triangle-height;
 
 @mixin background_container ($url){
     width: 100%;
-    background: cd($url, "c_scale,w_1920") center center no-repeat;
+    background: cd($url, "c_scale,w_1920") no-repeat;
 }
 
 @mixin wrapper {

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class IdeaLabComponent {
   logo = 'pages/idealab/logo.svg';
-  white = 'pages/idealab/IdeaLab_Logo_white'
+  white = 'pages/idealab/IdeaLab_Logo_white.png'
   
     endorsements = [
         {number: 4, message:"Innovation Challenge helped me lose 20kg. I higly recommend it", person:"Tom, the sportief"},
