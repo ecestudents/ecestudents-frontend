@@ -1,137 +1,28 @@
 @import 'mixins';
 
+$color: #049548;
+
 a,
 p {
-    font-size: ms(1);
+    font-size: ms(.7);
 }
 
-:host /deep/ .nav {
-    a {
-        font-size: ms(1);
-    }
+.container {
+    @include event-header("pages/sem/Asset.png")
 }
 
-@include bp(medium) {
-    :host /deep/ .nav {
-        height: $nav-height;
-        background: transparentize($ic-blue, .1);
-
-        li {
-            a {
-                line-height: $nav-height !important;
-                padding: 0 ms(1)!important;
-                color: white !important;
-            }
-        }
-    }
+.about {
+    @include event-about
 }
 
-.marketing-site-hero {
-    background: cd("pages/ic/DSC_0385_3.jpg", "w_1920,c_fill") top left no-repeat;
-    @include bp(medium) {
-        margin-top: -$nav-height;
-        padding: $nav-height 0;
-    }
+.signup{
+    @include event-signup($color)
 }
 
-.marketing-site-hero-content {
-    text-align: center;
-    display: grid;
-    margin: 0 auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-family: museosans;
-
-    h1 {
-        color: $ece-orange;
-        font-weight: 300;
-        font-size: ms(2);
-        margin: ms(0) 0 0 0;
-
-
-        &.subheader {
-            color: $ece-blue;
-            font-family: Aleo;
-            margin: 0;
-            font-weight: 500;
-        }
-    }
-    h3 {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        font-size: ms(2);
-        margin: 0 0 ms(1) 0;
-        &.sub {
-            margin: ms(1) 0 0 0;
-        }
-        .bold {
-            font-weight: 700;
-
-        }
-    }
-    h4 {
-        text-align: center;
-        color: white;
-        font-size: ms(1.2);
-        font-weight: 500;
-    }
-    a {
-        @include button @include button-hollow border-width: 4px;
-        border-color: white;
-        color: white;
-        margin: 0 auto;
-        font-size: ms(2);
-        font-weight: 500;
-        padding: ms(1) ms(3);
-        text-decoration: none;
-
-        &:hover {
-            color: $ic-blue;
-        }
-    }
+.agenda{
+    @include event-agenda
 }
 
-.content {
-    display: grid;
-    margin: ms(0);
-
-    img {
-        max-width: 50%;
-        display: block;
-        margin: auto;
-    }
-
-
-    h3 {
-        font-family: MuseoSans;
-        color: $ece-orange;
-        font-size: ms(1);
-        font-weight: 300;
-        margin-top: ms(1);
-    }
-    p {
-        font-family: Aleo;
-        color: $ece-black;
-        font-weight: 300;
-    }
-
-    span {
-        color: $ece-blue;
-        font-size: ms(1);
-    }
-
-    @include bp(medium) {
-        grid-template-columns: 1fr 2.5fr;
-        grid-row-gap: ms(4);
-        img {
-            max-width: 70%;
-            margin-top: ms(3);
-        }
-    }
-
-    @include bp(xxlarge) {
-        margin: ms(1) ms(6);
-    }
-
+.endorsements{
+    @include event-endorsements($color)
 }

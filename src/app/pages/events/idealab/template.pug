@@ -1,2 +1,43 @@
 //put the menu somewhere in the page
-app-main-menu
+.container
+    .wrapper
+        img(src='{{ white | cd:"w_600,c_fill"}}')
+        h2 Develop ideas. Disrupt Ownership
+        //h4 This is a tagline with some interesting text when Sansa woke up
+        h3 January 20, 2018
+
+.about
+    h2 Sharing Economy whenever we think is all there is around us.
+    div.left
+        img(src='{{ logo | cd:"w_300,c_fill"}}')
+    div.right
+        p Yes! The Innovation Challenge is all about Rotterdam's main industry: the port. In collaboration with APM Terminals, we unite students with different backgrounds from TU Delft, RSM and ESE to take their best shot at solving the challenges of global trade players face.
+        span December 20 | 14.00
+        span Marconistraat 16
+        span ECE Campus
+
+.signup
+    div
+        h2 Sign Up.
+        .right
+            input#email.form-control(type='email', placeholder='name@email.com' name='email')
+            button(type='submit') Submit
+
+.agenda
+    .left
+        h2 Agenda
+    .right
+        ul
+            li(*ngFor="let item of agenda")
+               | {{ item.time }}
+               br
+               | {{ item.event }}
+
+.endorsements
+    div
+        h2 Endorsements
+        
+        div(*ngFor="let item of endorsements")
+            span.heart(*appTimes="item.number")
+            .message "{{ item.message }}"
+            .person {{ item.person }}

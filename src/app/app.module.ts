@@ -25,6 +25,7 @@ import { MainMenuComponent } from './parts/main_menu/component';
 
 //helpers
 import { CloudinaryPipe } from './helpers/cloudinary/pipe';
+import { AppTimesDirective } from './app-times.directive';
 
 //routes
 
@@ -63,7 +64,8 @@ const appRoutes: Routes = [
     DCubeCommitteeComponent,
     FooterComponent,
     MainMenuComponent,
-    CloudinaryPipe
+    CloudinaryPipe,
+    AppTimesDirective
   ],
   imports: [
     BrowserModule,

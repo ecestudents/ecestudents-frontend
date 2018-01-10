@@ -1,52 +1,18 @@
 @import 'mixins';
 
+$color: $ic-blue;
+
 a,
 p {
-    font-size: ms(1);
-}
-
-:host /deep/ .nav {
-    a {
-        font-size: ms(1);
-    }
-}
-
-@include bp(medium) {
-    :host /deep/ .nav {
-        height: $nav-height;
-        background: transparentize($ic-blue, .1);
-
-        li {
-            a {
-                line-height: $nav-height !important;
-                padding: 0 ms(1)!important;
-                color: white !important;
-            }
-        }
-    }
+    font-size: ms(.7);
 }
 
 .marketing-site-hero {
-    background: cd("pages/ic/DSC_0385_3.jpg", "w_1920,c_fill") top left no-repeat;
-    @include bp(medium) {
-        margin-top: -$nav-height;
-        padding: $nav-height 0;
-    }
-}
-
-.marketing-site-hero-content {
-    text-align: center;
-    display: grid;
-    margin: 0 auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-family: museosans;
-
-    h1 {
+    @include event-header("pages/ic/Asset_1.png") h1 {
         color: $ece-orange;
         font-weight: 300;
         font-size: ms(2);
-        margin: ms(0) 0 0 0;
+        margin: ms(3) 0 0 0;
 
 
         &.subheader {
@@ -61,9 +27,9 @@ p {
         color: white;
         font-weight: 200;
         font-size: ms(2);
-        margin: 0 0 ms(1) 0;
+        margin-top: 0;
         &.sub {
-            margin: ms(1) 0 0 0;
+            margin: ms(0) 0 0 0;
         }
         .bold {
             font-weight: 700;
@@ -92,46 +58,18 @@ p {
     }
 }
 
-.content {
-    display: grid;
-    margin: ms(0);
+.about {
+    @include event-about
+}
 
-    img {
-        max-width: 50%;
-        display: block;
-        margin: auto;
-    }
+.signup {
+    @include event-signup($color)
+}
 
+.agenda {
+    @include event-agenda
+}
 
-    h3 {
-        font-family: MuseoSans;
-        color: $ece-orange;
-        font-size: ms(1);
-        font-weight: 300;
-        margin-top: ms(1);
-    }
-    p {
-        font-family: Aleo;
-        color: $ece-black;
-        font-weight: 300;
-    }
-
-    span {
-        color: $ece-blue;
-        font-size: ms(1);
-    }
-
-    @include bp(medium) {
-        grid-template-columns: 1fr 2.5fr;
-        grid-row-gap: ms(4);
-        img {
-            max-width: 70%;
-            margin-top: ms(3);
-        }
-    }
-
-    @include bp(xxlarge) {
-        margin: ms(1) ms(6);
-    }
-
+.endorsements {
+    @include event-endorsements($color)
 }
