@@ -19,7 +19,8 @@ export class MainMenuComponent implements OnInit {
                   { label:"IdeaLab",                path:"events/idealab"},
                   { label:"SEM",                    path:"events/sem"},
                   //{ label:"24 Hour Business Game",  path:"events/24hbg"},
-                  //{ label:"D Cube Summit",          path:"events/dcube"}]},
+                  //{ label:"D Cube Summit",          path:"events/dcube"}
+                  ]},
             //{ label:"Calendar",               path:"calendar"},
             //{ label:"Committees",             path:"committees", children: [
                   //{ label:"Innovation Challenge",   path:"committees/ic"},
