@@ -31,8 +31,9 @@
             li(*ngFor="let item of agenda")
                | {{ item.time }}
                br
-               | {{ item.event }}
-
+               ng-container(*ngFor="let p of item.event") 
+                | {{ p.text }}
+                br
 .endorsements
     div
         h2 Endorsements
