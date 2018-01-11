@@ -8,53 +8,95 @@ p {
 }
 
 .marketing-site-hero {
-    @include event-header("pages/ic/Asset_1.png") h1 {
-        color: $ece-orange;
-        font-weight: 300;
-        font-size: ms(2);
-        margin: ms(3) 0 0 0;
+    @include event-header("pages/ic/Asset_1.png") background-position: 50% 85%;
+    filter: saturate(150%);
+    overflow: auto;
+    .wrapper {
+        filter: saturate(100%);
+        padding-bottom: 0;
 
+        .logo {
+            width: 100%;
+            @include bp(medium) {
+                width: 50%;
+                padding-top: ms(3);
+            }
+            position: relative;
+            display: inline-block;
+            margin: 0 auto;
 
-        &.subheader {
-            color: $ece-blue;
-            font-family: Aleo;
-            margin: 0;
-            font-weight: 500;
+            img {
+                width: 20%;
+                @include bp(medium) {
+                    width: 30%;
+                }
+                float: left;
+            }
+
+            h1 {
+                font-size: 1.3rem;
+                font-weight: 600;
+                @include bp(medium) {
+                    font-size: ms(2.5);
+                    font-weight: 300;
+                }
+                margin-left: 5%;
+                margin-top: ms(1);
+                width: 60%;
+                float: left;
+                text-align: left;
+            }
+        }
+
+        h2 {
+            font-size: .9rem;
+            text-align: left;
+            float: left;
+            margin-top: 1rem;
+            width: 70%;
+
+            @include bp(medium) {
+                text-align: center;
+                float: none;
+                width: auto;
+                font-size: ms(1);
+            }
+        }
+
+        .fancybox {
+            width: 30%;
+            background: cd("pages/ic/box.png", "c_scale,w_400") no-repeat;
+            background-size: contain;
+            display: inline-block;
+            position: relative;
+            float: right;
+            @include bp(medium) {
+                width: 40%;
+                float: none;
+                margin: ms(0) auto 0 auto;
+                background-size: 100%;
+            }
+
+            h3 {
+                font-size: 0.7rem;
+                margin-top: 0;
+                padding: 14px 35% 0px 23%;
+                @include bp(medium) {
+                    padding: 22px 29% 0px 15%;
+                    font-size: ms(1);
+                    margin-top: ms(0);
+                }
+                @include bp(large){
+                    padding: 22px 35% 0px 23%;
+                }
+            }
         }
     }
-    h3 {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        font-size: ms(2);
-        margin-top: 0;
-        &.sub {
-            margin: ms(0) 0 0 0;
-        }
-        .bold {
-            font-weight: 700;
-
-        }
-    }
+    h1,
+    h2,
     h4 {
-        text-align: center;
-        color: white;
-        font-size: ms(1.2);
-        font-weight: 500;
-    }
-    a {
-        @include button @include button-hollow border-width: 4px;
-        border-color: white;
-        color: white;
-        margin: 0 auto;
-        font-size: ms(2);
-        font-weight: 500;
-        padding: ms(1) ms(3);
-        text-decoration: none;
+        color: $ece-black !important;
 
-        &:hover {
-            color: $ic-blue;
-        }
     }
 }
 
