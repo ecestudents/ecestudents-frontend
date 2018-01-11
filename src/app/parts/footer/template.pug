@@ -1,50 +1,13 @@
-.banner
-    .text
-        .title 
-            | We would 
-            span love 
-            | to meet you!
-        
-        div Maybe you have a question about what we do.
-            br 
-            | Or you have a super crazy idea to share.
-            
-        div Just drop by our office. jo 
-        
-        div We have coffee. 
-    .dates 
-        .days Monday 
-            span - 
-            | Friday 
-            
-        .time 9.00 to 17.00
-        .room H7-29
-
-.bottom
-    .follow Follow us!
-    .social
-
-        ul
-            li
-                a(class="fb", target="_blank", href='https://www.facebook.com/ECEStudents')
-                .count 3556
-            li
-                a(class="ln", target="_blank", href='https://www.linkedin.com/company/4997540/')
-                .count 348 
-            li
-                a(class="twit", target="_blank", href='https://twitter.com/ECEStudents')
-                .count 456 
-            li
-                a(class="insta", target="_blank", href='https://www.instagram.com/ecestudents/')
-                .count 502 
-    
-    .contact 
-        .location.fa
-        div Burgemeester Oudlaan 50
-            br 
-            | 3062 PA | Rotterdam
-            
-        .phone.fa
-        div +31 010 - 409 13 04
-        .mail.fa
-        div info@ecestudents.com
+footer 
+        .social 
+            h2 Social Media 
+            a(*ngFor="let item of social") {{item.icon}}
+                img
+        .roadmap
+            h2 Roadmap 
+            ul
+                li(*ngFor="let item of roadmap") 
+                    a {{item.link}}
+           
+        .googlemaps
+            h2 Googlemap
