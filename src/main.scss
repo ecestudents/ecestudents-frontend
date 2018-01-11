@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-//font awesome fonts
 
+//font awesome fonts
 @import '../node_modules/font-awesome-sass/assets/stylesheets/font-awesome/variables';
 @import '../node_modules/font-awesome-sass/assets/stylesheets/font-awesome-sprockets';
 $fa-font-path: '/font-awesome/';
@@ -14,70 +14,82 @@ $fa-sass-asset-helper: false;
 @include foundation-global-styles;
 
 //fonts
-@font-face{
+@font-face {
   font-family: Aleo;
   src: url(assets/fonts/aleo/aleo-regular.otf);
 }
-@font-face{
+
+@font-face {
   font-family: Aleo;
   src: url(assets/fonts/aleo/aleo-bold.otf);
   font-weight: bold;
 }
-@font-face{
+
+@font-face {
   font-family: Aleo;
   src: url(assets/fonts/aleo/aleo-italic.otf);
   font-style: italic;
 }
-@font-face{
+
+@font-face {
   font-family: Aleo;
   src: url(assets/fonts/aleo/aleo-lightitalic.otf);
   font-weight: 200;
   font-style: italic;
 }
-@font-face{
+
+@font-face {
   font-family: Aleo;
   src: url(assets/fonts/aleo/aleo-light.otf);
   font-weight: 200;
 }
-@font-face{
+
+@font-face {
   font-family: MuseoSans;
   src: url(assets/fonts/museosans/museosans_100.otf);
   font-weight: 200;
 }
-@font-face{
+
+@font-face {
   font-family: MuseoSans;
   src: url(assets/fonts/museosans/museosans_100_italic.otf);
   font-weight: 200;
   font-style: italic;
 }
-@font-face{
+
+@font-face {
   font-family: MuseoSans;
   src: url(assets/fonts/museosans/museosans_300.otf);
   font-weight: 300;
 }
-@font-face{
+
+@font-face {
   font-family: MuseoSans;
   src: url(assets/fonts/museosans/museosans_300_italic.otf);
   font-weight: 300;
   font-style: italic;
 }
-@font-face{
+
+@font-face {
   font-family: MuseoSans;
   src: url(assets/fonts/museosans/museosans_500.otf);
   font-weight: 500;
 }
-@font-face{
+
+@font-face {
   font-family: MuseoSans;
   src: url(assets/fonts/museosans/museosans_500_italic.otf);
   font-weight: 500;
   font-style: italic;
 }
-@font-face{
+
+@font-face {
   font-family: MuseoSans;
   src: url(assets/fonts/museosans/museosans_700.otf);
   font-weight: 700;
 }
-@font-face{
+
+@font-face {
   font-family: MuseoSans;
   src: url(assets/fonts/museosans/museosans_700_italic.otf);
   font-weight: 700;
@@ -86,22 +98,26 @@ $fa-sass-asset-helper: false;
 
 
 body {
-    font-size: ms(0);
-    color:$ece-black;
-    @include bp(medium){
-      min-width:600px; 
-    }
+  font-size: ms(0);
+  color: $ece-black;
+  @include bp(medium) {
+    min-width: 600px;
+  }
+  font-family: MuseoSans;
 }
 
 ::selection {
-  background: $ece-orange; /* WebKit/Blink Browsers */
-  color:white;
+  background: $ece-orange;
+  /* WebKit/Blink Browsers */
+  color: white;
 }
+
 ::-moz-selection {
-  background: $ece-orange; /* Gecko Browsers */
-  color:white;
+  background: $ece-orange;
+  /* Gecko Browsers */
+  color: white;
 }
 
 ::visited {
-            color: inherit;
-        }
+  color: inherit;
+}
