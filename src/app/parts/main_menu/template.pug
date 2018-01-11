@@ -9,11 +9,11 @@ nav
             <span></span>
         </div>
         a((click)="this.toggleMenu = true", routerLink="")
-            img(src="{{ 'parts/menu/logo_text1' | cd:'h_80' }}")
+            img(src="{{ 'parts/ECEStudents_logo_2017' | cd:'h_320' }}")
 
     //the desktop menu logo
     a(class="logo", (click)="this.toggleMenu = true", routerLink="")
-        img(src="{{ 'parts/menu/logo_text1' | cd:'h_100' }}")
+        img(src="{{ 'parts/ECEStudents_logo_2017_white' | cd:'h_400' }}")
 
     //the menu
     #menu([ngClass]="toggleMenu ? 'toggled' : 'untoggled'")
@@ -25,4 +25,4 @@ nav
                     div.dropdown-content
                         li(*ngFor="let child of item.children")
                             a(routerLink="{{child.path}}", (click)="this.toggleMenu = true") {{child.label}}
-    
+
