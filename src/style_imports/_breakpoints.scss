@@ -11,3 +11,23 @@
     }
 }
 
+
+
+@mixin wrapper {
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    width: 95%;
+    @include bp(medium) {
+        width: 600px;
+    }
+    @include bp(large) {
+        width: 800px;
+    }
+    @include bp(xlarge) {
+        width: 900px;
+    }
+    @include bp(xxlarge) {
+        width: 1000px;
+    }
+}

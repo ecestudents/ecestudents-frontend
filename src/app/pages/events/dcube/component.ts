@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-ic',
+  selector: 'app-dcube',
   templateUrl: './template.html',
   styleUrls: ['./style.scss']
 })
-export class ICComponent {
-    ic_logo = 'pages/ic/ic_logo.png'
-    svm_logo = 'pages/ic/svm.png'
+export class DCubeComponent {
 }

@@ -1,0 +1,296 @@
+@mixin event-header ($img) {
+    @include background_container($img);
+    background-size: cover;
+
+    .wrapper {
+        @include wrapper padding-top: ms(0);
+        padding-bottom: ms(0);
+        @include bp(medium) {
+            padding-top: ms(2);
+            padding-bottom: ms(3);
+        }
+        text-align: center;
+        h2,
+        span {
+            @include text(Aleo, 1.5, white, 600);
+            margin: 0;
+        }
+        h3 {
+            @include text(Aleo, 1, white, 400);
+            margin: 0;
+            margin-top: ms(2);
+        }
+        h4 {
+            @include text(Aleo, 0.5, white, 400);
+            margin: 0;
+        }
+
+        img {
+            max-width: 100%;
+            @include bp(medium){
+                max-width: 600px;
+            }
+        }
+
+    }
+}
+
+@mixin event-about {
+    @include wrapper display: grid;
+    margin: ms(0) auto;
+
+    img {
+        display: none;
+        margin: auto;
+    }
+
+    h2 {
+        font-family: Aleo;
+        color: $ece-black;
+        font-size: ms(1);
+        font-weight: 300;
+        margin-top: ms(1);
+        text-align: center;
+        font-weight: 500;
+    }
+    p {
+        font-family: Aleo;
+        color: $ece-black;
+        font-weight: 300;
+        text-align: justify;
+        @include bp(medium) {
+            text-align: left;
+        }
+    }
+
+    span {
+        color: $ece-blue;
+        font-size: ms(1);
+        margin-right: ms(1);
+    }
+    .right {
+        text-align: center;
+        @include bp(medium) {
+            text-align: left;
+        }
+    }
+
+    @include bp(medium) {
+        grid-template-columns: 1fr 2.5fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "center center" "left right";
+        img {
+            display: block;
+            max-width: 70%;
+            margin-top: 0;
+        }
+        h2 {
+            grid-area: center;
+            font-size: ms(2);
+            margin-left: ms(3);
+            margin-right: ms(3);
+        }
+
+        .left {
+            grid-area: left;
+        }
+
+        .right {
+            grid-area: right;
+        }
+        span {
+            margin-right: ms(1);
+        }
+    }
+
+    @include bp(xxlarge) {
+        margin: 0 auto;
+    }
+}
+
+@mixin event-signup ($color) {
+    @include margin_vertical background-color: $color;
+    >div {
+        @include wrapper;
+
+        input {
+            display: inline-block;
+            height: 50px;
+            border: none;
+            padding: 0 ms(0);
+            border-radius: 10px;
+            margin: ms(0) ms(-1) ms(0) 0;
+        }
+
+        button {
+            @include button(false, $ece-orange, darken($ece-orange, 8), white);
+            border-radius: 10px;
+            margin: ms(0) 0;
+            display: inline-block;
+            height: 50px;
+            font-size: 20px;
+            padding: 0em 1em;
+            font-family: MuseoSans;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: ms(2);
+            color: white;
+        }
+
+        h2,
+        .right {
+            text-align: center;
+        }
+
+        @include bp(medium) {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            grid-template-areas: "left right";
+            h2 {
+                grid-area: left;
+                font-family: MuseoSans;
+                @include margin_vertical @include padding_vertical text-align: left;
+            }
+
+            .right {
+                grid-area: right;
+                text-align: right;
+                @include margin_vertical @include padding_vertical;
+            }
+        }
+    }
+}
+
+@mixin event-agenda {
+    @include wrapper h2 {
+        color: $ece-orange;
+        font-weight: 400;
+        margin: 0;
+        font-family: MuseoSans;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        li {
+            font-weight: 400;
+            font-size: 18px;
+            font-family: Aleo;
+            margin: ms(-1) 0;
+        }
+
+    }
+
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 100px auto;
+    .left {
+        grid-area: left;
+        align-self: center;
+    }
+    h2 {
+        transform: rotate(-90deg);
+        transform-origin: 20% 40%;
+        font-size: 90px;
+    }
+    .right {
+        grid-area: right;
+        border-left: 3px solid $ece-blue;
+
+    }
+
+    @include bp(medium) {
+        grid-template-columns: 1fr 3fr;
+        .left {
+            align-self: start;
+        }
+        h2 {
+            transform: rotate(0deg);
+            font-size: ms(2);
+        }
+
+        .right {
+            margin-top: ms(1.5);
+            border-left: 2px solid $ece-blue;
+
+        }
+    }
+}
+
+
+
+@mixin event-endorsements($color) {
+    @include margin_vertical background-color: $color;
+    color: white;
+    >div {
+        @include wrapper;
+        @include padding_vertical;
+        display: grid;
+        grid-template-areas: "title title" "left1 right1";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+
+        h2 {
+            grid-area: title;
+            font-family: MuseoSans;
+            font-weight: 500;
+            font-size: ms(1);
+            justify-self: center;
+            margin-top: 0;
+        }
+        .heart {
+            @include fa(heart, 20, white)
+            font-size: 25px;
+        }
+
+        >div {
+            justify-self: center;
+            text-align: center;
+            font-size: 20px;
+            
+            .message{
+                font-family: Aleo;
+                margin-top: ms(0);
+                text-align: left;
+                font-weight: 400;
+            }
+            .person{
+                font-family: Aleo;
+                font-style: italic;
+                font-weight: 300;
+                text-align: right;
+                margin-bottom: ms(0);
+            }
+        }
+
+        >div:nth-of-type(1) {
+            grid-area: left1;
+        }
+        >div:nth-of-type(2) {
+            grid-area: right1;
+        }
+
+        >div:nth-of-type(3) {
+            grid-area: left2;
+            display: none;
+        }
+        >div:nth-of-type(4) {
+            grid-area: right2;
+            display: none;
+        }
+
+        @include bp(medium) {
+            grid-template-rows: auto auto auto;
+            grid-template-columns: 1fr 3fr 2fr 3fr 1fr;
+            grid-template-areas: "title title title title title" ". left1 . right1 ." ". left2 . right2 .";
+            >div:nth-of-type(3) {
+                display: block;
+            }
+            >div:nth-of-type(4) {
+                display: block;
+            }
+        }
+    }
+}

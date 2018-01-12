@@ -1,0 +1,28 @@
+@import 'mixins';
+
+$color: #049548;
+
+a,
+p {
+    font-size: ms(.7);
+}
+
+.container {
+    @include event-header("pages/sem/Asset.png")
+}
+
+.about {
+    @include event-about
+}
+
+.signup{
+    @include event-signup($color)
+}
+
+.agenda{
+    @include event-agenda
+}
+
+.endorsements{
+    @include event-endorsements($color)
+}

@@ -1,34 +1,28 @@
-//ul.nav
-    li.home
-        a(routerLink="/") 
-            img(src='{{ bulbicon | cd:"h_80,c_fill"}}')
-    //li(*ngFor="let link of menu")
-        a(routerLink="/{{ link.path }}") {{link.label}}
-    li
-        a(routerLink="/ic") Innovation Challenge
-    li
-        a(href="http://jobportal.ecestudents.com") Job Portal    
-    li
-        a(href="http://events.ecestudents.com") Events
-        
+nav
+    //the mobile menu header
+    .togglewrap
+        //button((click)="this.toggleMenu = !this.toggleMenu", type="button")
+        <div id="nav-icon3" (click)="this.toggleMenu = !this.toggleMenu" [ngClass]="toggleMenu ? 'untoggled' : 'open'">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        a((click)="this.toggleMenu = true", routerLink="")
+            img(src="{{ 'parts/menu/logo_text1' | cd:'h_80' }}")
 
-.togglewrap(data-responsive-toggle="example-menu", data-hide-for="medium")
-    div(data-toggle="example-menu")#toggle
-        button(class="menu-icon", type="button")
-        .title-bar-title Menu
+    //the desktop menu logo
+    a(class="logo", (click)="this.toggleMenu = true", routerLink="")
+        img(src="{{ 'parts/menu/logo_text1' | cd:'h_100' }}")
 
-#example-menu
-  ul.nav
-    li.home
-        a(routerLink="/") 
-            img(src='{{ bulbicon | cd:"h_80,c_fill"}}')
-    li.hometxt
-        a(routerLink="/") Home
-    //li(*ngFor="let link of menu")
-        a(routerLink="/{{ link.path }}") {{link.label}}
-    li
-        a(routerLink="/ic") Innovation Challenge
-    //li
-        a(href="http://jobportal.ecestudents.com") Job Portal    
-    li
-        a(href="http://events.ecestudents.com") Events
+    //the menu
+    #menu([ngClass]="toggleMenu ? 'toggled' : 'untoggled'")
+        ul.main
+            li.dropdown(*ngFor="let item of menu")
+                a.dropbtn(routerLink="{{item.path}}", (click)="this.toggleMenu = true") {{item.label}}
+
+                ul(class="child", *ngIf="item.children")
+                    div.dropdown-content
+                        li(*ngFor="let child of item.children")
+                            a(routerLink="{{child.path}}", (click)="this.toggleMenu = true") {{child.label}}
+    
