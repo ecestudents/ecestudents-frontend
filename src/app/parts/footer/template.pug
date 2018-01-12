@@ -1,13 +1,34 @@
 footer 
-        .social 
-            h2 Social Media 
-            a(*ngFor="let item of social") {{item.icon}}
-                img
-        .roadmap
-            h2 Roadmap 
+    .wrapper
+        h2.con Contact Us 
+        .contact 
+            
+            .phone.fa
+            div 010 - 409 13 04
+            .mail.fa
+            div info@ecestudents.com
+        h2.add Visiting Address
+        .adress
+             
+            .location.fa
+            div Burgemeester Oudlaan 50
+                br
+                | Office H7-27
+                br 
+                | 3062 PA | Rotterdam
+        h2.soc Stay Updated   
+        .social
+            
             ul
-                li(*ngFor="let item of roadmap") 
-                    a {{item.link}}
-           
-        .googlemaps
-            h2 Googlemap
+                li
+                    a(class="fb", target="_blank", href='https://www.facebook.com/ECEStudents')
+                    .count 3556
+                li
+                    a(class="ln", target="_blank", href='https://www.linkedin.com/company/4997540/')
+                    .count 348 
+                li
+                    a(class="twit", target="_blank", href='https://twitter.com/ECEStudents')
+                    .count 456 
+                li
+                    a(class="insta", target="_blank", href='https://www.instagram.com/ecestudents/')
+                    .count 502

@@ -3,42 +3,136 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: MuseoSans;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: ms(1);
+    font-weight: 300;
+    margin: 0 0 ms(1) 0;
+    text-align: center;
+}
+
+.fa {
+    margin-left: 5px;
 }
 
 footer {
     width: 100%;
-    background-color: #d9d9d9;
-    height: 400px;
-}
+    background-color: $ece-orange;
 
-.social {
-    background-color: #d9d9d9;
-    display: block;
-    float: left;
-    margin-right: 400px;
-    margin-left: 50px;
-    
-}
-.social a {
-    margin-right:5px;
-    
-}
-.roadmap {
-    background-color: #d9d9d9;
-    float: left;
-    
-    margin-right: 400px;
-    ul {
-        @include menu-base;
-        @include menu-direction("vertical");
-        //text-align: left;
-        background-color: #d9d9d9 ;
-        //width: 15%;
-        //margin-left: 700px;
+    .wrapper {
+        @include wrapper padding: ms(1) 0;
+        display: grid;
+        overflow: auto;
+        grid-template-rows: repeat(5, auto);
+        grid-auto-flow: column;
+        align-items: center;
+        justify-items: center;
+        @include bp(large){
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            padding: ms(3) 0;
+        }
     }
 }
 
-.googlemaps {
-    background-color: #d9d9d9;
-    float: left;
+.add {
+    display: none;
+    @include bp(large){
+        display: block;
+    }
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: auto auto;
+    grid-auto-flow: row;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    align-items: center;
+    
+    @include bp(large){
+        grid-template-columns: 1fr auto;
+    }
+
+    .fa {
+        text-align: center;
+    }
+}
+
+.adress {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-auto-flow: row;
+    grid-column-gap: 10px;
+    align-items: center;
+    margin-top: 5px;
+    
+    @include bp(large){
+        grid-template-columns: 1fr auto;
+        margin-top: 0px;
+    }
+}
+
+.soc {
+    margin-top: ms(1);
+    @include bp(large){
+        margin-top: 0;
+    }
+}
+
+.social {
+    display: block;
+    ul {
+        list-style: none;
+        li {
+            float: left;
+
+            .count {
+                color: white;
+                text-align: center;
+            }
+
+            a {
+                margin-right: 2px;
+                margin-left: 6px;
+            }
+        }
+    }
+}
+
+.fb {
+    @include fa-link(facebook-square, ms(2.5), white);
+}
+
+.ln {
+    @include fa-link(linkedin-square, ms(2.5), white);
+}
+
+.twit {
+    @include fa-link(twitter-square, ms(2.5), white);
+}
+
+.insta {
+    @include fa-link(instagram, ms(2.5), white);
+}
+
+.location {
+    @include fa(map-marker, ms(2));
+}
+
+.phone {
+    @include fa(mobile, ms(2));
+}
+
+.mail {
+    @include fa(envelope-o, ms(1));
 }
