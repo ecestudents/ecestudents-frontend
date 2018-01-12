@@ -2,25 +2,40 @@
 .container
     .wrapper
         img(src='{{ white | cd:"w_600,c_fill"}}')
-        h2 Develop ideas. Disrupt Ownership
+        h2 Develop ideas. Disrupt Ownership.
         //h4 This is a tagline with some interesting text when Sansa woke up
-        h3 January 16, 2018
+        h3 January 16th, 2018
+
 
 .about
     h2 Sharing Economy whenever we think is all there is around us.
     div.left
         img(src='{{ logo | cd:"w_300,c_fill"}}')
     div.right
-        p Yes! The Innovation Challenge is all about Rotterdam's main industry: the port. In collaboration with APM Terminals, we unite students with different backgrounds from TU Delft, RSM and ESE to take their best shot at solving the challenges of global trade players face.
-        span January 16 | 13.00 - 17:00
+
+        p ECE Students’ IdeaLab is back! Starting in January 2018 we offer a series of startup consultancy events where you can experience the dynamics of working for a young venture. This time we will take a close look at the Sharing Economy.
+        p Develop ideas. Disrupt ownership.
+        p The Sharing Economy spans into a variety of areas in everyday life - ride-sharing services such as Greenwheels or OV fiets, co-working spaces like WeWork, hotel competitors like AirBnB or just the good old property rental. For IdeaLab we bring together startups that are built around one basic idea: enabling people to borrow or rent assets to and from others to create a greater benefit for all.
+        p This time, the following companies will join us:
+            a(href="https://www.djeepo.com", target="_blank") Djeepo
+            | offers an innovative platform to help you lend or find cheap storage around the corner. With
+            a(href="https://www.gearbooker.com", target="_blank") Gearbooker
+            | you can get your hands on that top notch camera system you’ve been dreaming about. And
+            a(href="https://felyx.nl", target="_blank") Felyx
+            | lets you rent both the coolest and greenest two-wheelers in town. Together with them you get the chance to tap into that entrepreneurial spirit!
+        p During an intensive workshop you will develop solutions for a real-life business challenge and pitch your final results to the startups. Also you can interact with the companies on a personal level to broaden your network for collaborations, internships, mentoring and - of course - to share a great experience!
+        span January 16th | 13:00 - 17:00
         span Erasmus University Rotterdam
+        span Mandeville T3-21
+
 
 .signup
     div
-        h2 Sign Up.
+        h2 Develop innovative solutions for startups in the sharing economy.
         .right
-            input#email.form-control(type='email', placeholder='name@email.com' name='email')
-            button(type='submit') Submit
+
+            button(type='submit')
+                a(href="https://ecestudents2017.typeform.com/to/t970kV") Sign Up.
 
 .agenda
     .left
@@ -28,15 +43,15 @@
     .right
         ul
             li(*ngFor="let item of agenda")
-               | {{ item.time }}
+               span.time {{ item.time }}
                br
-               ng-container(*ngFor="let p of item.event") 
+               ng-container(*ngFor="let p of item.event")
                 | {{ p.text }}
                 br
-.endorsements
+//.endorsements
     div
         h2 Endorsements
-        
+
         div(*ngFor="let item of endorsements")
             span.heart(*appTimes="item.number")
             .message "{{ item.message }}"

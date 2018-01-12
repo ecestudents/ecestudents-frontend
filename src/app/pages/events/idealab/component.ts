@@ -9,16 +9,16 @@ import { Component } from '@angular/core';
 export class IdeaLabComponent {
   logo = 'pages/idealab/logo.svg';
   white = 'pages/idealab/IdeaLab_Logo_white.png'
-  
+
     endorsements = [
         {number: 4, message:"Innovation Challenge helped me lose 20kg. I higly recommend it", person:"Tom, the sportief"},
         {number: 5, message:"Innovation Challenge helped me lose 20kg. I higly recommend it", person:"Tom, the sportief"},
         {number: 4, message:"Innovation Challenge helped me lose 20kg. I higly recommend it", person:"Tom, the sportief"},
         {number: 3, message:"Innovation Challenge helped me lose 20kg. I higly recommend it", person:"Tom, the sportief"}
       ];
-  
+
     agenda = [
-            { time:"13:30 START", event: [
+            { time:"13:30 - START", event: [
               {text: "Introduction to the event and to ECE Students"},
               {text: "Company presentations"}
               ]},
@@ -38,8 +38,8 @@ export class IdeaLabComponent {
               {text: "Selection of winning team by jury"},
               {text: "Award ceremony and wrap-up"}
               ]},
-            { time:"17:00 END", event:[
-              
+            { time:"17:00 - END", event:[
+
               ]}
             ];
 }
