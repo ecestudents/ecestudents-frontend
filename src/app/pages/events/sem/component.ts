@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class SEMComponent {
   logo = 'pages/sem/SEM_logo.svg';
-  white = 'pages/idealab/IdeaLab_Logo_white'
+  white = 'pages/sem/SEMlogowhite.png'
   
     endorsements = [
         {number: 4, message:"Innovation Challenge helped me lose 20kg. I higly recommend it", person:"Tom, the sportief"},
