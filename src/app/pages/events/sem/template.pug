@@ -2,9 +2,9 @@
 .container
     .wrapper
         img(src='{{ white | cd:"w_1200,c_fill"}}')
-        h2 The tagline. Disrupt taglines.
-        //h4 This is a tagline with some interesting text when Sansa woke up
-        h3 January 20, 2018
+        h2 Build changemaking ideas.
+        h4 SEM 2018 Topics are Sustainability & Circular Economy, Sharing Economy, and Social Development & Challenges!
+        h3 February 7, 2018
 
 .about
     h2 Sharing Economy whenever we think is all there is around us.
@@ -12,9 +12,8 @@
         img(src='{{ logo | cd:"w_300,c_fill"}}')
     div.right
         p The Social Entrepreneurship Masterclass (SEM) is an event designed to coach students about starting their own social enterprise. Student teams take part in practical workshops and develop a business plan that tackles a social issue. In the end, participants pitch their ideas to a jury - and the winners will get to participate in ECE's 12-week startup programme. Get Started! 
-        span December 20 | 14.00
-        span Marconistraat 16
-        span ECE Campus
+        span Kick-off: February 7
+        span Erasmus University Campus
 
 .signup
     div
@@ -33,11 +32,11 @@
                br
                | {{ item.event }}
 
-.endorsements
-    div
-        h2 Endorsements
+// .endorsements
+//     div
+//         h2 Endorsements
         
-        div(*ngFor="let item of endorsements")
-            span.heart(*appTimes="item.number")
-            .message "{{ item.message }}"
-            .person {{ item.person }}
+//         div(*ngFor="let item of endorsements")
+//             span.heart(*appTimes="item.number")
+//             .message "{{ item.message }}"
+//             .person {{ item.person }}
