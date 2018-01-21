@@ -11,13 +11,15 @@
     div.left
         img(src='{{ logo | cd:"w_300,c_fill"}}')
     div.right
-        p The Social Entrepreneurship Masterclass (SEM) is an event designed to coach students about starting their own social enterprise. Student teams take part in practical workshops and develop a business plan that tackles a social issue. In the end, participants pitch their ideas to a jury - and the winners will get to participate in ECE's 12-week startup programme. Get Started! 
-        span Kick-off: February 7
-        span Erasmus University Campus
+        p The Social Entrepreneurship Masterclass (SEM) is an event where you experience the thrill of being an entrepreneur while solving a social or sustainable issue!
+        p With practical workshops, speakers, and consulting from experts in areas such as sustainable innovation, marketing, and business modelling, you work to develop your social business plan for the final pitch in front of a professional jury. 
+        p The winning team gets the exclusive opportunity of participating for free in ECE’s 12-week startup programme Get Started, worth 300 euros per student!
+        span Kick-off: February 7   
+        span Theil CT-1 (C Building), Erasmus University Campus
 
 .signup
     div
-        h2 Sign Up.
+        h2 Sign up for free here. 
         .right
             input#email.form-control(type='email', placeholder='name@email.com' name='email')
             button(type='submit') Submit
@@ -28,9 +30,20 @@
     .right
         ul
             li(*ngFor="let item of agenda")
-               | {{ item.time }}
+               span.time {{ item.time }}
                br
                | {{ item.event }}
+               
+.faq
+    .left
+        h2 F.A.Q.
+    .right
+        ul
+            li(*ngFor="let item of faq")
+               span.time {{ item.ask }}
+               br
+               | {{ item.answer }}
+        
 
 // .endorsements
 //     div
@@ -40,3 +53,25 @@
 //             span.heart(*appTimes="item.number")
 //             .message "{{ item.message }}"
 //             .person {{ item.person }}
+
+<ul class="tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge="500" data-tabs id="deeplinked-tabs">
+  <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Tab 1</a></li>
+  <li class="tabs-title"><a href="#panel2d">Tab 2</a></li>
+  <li class="tabs-title"><a href="#panel3d">Tab 3</a></li>
+  <li class="tabs-title"><a href="#panel4d">Tab 4</a></li>
+</ul>
+
+<div id="tabs" class="tabs-content" data-tabs-content="deeplinked-tabs">
+  <div class="tabs-panel is-active" id="panel1d">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  <div class="tabs-panel" id="panel2d">
+    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+  </div>
+  <div class="tabs-panel" id="panel3d">
+    <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
+  </div>
+  <div class="tabs-panel" id="panel4d">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+</div>

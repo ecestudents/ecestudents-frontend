@@ -23,6 +23,18 @@ p {
     @include event-agenda
 }
 
+.faq{
+    @include event-agenda
+}
+
 .endorsements{
     @include event-endorsements($color)
+}
+
+.tabs {
+    @include tabs-container;
+}
+
+.tabs-content {
+    @include tabs-content;
 }
