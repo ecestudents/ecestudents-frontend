@@ -28,7 +28,7 @@ export class MainMenuComponent implements OnInit {
                   //{ label:"SEM",                    path:"committees/sem"},
                   //{ label:"24 Hour Business Game",  path:"committees/24hbg"},
                   //{ label:"D Cube Summit",          path:"committees/dcube"}]},
-            //{ label:"Job Portal",             path:"jobs" }
+            { label:"Job Portal",             path:"jobs" }
             ];
 
   //toggle based on resize
