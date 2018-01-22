@@ -1,168 +1,138 @@
 @import 'mixins';
 
-.banner {
-    font-family: MuseoSans;
-    margin: ms(2) 0;
-    padding: ms(3) 0;
-    background-image: cd("parts/footer/annie-spratt-61561.jpg", "w_1920,c_fill");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-
-    display: grid;
-    grid-template-areas: ". text . dates .";
-    grid-template-columns: 1fr auto 1fr auto 1fr;
-
-    @include bp(large) {
-        grid-template-columns: 2fr auto 5fr auto 2fr;
-    }
-
+* {
+    margin: 0;
+    padding: 0;
     color: white;
+    font-family: MuseoSans;
+    font-weight: 300;
+}
 
-    span {
-        color: $ece-orange;
-    }
+a {
+    text-decoration: none;
+}
 
-    .text {
-        
-        grid-area: text;
-        padding: ms(-1);
+h2 {
+    font-size: ms(1);
+    font-weight: 300;
+    margin: 0 0 ms(1) 0;
+    text-align: center;
+}
 
-        .title {
-            font-size: ms(1);
-            font-family: MuseoSans;
-            font-weight: 500;
-        }
+.fa {
+    margin-left: 5px;
+}
 
-        div {
-            font-family: Aleo;
-            margin-bottom: ms(0);
-            font-size: ms(.7);
-            font-weight: 300;
-        }
-    }
+footer {
+    width: 100%;
+    background-color: $ece-orange;
 
-    .dates {
-        font-size: ms(1);
-        grid-area: dates;
-        padding: ms(-1);
-        text-align: center;
-
-        @include bp(large) {
-            margin-top: ms(5);
-            margin-bottom: ms(0);
-        }
-
-        .room {
-            color: $ece-blue;
+    .wrapper {
+        @include wrapper padding: ms(1) 0;
+        display: grid;
+        overflow: auto;
+        grid-template-rows: repeat(5, auto);
+        grid-auto-flow: column;
+        align-items: center;
+        justify-items: center;
+        @include bp(large){
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            padding: ms(3) 0;
         }
     }
 }
 
-.bottom {
+.add {
+    display: none;
+    @include bp(large){
+        display: block;
+    }
+}
+
+.contact {
     display: grid;
-    grid-template: "contact" auto "title" auto "social" auto;
-    grid-gap: ms(-6);
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: auto auto;
+    grid-auto-flow: row;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     align-items: center;
-    margin: ms(0);
-
-
-    @include bp(medium) {
-        grid-template: ". title title title ." auto 
-                        ". social . contact ." auto 
-                        / 3fr auto 2fr auto 3fr;
+    
+    @include bp(large){
+        grid-template-columns: 1fr auto;
     }
 
-        .follow {
-            grid-area: title;
-            color: $ece-blue;
-            font-size: ms(2);
-            @include bp(medium) {
-                font-size: ms(2);
-            }
-
-            margin-bottom: ms(1);
-        }
-
-    .social {
-        padding: 0;
-        padding-bottom: ms(2);
-        @include bp(medium) {
-            padding: 0 ms(1);
-        }
-
-
-        grid-area: social;
-
-        ul {
-            @include menu-base;
-            margin: 0;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            li {
-                text-align: center;
-                .count {
-                    margin-top: ms(0);
-                    color: $ece-orange;
-                    font-size: ms(1);
-                }
-                .fb {
-                    @include fa-link(facebook, ms(2.5), $ece-black);
-                }
-
-                .ln {
-                    @include fa-link(linkedin, ms(2.5), $ece-black);
-                }
-
-                .twit {
-                    @include fa-link(twitter, ms(2.5), $ece-black);
-                }
-
-                .insta {
-                    @include fa-link(instagram, ms(2.5), $ece-black);
-                }
-            }
-        }
+    .fa {
+        text-align: center;
     }
+}
 
-    .contact {
-        grid-area: contact;
-        display: grid;
-        grid-template-columns: 1fr auto ms(2) auto 1fr;
-        align-items: center;
-        &>div {
-            font-size: ms(0);
-            font-family: MuseoSans;
-            font-weight: 500;
-            grid-column: 4;
-            display: inline-block;
-            vertical-align: middle;
-            margin-bottom: ms(0);
-            
-            @include bp(large){
-                font-size: ms(1);
-            }
-        }
+.adress {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-auto-flow: row;
+    grid-column-gap: 10px;
+    align-items: center;
+    margin-top: 5px;
+    
+    @include bp(large){
+        grid-template-columns: 1fr auto;
+        margin-top: 0px;
+    }
+}
 
-        .fa {
-            grid-column: 2;
-            width: 0;
-            &:before {
-                width: ms(1);
+.soc {
+    margin-top: ms(1);
+    @include bp(large){
+        margin-top: 0;
+    }
+}
+
+.social {
+    display: block;
+    ul {
+        list-style: none;
+        li {
+            float: left;
+
+            .count {
+                color: white;
                 text-align: center;
             }
-        }
 
-        .location {
-            @include fa(map-marker, ms(2));
-        }
-
-        .phone {
-            @include fa(mobile, ms(2));
-        }
-
-        .mail {
-            @include fa(envelope-o, ms(1));
+            a {
+                margin-right: 2px;
+                margin-left: 6px;
+            }
         }
     }
+}
+
+.fb {
+    @include fa-link(facebook-square, ms(2.5), white);
+}
+
+.ln {
+    @include fa-link(linkedin-square, ms(2.5), white);
+}
+
+.twit {
+    @include fa-link(twitter-square, ms(2.5), white);
+}
+
+.insta {
+    @include fa-link(instagram, ms(2.5), white);
+}
+
+.location {
+    @include fa(map-marker, ms(2));
+}
+
+.phone {
+    @include fa(mobile, ms(2));
+}
+
+.mail {
+    @include fa(envelope-o, ms(1));
 }
