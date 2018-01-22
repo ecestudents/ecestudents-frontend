@@ -28,14 +28,14 @@
       @include bp(medium) {
             padding-top: ms(-1);
       }
-      
+
       li:first-of-type,
       li:nth-of-type(2):before {
             display: none;
       }
       li+li:before {
             line-height: 47px !important;
-      } 
+      }
 
       li {
             padding: 0;
@@ -49,45 +49,51 @@
 }
 
 .shaping {
-      background: rgba(255,126,21,1);
-      background: -moz-linear-gradient(left, rgba(255,126,21,1) 0%, rgba(228,87,36,1) 100%);
-      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,126,21,1)), color-stop(100%, rgba(228,87,36,1)));
-      background: -webkit-linear-gradient(left, rgba(255,126,21,1) 0%, rgba(228,87,36,1) 100%);
-      background: -o-linear-gradient(left, rgba(255,126,21,1) 0%, rgba(228,87,36,1) 100%);
-      background: -ms-linear-gradient(left, rgba(255,126,21,1) 0%, rgba(228,87,36,1) 100%);
-      background: linear-gradient(to right, rgba(255,126,21,1) 0%, rgba(228,87,36,1) 100%);
-      
-      .wrapper{
-            @include wrapper
-            padding-top: ms(0);
+      background: rgba(255, 126, 21, 1);
+      background: -moz-linear-gradient(left, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 126, 21, 1)), color-stop(100%, rgba(228, 87, 36, 1)));
+      background: -webkit-linear-gradient(left, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
+      background: -o-linear-gradient(left, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
+      background: -ms-linear-gradient(left, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
+      background: linear-gradient(to right, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
+
+      .wrapper {
+            @include wrapper padding-top: ms(0);
             padding-bottom: ms(0);
-            @include bp(medium){
+            @include bp(medium) {
                   padding-top: ms(5);
-                  padding-bottom: ms(3);   
+                  padding-bottom: ms(3);
             }
             text-align: center;
-            h1{
-                @include text(MuseoSans, 2, white, 600);
-                margin: 0;
+            h1 {
+                  @include text(MuseoSans, 2, white, 600);
+                  margin: 0;
             }
-            h2, span{
+            h2,
+            span {
                   @include text(MuseoSans, 1.5, white, 600);
                   margin: 0;
-                  &.blue{
+                  &.blue {
                         color: $ece-blue;
                   }
             }
-            
+
       }
 
 }
 
 #erasmus {
-      margin: ms(0);
+      @include wrapper;
       display: grid;
       align-items: center;
       grid-template-areas: "left" "right";
       grid-template-rows: auto auto;
+
+      @include bp(large) {
+            grid-template-areas: "left right";
+            grid-template-columns: auto auto;
+            grid-column-gap: ms(0);
+      }
 
       h1 {
             font-family: MuseoSans;
@@ -106,8 +112,7 @@
             font-family: MuseoSans;
             color: $ece-orange;
             font-size: ms(.5);
-            font-weight: 300;
-            //margin-top: ms(1);
+            font-weight: 300; //margin-top: ms(1);
       }
       p {
             font-family: Aleo;
@@ -126,6 +131,7 @@
       }
 }
 
+/*
 #innovation {
       background: cd("pages/front/pexels.jpg", "c_scale,w_1920") 50% 40% no-repeat;
       width: 100%;
@@ -157,7 +163,7 @@
             margin-bottom: 0;
             font-weight: 800;
             @include bp(medium) {
-                font-size: ms(2.2);  
+                font-size: ms(2.2);
             }
       }
       h2 {
@@ -179,7 +185,7 @@
             padding: ms(0) ms(2);
             text-decoration: none;
             @include bp(medium) {
-                font-size: ms(2);  
+                font-size: ms(2);
             }
 
             &:hover {
@@ -196,9 +202,10 @@
             text-align: center;
       }
 }
+*/
 
 #commingsoon {
-      margin: ms(0);
+      @include wrapper;
       text-align: center;
       h1 {
             font-family: MuseoSans;
@@ -217,59 +224,33 @@
 }
 
 #partners {
-      margin: ms(2) ms(0);
+      @include wrapper;
+      margin-bottom: ms(2);
       h1 {
             color: $ece-orange;
             font-family: MuseoSans;
             font-size: ms(1);
       }
-}
 
-@include bp(medium) {
+      ul {
+            @include menu-base;
+            @include menu-direction("vertical");
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(3, auto);
+            grid-column-gap: ms(1);
+            grid-row-gap: ms(0);
 
-      #erasmus {
-            margin: ms(3) 0;
-            padding: 0;
-            grid-template-areas: ". left . right .";
-            grid-template-columns: ms(5) 1fr ms(3) 1fr ms(5);
-            h1 {
-                  font-size: ms(2);
+            @include bp(medium) {
+                  grid-template-columns: repeat(4, auto);
             }
-            h2 {
 
-                  font-size: ms(2.5);
+            @include bp(large) {
+                  grid-template-columns: repeat(5, auto);
             }
-            h3 {
-                  font-size: ms(.5);
-                  margin-top: ms(.5);
-            }
-            p {
-                  font-size: ms(.5);
-            }
-      }
 
-      #partners {
-            margin: ms(3) 0;
-            padding: 0 ms(2);
-      }
-
-}
-
-@include bp(xxlarge) {
-      #erasmus {
-            h1 {
-                  font-size: ms(2.5);
-            }
-            h2 {
-
-                  font-size: ms(3);
-            }
-            h3 {
-                  font-size: ms(1);
-                  margin-top: ms(1);
-            }
-            p {
-                  font-size: ms(1);
+            @include bp(xlarge) {
+                  grid-template-columns: repeat(6, auto);
             }
       }
 }

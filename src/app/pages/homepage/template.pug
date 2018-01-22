@@ -4,8 +4,8 @@
     .wrapper
         h2 Erasmus Centre for
         h2
-            |Entrepreneurship 
-            span.blue Students 
+            |Entrepreneurship
+            span.blue Students
         h2 is
         h1 Shaping Ideas
 
@@ -17,7 +17,7 @@
         h1
             | ERASMUS
             br
-            
+
             | CENTRE FOR
             br
 
@@ -40,12 +40,16 @@
 #commingsoon.container-fluid
     h1 More content is coming soon
     h2 Keep visiting our site to find out about our amazing projects
-    
+
 
 #partners.container-fluid
     h1 Our Partners
-    img(src='{{ partners | cd:"w_1920,c_fill"}}')
+    ul
+        li(*ngFor="let item of partners")
+            img(src='{{ "pages/front/"+item+".svg" | cd:"w_300,c_fill"}}')
 #love.container-fluid
 #follow.container-fluid
     .social
     .contact
+
+
