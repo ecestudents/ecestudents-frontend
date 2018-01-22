@@ -1,5 +1,6 @@
 import { Component, OnInit,  NgZone } from '@angular/core';
 import { DropdownMenu } from 'foundation-sites/js/foundation.dropdownMenu';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-main-menu',
@@ -8,7 +9,7 @@ import { DropdownMenu } from 'foundation-sites/js/foundation.dropdownMenu';
 })
 
 export class MainMenuComponent implements OnInit {
-  constructor(ngZone:NgZone) {
+  constructor(ngZone:NgZone, private router: Router) {
     this.breakpoint_switcher(window, ngZone)
   }
 
@@ -31,6 +32,8 @@ export class MainMenuComponent implements OnInit {
             { label:"Job Portal",             path:"jobs" }
             ];
 
+  //menu visible
+  menuvisible = true;
   //toggle based on resize
   toggleMenu = true;
   breakpoint_switcher = (window, ngZone) => {
@@ -44,6 +47,10 @@ export class MainMenuComponent implements OnInit {
   }
 
     ngOnInit() {
-      //new DropdownMenu("#menu");
+      this.router.events.subscribe((event: NavigationEnd) => {
+            if(this.router.url == '/jobs') this.menuvisible = false
+            else this.menuvisible = true
+        })
+      
   }
 }

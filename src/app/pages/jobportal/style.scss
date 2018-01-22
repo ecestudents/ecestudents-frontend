@@ -1,11 +1,18 @@
 @import 'mixins';
 
 :host /deep/ nav {
-    a {
+    @include bp(medium){
+       a {
         color: $ece-orange !important;
+    } 
     }
+    
     .logo {
         filter: unset !important;
+    }
+    
+    app-main-menu {
+        display: none;
     }
 }
 
