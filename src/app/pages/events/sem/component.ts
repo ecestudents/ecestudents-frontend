@@ -1,8 +1,4 @@
 import { Component } from '@angular/core';
-import { Core } from 'foundation-sites/js/foundation.core';
-import { Tabs } from 'foundation-sites/js/foundation.tabs';
-import { UtilKeyboard } from 'foundation-sites/js/foundation.util.keyboard';
-import { UtilImageloader } from 'foundation-sites/js/foundation.util.imageLoader';
 
 @Component({
   selector: 'app-sem',
@@ -12,6 +8,10 @@ import { UtilImageloader } from 'foundation-sites/js/foundation.util.imageLoader
 export class SEMComponent {
   logo = 'pages/sem/SEM_logo.svg';
   white = 'pages/sem/SEMlogowhite.png'
+  ws1 = 'pages/sem/ws1'
+  ws2 = 'pages/sem/ws2'
+  ws3 = 'pages/sem/ws3'
+  ws4 = 'pages/sem/ws4'
   
     endorsements = [
         {number: 4, message:"Innovation Challenge helped me lose 20kg. I higly recommend it", person:"Tom, the sportief"},
@@ -42,7 +42,4 @@ export class SEMComponent {
             { ask:"Why do I need to upload my CV in the registration form?", answer:"We ask you to upload your CV if one of our sponsors or participating companies at SEM would like to know more about you. Furthermore, in the case that there are too many participant applications, we will use the submitted CVs to select who will participate in SEM according to best fit due to  the limited spots available for SEM (maybe we don’t have to mention it now, but we only do the selection if we have too many applications)."},
             ];
             
-    ngOnInit() {
-      new Tabs("#tabs");
-    }
 }
