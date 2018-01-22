@@ -1,0 +1,70 @@
+app-main-menu
+.header
+    h1 Welcome to ECE Students'
+    h1.bold Job Portal
+    img(src='{{ sphere | cd:"w_420,c_fill"}}')
+    a.button(href='https://ecestudents2017.typeform.com/to/h8Bpeg') Apply Now
+
+.process
+    h2 HOW IT WORKS
+    .container
+        img.asset1(src='{{ asset1 | cd:"w_60,c_fill"}}')
+        img.asset2(src='{{ asset2 | cd:"w_80,c_fill"}}')
+        img.asset3(src='{{ asset3 | cd:"w_80,c_fill"}}')
+        img.asset4(src='{{ asset4 | cd:"w_35,c_fill"}}')
+        .arrow1 
+            <svg width="100%" height="100px">
+              <defs>
+                <marker id="arrow" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+                  <path d="M0,0 L0,6 L6,3 z" fill="#5d5d5d" />
+                </marker>
+              </defs>
+              <line x1="20%" y1="50" x2="80%" y2="50" stroke="#5d5d5d" stroke-width="2" marker-end="url(#arrow)" />
+            </svg>
+        .arrow2 
+            <svg width="100%" height="120px">
+              <defs>
+                <marker id="arrow" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+                  <path d="M0,0 L0,6 L6,3 z" fill="#5d5d5d" />
+                </marker>
+              </defs>
+              <line x1="80%" y1="5" x2="20%" y2="112" stroke="#5d5d5d" stroke-width="2" marker-end="url(#arrow)" />
+            </svg>
+        .arrow3 
+            <svg width="100%" height="100px">
+              <defs>
+                <marker id="arrow" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+                  <path d="M0,0 L0,6 L6,3 z" fill="#5d5d5d" />
+                </marker>
+              </defs>
+              <line x1="20%" y1="50" x2="80%" y2="50" stroke="#5d5d5d" stroke-width="2" marker-end="url(#arrow)" />
+            </svg>
+        .arrow4
+            <svg width="100%" height="100px">
+              <defs>
+                <marker id="arrow" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+                  <path d="M0,0 L0,6 L6,3 z" fill="#5d5d5d" />
+                </marker>
+              </defs>
+              <line x1="20%" y1="50" x2="80%" y2="50" stroke="#5d5d5d" stroke-width="2" marker-end="url(#arrow)" />
+            </svg>
+        .apply
+            | Apply to our portal
+        .matching
+            | Get matched to a startup
+        .interview
+            | Go to an interview
+        .impact
+            | Make an impact!
+        
+.stories
+    h2 Success Stories
+    .left
+        img(src='{{ portrait | cd:"w_351,c_fill"}}')
+    .right
+        p I started as an intern at Travis one year ago and now I am working there on a part-time basis next to my studies. I love the flexibility a start-up job offers and I am thankful for everything I am learning here: I learned that, as a start-up, you need to be quick at executing your plans as the competition is intense. Also, focus on communication, it’s easy to get misunderstandings when not everyone is on the same page.
+        p Travis recently had a few successes that make us proud:  we recently counted more than 50,000 users and were invited by StartupDelta to participate at CES, the world’s most famous technology fair in Las Vegas. I was given the opportunity to represent Travis at CES and it was an amazing experience. We are excited to improve the product and bridge more language barriers!
+        p.italic Daphne, 20, Student at EUC and Part-Time employee at Travis the Translator 
+
+.match
+    a.button(href='https://ecestudents2017.typeform.com/to/h8Bpeg') Find your match!
