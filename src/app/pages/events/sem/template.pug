@@ -2,42 +2,113 @@
 .container
     .wrapper
         img(src='{{ white | cd:"w_1200,c_fill"}}')
-        h2 The tagline. Disrupt taglines.
-        //h4 This is a tagline with some interesting text when Sansa woke up
-        h3 January 20, 2018
+        h2 Build changemaking ideas.
+        h4 3 workshops. 3 themes. 1 winner.
+        h3 February 7, 2018
 
 .about
-    h2 Sharing Economy whenever we think is all there is around us.
+    h2 SEM 2018 Topics are Sustainability & Circular Economy, Sharing Economy, and Social Development & Challenges!
     div.left
         img(src='{{ logo | cd:"w_300,c_fill"}}')
     div.right
-        p The Social Entrepreneurship Masterclass (SEM) is an event designed to coach students about starting their own social enterprise. Student teams take part in practical workshops and develop a business plan that tackles a social issue. In the end, participants pitch their ideas to a jury - and the winners will get to participate in ECE's 12-week startup programme. Get Started! 
-        span December 20 | 14.00
-        span Marconistraat 16
-        span ECE Campus
+        p The Social Entrepreneurship Masterclass (SEM) is an event where you experience the thrill of being an entrepreneur while solving a social or sustainable issue!
+        p With practical workshops, speakers, and consulting from experts in areas such as sustainable innovation, marketing, and business modelling, you work to develop your social business plan for the final pitch in front of a professional jury. 
+        p The winning team gets the exclusive opportunity of participating for free in ECE’s 12-week startup programme Get Started, worth 300 euros per student!
+        span Kick-off: February 7   
+        span Theil CT-1 (C Building), Erasmus University Campus
 
 .signup
     div
-        h2 Sign Up.
+        h2 Sign up for free here. 
         .right
-            input#email.form-control(type='email', placeholder='name@email.com' name='email')
-            button(type='submit') Submit
+            a(href="https://ecestudents2017.typeform.com/to/f8qAI4")
+                button Sign Up
 
-.agenda
-    .left
-        h2 Agenda
-    .right
-        ul
-            li(*ngFor="let item of agenda")
-               | {{ item.time }}
-               br
-               | {{ item.event }}
-
-.endorsements
-    div
-        h2 Endorsements
+.schedule
+    h2 Agenda
+    
+    input#tab1(type="radio" name="tabs" checked)
+    label(for="tab1") Kick-off (Workshop 1)
         
-        div(*ngFor="let item of endorsements")
-            span.heart(*appTimes="item.number")
-            .message "{{ item.message }}"
-            .person {{ item.person }}
+    input#tab2(type="radio" name="tabs")
+    label(for="tab2") Workshop 2
+        
+    input#tab3(type="radio" name="tabs")
+    label(for="tab3") Workshop 3
+        
+    input#tab4(type="radio" name="tabs")
+    label(for="tab4") Final (Workshop 4)
+        
+    section#content1
+        .left
+            h3 Idea Generation
+            .date
+                | 07/02/2018
+                br
+                | 15:00-18:00
+                br
+                | Theil CT-1 (C building)
+            p Listen to inspirational talks on our SEM themes: Circular Economy & Sustainability, Sharing Economy, Social Development & Challenges. After that, a workshop on idea generation will follow where you can learn about social innovation and build your changemaking idea.
+        figure.tint
+            img(src='{{ ws1 | cd:"w_400,c_fill"}}')
+        
+    section#content2
+        .left
+            h3 Social Business Model and Marketing
+            .date
+                | 13/02/2018 
+                br
+                | 15:00-17:30
+                br
+                | Theil CT-6 (C building)
+            p Work on the most foundational tool for your enterprise: the social business model canvas. Identify your value proposition and develop a sustainable marketing strategy for your social enterprise idea. 
+        figure.tint
+            img(src='{{ ws2 | cd:"w_400,c_fill"}}')
+        
+    section#content3
+        .left
+            h3 Finance and Pitching
+            .date
+                | 20/02/2018
+                br
+                | 15:00-17:30
+                br
+                | Theil CB-4 (C building)
+            p Build the finance model of your enterprise by outlining your cost and revenue structure. Gain the tools that will help you craft that perfect pitch before the final of SEM. 
+        figure.tint
+            img(src='{{ ws3 | cd:"w_400,c_fill"}}')
+        
+    section#content4
+        .left
+            h3 The Final Pitch
+            .date
+                | 23/02/2018 
+                br
+                | 15:00-18:00
+                br
+                | ECE Campus
+            p Present your idea to a jury of experts. Compete in a final pitch battle between all teams to win the grand prize: free participation in ECE’s startup programme Get Started! Work with experienced entrepreneurs and investors there to grow your entrepreneurial skills.
+        figure.tint
+            img(src='{{ ws4 | cd:"w_400,c_fill"}}')
+               
+.faq
+    .left
+        h2 F.A.Q.
+        
+        .tab(*ngFor="let item of faq; let i = index")
+            input(type="checkbox" name="tabs" id="tab-{{ i }}")
+            label(for="tab-{{ i }}") {{ item.ask }}
+            .tab-content
+                p {{ item.answer }}
+
+        
+    
+
+// .endorsements
+//     div
+//         h2 Endorsements
+        
+//         div(*ngFor="let item of endorsements")
+//             span.heart(*appTimes="item.number")
+//             .message "{{ item.message }}"
+//             .person {{ item.person }}
