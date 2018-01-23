@@ -1,6 +1,6 @@
 @import 'mixins';
 
-$color: #049548;
+$color: #171845;
 
 a,
 p {
@@ -254,5 +254,30 @@ p {
         right: 0;
         background: rgba(23, 140, 68, 0.5);
         transition: all .3s linear;
+    }
+}
+
+
+#partners {
+    @include wrapper;
+    margin-bottom: ms(2);
+    h1 {
+        color: $ece-orange;
+        font-family: MuseoSans;
+        font-size: ms(1);
+    }
+
+    ul {
+        @include menu-base;
+        @include menu-direction("vertical");
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, auto);
+        grid-column-gap: ms(1);
+        grid-row-gap: ms(0);
+
+        @include bp(medium) {
+            grid-template-columns: repeat(5, auto);
+        }
     }
 }

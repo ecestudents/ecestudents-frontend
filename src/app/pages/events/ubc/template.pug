@@ -5,6 +5,7 @@
         h2 Unilever Business Challenge
         h4 Step Up. Make an Impact.
         h3 February 9th
+        h4 Limited spots available.
 
 .about
     h2 Bring your creativity & intellect to the real world.
@@ -24,7 +25,7 @@
 
 .signup
     div
-        h2 Step Up. Make an Impact.
+        h2 Deadline: 3rd of February - 23:59
         .right
             a(href="https://ecestudents2017.typeform.com/to/bPmDa9", target="_blank")
                 button Sign Up
@@ -38,3 +39,9 @@
                 br
                 ng-container(*ngFor="let p of item.event") {{ p.text }}
                     br
+
+#partners.container-fluid
+    h1 Unilever Case Brands
+    ul
+        li(*ngFor="let item of partners")
+            img(src='{{ "pages/unilever/"+item | cd:"w_300,c_fill"}}')

@@ -21,4 +21,6 @@ export class UBCComponent {
             { time:"17:30", event:[{text:"Networking Drinks at Weena Bar"}]}
             ]
 
+    partners = ["amora", "calve", "hellmans", "knorr", "maille"]
+
 }
