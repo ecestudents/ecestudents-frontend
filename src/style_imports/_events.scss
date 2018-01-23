@@ -95,8 +95,8 @@
         h2 {
             grid-area: center;
             font-size: ms(2);
-            margin-left: ms(3);
-            margin-right: ms(3);
+            max-width: 80%;
+            margin: 0 auto;
         }
 
         .left {
