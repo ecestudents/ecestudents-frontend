@@ -2,6 +2,8 @@
 
 nav {
     @include wrapper;
+    padding-top: ms(-1);
+    padding-bottom: ms(0);
     a,
     a:visited {
         color: $ece-black;
@@ -10,7 +12,7 @@ nav {
     @include bp(medium) {
         display: flex;
         justify-content: space-between;
-        margin-bottom: -100px;
+        margin-bottom: -126px;
         z-index: 2;
 
         a,
