@@ -146,7 +146,7 @@
 
         @include bp(medium) {
             display: grid;
-            grid-template-columns: 2fr 3fr;
+            grid-template-columns: auto auto;
             grid-template-areas: "left right";
             h2 {
                 grid-area: left;
@@ -164,7 +164,9 @@
 }
 
 @mixin event-agenda {
-    @include wrapper h2 {
+    @include wrapper;
+    margin-bottom: ms(1);
+    h2 {
         color: $ece-orange;
         font-weight: 400;
         margin: 0;
