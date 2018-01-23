@@ -12,7 +12,7 @@
         text-align: center;
         h2,
         span {
-            @include text(Aleo, 1.5, white, 600);
+            @include text(MuseoSans, 1.5, white, 600);
             margin: 0;
         }
         h3 {
@@ -45,7 +45,7 @@
     }
 
     h2 {
-        font-family: Aleo;
+        font-family: MuseoSans;
         color: $ece-black;
         font-size: ms(1);
         font-weight: 300;
