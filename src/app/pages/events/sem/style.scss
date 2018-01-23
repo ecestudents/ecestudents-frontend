@@ -15,26 +15,239 @@ p {
     @include event-about
 }
 
-.signup{
+.signup {
     @include event-signup($color)
 }
 
-.agenda{
+.agenda {
     @include event-agenda
 }
 
-.faq{
-    @include event-agenda
+.faq {
+    @include wrapper
+    margin-bottom: ms(3);
+    h2 {
+        color: $ece-orange;
+        font-weight: 400;
+        margin: 0 0 ms(0) 0;
+        font-family: MuseoSans;
+        font-size: ms(2);
+    }
+    
+    .right {
+            border-left: 0px solid $ece-blue;
+            @include margin_vertical
+        }
+    .tab {
+        position: relative;
+        margin-bottom: 1px;
+        width: 100%;
+        color: white;
+        font: Aleo;
+        overflow: hidden;
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+    label {
+        position: relative;
+        display: block;
+        padding: 0 0 0 1em;
+        background: $color;
+        font-weight: bold;
+        line-height: 3;
+        cursor: pointer;
+    }
+
+    .tab-content {
+        max-height: 0;
+        overflow: hidden;
+        background: white;
+        color: $ece-black;
+        -webkit-transition: all .7s;
+        -o-transition: all .7s;
+        transition: all .7s;
+        border: 2px solid white;
+        
+    }
+
+    .tab-content p {
+        margin: 1em;
+        font-size: 18px;
+        font-family: Aleo;
+        font-weight: 300;
+    }
+    /* :checked */
+    input:checked~.tab-content {
+        max-height: 20em;
+        border: 2px solid #ddd;
+    }
+    /* Icon */
+    label::after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        width: 3em;
+        height: 3em;
+        line-height: 3;
+        text-align: center;
+        -webkit-transition: all .7s;
+        -o-transition: all .7s;
+        transition: all .7s;
+    }
+    input[type=checkbox]+label::after {
+        content: "+";
+    }
+
+    input[type=checkbox]:checked+label::after {
+        transform: rotate(315deg);
+    }
+
 }
 
-.endorsements{
+.endorsements {
     @include event-endorsements($color)
 }
 
-.tabs {
-    @include tabs-container;
-}
+.schedule {
+    .left {
+        float: left;
+        
+        @include bp(medium){
+         width: 50%;
+        }
+        
 
-.tabs-content {
-    @include tabs-content;
+        p {
+            font-size: 18px;
+            font-weight: 300;
+            font-family: Aleo;
+        }
+
+        h3 {
+            font-size: ms(1);
+            font-family: MuseoSans;
+            margin-top: 0;
+        }
+    }
+    overflow: auto;
+    @include wrapper @include margin_vertical h2 {
+        color: $ece-orange;
+        font-weight: 400;
+        margin: 0 0 ms(0) 0;
+        font-family: MuseoSans;
+        font-size: ms(2);
+    }
+
+    section {
+        display: none;
+        padding: 20px 0 20px;
+        border-top: 2px solid #ddd;
+        border-bottom: 2px solid #ddd;
+        overflow: auto;
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        display: inline-block;
+        margin: 0 0 -2px;
+        padding: 15px 5px;
+        font-size: 14px;
+        @include bp(xlarge){
+            padding: 15px 25px;
+            font-size: 1rem;
+        }
+        
+        font-weight: 600;
+        text-align: center;
+        color: #bbb;
+        border: 2px solid transparent;
+    }
+
+    label:before {
+        font-family: fontawesome;
+        font-weight: normal;
+        margin-right: 10px;
+    }
+
+    label[for*='1']:before {
+        content: '\f251';
+    }
+    label[for*='2']:before {
+        content: '\f252';
+    }
+    label[for*='3']:before {
+        content: '\f252';
+    }
+    label[for*='4']:before {
+        content: '\f253';
+    }
+
+    label:hover {
+        color: #888;
+        cursor: pointer;
+    }
+
+    input:checked+label {
+        color: #555;
+        border: 2px solid #ddd;
+        border-top: 2px solid $color;
+        border-bottom: 2px solid #fff;
+    }
+
+    #tab1:checked~#content1,
+    #tab2:checked~#content2,
+    #tab3:checked~#content3,
+    #tab4:checked~#content4 {
+        display: block;
+    }
+
+    @media screen and (max-width: 800px) {
+        label {
+            font-size: 0;
+            padding: 15px 25px;
+            
+        }
+        label:before {
+            margin: 0;
+            font-size: 18px;
+            
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        label {
+            padding: 15px;
+        }
+    }
+
+    .tint {
+        position: relative;
+        float: left;
+        margin: 1em 5% 20px 0;
+        max-width: 90%;
+        
+        @include bp(medium){
+         margin: 1em 5% 20px 5%;
+        max-width: 40%;
+        }
+    }
+
+    .tint:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(23, 140, 68, 0.5);
+        transition: all .3s linear;
+    }
 }

@@ -18,6 +18,7 @@ import { SEMCommitteeComponent } from './pages/committees/sem/component';
 import { HBGCommitteeComponent } from './pages/committees/24hbg/component';
 import { DCubeCommitteeComponent } from './pages/committees/dcube/component';
 import { CommitteesComponent } from './pages/committees/committees/component';
+import { JobportalComponent } from './pages/jobportal/component';
 
 //parts
 import { FooterComponent } from './parts/footer/component';
@@ -26,6 +27,7 @@ import { MainMenuComponent } from './parts/main_menu/component';
 //helpers
 import { CloudinaryPipe } from './helpers/cloudinary/pipe';
 import { AppTimesDirective } from './app-times.directive';
+
 
 //routes
 
@@ -43,6 +45,7 @@ const appRoutes: Routes = [
   { path: 'committees/24hbg',             component: HBGCommitteeComponent },
   { path: 'committees/dcube',             component: DCubeCommitteeComponent},
   { path: 'committees',             component: CommitteesComponent}, 
+  { path: 'jobs',             component: JobportalComponent}, 
   { path: '**', redirectTo: '' }
 ];
 
@@ -65,7 +68,8 @@ const appRoutes: Routes = [
     FooterComponent,
     MainMenuComponent,
     CloudinaryPipe,
-    AppTimesDirective
+    AppTimesDirective,
+    JobportalComponent
   ],
   imports: [
     BrowserModule,

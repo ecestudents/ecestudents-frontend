@@ -1,0 +1,256 @@
+@import 'mixins';
+
+:host /deep/ nav {
+    @include bp(medium){
+       a {
+        color: $ece-orange !important;
+    } 
+    }
+    
+    .logo {
+        filter: unset !important;
+    }
+    
+    app-main-menu {
+        display: none;
+    }
+}
+
+.header {
+    @include wrapper h1 {
+        font-family: MuseoSans;
+        text-align: center;
+        color: $ece-orange;
+        margin: ms(1) auto 0 auto;
+        width: 270px;
+        font-size: ms(2);
+        font-weight: 300;
+    }
+    h1.bold {
+        margin-top: 0;
+        font-weight: bold;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 220px;
+    }
+
+    .button {
+        @include button(false, #130ab4, $ece-orange, white, solid);
+        font-family: MuseoSans;
+        padding: 0.3em .3em;
+        font-size: ms(1.5);
+        font-weight: bold;
+        text-decoration: none;
+        margin: 25px auto;
+        display: block;
+        width: 270px;
+        border-radius: 10px;
+        text-transform: uppercase;
+    }
+
+    @include bp(medium) {
+        margin-top: 130px;
+        margin-bottom: 50px;
+        h1 {
+            text-align: left;
+            width: auto;
+            color: $ece-orange;
+            margin: ms(1) 0 0 0;
+            font-size: ms(2.6);
+            font-weight: 300;
+        }
+        .button {
+            background-color: $ece-orange;
+            font-size: ms(2);
+            font-weight: 300;
+            text-transform: capitalize;
+            margin: 25px 0;
+        }
+
+        img {
+            margin: -120px auto 0 auto;
+            max-width: 270px;
+            float: right;
+        }
+    }
+
+    @include bp(large) {
+        img {
+            margin: -80px auto 0 auto;
+            max-width: 350px;
+        }
+    }
+}
+
+.process {
+    @include wrapper .container {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        grid-template-rows: auto auto 100px auto auto;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: "asset1 arrow1 asset2" "text1 arrow1 text2" ". arrow2 ." "asset3 arrow3 asset4" "text3 arrow3 text4";
+
+        .apply {
+            grid-area: text1;
+        }
+        .matching {
+            grid-area: text2;
+        }
+        .interview {
+            grid-area: text3;
+        }
+
+        .impact {
+            grid-area: text4;
+        }
+
+        .asset1 {
+            grid-area: asset1;
+        }
+        .asset2 {
+            grid-area: asset2;
+        }
+
+        .asset3 {
+            grid-area: asset3;
+        }
+
+        .asset4 {
+            grid-area: asset4;
+        }
+
+        .arrow1 {
+            grid-area: arrow1;
+        }
+        .arrow2 {
+            grid-area: arrow2;
+        }
+        .arrow3 {
+            grid-area: arrow3;
+        }
+
+        .arrow4 {
+            display: none;
+        }
+
+        @include bp(medium) {
+            grid-template-rows: auto auto;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-areas: "asset1 arrow1 asset2 arrow2 asset3 arrow3 asset4" "text1 . text2 . text3 . text4";
+
+            .arrow2 {
+                display: none;
+            }
+
+            .arrow4 {
+                display: block;
+                grid-area: arrow2;
+            }
+        }
+
+        .apply,
+        .matching,
+        .interview,
+        .impact {
+            font-family: MuseoSans;
+            font-size: ms(.8);
+            color: $ece-black;
+            font-weight: 300;
+        }
+    }
+
+    h2 {
+        font-family: MuseoSans;
+        text-align: center;
+        color: #4B0B52;
+        margin: ms(0) auto;
+        font-size: ms(2);
+        font-weight: bold;
+        @include bp (medium) {
+            display: none;
+        }
+    }
+}
+
+.stories {
+    @include wrapper h2 {
+        font-family: MuseoSans;
+        text-align: center;
+        color: $ece-orange;
+        margin: ms(0) auto;
+        font-size: ms(2);
+        font-weight: bold;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 250px;
+    }
+
+    p {
+        font-size: ms(.5);
+        font-family: Aleo;
+        color: $ece-black;
+        text-align: center;
+    }
+
+    @include bp(medium) {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "title title" "left right";
+        align-items: center;
+        grid-column-gap: 20px;
+        h2 {
+            grid-area: title;
+            text-align: left;
+            font-size: ms(1.5);
+            margin: ms(0) 0;
+        }
+
+        .left {
+            grid-area: left
+        }
+
+        .right {
+            grid-area: right
+        }
+    }
+}
+
+.match {
+    @include wrapper .button {
+        @include button(false, $ece-orange, #130ab4, white, solid);
+        font-family: MuseoSans;
+        padding: 0.3em .3em;
+        font-size: ms(1.5);
+        font-weight: bold;
+        text-decoration: none;
+        margin: 25px auto;
+        display: block;
+        width: 300px;
+        border-radius: 10px;
+        text-transform: uppercase;
+    }
+    
+    @include bp(medium) {
+        .button{
+            background: $ece-blue;
+            text-transform: capitalize;
+            width: auto;
+            font-size: ms(1);
+            max-width: 400px;
+            padding: 0.7em .7em;
+            font-weight: 300;
+        }
+        .button:hover {
+            background: $ece-orange;
+        }
+    }
+}
