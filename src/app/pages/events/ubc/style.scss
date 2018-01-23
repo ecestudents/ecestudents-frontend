@@ -8,11 +8,17 @@ p {
 }
 
 .container {
-    @include event-header("pages/sem/Asset.png")
+    @include event-header("pages/unilever/BackgroundUBC")
 }
 
 .about {
-    @include event-about
+    @include event-about;
+    ul {
+        list-style-type: none;
+    }
+    ul li:before {
+        content: "- ";
+    }
 }
 
 .signup {
@@ -24,8 +30,7 @@ p {
 }
 
 .faq {
-    @include wrapper
-    margin-bottom: ms(3);
+    @include wrapper margin-bottom: ms(3);
     h2 {
         color: $ece-orange;
         font-weight: 400;
@@ -33,11 +38,11 @@ p {
         font-family: MuseoSans;
         font-size: ms(2);
     }
-    
+
     .right {
-            border-left: 0px solid $ece-blue;
-            @include margin_vertical
-        }
+        border-left: 0px solid $ece-blue;
+        @include margin_vertical
+    }
     .tab {
         position: relative;
         margin-bottom: 1px;
@@ -70,7 +75,7 @@ p {
         -o-transition: all .7s;
         transition: all .7s;
         border: 2px solid white;
-        
+
     }
 
     .tab-content p {
@@ -115,11 +120,11 @@ p {
 .schedule {
     .left {
         float: left;
-        
-        @include bp(medium){
-         width: 50%;
+
+        @include bp(medium) {
+            width: 50%;
         }
-        
+
 
         p {
             font-size: 18px;
@@ -159,11 +164,11 @@ p {
         margin: 0 0 -2px;
         padding: 15px 5px;
         font-size: 14px;
-        @include bp(xlarge){
+        @include bp(xlarge) {
             padding: 15px 25px;
             font-size: 1rem;
         }
-        
+
         font-weight: 600;
         text-align: center;
         color: #bbb;
@@ -212,12 +217,12 @@ p {
         label {
             font-size: 0;
             padding: 15px 25px;
-            
+
         }
         label:before {
             margin: 0;
             font-size: 18px;
-            
+
         }
     }
 
@@ -232,10 +237,10 @@ p {
         float: left;
         margin: 1em 5% 20px 0;
         max-width: 90%;
-        
-        @include bp(medium){
-         margin: 1em 5% 20px 5%;
-        max-width: 40%;
+
+        @include bp(medium) {
+            margin: 1em 5% 20px 5%;
+            max-width: 40%;
         }
     }
 

@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./style.scss']
 })
 export class UBCComponent {
-  logo = 'pages/sem/SEM_logo.svg';
-  white = 'pages/sem/SEMlogowhite.png'
+  logo = 'pages/unilever/D3_Logo_transparent_darkbg';
+  white = 'pages/unilever/D3_Logo_transparent_darkbg'
   ws1 = 'pages/sem/ws1'
   ws2 = 'pages/sem/ws2'
   ws3 = 'pages/sem/ws3'
