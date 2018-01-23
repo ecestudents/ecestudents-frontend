@@ -3,10 +3,11 @@
     background-size: cover;
 
     .wrapper {
-        @include wrapper padding-top: ms(0);
+        @include wrapper;
+        padding-top: ms(0);
         padding-bottom: ms(0);
         @include bp(medium) {
-            padding-top: ms(3);
+            padding-top: ms(4);
             padding-bottom: ms(3);
         }
         text-align: center;
