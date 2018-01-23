@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class UBCComponent {
   white = 'pages/unilever/D3_Logo_transparent_darkbg';
   logo = 'pages/unilever/logo_dark'
-
+  about = "pages/unilever/UnileverxECES"
     agenda = [
             { time:"09:00", event: [
                 {text: "Reporting"},

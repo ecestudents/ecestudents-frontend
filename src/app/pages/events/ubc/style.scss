@@ -13,6 +13,7 @@ p {
 
 .about {
     @include event-about;
+
     ul {
         list-style-type: none;
     }

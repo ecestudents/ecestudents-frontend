@@ -36,14 +36,14 @@
 }
 
 @mixin event-about {
-    @include wrapper display: grid;
+    @include wrapper;
+
     margin: ms(0) auto;
+    text-align: center;
 
-    img {
+    .left img {
         display: none;
-        margin: auto;
     }
-
     h2 {
         font-family: MuseoSans;
         color: $ece-black;
@@ -76,14 +76,22 @@
     }
 
     @include bp(medium) {
-        grid-template-columns: 1fr 2.5fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: "center center" "left right";
-        img {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "topimage topimage" "center center" "left right";
+
+        .topimage {
+            grid-area: topimage;
+            margin: 0 auto;
+        }
+
+        .left img {
             display: block;
             max-width: 70%;
             margin-top: 0;
         }
+
         h2 {
             grid-area: center;
             font-size: ms(2);
