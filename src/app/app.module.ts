@@ -17,6 +17,7 @@ import { IdeaLabCommitteeComponent } from './pages/committees/idealab/component'
 import { SEMCommitteeComponent } from './pages/committees/sem/component';
 import { HBGCommitteeComponent } from './pages/committees/24hbg/component';
 import { DCubeCommitteeComponent } from './pages/committees/dcube/component';
+import { UBCComponent } from './pages/events/ubc/component';
 import { CommitteesComponent } from './pages/committees/committees/component';
 import { JobportalComponent } from './pages/jobportal/component';
 
@@ -36,15 +37,16 @@ const appRoutes: Routes = [
   //{ path: 'events/ic',             component: ICComponent },
   { path: 'events/idealab',             component: IdeaLabComponent },
   { path: 'events/sem',             component: SEMComponent },
-  { path: 'events/24hbg',             component: HBGComponent },
-  { path: 'events/dcube',             component: DCubeComponent},
-  { path: 'events',             component: EventsComponent},
-  { path: 'committees/ic',             component: ICCommitteeComponent },
-  { path: 'committees/idealab',             component: IdeaLabCommitteeComponent },
-  { path: 'committees/sem',             component: SEMCommitteeComponent },
-  { path: 'committees/24hbg',             component: HBGCommitteeComponent },
-  { path: 'committees/dcube',             component: DCubeCommitteeComponent},
-  { path: 'committees',             component: CommitteesComponent},
+  { path: 'events/unilever_business_challenge', component: UBCComponent },
+  //{ path: 'events/24hbg',             component: HBGComponent },
+  //{ path: 'events/dcube',             component: DCubeComponent},
+  //{ path: 'events',             component: EventsComponent},
+  //{ path: 'committees/ic',             component: ICCommitteeComponent },
+  //{ path: 'committees/idealab',             component: IdeaLabCommitteeComponent },
+  //{ path: 'committees/sem',             component: SEMCommitteeComponent },
+  //{ path: 'committees/24hbg',             component: HBGCommitteeComponent },
+  //{ path: 'committees/dcube',             component: DCubeCommitteeComponent},
+  //{ path: 'committees',             component: CommitteesComponent},
   { path: 'jobs',             component: JobportalComponent},
   { path: '**', redirectTo: '' }
 ];
@@ -65,6 +67,7 @@ const appRoutes: Routes = [
     SEMCommitteeComponent,
     HBGCommitteeComponent,
     DCubeCommitteeComponent,
+    UBCComponent,
     FooterComponent,
     MainMenuComponent,
     CloudinaryPipe,
