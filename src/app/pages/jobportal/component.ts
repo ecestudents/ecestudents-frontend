@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JobportalComponent implements OnInit {
   sphere = 'pages/jobportal/JobPortalSphere';
-  portrait = 'pages/jobportal/sucess.png';
+  portrait = 'pages/jobportal/succesgirl';
   asset1 = 'pages/jobportal/Asset_3';
   asset2 = 'pages/jobportal/Asset_5';
   asset3 = 'pages/jobportal/Asset_2';
