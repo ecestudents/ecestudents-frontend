@@ -16,7 +16,7 @@
         p The winning team gets the exclusive opportunity of participating for free in ECE’s 12-week startup programme Get Started, worth 300 euros per student!
         span Kick-off: February 7
         span Theil CT-1 (C Building), Erasmus University Campus
- 
+
 .signup
     div
         h2 Sign up for free here.
@@ -26,19 +26,19 @@
 
 .schedule
     h2 Agenda
-    
+
     input#tab1(type="radio" name="tabs" checked)
     label(for="tab1") Kick-off (Workshop 1)
-        
+
     input#tab2(type="radio" name="tabs")
     label(for="tab2") Workshop 2
-        
+
     input#tab3(type="radio" name="tabs")
     label(for="tab3") Workshop 3
-        
+
     input#tab4(type="radio" name="tabs")
-    label(for="tab4") Final (Workshop 4)
-        
+    label(for="tab4") Final
+
     section#content1
         .left
             h3 Idea Generation
@@ -51,20 +51,20 @@
             p Listen to inspirational talks on our SEM themes: Circular Economy & Sustainability, Sharing Economy, Social Development & Challenges. After that, a workshop on idea generation will follow where you can learn about social innovation and build your changemaking idea.
         figure.tint
             img(src='{{ ws1 | cd:"w_400,c_fill"}}')
-        
+
     section#content2
         .left
             h3 Social Business Model and Marketing
             .date
-                | 13/02/2018 
+                | 13/02/2018
                 br
                 | 15:00-17:30
                 br
                 | Theil CT-6 (C building)
-            p Work on the most foundational tool for your enterprise: the social business model canvas. Identify your value proposition and develop a sustainable marketing strategy for your social enterprise idea. 
+            p Work on the most foundational tool for your enterprise: the social business model canvas. Identify your value proposition and develop a sustainable marketing strategy for your social enterprise idea.
         figure.tint
             img(src='{{ ws2 | cd:"w_400,c_fill"}}')
-        
+
     section#content3
         .left
             h3 Finance and Pitching
@@ -74,15 +74,15 @@
                 | 15:00-17:30
                 br
                 | Theil CB-4 (C building)
-            p Build the finance model of your enterprise by outlining your cost and revenue structure. Gain the tools that will help you craft that perfect pitch before the final of SEM. 
+            p Build the finance model of your enterprise by outlining your cost and revenue structure. Gain the tools that will help you craft that perfect pitch before the final of SEM.
         figure.tint
             img(src='{{ ws3 | cd:"w_400,c_fill"}}')
-        
+
     section#content4
         .left
             h3 The Final Pitch
             .date
-                | 23/02/2018 
+                | 23/02/2018
                 br
                 | 15:00-18:00
                 br
@@ -90,11 +90,11 @@
             p Present your idea to a jury of experts. Compete in a final pitch battle between all teams to win the grand prize: free participation in ECE’s startup programme Get Started! Work with experienced entrepreneurs and investors there to grow your entrepreneurial skills.
         figure.tint
             img(src='{{ ws4 | cd:"w_400,c_fill"}}')
-               
+
 .faq
     .left
         h2 F.A.Q.
-        
+
         .tab(*ngFor="let item of faq; let i = index")
             input(type="checkbox" name="tabs" id="tab-{{ i }}")
             label(for="tab-{{ i }}") {{ item.ask }}
