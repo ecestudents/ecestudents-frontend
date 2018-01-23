@@ -1,16 +1,16 @@
 @import 'mixins';
 
 :host /deep/ nav {
-    @include bp(medium){
-       a {
-        color: $ece-orange !important;
-    } 
+    @include bp(medium) {
+        a {
+            color: $ece-orange !important;
+        }
     }
-    
+
     .logo {
         filter: unset !important;
     }
-    
+
     app-main-menu {
         display: none;
     }
@@ -190,7 +190,7 @@
     img {
         display: block;
         margin: 0 auto;
-        max-width: 250px;
+        max-width: 350px;
     }
 
     p {
@@ -203,10 +203,10 @@
     @include bp(medium) {
         display: grid;
         grid-template-rows: auto auto;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: auto auto;
         grid-template-areas: "title title" "left right";
         align-items: center;
-        grid-column-gap: 20px;
+        grid-column-gap: ms(0);
         h2 {
             grid-area: title;
             text-align: left;
@@ -238,9 +238,9 @@
         border-radius: 10px;
         text-transform: uppercase;
     }
-    
+
     @include bp(medium) {
-        .button{
+        .button {
             background: $ece-blue;
             text-transform: capitalize;
             width: auto;
