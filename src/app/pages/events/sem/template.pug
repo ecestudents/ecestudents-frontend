@@ -2,7 +2,7 @@
 .container
     .wrapper
         img(src='{{ white | cd:"w_1200,c_fill"}}')
-        h2 Build changemaking ideas.
+        h2 Build your changemaking idea.
         h4 SEM 2018 Topics are Sustainability & Circular Economy, Sharing Economy, and Social Development & Challenges!
         h3 February 7, 2018
 
@@ -12,14 +12,14 @@
         img(src='{{ logo | cd:"w_300,c_fill"}}')
     div.right
         p The Social Entrepreneurship Masterclass (SEM) is an event where you experience the thrill of being an entrepreneur while solving a social or sustainable issue!
-        p With practical workshops, speakers, and consulting from experts in areas such as sustainable innovation, marketing, and business modelling, you work to develop your social business plan for the final pitch in front of a professional jury. 
+        p With practical workshops, speakers, and consulting from experts in areas such as sustainable innovation, marketing, and business modelling, you work to develop your social business plan for the final pitch in front of a professional jury.
         p The winning team gets the exclusive opportunity of participating for free in ECE’s 12-week startup programme Get Started, worth 300 euros per student!
-        span Kick-off: February 7   
+        span Kick-off: February 7
         span Theil CT-1 (C Building), Erasmus University Campus
 
 .signup
     div
-        h2 Sign up for free here. 
+        h2 Sign up for free here.
         .right
             input#email.form-control(type='email', placeholder='name@email.com' name='email')
             button(type='submit') Submit
@@ -33,7 +33,7 @@
                span.time {{ item.time }}
                br
                | {{ item.event }}
-               
+
 .faq
     .left
         h2 F.A.Q.
@@ -43,12 +43,12 @@
                span.time {{ item.ask }}
                br
                | {{ item.answer }}
-        
+
 
 // .endorsements
 //     div
 //         h2 Endorsements
-        
+
 //         div(*ngFor="let item of endorsements")
 //             span.heart(*appTimes="item.number")
 //             .message "{{ item.message }}"
