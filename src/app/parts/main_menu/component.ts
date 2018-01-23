@@ -16,7 +16,7 @@ export class MainMenuComponent implements OnInit {
   menu = [
             { label:"Home",                   path:""},
             { label:"Events",                 path:"events", children: [
-                  { label:"Innovation Challenge",   path:"events/ic"},
+                  //{ label:"Innovation Challenge",   path:"events/ic"},
                   { label:"IdeaLab",                path:"events/idealab"},
                   { label:"SEM",                    path:"events/sem"},
                   //{ label:"24 Hour Business Game",  path:"events/24hbg"},
@@ -51,6 +51,6 @@ export class MainMenuComponent implements OnInit {
             if(this.router.url == '/jobs') this.menuvisible = false
             else this.menuvisible = true
         })
-      
+
   }
 }
