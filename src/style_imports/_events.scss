@@ -3,16 +3,17 @@
     background-size: cover;
 
     .wrapper {
-        @include wrapper padding-top: ms(0);
+        @include wrapper;
+        padding-top: ms(0);
         padding-bottom: ms(0);
         @include bp(medium) {
-            padding-top: ms(3);
+            padding-top: ms(4);
             padding-bottom: ms(3);
         }
         text-align: center;
         h2,
         span {
-            @include text(Aleo, 1.5, white, 600);
+            @include text(MuseoSans, 1.5, white, 600);
             margin: 0;
         }
         h3 {
@@ -36,16 +37,16 @@
 }
 
 @mixin event-about {
-    @include wrapper display: grid;
+    @include wrapper;
+
     margin: ms(0) auto;
+    text-align: center;
 
-    img {
+    .left img {
         display: none;
-        margin: auto;
     }
-
     h2 {
-        font-family: Aleo;
+        font-family: MuseoSans;
         color: $ece-black;
         font-size: ms(1);
         font-weight: 300;
@@ -76,19 +77,28 @@
     }
 
     @include bp(medium) {
-        grid-template-columns: 1fr 2.5fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: "center center" "left right";
-        img {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "topimage topimage" "center center" "left right";
+
+        .topimage {
+            grid-area: topimage;
+            margin: 0 auto;
+            max-width: 50%;
+        }
+
+        .left img {
             display: block;
             max-width: 70%;
             margin-top: 0;
         }
+
         h2 {
             grid-area: center;
             font-size: ms(2);
-            margin-left: ms(3);
-            margin-right: ms(3);
+            max-width: 80%;
+            margin: 0 auto;
         }
 
         .left {
@@ -146,7 +156,7 @@
 
         @include bp(medium) {
             display: grid;
-            grid-template-columns: 2fr 3fr;
+            grid-template-columns: auto auto;
             grid-template-areas: "left right";
             h2 {
                 grid-area: left;
@@ -164,7 +174,9 @@
 }
 
 @mixin event-agenda {
-    @include wrapper h2 {
+    @include wrapper;
+    margin-bottom: ms(1);
+    h2 {
         color: $ece-orange;
         font-weight: 400;
         margin: 0;
@@ -192,7 +204,9 @@
     grid-template-columns: 100px auto;
     .left {
         grid-area: left;
-        align-self: center;
+        align-self: start;
+        direction: rtl;
+        padding-top: ms(0);
     }
     h2 {
         transform: rotate(-90deg);
@@ -209,6 +223,7 @@
         grid-template-columns: 1fr 3fr;
         .left {
             align-self: start;
+            direction: ltr;
         }
         h2 {
             transform: rotate(0deg);
