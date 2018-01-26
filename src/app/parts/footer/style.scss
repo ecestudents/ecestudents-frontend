@@ -25,7 +25,13 @@ h2 {
 
 footer {
     width: 100%;
-    background-color: $ece-orange;
+    background: rgba(255, 126, 21, 1);
+    background: -moz-linear-gradient(left, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 126, 21, 1)), color-stop(100%, rgba(228, 87, 36, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
+    background: -o-linear-gradient(left, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
 
     .wrapper {
         @include wrapper padding: ms(1) 0;
@@ -35,7 +41,7 @@ footer {
         grid-auto-flow: column;
         align-items: center;
         justify-items: center;
-        @include bp(large){
+        @include bp(large) {
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto auto;
             padding: ms(3) 0;
@@ -45,7 +51,7 @@ footer {
 
 .add {
     display: none;
-    @include bp(large){
+    @include bp(large) {
         display: block;
     }
 }
@@ -58,8 +64,8 @@ footer {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     align-items: center;
-    
-    @include bp(large){
+
+    @include bp(large) {
         grid-template-columns: 1fr auto;
     }
 
@@ -75,8 +81,8 @@ footer {
     grid-column-gap: 10px;
     align-items: center;
     margin-top: 5px;
-    
-    @include bp(large){
+
+    @include bp(large) {
         grid-template-columns: 1fr auto;
         margin-top: 0px;
     }
@@ -84,7 +90,7 @@ footer {
 
 .soc {
     margin-top: ms(1);
-    @include bp(large){
+    @include bp(large) {
         margin-top: 0;
     }
 }
