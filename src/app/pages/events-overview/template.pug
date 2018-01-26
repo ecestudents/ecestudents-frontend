@@ -7,7 +7,7 @@ main
             h3 {{event.title}}
             .text {{event.text}}
             .bottom
-                a(routerLink="{{event.link}}") Learn more
+                a(routerLink="{{'/'+event.link}}") Learn more
                 img(src='{{ event.icon | cd:"h_50,c_fill"}}')
             
             
