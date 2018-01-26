@@ -17,15 +17,32 @@
 main {
     @include wrapper;
     h2 {
-        text-align:center;
-        color:$ece-orange;
+        text-align: center;
+        color: $ece-orange;
         font-size: ms(2);
     }
-    
+
     .overview {
         .event {
             @include card-container;
+            h3,
+            .text,
+            .bottom {
+                padding: 0 ms(0);
+            }
+            .bottom {
+                padding-bottom: ms(0);
+                a {
+                    float:left;
+                    text-decoration: none !important;
+                    color: $ece-blue;
+                    margin-top: (50px - 16px) / 2;
+                }
+                img {
+                   float: right;
+
+                }
+            }
         }
     }
 }
-
