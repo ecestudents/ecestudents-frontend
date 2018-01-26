@@ -25,41 +25,55 @@ main {
     .overview {
         .event {
             @include card-container;
-            max-width:ms(7);
+            border: none;
+
+            max-width: ms(7);
             margin: 0 auto;
-            margin-bottom:ms(2);
-            
+            margin-bottom: ms(2);
+            box-shadow: 0 0 5px -2px black;
+
+            &:hover {
+                box-shadow: 0 0 10px -2px black;
+            }
+
             h3,
             .text,
             .bottom {
                 padding: 0 ms(0);
             }
-            
+
             img.top {
-                width:100%;
+                width: 100%;
             }
             .bottom {
                 padding-bottom: ms(0);
                 a {
-                    float:left;
+                    float: left;
                     text-decoration: none !important;
                     color: $ece-blue;
                     margin-top: (50px - 16px) / 2;
                 }
                 img {
-                   float: right;
+                    float: right;
                 }
             }
         }
-        
-        @include bp(medium){
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-column-gap: ms(0);
-            
+
+        @include bp(medium) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .event {
+                flex: 0 0 calc(50% - 20px);
+            }
+
         }
-        @include bp(large){
-            grid-template-columns: auto auto auto;
+        @include bp(large) {
+            .event {
+                flex: 0 0 calc(33% - 20px;
+            }
         }
     }
 }
+ 
