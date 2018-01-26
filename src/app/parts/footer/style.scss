@@ -28,7 +28,8 @@ footer {
     background-color: $ece-orange;
 
     .wrapper {
-        @include wrapper padding: ms(1) 0;
+        @include wrapper; 
+        padding: ms(1) 0;
         display: grid;
         overflow: auto;
         grid-template-rows: repeat(5, auto);

@@ -20,6 +20,7 @@ import { DCubeCommitteeComponent } from './pages/committees/dcube/component';
 import { UBCComponent } from './pages/events/ubc/component';
 import { CommitteesComponent } from './pages/committees/committees/component';
 import { JobportalComponent } from './pages/jobportal/component';
+import { EventsOverviewComponent } from './pages/events-overview/component';
 
 //parts
 import { FooterComponent } from './parts/footer/component';
@@ -40,7 +41,7 @@ const appRoutes: Routes = [
   { path: 'events/unilever_business_challenge', component: UBCComponent },
   //{ path: 'events/24hbg',             component: HBGComponent },
   //{ path: 'events/dcube',             component: DCubeComponent},
-  //{ path: 'events',             component: EventsComponent},
+  { path: 'events',             component: EventsOverviewComponent},
   //{ path: 'committees/ic',             component: ICCommitteeComponent },
   //{ path: 'committees/idealab',             component: IdeaLabCommitteeComponent },
   //{ path: 'committees/sem',             component: SEMCommitteeComponent },
@@ -72,7 +73,8 @@ const appRoutes: Routes = [
     MainMenuComponent,
     CloudinaryPipe,
     AppTimesDirective,
-    JobportalComponent
+    JobportalComponent,
+    EventsOverviewComponent
   ],
   imports: [
     BrowserModule,
