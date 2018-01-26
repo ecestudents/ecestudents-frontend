@@ -8,7 +8,15 @@ p {
 }
 
 .container {
-    @include event-header("pages/unilever/BackgroundUBC")
+    @include event-header("pages/unilever/BackgroundUBC");
+    .wrapper {
+        h2 {
+            margin-top: ms(0);
+        }
+        h3 {
+            margin-top: 0;
+        }
+    }
 }
 
 .about {
