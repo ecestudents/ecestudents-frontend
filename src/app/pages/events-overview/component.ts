@@ -73,6 +73,11 @@ export class EventsOverviewComponent {
         text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum ornare eros, tempus pulvinar magna vulputate id.Praesent eget nunc quis est pulvinar feugiat.", 
         link:"events/idealab", 
         icon:"pages/idealab/logo"},
+        { topimage: "pages/idealab/header", 
+        title:"Innovation challenge 2018", 
+        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum ornare eros, tempus pulvinar magna vulputate id.Praesent eget nunc quis est pulvinar feugiat.", 
+        link:"events/idealab", 
+        icon:"pages/idealab/logo"},
       ]
 
 }
