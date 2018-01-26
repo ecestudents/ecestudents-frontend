@@ -2,12 +2,12 @@
 main
     h2 Events Calendar
     .overview
-        .event
-            img.top(src='{{"pages/idealab/header" | cd:"w_200,h_175,c_fill"}}')
-            h3 Innovation challenge 2018
-            .text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum ornare eros, tempus pulvinar magna vulputate id.Praesent eget nunc quis est pulvinar feugiat.    
+        .event(*ngFor="let event of events")
+            img.top(src='{{event.topimage | cd:"w_320,h_180,c_fill"}}')
+            h3 {{event.title}}
+            .text {{event.text}}
             .bottom
-                a(href="") Learn more
-                img(src='{{"pages/idealab/logo" | cd:"h_50,c_fill"}}')
+                a(routerLink="{{event.link}}") Learn more
+                img(src='{{ event.icon | cd:"h_50,c_fill"}}')
             
             
