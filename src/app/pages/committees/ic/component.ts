@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./style.scss']
 })
 export class ICCommitteeComponent {
-    ic_logo = 'pages/ic/ic_logo.png'
-    svm_logo = 'pages/ic/svm.png'
+  ic_logo = 'pages/ic/ic_logo.png'
+  svm_logo = 'pages/ic/svm.png'
 }

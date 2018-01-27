@@ -1,0 +1,8 @@
+.event-header(*ngIf="event?.event_header")
+    h1 {{ event?.event_header?.tagline1 }}
+    h2 {{ event?.event_header?.tagline2 }}
+
+.event-header(*ngIf="event?.event_about")
+    h2 {{ event?.event_about?.title }}
+    div([innerHtml]="event?.event_about?.body")
+    a(routerLink="{{event?.event_about?.link?.route}}") check out {{event?.event_about?.link?.label}}
