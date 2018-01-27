@@ -6,13 +6,11 @@ import { RouterModule, Routes } from '@angular/router';
 //pages
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './pages/homepage/component';
-import { ICComponent } from './pages/events/ic/component';
 import { IdeaLabComponent } from './pages/events/idealab/component';
 import { SEMComponent } from './pages/events/sem/component';
 import { HBGComponent } from './pages/events/24hbg/component';
 import { DCubeComponent } from './pages/events/dcube/component';
 import { EventsComponent } from './pages/events/events/component';
-import { ICCommitteeComponent } from './pages/committees/ic/component';
 import { IdeaLabCommitteeComponent } from './pages/committees/idealab/component';
 import { SEMCommitteeComponent } from './pages/committees/sem/component';
 import { HBGCommitteeComponent } from './pages/committees/24hbg/component';
@@ -20,14 +18,14 @@ import { DCubeCommitteeComponent } from './pages/committees/dcube/component';
 import { UBCComponent } from './pages/events/ubc/component';
 import { CommitteesComponent } from './pages/committees/committees/component';
 import { JobportalComponent } from './pages/jobportal/component';
-
+import { EventPageComponent } from './pages/event-page/component'
 //parts
 import { FooterComponent } from './parts/footer/component';
 import { MainMenuComponent } from './parts/main_menu/component';
 
 //helpers
 import { CloudinaryPipe } from './helpers/cloudinary/pipe';
-import { AppTimesDirective } from './app-times.directive';
+import { DataService } from './helpers/dataservice/dataservice';
 
 
 //routes
@@ -38,6 +36,7 @@ const appRoutes: Routes = [
   { path: 'events/idealab',             component: IdeaLabComponent },
   { path: 'events/sem',             component: SEMComponent },
   { path: 'events/unilever_business_challenge', component: UBCComponent },
+  { path: 'events/:id', component: EventPageComponent },
   //{ path: 'events/24hbg',             component: HBGComponent },
   //{ path: 'events/dcube',             component: DCubeComponent},
   //{ path: 'events',             component: EventsComponent},
@@ -56,13 +55,11 @@ const appRoutes: Routes = [
     AppComponent,
     HomepageComponent,
     EventsComponent,
-    ICComponent,
     IdeaLabComponent,
     SEMComponent,
     HBGComponent,
     DCubeComponent,
     CommitteesComponent,
-    ICCommitteeComponent,
     IdeaLabCommitteeComponent,
     SEMCommitteeComponent,
     HBGCommitteeComponent,
@@ -71,14 +68,14 @@ const appRoutes: Routes = [
     FooterComponent,
     MainMenuComponent,
     CloudinaryPipe,
-    AppTimesDirective,
-    JobportalComponent
+    JobportalComponent,
+    EventPageComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
