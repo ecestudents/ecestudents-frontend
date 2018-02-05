@@ -117,8 +117,12 @@ p {
         color: grey;
         a {
             color: $ece-orange;
-            font-size: ms(0);
+            font-size: inherit;
             text-decoration:none;
+        }
+
+        &.full, {
+            font-size:ms(0.5);
         }
     }
     .left {
