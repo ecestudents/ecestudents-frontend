@@ -20,6 +20,7 @@ import { DCubeCommitteeComponent } from './pages/committees/dcube/component';
 import { UBCComponent } from './pages/events/ubc/component';
 import { CommitteesComponent } from './pages/committees/committees/component';
 import { JobportalComponent } from './pages/jobportal/component';
+import { DeclarationComponent } from './pages/declaration/component';
 
 //parts
 import { FooterComponent } from './parts/footer/component';
@@ -47,9 +48,10 @@ const appRoutes: Routes = [
   //{ path: 'committees/24hbg',             component: HBGCommitteeComponent },
   //{ path: 'committees/dcube',             component: DCubeCommitteeComponent},
   //{ path: 'committees',             component: CommitteesComponent},
+  { path: 'declaration',             component: DeclarationComponent},
   { path: 'jobs',             component: JobportalComponent},
   { path: '**', redirectTo: '' }
-];
+]; 
 
 @NgModule({
   declarations: [
@@ -72,7 +74,8 @@ const appRoutes: Routes = [
     MainMenuComponent,
     CloudinaryPipe,
     AppTimesDirective,
-    JobportalComponent
+    JobportalComponent,
+    DeclarationComponent
   ],
   imports: [
     BrowserModule,
