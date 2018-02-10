@@ -16,7 +16,7 @@ p {
 }
 
 .signup {
-    @include event-signup($color)
+    @include event-signup(null)
 }
 
 .agenda {

@@ -6,7 +6,7 @@
             "text": false
         },
         "page": {
-            "event_header": {
+            "header": {
                 "logo": "pages/sem/SEMlogowhite",
                 "background": "pages/sem/Asset",
                 "taglines": [
@@ -14,6 +14,24 @@
                     { "large": false, "text": "SEM 2018 Topics are Sustainability & Circular Economy, Sharing Economy, and Social Development & Challenges!" }
                 ],
                 "date": "February 7, 2018"
+            },
+            "about": {
+                "title": "SEM 2018 Topics are Sustainability & Circular Economy, Sharing Economy, and Social Development & Challenges!",
+                "img": "pages/sem/SEM_logo",
+                "paragraphs": [
+                    "The Social Entrepreneurship Masterclass (SEM) is an event where you experience the thrill of being an entrepreneur while solving a social or sustainable issue!",
+                    "With practical workshops, speakers, and consulting from experts in areas such as sustainable innovation, marketing, and business modelling, you work to develop your social business plan for the final pitch in front of a professional jury.",
+                    "The winning team gets the exclusive opportunity of participating for free in ECE’s 12-week startup programme Get Started, worth 300 euros per student!"
+                ],
+                "bottom_taglines": [
+                    "Kick-off: February 7",
+                    "Theil CT-1 (C Building), Erasmus University Campus"
+                    ]
+            },
+            "signup": {
+                "color": "#049548",
+                "tagline": "Sign up for free here.",
+                "link": "https://ecestudents2017.typeform.com/to/f8qAI4"
             }
         }
     }
