@@ -23,3 +23,28 @@ ng-container(*ngIf="event?.signup")
             .right
                 a(href="{{ event.signup.link }}")
                     button Sign Up
+
+ng-container(*ngIf="event?.agenda")
+    .schedule
+        h2 Agenda
+
+        ng-container(*ngFor="let item of event?.agenda.items; let i = index")
+            ng-container(*ngIf="i == 0")
+                input(id="tab{{i+1}}"  type="radio" name="tabs" checked)
+            ng-container(*ngIf="i != 0")
+                input(id="tab{{i+1}}"  type="radio" name="tabs")
+            label(for="tab{{i+1}}") {{ item.tab }}
+
+        ng-container(*ngFor="let item of event?.agenda.items; let i = index")
+            section(id="content{{i+1}}")
+                .left
+                    h3 {{ item.title }}
+                    .date
+                        | {{ item.date }}
+                        br
+                        | {{ item.time }}
+                        br
+                        | {{ item.location }}
+                    p {{ item.text }}
+                figure.tint
+                    img(src='{{ item.img | cd:"w_400,c_fill"}}')

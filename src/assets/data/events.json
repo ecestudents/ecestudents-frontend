@@ -26,12 +26,50 @@
                 "bottom_taglines": [
                     "Kick-off: February 7",
                     "Theil CT-1 (C Building), Erasmus University Campus"
-                    ]
+                ]
             },
             "signup": {
                 "color": "#049548",
                 "tagline": "Sign up for free here.",
                 "link": "https://ecestudents2017.typeform.com/to/f8qAI4"
+            },
+            "agenda": {
+                "items": [{
+                        "tab": "Kick-off (Workshop 1)",
+                        "title": "Idea Generation",
+                        "date": "07/02/2018",
+                        "time": "15:00-18:00",
+                        "location:": "Theil CT-1 (C building)",
+                        "img": "pages/sem/ws1",
+                        "text": "Listen to inspirational talks on our SEM themes: Circular Economy & Sustainability, Sharing Economy, Social Development & Challenges. After that, a workshop on idea generation will follow where you can learn about social innovation and build your changemaking idea."
+                    },
+                    {
+                        "tab": "Workshop 2",
+                        "title": "Social Business Model and Marketing",
+                        "date": "13/02/2018",
+                        "time": "15:00-17:30",
+                        "location:": "Theil CT-6 (C building)",
+                        "img": "pages/sem/ws2",
+                        "text": "Work on the most foundational tool for your enterprise: the social business model canvas. Identify your value proposition and develop a sustainable marketing strategy for your social enterprise idea."
+                    }, {
+                        "tab": "Workshop 3",
+                        "title": "Finance and Pitching",
+                        "date": "20/02/2018",
+                        "time": "15:00-17:30",
+                        "location:": "Theil CB-4 (C building)",
+                        "img": "pages/sem/ws3",
+                        "text": "Build the finance model of your enterprise by outlining your cost and revenue structure. Gain the tools that will help you craft that perfect pitch before the final of SEM."
+                    },
+                    {
+                        "tab": "Final",
+                        "title": "The Final Pitch",
+                        "date": "23/02/2018",
+                        "time": "15:00-18:00",
+                        "location:": "ECE Campus",
+                        "img": "pages/sem/ws4",
+                        "text": "Present your idea to a jury of experts. Compete in a final pitch battle between all teams to win the grand prize: free participation in ECE’s startup programme Get Started! Work with experienced entrepreneurs and investors there to grow your entrepreneurial skills."
+                    }
+                ]
             }
         }
     }
