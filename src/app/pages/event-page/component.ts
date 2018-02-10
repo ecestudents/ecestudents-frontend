@@ -15,10 +15,11 @@ export class EventPageComponent {
     private dataservice: DataService,
     private activatedRoute: ActivatedRoute,
     private router: Router) {
+
     this.activatedRoute.params.subscribe(params => {
       this.dataservice.getEvent(params['id']).subscribe(event => {
         if (event == false) this.router.navigate(["/"])
-        else this.event = event
+        else this.event = event.page
         console.log(this.event)
       })
     })

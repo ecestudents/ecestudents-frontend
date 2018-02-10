@@ -8,7 +8,7 @@ p {
 }
 
 .container {
-    @include event-header("pages/sem/Asset.png")
+    @include event-header(null)
 }
 
 .about {
@@ -33,7 +33,7 @@ p {
         font-family: MuseoSans;
         font-size: ms(2);
     }
-    
+
     .right {
             border-left: 0px solid $ece-blue;
             @include margin_vertical
@@ -70,7 +70,7 @@ p {
         -o-transition: all .7s;
         transition: all .7s;
         border: 2px solid white;
-        
+
     }
 
     .tab-content p {
@@ -115,11 +115,11 @@ p {
 .schedule {
     .left {
         float: left;
-        
+
         @include bp(medium){
          width: 50%;
         }
-        
+
 
         p {
             font-size: 18px;
@@ -163,7 +163,7 @@ p {
             padding: 15px 25px;
             font-size: 1rem;
         }
-        
+
         font-weight: 600;
         text-align: center;
         color: #bbb;
@@ -212,12 +212,12 @@ p {
         label {
             font-size: 0;
             padding: 15px 25px;
-            
+
         }
         label:before {
             margin: 0;
             font-size: 18px;
-            
+
         }
     }
 
@@ -232,7 +232,7 @@ p {
         float: left;
         margin: 1em 5% 20px 0;
         max-width: 90%;
-        
+
         @include bp(medium){
          margin: 1em 5% 20px 5%;
         max-width: 40%;

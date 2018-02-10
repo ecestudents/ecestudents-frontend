@@ -1,7 +1,12 @@
-.event-header(*ngIf="event?.event_header")
-    h1 {{ event?.event_header?.tagline1 }}
-    h2 {{ event?.event_header?.tagline2 }}
-
+ng-container(*ngIf="event?.event_header")
+    .container([style.background-image]="'url(https://res.cloudinary.com/ece/image/upload/f_auto,q_auto/' + event.event_header.background + ')'")
+        .wrapper
+            img(src='{{ event.event_header.logo | cd:"w_1200,c_fill"}}')
+            ng-container(*ngFor="let tl of event.event_header.taglines")
+                h2(*ngIf="tl.large") {{tl.text}}
+                h4(*ngIf="!tl.large") {{tl.text}}
+            h3 {{ event.event_header.date }}
+//{{ event.event_header.background | cd:"c_scale,w_1920"}}
 .event-header(*ngIf="event?.event_about")
     h2 {{ event?.event_about?.title }}
     div([innerHtml]="event?.event_about?.body")

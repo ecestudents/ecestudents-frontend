@@ -1,24 +1,20 @@
 {
-    "innovation_challenge": {
-        "event_header": {
-            "tagline1": "nice ic challange",
-            "tagline2": "second nice tagline"
+    "sem": {
+        "menu": { "label": "SEM", "url": "sem" },
+        "eventspage": {
+            "img": false,
+            "text": false
         },
-        "event_about": {
-            "title": "this is the about section",
-            "body": "in here you can just put <a href='https://www.google.nl/' target='_blank'>plain</a> html",
-            "link": {"route": "/events/24hbg", "label": "24hbg!"}
-        }
-    },
-    "24hbg": {
-        "event_header": {
-            "tagline1": "The amazing 24hbg",
-            "tagline2": "which is amazing"
-        },
-        "event_about": {
-            "title": "this is the about 24hbg section",
-            "body": "a fancy link <a href='google.com' target='_blank'>hi</a>",
-            "link": {"route": "/events/innovation_challenge", "label": "Innovation Challenge!"}
+        "page": {
+            "event_header": {
+                "logo": "pages/sem/SEMlogowhite",
+                "background": "pages/sem/Asset",
+                "taglines": [
+                    { "large": true, "text": "Build your changemaking idea." },
+                    { "large": false, "text": "SEM 2018 Topics are Sustainability & Circular Economy, Sharing Economy, and Social Development & Challenges!" }
+                ],
+                "date": "February 7, 2018"
+            }
         }
     }
 }
