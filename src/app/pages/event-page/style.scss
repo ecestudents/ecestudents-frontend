@@ -24,8 +24,7 @@ p {
 }
 
 .faq {
-    @include wrapper
-    margin-bottom: ms(3);
+    @include wrapper margin-bottom: ms(3);
     h2 {
         color: $ece-orange;
         font-weight: 400;
@@ -35,9 +34,9 @@ p {
     }
 
     .right {
-            border-left: 0px solid $ece-blue;
-            @include margin_vertical
-        }
+        border-left: 0px solid $ece-blue;
+        @include margin_vertical
+    }
     .tab {
         position: relative;
         margin-bottom: 1px;
@@ -113,11 +112,25 @@ p {
 }
 
 .schedule {
+    i {
+        font-size: ms(0);
+        color: grey;
+        a {
+            color: $ece-orange;
+            font-size: inherit;
+            text-decoration: none;
+        }
+
+        &.full,
+            {
+            font-size: ms(0.5);
+        }
+    }
     .left {
         float: left;
 
-        @include bp(medium){
-         width: 50%;
+        @include bp(medium) {
+            width: 50%;
         }
 
 
@@ -159,7 +172,7 @@ p {
         margin: 0 0 -2px;
         padding: 15px 5px;
         font-size: 14px;
-        @include bp(xlarge){
+        @include bp(xlarge) {
             padding: 15px 25px;
             font-size: 1rem;
         }
@@ -233,9 +246,9 @@ p {
         margin: 1em 5% 20px 0;
         max-width: 90%;
 
-        @include bp(medium){
-         margin: 1em 5% 20px 5%;
-        max-width: 40%;
+        @include bp(medium) {
+            margin: 1em 5% 20px 5%;
+            max-width: 40%;
         }
     }
 

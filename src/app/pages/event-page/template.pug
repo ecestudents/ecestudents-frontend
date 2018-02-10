@@ -27,7 +27,7 @@ ng-container(*ngIf="event?.signup")
 ng-container(*ngIf="event?.agenda")
     .schedule
         h2 Agenda
-
+        i.full(*ngIf="event?.agenda.mainpdf") Check out the full outline of the programme <a href="{{event.agenda.mainpdf}}" target="_blank">here!</a>
         ng-container(*ngFor="let item of event?.agenda.items; let i = index")
             ng-container(*ngIf="i == 0")
                 input(id="tab{{i+1}}"  type="radio" name="tabs" checked)
@@ -46,5 +46,6 @@ ng-container(*ngIf="event?.agenda")
                         br
                         | {{ item.location }}
                     p {{ item.text }}
+                    i(*ngIf="item.pdf")  Check out the full {{item.tab}} agenda <a href="{{item.pdf}}" target="_blank">here!</a>
                 figure.tint
                     img(src='{{ item.img | cd:"w_400,c_fill"}}')

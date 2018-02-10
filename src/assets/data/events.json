@@ -34,6 +34,7 @@
                 "link": "https://ecestudents2017.typeform.com/to/f8qAI4"
             },
             "agenda": {
+                "mainpdf": "/assets/sem/agenda_full.pdf",
                 "items": [{
                         "tab": "Kick-off (Workshop 1)",
                         "title": "Idea Generation",
@@ -41,6 +42,7 @@
                         "time": "15:00-18:00",
                         "location:": "Theil CT-1 (C building)",
                         "img": "pages/sem/ws1",
+                        "pdf": "/assets/sem/agenda_w1.pdf",
                         "text": "Listen to inspirational talks on our SEM themes: Circular Economy & Sustainability, Sharing Economy, Social Development & Challenges. After that, a workshop on idea generation will follow where you can learn about social innovation and build your changemaking idea."
                     },
                     {
@@ -50,6 +52,7 @@
                         "time": "15:00-17:30",
                         "location:": "Theil CT-6 (C building)",
                         "img": "pages/sem/ws2",
+                        "pdf": "/assets/sem/agenda_w2.pdf",
                         "text": "Work on the most foundational tool for your enterprise: the social business model canvas. Identify your value proposition and develop a sustainable marketing strategy for your social enterprise idea."
                     }, {
                         "tab": "Workshop 3",
@@ -58,6 +61,7 @@
                         "time": "15:00-17:30",
                         "location:": "Theil CB-4 (C building)",
                         "img": "pages/sem/ws3",
+                        "pdf": "/assets/sem/agenda_w3.pdf",
                         "text": "Build the finance model of your enterprise by outlining your cost and revenue structure. Gain the tools that will help you craft that perfect pitch before the final of SEM."
                     },
                     {
@@ -67,6 +71,7 @@
                         "time": "15:00-18:00",
                         "location:": "ECE Campus",
                         "img": "pages/sem/ws4",
+                        "pdf": "/assets/sem/agenda_w4.pdf",
                         "text": "Present your idea to a jury of experts. Compete in a final pitch battle between all teams to win the grand prize: free participation in ECE’s startup programme Get Started! Work with experienced entrepreneurs and investors there to grow your entrepreneurial skills."
                     }
                 ]
