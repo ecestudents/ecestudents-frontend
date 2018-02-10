@@ -49,3 +49,14 @@ ng-container(*ngIf="event?.agenda")
                     i(*ngIf="item.pdf")  Check out the full {{item.tab}} agenda <a href="{{item.pdf}}" target="_blank">here!</a>
                 figure.tint
                     img(src='{{ item.img | cd:"w_400,c_fill"}}')
+
+ng-container(*ngIf="event?.faq")
+    .faq
+        .left
+            h2 F.A.Q.
+
+            .tab(*ngFor="let item of event.faq; let i = index")
+                input(type="checkbox" name="tabs" id="tab-{{ i }}")
+                label(for="tab-{{ i }}") {{ item.ask }}
+                .tab-content
+                    p {{ item.answer }}
