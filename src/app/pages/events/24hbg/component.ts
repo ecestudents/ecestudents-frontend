@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./style.scss']
 })
 export class HBGComponent {
+  
+  
 }

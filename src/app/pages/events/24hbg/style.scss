@@ -1,15 +1,26 @@
 @import 'mixins';
 
+$color: #B51C47;
+
 a,
 p {
     font-size: ms(1);
 }
 
-:host /deep/ .nav {
-    a {
-        font-size: ms(1);
+app-main-menu {
+    display: block;
+    background: $color;
+}
+
+:host /deep/ {
+    nav {
+        margin-bottom: 0 !important;
+    }
+    footer {
+        background-color: $color !important;
     }
 }
+
 
 @include bp(medium) {
     :host /deep/ .nav {

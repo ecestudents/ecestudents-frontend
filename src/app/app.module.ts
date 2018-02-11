@@ -38,7 +38,7 @@ const appRoutes: Routes = [
   { path: 'events/idealab',             component: IdeaLabComponent },
   { path: 'events/sem',             component: SEMComponent },
   { path: 'events/unilever_business_challenge', component: UBCComponent },
-  //{ path: 'events/24hbg',             component: HBGComponent },
+  { path: 'events/24hbg',             component: HBGComponent },
   //{ path: 'events/dcube',             component: DCubeComponent},
   //{ path: 'events',             component: EventsComponent},
   //{ path: 'committees/ic',             component: ICCommitteeComponent },
