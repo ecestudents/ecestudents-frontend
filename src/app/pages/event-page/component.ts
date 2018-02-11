@@ -15,6 +15,7 @@ export class EventPageComponent {
     private dataservice: DataService,
     private activatedRoute: ActivatedRoute,
     private router: Router) {
+    this.event = {}
 
     this.activatedRoute.params.subscribe(params => {
       this.dataservice.getEvent(params['id']).subscribe(event => {

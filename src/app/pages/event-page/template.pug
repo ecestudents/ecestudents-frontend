@@ -1,5 +1,5 @@
 ng-container(*ngIf="event?.header")
-    .container([style.background-image]="'url(https://res.cloudinary.com/ece/image/upload/f_auto,q_auto/' + event.header.background + ')'")
+    .container([style.background-image]="'url(https://res.cloudinary.com/ece/image/upload/f_auto,q_auto' + event.header.background + ')'")
         .wrapper
             img(*ngIf="event.header?.logo" src='{{ event.header.logo | cd:"w_1200,c_fill"}}')
             ng-container(*ngFor="let tl of event.header.taglines")
@@ -11,25 +11,37 @@ ng-container(*ngIf="event?.header")
                 br
                 span.bottom_span {{ event.header.bottom_span }}
 
-ng-container(*ngIf="event?.about")
+ng-container(*ngIf="event?.about_1")
     .about
-        img.topimage(*ngIf="event.about?.topimage" src='{{ event.about.topimage | cd:"c_fill"}}')
-        h2 {{ event.about.title }}
+        img.topimage(*ngIf="event.about_1?.topimage" src='{{ event.about_1.topimage | cd:"c_fill"}}')
+        h2 {{ event.about_1.title }}
         div.left
-            img(src='{{ event.about.img | cd:"w_300,c_fill"}}')
+            img(src='{{ event.about_1.img | cd:"w_300,c_fill"}}')
         div.right
-            ng-container(*ngFor="let p of event.about.paragraphs")
+            ng-container(*ngFor="let p of event.about_1.paragraphs")
                 p([innerHtml]="p")
-            span(*ngFor="let t of event.about.bottom_taglines") {{t}}
+            span(*ngFor="let t of event.about_1.bottom_taglines") {{t}}
                 br
 
 ng-container(*ngIf="event?.signup")
     .signup([style.background-color]="event.signup.color")
         div
             h2 {{ event.signup.tagline }}
-            .right
-                a(href="{{ event.signup.link }}")
+            .right(*ngIf="event?.signup.link")
+                a(href="{{ event.signup.link }}" target="_blank")
                     button Sign Up
+
+ng-container(*ngIf="event?.about_2")
+    .about
+        img.topimage(*ngIf="event.about_2?.topimage" src='{{ event.about_2.topimage | cd:"c_fill"}}')
+        h2(*ngIf="event.about_2?.title") {{ event.about_2?.title }}
+        div.left
+            img(src='{{ event.about_2.img | cd:"w_300,c_fill"}}')
+        div.right
+            ng-container(*ngFor="let p of event.about_2.paragraphs")
+                p([innerHtml]="p")
+            span(*ngFor="let t of event.about_2.bottom_taglines") {{t}}
+                br
 
 ng-container(*ngIf="event?.agenda")
     .schedule

@@ -8,7 +8,7 @@
         "page": {
             "header": {
                 "logo": "pages/sem/SEMlogowhite",
-                "background": "pages/sem/Asset",
+                "background": "/pages/sem/Asset",
                 "taglines": [
                     { "large": true, "text": "Build your changemaking idea." },
                     { "large": false, "text": "SEM 2018 Topics are Sustainability & Circular Economy, Sharing Economy, and Social Development & Challenges!" }
@@ -17,7 +17,7 @@
                 "date": "February 7, 2018",
                 "bottom_span": false
             },
-            "about": {
+            "about_1": {
                 "topimage": false,
                 "title": "SEM 2018 Topics are Sustainability & Circular Economy, Sharing Economy, and Social Development & Challenges!",
                 "img": "pages/sem/SEM_logo",
@@ -36,6 +36,7 @@
                 "tagline": "Sign up for free here.",
                 "link": "https://ecestudents2017.typeform.com/to/f8qAI4"
             },
+            "about_2": false,
             "agenda": {
                 "mainpdf": "/assets/sem/agenda_full.pdf",
                 "items": [{
@@ -117,7 +118,7 @@
         "page": {
             "header": {
                 "logo": false,
-                "background": "pages/unilever/BackgroundUBC",
+                "background": "/pages/unilever/BackgroundUBC",
                 "taglines": [
                     { "large": true, "text": "UNILEVER BUSINESS CHALLENGE" },
                     { "large": false, "text": "Step Up. Make an Impact." }
@@ -126,7 +127,7 @@
                 "date": "February 9th",
                 "bottom_span": "Limited spots available."
             },
-            "about": {
+            "about_1": {
                 "topimage": "pages/unilever/UnileverxECES_1",
                 "title": "Bring your creativity & intellect to the real world.",
                 "img": "pages/unilever/desc_logo",
@@ -164,11 +165,61 @@
                 },
                 { "time": "17:30", "event": [{ "text": "Networking Drinks at Weena Bar" }] }
             ],
+            "about_2": false,
             "faq": false,
             "image_list": {
                 "label": "Unilever Case Brands",
                 "items": ["pages/unilever/amora", "pages/unilever/calve", "pages/unilever/hellmans", "pages/unilever/knorr", "pages/unilever/maille"]
             }
+        }
+    },
+    "start_summit": {
+        "menu_label": "START Summit 2018",
+        "eventspage": {
+            "img": false,
+            "text": false
+        },
+        "page": {
+            "header": {
+                "background": ",c_crop,h_400,w_1106/pages/start/background",
+                "taglines": [
+                    { "large": true, "text": "Trip to START Summit 2018" },
+                    { "large": false, "text": "Be where innovation happens." }
+                ],
+                "subimg": false,
+                "date": "14 March - 17 March",
+                "bottom_span": "Deadline to apply 11 February"
+            },
+            "about_1": {
+                "topimage": false,
+                "title": "We are looking for 45 enthusiastic students and/or entrepreneurs, eager to meet industry leaders, founders, investors, and driven students from all over the world!",
+                "img": "pages/start/logo",
+                "paragraphs": [
+                    "START Summit 2018 is the leading student-run conference for entrepreneurship and technology in Europe, taking place on March in St. Gallen, Switzerland.",
+                    "Be where innovation happens and participate as one of the over 2000 ambitious students, visionary founders and high-profile investors, gathering for a two-day conference full of unique speakers, workshops and networking events.",
+                    "START Summit brings together innovative minds from tech and business side, while focusing on: <ul> <li>Blockchain</li> <li>Augmented & Virtual Reality</li> <li>Artificial Intelligence</li> <li>Internet of Things</li> <li>HealthTech</li> </ul>"
+                ],
+                "bottom_taglines": ["Find more information on the official website www.startsummit.ch"]
+            },
+            "signup": {
+                "color": "#2f4e63",
+                "tagline": "There are limited spots, so we ask you apply here as soon as possible, as the earliest applicants will be given priority",
+                "link": "https://ecestudents2017.typeform.com/to/Ha5m5P"
+            },
+            "about_2": {
+                "topimage": false,
+                "title": false,
+                "img": "pages/start/logo",
+                "paragraphs": [
+                    "For an all-inclusive price of only €169 ECE Students will bring you to St. Gallen from the 14th to the 17th of March 2018.",
+                    "The price includes: <ul> <li>Return tickets from Amsterdam Schiphol</li> <li>START Summit tickets</li> <li>Accommodation in St. Gallen</li> <li>Breakfast, lunch, and dinner in St. Gallen</li> <li>An amazing group to travel with!</li> </ul>"
+                ],
+                "bottom_taglines": []
+            },
+            "agenda": false,
+            "agenda_list": false,
+            "faq": false,
+            "image_list": false
         }
     }
 }
