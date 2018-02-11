@@ -1,0 +1,49 @@
+//put the menu somewhere in the page
+.container
+    .wrapper
+        h2 UNILEVER BUSINESS CHALLENGE
+        h4 Step Up. Make an Impact.
+        img(src='{{ white | cd:"w_200,c_fill"}}')
+        h3 February 9th
+        h4 Limited spots available.
+
+.about
+    img.topimage(src='{{ about | cd:"c_fill"}}')
+    h2 Bring your creativity & intellect to the real world.
+    div.left
+        img(src='{{ logo | cd:"w_600,c_fill"}}')
+    div.right
+        p ECE Students is here to offer you a fantastic opportunity - the chance to step up and apply your innovative skills to make an impact at Unilever, one of the world's premier global conglomerates. Work with your assigned team to formulate an ingenious solution to the presented business challenge. The winning team’s idea might be implemented by Unilever executives!
+        p The event will include:
+        ul
+            li Informative presentations by Unilever;
+            li Lunch with Unilever executives;
+            li Business case solving and pitching sessions;
+            li Networking drinks and possible job opportunities at Unilever
+        p Don’t miss this opportunity to establish yourself as a force to be reckoned with in one of the most sought after companies by employees. Good luck!
+        span Kick-off: February 9th | 09:00 - 17:00
+        br
+        span Unilever Headquarters Rotterdam, Weena 455, 3013 AL
+
+.signup
+    div
+        h2 Deadline: 3rd of February - 23:59
+        .right
+            a(href="https://ecestudents2017.typeform.com/to/bPmDa9", target="_blank")
+                button Sign Up
+.agenda
+    .left
+        h2 Agenda
+    .right
+        ul
+            li(*ngFor="let item of agenda")
+                span.time {{ item.time }}
+                br
+                ng-container(*ngFor="let p of item.event") {{ p.text }}
+                    br
+
+#partners.container-fluid
+    h1 Unilever Case Brands
+    ul
+        li(*ngFor="let item of partners")
+            img(src='{{ "pages/unilever/"+item | cd:"w_300,c_fill"}}')

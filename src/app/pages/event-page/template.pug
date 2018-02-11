@@ -1,20 +1,27 @@
 ng-container(*ngIf="event?.header")
     .container([style.background-image]="'url(https://res.cloudinary.com/ece/image/upload/f_auto,q_auto/' + event.header.background + ')'")
         .wrapper
-            img(src='{{ event.header.logo | cd:"w_1200,c_fill"}}')
+            img(*ngIf="event.header?.logo" src='{{ event.header.logo | cd:"w_1200,c_fill"}}')
             ng-container(*ngFor="let tl of event.header.taglines")
                 h2(*ngIf="tl.large") {{tl.text}}
                 h4(*ngIf="!tl.large") {{tl.text}}
+            img(*ngIf="event.header?.subimg" src='{{ event.header.subimg | cd:"w_200,c_fill"}}')
             h3 {{ event.header.date }}
+            ng-container(*ngIf="event.header?.bottom_span")
+                br
+                span.bottom_span {{ event.header.bottom_span }}
 
 ng-container(*ngIf="event?.about")
     .about
+        img.topimage(*ngIf="event.about?.topimage" src='{{ event.about.topimage | cd:"c_fill"}}')
         h2 {{ event.about.title }}
         div.left
             img(src='{{ event.about.img | cd:"w_300,c_fill"}}')
         div.right
-            p(*ngFor="let p of event.about.paragraphs") {{p}}
+            ng-container(*ngFor="let p of event.about.paragraphs")
+                p([innerHtml]="p")
             span(*ngFor="let t of event.about.bottom_taglines") {{t}}
+                br
 
 ng-container(*ngIf="event?.signup")
     .signup([style.background-color]="event.signup.color")

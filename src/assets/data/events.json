@@ -1,6 +1,6 @@
 {
     "sem": {
-        "menu": { "label": "SEM", "url": "sem" },
+        "menu_label": "SEM",
         "eventspage": {
             "img": false,
             "text": false
@@ -13,9 +13,12 @@
                     { "large": true, "text": "Build your changemaking idea." },
                     { "large": false, "text": "SEM 2018 Topics are Sustainability & Circular Economy, Sharing Economy, and Social Development & Challenges!" }
                 ],
-                "date": "February 7, 2018"
+                "subimg": false,
+                "date": "February 7, 2018",
+                "bottom_span": false
             },
             "about": {
+                "topimage": false,
                 "title": "SEM 2018 Topics are Sustainability & Circular Economy, Sharing Economy, and Social Development & Challenges!",
                 "img": "pages/sem/SEM_logo",
                 "paragraphs": [
@@ -26,6 +29,113 @@
                 "bottom_taglines": [
                     "Kick-off: February 7",
                     "Theil CT-1 (C Building), Erasmus University Campus"
+                ]
+            },
+            "signup": {
+                "color": "#049548",
+                "tagline": "Sign up for free here.",
+                "link": "https://ecestudents2017.typeform.com/to/f8qAI4"
+            },
+            "agenda": {
+                "mainpdf": "/assets/sem/agenda_full.pdf",
+                "items": [{
+                        "tab": "Kick-off (Workshop 1)",
+                        "title": "Idea Generation",
+                        "date": "07/02/2018",
+                        "time": "15:00-18:00",
+                        "location:": "Theil CT-1 (C building)",
+                        "img": "pages/sem/ws1",
+                        "pdf": "/assets/sem/agenda_w1.pd",
+                        "text": "Listen to inspirational talks on our SEM themes: Circular Economy & Sustainability, Sharing Economy, Social Development & Challenges. After that, a workshop on idea generation will follow where you can learn about social innovation and build your changemaking idea."
+                    },
+                    {
+                        "tab": "Workshop 2",
+                        "title": "Social Business Model and Marketing",
+                        "date": "13/02/2018",
+                        "time": "15:00-17:30",
+                        "location:": "Theil CT-6 (C building)",
+                        "img": "pages/sem/ws2",
+                        "pdf": "/assets/sem/agenda_w2.pdf",
+                        "text": "Work on the most foundational tool for your enterprise: the social business model canvas. Identify your value proposition and develop a sustainable marketing strategy for your social enterprise idea."
+                    }, {
+                        "tab": "Workshop 3",
+                        "title": "Finance and Pitching",
+                        "date": "20/02/2018",
+                        "time": "15:00-17:30",
+                        "location:": "Theil CB-4 (C building)",
+                        "img": "pages/sem/ws3",
+                        "pdf": "/assets/sem/agenda_w3.pdf",
+                        "text": "Build the finance model of your enterprise by outlining your cost and revenue structure. Gain the tools that will help you craft that perfect pitch before the final of SEM."
+                    },
+                    {
+                        "tab": "Final",
+                        "title": "The Final Pitch",
+                        "date": "23/02/2018",
+                        "time": "15:00-18:00",
+                        "location:": "ECE Campus",
+                        "img": "pages/sem/ws4",
+                        "pdf": "/assets/sem/agenda_w4.pdf",
+                        "text": "Present your idea to a jury of experts. Compete in a final pitch battle between all teams to win the grand prize: free participation in ECE’s startup programme Get Started! Work with experienced entrepreneurs and investors there to grow your entrepreneurial skills."
+                    }
+                ]
+            },
+            "faq": [{
+                    "ask": "Do I (my team) need to attend all workshops?",
+                    "answer": "As our competition involves a series of workshops that build up on each other to develop your entrepreneurial idea, attending all workshops is highly advised. Also, the winning team in the final workshop will be determined additionally based on the progress they have made throughout the weeks."
+                },
+                {
+                    "ask": "I can’t attend a workshop, what should I do?",
+                    "answer": "In case you cannot come to one of our workshops, please send an email to asparuh.georgiev@ecestudents.com. It is best if at least the majority of your team is present in each workshop."
+                },
+                {
+                    "ask": "Can I sign up individually?",
+                    "answer": "Yes, you can! If you don’t have a team, we will find you one based on your indicated interest in the SEM themes. We will group you with participants who have the same preferred theme to work on during the event. "
+                },
+                {
+                    "ask": "How many people should be in a team?",
+                    "answer": "All teams should have 4 members to work together. If you have friends/people in mind you would like to work with, please write their names in our application form. All members of your team should fill out the SEM application form. Furthermore, if you do not have enough members for a full team, we will group you with other participants based on best fit. "
+                },
+                {
+                    "ask": "Is it only for master students?",
+                    "answer": "We welcome both bachelor and master students. "
+                },
+                {
+                    "ask": "Why do I need to upload my CV in the registration form?",
+                    "answer": "Uploading your CV is optional. We ask you to upload your CV if one of our sponsors or participating companies at SEM would like to know more about you."
+                }
+            ]
+        }
+    },
+    "unilever_business_challenge": {
+        "menu_label": "Unilever Business Challenge",
+        "eventspage": {
+            "img": false,
+            "text": false
+        },
+        "page": {
+            "header": {
+                "logo": false,
+                "background": "pages/unilever/BackgroundUBC",
+                "taglines": [
+                    { "large": true, "text": "UNILEVER BUSINESS CHALLENGE" },
+                    { "large": false, "text": "Step Up. Make an Impact." }
+                ],
+                "subimg": "pages/unilever/top_logo",
+                "date": "February 9th",
+                "bottom_span": "Limited spots available."
+            },
+            "about": {
+                "topimage": "pages/unilever/UnileverxECES_1",
+                "title": "Bring your creativity & intellect to the real world.",
+                "img": "pages/unilever/desc_logo",
+                "paragraphs": [
+                    "ECE Students is here to offer you a fantastic opportunity - the chance to step up and apply your innovative skills to make an impact at Unilever, one of the world's premier global conglomerates. Work with your assigned team to formulate an ingenious solution to the presented business challenge. The winning team’s idea might be implemented by Unilever executives!",
+                    "The event will include: <ul><li>Informative presentations by Unilever;</li><li>Lunch with Unilever executives;</li><li>Business case solving and pitching sessions;</li><li>Networking drinks and possible job opportunities at Unilever</li></ul>",
+                    "Don’t miss this opportunity to establish yourself as a force to be reckoned with in one of the most sought after companies by employees. Good luck!"
+                ],
+                "bottom_taglines": [
+                    "Kick-off: February 9th | 09:00 - 17:00",
+                    "Unilever Headquarters Rotterdam, Weena 455, 3013 AL"
                 ]
             },
             "signup": {

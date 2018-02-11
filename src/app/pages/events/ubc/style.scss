@@ -1,6 +1,6 @@
 @import 'mixins';
 
-$color: #049548;
+$color: #171845;
 
 a,
 p {
@@ -8,20 +8,30 @@ p {
 }
 
 .container {
-    @include event-header(null)
-    padding-top: ms(0);
-    .wrapper span.bottom_span {
-        font-size: ms(1.5);
-        font-weight: 400;
+    @include event-header("pages/unilever/BackgroundUBC");
+    .wrapper {
+        h2 {
+            margin-top: ms(0);
+        }
+        h3 {
+            margin-top: 0;
+        }
     }
 }
 
 .about {
-    @include event-about
+    @include event-about;
+
+    ul {
+        list-style-type: none;
+    }
+    ul li:before {
+        content: "- ";
+    }
 }
 
 .signup {
-    @include event-signup(null)
+    @include event-signup($color)
 }
 
 .agenda {
@@ -117,22 +127,6 @@ p {
 }
 
 .schedule {
-    i {
-        float: left;
-        width: 100%;
-        font-size: ms(0);
-        color: grey;
-        a {
-            color: $ece-orange;
-            font-size: inherit;
-            text-decoration: none;
-        }
-
-        &.full,
-            {
-            font-size: ms(0.5);
-        }
-    }
     .left {
         float: left;
 
@@ -269,5 +263,30 @@ p {
         right: 0;
         background: rgba(23, 140, 68, 0.5);
         transition: all .3s linear;
+    }
+}
+
+
+#partners {
+    @include wrapper;
+    margin-bottom: ms(2);
+    h1 {
+        color: $ece-orange;
+        font-family: MuseoSans;
+        font-size: ms(1);
+    }
+
+    ul {
+        @include menu-base;
+        @include menu-direction("vertical");
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, auto);
+        grid-column-gap: ms(1);
+        grid-row-gap: ms(0);
+
+        @include bp(medium) {
+            grid-template-columns: repeat(5, auto);
+        }
     }
 }
