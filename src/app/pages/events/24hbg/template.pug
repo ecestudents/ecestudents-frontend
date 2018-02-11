@@ -2,21 +2,36 @@
 app-main-menu
 .container
     .wrapper
-        h1 Need another longer tagline
-        h2 Business never sleeps.
-        h3 THE 24 HOUR BUSINESS GAME START IN
-        button(type='submit')
-            a(href="#") SIGN UP
+        .left
+            h1 Need another longer tagline.
+            h2 Business never sleeps.
+            h3 THE 24 HOUR BUSINESS GAME START IN:
+            countdown( [config]="{stopTime: 1526040000000}")
+                | $!d!
+                span.stamp days
+                | $!h!
+                span.stamp hours
+                | $!m!
+                span.stamp minutes
+                | $!s!
+                span.stamp seconds
+            .buttonHolder
+                button(type='submit')
+                    a(href="#") Sign up
+            .under Build your idea | Showcase your project
 
 .about
-    h2 ECE STUDENTS’ 24 HOUR BUSINESS GAME IS BACK!
-    p 24 Hour Business Game is a sleepless business competition where we aim at helping entrepreneurial students to conceptualize their business ideas. During the challenge, over 150 students, guided by experienced executives, form teams and create their own business plans for the final pitch. All in 24 hours! Judges select the best team, which will receive a grand prize! 
-    p The event is taking place at THE Dutch entrepreneurial hub, the ECE Campus in the Rotterdam Science Tower.
-    span 11/12 MAY 2018 | 14:00
-    span MARCONISTRAAT 16
-    span ECE CAMPUS
-    button(type='submit')
-        a(href="https://ecestudents2017.typeform.com/to/t970kV") Sign Up.
+    .wrapper
+        h2 ECE STUDENTS’ 24 HOUR BUSINESS GAME IS BACK!
+        p 24 Hour Business Game is a sleepless business competition where we aim at helping entrepreneurial students to conceptualize their business ideas. During the challenge, over 150 students, guided by experienced executives, form teams and create their own business plans for the final pitch. All in 24 hours! Judges select the best team, which will receive a grand prize! 
+        p The event is taking place at THE Dutch entrepreneurial hub, the ECE Campus in the Rotterdam Science Tower.
+        div
+            span 11/12 MAY 2018 | 14:00
+            span MARCONISTRAAT 16
+            span ECE CAMPUS
+        .buttonHolder
+            button(type='submit')
+                a(href="https://ecestudents2017.typeform.com/to/t970kV") Sign Up
         
 .past
     h2 PAST YEARS' NUMBERS:

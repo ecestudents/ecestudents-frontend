@@ -21,6 +21,90 @@ app-main-menu {
     }
 }
 
+.wrapper {
+    @include wrapper;
+}
+
+.buttonHolder {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    background: cd("pages/24hbg/avi-richards-183715", "c_crop,g_north_west,w_4100/c_scale,w_1920") center center no-repeat;
+    background-position: 50% 40%;
+
+    .left {
+        width: 60%;
+    }
+    h1 {
+        margin: 0;
+        padding-top: ms(2);
+        font-weight: 300;
+        font-size: ms(2);
+        color: $ece-orange;
+    }
+    h2 {
+        margin: 0;
+        padding-bottom: ms(2);
+        font-weight: 300;
+        font-size: ms(2);
+        color: $ece-blue;
+    }
+    h3 {
+        margin: 0;
+        padding-top: ms(2.5);
+        padding-bottom: ms(1);
+        font-weight: 400;
+        font-size: ms(1.2);
+        color: white;
+    }
+
+    .count-down {
+        margin-bottom: ms(2);
+        margin-left: -20px;
+        color: white;
+        display: grid !important;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-column-gap: 20px;
+        grid-auto-flow: column;
+        align-items: center;
+        justify-items: center;
+        font-weight: 700;
+        font-size: ms(1.2);
+        font-family: Aleo;
+        .stamp {
+            font-weight: 200;
+            font-size: ms(1.2);
+            line-height: ms(1.2);
+            font-family: MuseoSans;
+        }
+    }
+
+    button {
+        @include button;
+        @include button-hollow;
+        border-color: white;
+        border-width: 2px;
+        padding: 20px 50px;
+        a {
+            color: white;
+            font-size: ms(2);
+            font-weight: 200;
+
+        }
+    }
+    .under {
+        color: white;
+        font-size: ms(1);
+        text-align: center;
+        font-weight: 100;
+        margin-top: ms(0);
+        padding-bottom: ms(5);
+    }
+}
+
 
 @include bp(medium) {
     :host /deep/ .nav {
@@ -34,6 +118,42 @@ app-main-menu {
                 color: white !important;
             }
         }
+    }
+}
+
+.about {
+    background: $color;
+    color: white;
+    padding-bottom: ms(0);
+    border-bottom: 4px solid $ece-orange;
+
+    h2 {
+        font-weight: 400;
+        font-size: ms(1.2);
+        margin: 0;
+        padding: ms(2) 0;
+        text-align: center;
+    }
+
+    p {
+        font-family: Aleo;
+        font-weight: 300;
+        font-size: ms(0.5);
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+
+    span {
+        font-weight: 400;
+        font-size: ms(1);
+        text-align: center;
+        margin: 0 ms(1);
+    }
+    
+    button {
+        @include ece-button 
     }
 }
 

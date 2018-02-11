@@ -29,7 +29,9 @@
     }
 }
 
-@mixin background_container ($url){
+
+
+@mixin background_container ($url) {
     width: 100%;
     background: cd($url, "c_scale,w_1920") center center no-repeat;
 }
