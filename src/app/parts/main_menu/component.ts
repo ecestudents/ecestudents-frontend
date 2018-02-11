@@ -1,6 +1,7 @@
 import { Component, OnInit, NgZone } from '@angular/core';
 import { DropdownMenu } from 'foundation-sites/js/foundation.dropdownMenu';
 import { Router, NavigationEnd } from '@angular/router';
+import { DataService } from '../../helpers/dataservice/dataservice'
 
 @Component({
   selector: 'app-main-menu',
@@ -8,30 +9,23 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./style.scss']
 })
 
+
 export class MainMenuComponent implements OnInit {
-  constructor(ngZone: NgZone, private router: Router) {
+  eventitems = [];
+
+  constructor(ngZone: NgZone, private router: Router, private dataservice: DataService) {
+    this.dataservice.getEvent(false).subscribe(events => {
+      Object.keys(events).forEach(key => this.eventitems.push({ label: events[key].menu_label, path: "events/" + key }))
+      console.log(events)
+    })
     this.breakpoint_switcher(window, ngZone)
   }
 
   menu = [
     { label: "Home", path: "" },
     {
-      label: "Events", path: "events", children: [
-        //{ label:"Innovation Challenge",   path:"events/ic"},
-        { label: "Unilever Business Challenge", path: "events/unilever_business_challenge" },
-        { label: "IdeaLab", path: "events/idealab" },
-        { label: "SEM", path: "events/sem" },
-        //{ label:"24 Hour Business Game",  path:"events/24hbg"},
-        //{ label:"D Cube Summit",          path:"events/dcube"}
-      ]
+      label: "Events", path: "events", children: this.eventitems
     },
-    //{ label:"Calendar",               path:"calendar"},
-    //{ label:"Committees",             path:"committees", children: [
-    //{ label:"Innovation Challenge",   path:"committees/ic"},
-    //{ label:"IdeaLab",                path:"committees/idealab"},
-    //{ label:"SEM",                    path:"committees/sem"},
-    //{ label:"24 Hour Business Game",  path:"committees/24hbg"},
-    //{ label:"D Cube Summit",          path:"committees/dcube"}]},
     { label: "Job Portal", path: "jobs" }
   ];
 
