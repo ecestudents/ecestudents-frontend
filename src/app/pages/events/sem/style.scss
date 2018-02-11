@@ -118,11 +118,12 @@ p {
         a {
             color: $ece-orange;
             font-size: inherit;
-            text-decoration:none;
+            text-decoration: none;
         }
 
-        &.full, {
-            font-size:ms(0.5);
+        &.full,
+            {
+            font-size: ms(0.5);
         }
     }
     .left {
@@ -146,7 +147,8 @@ p {
         }
     }
     overflow: auto;
-    @include wrapper @include margin_vertical h2 {
+    @include wrapper;
+    @include margin_vertical h2 {
         color: $ece-orange;
         font-weight: 400;
         margin: 0 0 ms(0) 0;
