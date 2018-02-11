@@ -19,10 +19,10 @@ nav(*ngIf="menuvisible")
     #menu([ngClass]="toggleMenu ? 'toggled' : 'untoggled'")
         ul.main
             li.dropdown(*ngFor="let item of menu")
-                a.dropbtn(routerLink="{{item.path}}", (click)="this.toggleMenu = true") {{item.label}}
+                a.dropbtn(routerLink="{{ '/'+item.path}}", (click)="this.toggleMenu = true") {{item.label}}
 
                 ul(class="child", *ngIf="item.children")
                     div.dropdown-content
                         li(*ngFor="let child of item.children")
-                            a(routerLink="{{child.path}}", (click)="this.toggleMenu = true") {{child.label}}
+                            a(routerLink="{{'/'+child.path}}", (click)="this.toggleMenu = true") {{child.label}}
 

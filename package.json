@@ -7,11 +7,11 @@
   },
   "scripts": {
     "ng": "ng",
-    "dev": "npm run pug_w & node_modules/.bin/ng serve --host $IP --port $PORT --disableHostCheck=true",
+    "dev": "npm run beautify & npm run pug_w & node_modules/.bin/ng serve --host $IP --port $PORT --disableHostCheck=true",
     "build": "npm run pug && node_modules/.bin/ng build --aot -prod",
     "pug": "node_modules/.bin/pug src/app -P",
     "pug_w": "node_modules/.bin/pug src/app -P -w",
-    "fdblock": "node_modules/.bin/foundation blocks install",
+    "beautify": "node_modules/.bin/gulp beautify",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -80,5 +80,13 @@
     "webpack-concat-plugin": "2.4.2",
     "webpack-dev-server": "~2.11.1",
     "zone.js": "^0.8.20"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jsonlint": "^1.2.1",
+    "gulp-typescript-formatter": "^0.1.3",
+    "gulp-watch": "^5.0.0",
+    "js-beautify": "^1.7.5",
+    "pretty-typescript": "^1.15.0"
   }
 }

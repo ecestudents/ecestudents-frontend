@@ -43,14 +43,14 @@ $shaping-box-height: $shaping-height - $triangle-height;
     font-size: ms($size);
     font-weight: $weight;
     @include bp(medium) {
-        font-size: ms($size + 1);  
+        font-size: ms($size + 1);
     }
 }
 
 @mixin margin_vertical {
     margin-top: ms(0);
     margin-bottom: ms(0);
-    
+
     @include bp(medium) {
         margin-top: ms(3);
         margin-bottom: ms(3);
@@ -60,7 +60,7 @@ $shaping-box-height: $shaping-height - $triangle-height;
 @mixin padding_vertical {
     padding-top: ms(0);
     padding-bottom: ms(0);
-    
+
     @include bp(medium) {
         padding-top: ms(3);
         padding-bottom: ms(3);
@@ -69,7 +69,10 @@ $shaping-box-height: $shaping-height - $triangle-height;
 
 @mixin background_container ($url){
     width: 100%;
-    background: cd($url, "c_scale,w_1920") no-repeat;
+    background-repeat: no-repeat;
+    @if $url != null {
+        background-image: cd($url, "c_scale,w_1920");
+  }
 }
 
 @mixin wrapper {
