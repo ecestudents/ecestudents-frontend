@@ -228,8 +228,7 @@ app-main-menu {
 }
 
 .agenda {
-    background: linear-gradient( rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)), cd("pages/24hbg/24hbg_background", "c_scale,w_1920") no-repeat;
+    background: cd("pages/24hbg/24hbg_background", "c_scale,w_1920") no-repeat;
     color: white;
     border-bottom: 4px solid $ece-orange;
     h2 {
