@@ -57,6 +57,18 @@ ng-container(*ngIf="event?.agenda")
                 figure.tint
                     img(src='{{ item.img | cd:"w_400,c_fill"}}')
 
+ng-container(*ngIf="event?.agenda_list")
+    .agenda
+        .left
+            h2 Agenda
+        .right
+            ul
+                li(*ngFor="let item of event.agenda_list")
+                    span.time {{ item.time }}
+                    br
+                    ng-container(*ngFor="let p of item.event") {{ p.text }}
+                        br
+
 ng-container(*ngIf="event?.faq")
     .faq
         .left
@@ -67,3 +79,10 @@ ng-container(*ngIf="event?.faq")
                 label(for="tab-{{ i }}") {{ item.ask }}
                 .tab-content
                     p {{ item.answer }}
+
+ng-container(*ngIf="event?.image_list")
+    #partners.container-fluid
+        h1 {{event.image_list.label}}
+        ul
+            li(*ngFor="let item of event.image_list.items")
+                img(src='{{ item | cd:"w_300,c_fill"}}')

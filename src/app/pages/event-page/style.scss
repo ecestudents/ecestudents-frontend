@@ -271,3 +271,28 @@ p {
         transition: all .3s linear;
     }
 }
+
+
+#partners {
+    @include wrapper;
+    margin-bottom: ms(2);
+    h1 {
+        color: $ece-orange;
+        font-family: MuseoSans;
+        font-size: ms(1);
+    }
+
+    ul {
+        @include menu-base;
+        @include menu-direction("vertical");
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, auto);
+        grid-column-gap: ms(1);
+        grid-row-gap: ms(0);
+
+        @include bp(medium) {
+            grid-template-columns: repeat(5, auto);
+        }
+    }
+}
