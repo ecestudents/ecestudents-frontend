@@ -39,50 +39,73 @@ app-main-menu {
     background-position: 50% 40%;
 
     .left {
-        width: 60%;
+        width: 100%;
+        @include bp(medium) {
+            width: 60%;
+        }
     }
     h1 {
         margin: 0;
-        padding-top: ms(2);
+        padding-top: ms(1);
         font-weight: 300;
-        font-size: ms(2);
+        font-size: ms(1.2);
         color: $ece-orange;
+        @include bp(medium) {
+            font-size: ms(2);
+        }
     }
     h2 {
         margin: 0;
-        padding-bottom: ms(2);
+        padding-bottom: ms(1);
         font-weight: 300;
-        font-size: ms(2);
+        font-size: ms(1.2);
         color: $ece-blue;
+        @include bp(medium) {
+            font-size: ms(2);
+            padding-bottom: ms(2);
+        }
     }
     h3 {
         margin: 0;
-        padding-top: ms(2.5);
+        padding-top: ms(1);
         padding-bottom: ms(1);
         font-weight: 400;
-        font-size: ms(1.2);
+        font-size: ms(1);
         color: white;
+        @include bp(medium) {
+            font-size: ms(1.2);
+            padding-top: ms(2.5);
+        }
     }
 
     .count-down {
         margin-bottom: ms(2);
-        margin-left: -20px;
         color: white;
         display: grid !important;
         grid-template-columns: repeat(4, auto);
         grid-template-rows: repeat(2, auto);
-        grid-column-gap: 20px;
+        grid-column-gap: 5px;
         grid-auto-flow: column;
         align-items: center;
         justify-items: center;
         font-weight: 700;
-        font-size: ms(1.2);
+        font-size: ms(.8);
         font-family: Aleo;
         .stamp {
             font-weight: 200;
-            font-size: ms(1.2);
-            line-height: ms(1.2);
+            font-size: ms(.8);
+            line-height: ms(.8);
             font-family: MuseoSans;
+        }
+
+        @include bp(medium) {
+            margin-left: -20px;
+            grid-column-gap: 20px;
+            font-size: ms(1.2);
+            .stamp {
+                font-size: ms(1.2);
+                line-height: ms(1.2);
+            }
         }
     }
 
@@ -105,7 +128,10 @@ app-main-menu {
         text-align: center;
         font-weight: 100;
         margin-top: ms(0);
-        padding-bottom: ms(5);
+        padding-bottom: ms(2);
+        @include bp(medium) {
+            padding-bottom: ms(5);
+        }
     }
 }
 
@@ -124,8 +150,8 @@ app-main-menu {
         }
     }
     app-main-menu {
-    display: block;
-}
+        display: block;
+    }
 }
 
 .about {
@@ -151,7 +177,7 @@ app-main-menu {
             margin-top: 0;
         }
     }
-    
+
     .info {
         text-align: center
     }
@@ -159,7 +185,15 @@ app-main-menu {
         font-weight: 400;
         font-size: ms(1);
         text-align: center;
-        margin: 0 ms(0);
+        margin: 0;
+        width: 100%;
+        display: block;
+
+        @include bp(medium) {
+            width: auto;
+            display: inline;
+            margin: 0 ms(0);
+        }
     }
 
     button {
@@ -169,9 +203,16 @@ app-main-menu {
 
 .past {
     @include wrapper display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "title title" "left right";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "title" "left" "right";
+
+    @include bp(medium) {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "title title" "left right";
+    }
+
 
     h2 {
         grid-area: title;
@@ -200,7 +241,10 @@ app-main-menu {
         }
         &.unis {
             li {
-                width: 50%;
+                width: 100%;
+                @include bp(medium) {
+                    width: 50%;
+                }
             }
         }
         &.studies {
@@ -254,7 +298,7 @@ app-main-menu {
             width: 100%;
             margin-bottom: ms(-2);
         }
-        .event{
+        .event {
             width: 70%;
             float: left;
         }
@@ -273,10 +317,16 @@ app-main-menu {
     }
     .wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "title title" "left right" "bottom bottom";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "title" "left" "right" "bottom";
         grid-column-gap: 25px;
+        
+        @include bp(medium){
+           grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "title title" "left right" "bottom bottom"; 
+        }
 
         .top {
             grid-area: title;
@@ -305,7 +355,8 @@ app-main-menu {
         color: $ece-blue;
         font-style: italic;
     }
-    .row1, .row3{
+    .row1,
+    .row3 {
         display: grid;
         grid-template-columns: repeat(4, auto);
         justify-items: center;
@@ -323,7 +374,7 @@ app-main-menu {
     padding-bottom: ms(2);
     background: $color;
     color: white;
-    .logo{
+    .logo {
         text-align: center;
         padding: ms(2);
         margin: ms(2) auto 0 auto;
@@ -339,15 +390,20 @@ app-main-menu {
         font-weight: 200;
         font-size: ms(.4);
     }
-    .speakers-grid{
+    .speakers-grid {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
         align-items: center;
-        .img{
+        @include bp(medium){
+            grid-template-columns: 1fr 2fr 1fr 2fr;
+            grid-template-rows: auto;
+        }
+        .img {
             justify-self: end;
             margin: ms(0);
         }
-        .text{
+        .text {
             width: 70%;
             justify-self: start;
             font-weight: 200;
@@ -360,56 +416,61 @@ app-main-menu {
 }
 
 .map {
-    .buttonHolder{
+    .buttonHolder {
         margin-top: -100px;
     }
     button {
         @include ece-button;
-        
+
     }
 }
 
-.contact{
+.contact {
     background: $color;
     color: white;
     border-bottom: 4px solid white;
     h2 {
         margin: 0;
     }
-    .wrapper{
+    .wrapper {
         padding: ms(2) 0;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: "touch p1 p2" "social social social";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "touch" "p1" "p2" "social";
         align-items: center;
         text-align: center;
-        
-        .person{
-            .orange{
+        @include bp(medium){
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: "touch p1 p2" "social social social";
+        }
+
+        .person {
+            .orange {
                 color: $ece-orange;
                 margin-top: ms(0);
                 display: inline-block;
             }
             a {
-             color: white;
-             font-size: ms(0);
+                color: white;
+                font-size: ms(0);
             }
         }
-        
-        .social{
+
+        .social {
             grid-area: social;
             margin: ms(1) 0;
             font-size: ms(.5);
             font-weight: 400;
-            
+
             a {
-             color: white;
-             font-size: ms(0.5);
+                color: white;
+                font-size: ms(0.5);
             }
         }
-        
-        
+
+
         .light {
             font-style: italic;
             font-weight: 200;
