@@ -72,6 +72,21 @@ $shaping-box-height: $shaping-height - $triangle-height;
     background: cd($url, "c_scale,w_1920") no-repeat;
 }
 
+@mixin ece-button {
+    @include button(false, $ece-orange, darken($ece-orange, 8), white);
+    border-radius: 10px;
+    margin: ms(0) 0;
+    display: inline-block;
+    height: 50px;
+    font-size: 20px;
+    padding: 0em 1em;
+    font-family: MuseoSans;
+    font-weight: 500;
+    a {
+        color: white;
+    }
+}
+
 @mixin wrapper {
     position: relative;
     clear: both;

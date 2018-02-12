@@ -2,6 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CountdownModule } from 'ngx-countdown';
 
 //pages
 import { AppComponent } from './app.component';
@@ -38,7 +39,7 @@ const appRoutes: Routes = [
   { path: 'events/idealab',             component: IdeaLabComponent },
   { path: 'events/sem',             component: SEMComponent },
   { path: 'events/unilever_business_challenge', component: UBCComponent },
-  //{ path: 'events/24hbg',             component: HBGComponent },
+  { path: 'events/24hbg',             component: HBGComponent },
   //{ path: 'events/dcube',             component: DCubeComponent},
   //{ path: 'events',             component: EventsComponent},
   //{ path: 'committees/ic',             component: ICCommitteeComponent },
@@ -77,6 +78,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
+    CountdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

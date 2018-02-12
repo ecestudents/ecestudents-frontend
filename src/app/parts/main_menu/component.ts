@@ -15,12 +15,12 @@ export class MainMenuComponent implements OnInit {
 
   menu = [
             { label:"Home",                   path:""},
-            { label:"Events",                 path:"events", children: [
+            { label:"Events",                 path:"/events", children: [
                   //{ label:"Innovation Challenge",   path:"events/ic"},
-                  { label: "Unilever Business Challenge", path:"events/unilever_business_challenge"},
-                  { label:"IdeaLab",                path:"events/idealab"},
-                  { label:"SEM",                    path:"events/sem"},
-                  //{ label:"24 Hour Business Game",  path:"events/24hbg"},
+                  { label: "Unilever Business Challenge", path:"/events/unilever_business_challenge"},
+                  { label:"IdeaLab",                path:"/events/idealab"},
+                  { label:"SEM",                    path:"/events/sem"},
+                  { label:"24 Hour Business Game",  path:"/events/24hbg"},
                   //{ label:"D Cube Summit",          path:"events/dcube"}
                   ]},
             //{ label:"Calendar",               path:"calendar"},
@@ -30,7 +30,7 @@ export class MainMenuComponent implements OnInit {
                   //{ label:"SEM",                    path:"committees/sem"},
                   //{ label:"24 Hour Business Game",  path:"committees/24hbg"},
                   //{ label:"D Cube Summit",          path:"committees/dcube"}]},
-            { label:"Job Portal",             path:"jobs" }
+            { label:"Job Portal",             path:"/jobs" }
             ];
 
   //menu visible
