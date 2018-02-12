@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-declare var $:any
+declare var $: any
 
 @Component({
   selector: 'app-homepage',
@@ -11,20 +11,20 @@ export class HomepageComponent implements OnInit {
   bulb = 'pages/front/Bulbicon.svg'
   ic_logo = 'pages/ic/ic_logo.png'
   partners = [
-              'AEGON',
-              'Booking.com-logo',
-              'DOPPER',
-              'EY',
-              'ING_Group_N.V._Logo',
-              'mediamarkt',
-              'oxfam',
-              'Port_of_Rotterdam_logo',
-              'Rabobank_-_Copy',
-              'redbull',
-              'thuisbezorgd',
-              'Unicef_Logo',
-              'Unilever'
-              ]
+    'AEGON',
+    'Booking.com-logo',
+    'DOPPER',
+    'EY',
+    'ING_Group_N.V._Logo',
+    'mediamarkt',
+    'oxfam',
+    'Port_of_Rotterdam_logo',
+    'Rabobank_-_Copy',
+    'redbull',
+    'thuisbezorgd',
+    'Unicef_Logo',
+    'Unilever'
+  ]
 
   ngOnInit() {
   }
