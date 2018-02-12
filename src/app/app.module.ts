@@ -24,8 +24,8 @@ import { DataService } from './helpers/dataservice/dataservice';
 
 const appRoutes: Routes = [
   { path: '', component: HomepageComponent },
+  { path: 'events/24hbg', component: HBGComponent },
   { path: 'events/:id', component: EventPageComponent },
-  { path: '24hbg', component: HBGComponent },
   { path: 'jobs', component: JobportalComponent },
   { path: '**', redirectTo: '' }
 ];

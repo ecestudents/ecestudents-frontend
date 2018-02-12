@@ -221,5 +221,8 @@
             "faq": false,
             "image_list": false
         }
+    },
+    "24hbg": {
+        "menu_label": "24 Hour Business Game"
     }
 }
