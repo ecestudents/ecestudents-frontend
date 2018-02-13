@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-24hbg',
-  templateUrl: './template.html',
+  templateUrl: './template.pug',
   styleUrls: ['./style.scss']
 })
 export class HBGComponent {

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-jobportal',
-  templateUrl: './template.html',
+  templateUrl: './template.pug',
   styleUrls: ['./style.scss']
 })
 export class JobportalComponent implements OnInit {

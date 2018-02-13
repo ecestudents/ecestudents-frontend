@@ -6,15 +6,10 @@
     "node": "6.12.0"
   },
   "scripts": {
-    "ng": "ng",
-    "dev": "npm run beautify & npm run pug_w & node_modules/.bin/ng serve --host $IP --port $PORT --disableHostCheck=true",
-    "build": "npm run pug && node_modules/.bin/ng build --aot -prod",
-    "pug": "node_modules/.bin/pug src/app -P",
-    "pug_w": "node_modules/.bin/pug src/app -P -w",
+    "dev": "npm run beautify & node_modules/.bin/ng serve --host $IP --port $PORT --disableHostCheck=true",
+    "build": "node_modules/.bin/ng build --aot -prod",
     "beautify": "node_modules/.bin/gulp beautify",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "postinstall": "node pug-rule-insert.js"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +28,7 @@
     "@types/jasmine": "~2.8.4",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~9.3.0",
+    "apply-loader": "2.0.0",
     "autoprefixer": "^7.2.5",
     "breakpoint-sass": "^2.7.1",
     "circular-dependency-plugin": "^4.4.0",
@@ -58,14 +54,12 @@
     "l": "^0.6.0",
     "less-loader": "^4.0.5",
     "modularscale-sass": "3.0.4",
-    "ngx-countdown": "^2.0.4",
+    "ngx-countdown": "2.0.4",
     "nvmrc-check": "^1.0.2",
     "postcss-loader": "^2.0.10",
     "postcss-url": "^7.3.0",
     "protractor": "~5.2.2",
-    "pug-cli": "^1.0.0-alpha6",
-    "pug-ng-html-loader": "^1.0.10",
-    "pug-plugin-ng": "0.0.2",
+    "pug-loader": "2.3.0",
     "raw-loader": "^0.5.1",
     "rxjs": "^5.5.6",
     "sass-loader": "^6.0.6",

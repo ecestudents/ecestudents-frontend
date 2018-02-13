@@ -5,7 +5,7 @@ import { DataService } from '../../helpers/dataservice/dataservice'
 
 @Component({
   selector: 'app-main-menu',
-  templateUrl: './template.html',
+  templateUrl: './template.pug',
   styleUrls: ['./style.scss']
 })
 
