@@ -3,8 +3,7 @@ app-main-menu
 .container
     .wrapper
         .left
-            h1 Need another longer tagline.
-            h2 Business never sleeps.
+            h1 Business never sleeps.
             h3 THE 24 HOUR BUSINESS GAME START IN:
             countdown( [config]="{stopTime: 1526040000000}")
                 | $!d!
@@ -15,13 +14,14 @@ app-main-menu
                 span.stamp minutes
                 | $!s!
                 span.stamp seconds
-            .buttonHolder
-                button(type='submit')
-                    a(href="#") Sign up
+            // .buttonHolder
+            //     button(type='submit')
+            //         a(href="#") Sign up
             .under Build your idea | Showcase your project
 
 .about
     .wrapper
+        img.logo(src='{{ "pages/24hbg/logo" | cd:"w_600,c_fill"}}')
         h2 ECE STUDENTS’ 24 HOUR BUSINESS GAME IS BACK!
         p 24 Hour Business Game is a sleepless business competition where we aim at helping entrepreneurial students to conceptualize their business ideas. During the challenge, over 150 students, guided by experienced executives, form teams and create their own business plans for the final pitch. All in 24 hours! Judges select the best team, which will receive a grand prize! 
         p The event is taking place at THE Dutch entrepreneurial hub, the ECE Campus in the Rotterdam Science Tower.
@@ -29,9 +29,9 @@ app-main-menu
             span 11/12 MAY 2018 | 14:00
             span MARCONISTRAAT 16
             span ECE CAMPUS
-        .buttonHolder
-            button(type='submit')
-                a(href="https://ecestudents2017.typeform.com/to/t970kV") Sign Up
+        // .buttonHolder
+        //     button(type='submit')
+        //         a(href="https://ecestudents2017.typeform.com/to/t970kV") Sign Up
         
 .past
     h2 PAST YEARS' NUMBERS:
@@ -57,10 +57,14 @@ app-main-menu
             li TU Delft
         h3 With a wide range of backgrounds:
         ul.studies
-            li Engineering 
-            li Business 
-            li Economics 
+            li Engineering
+            li.big ·
+            li Business
+            li.big ·
+            li Economics
+            li.big ·
             li Entrepreneurship 
+            li.big ·
             li Innovation
     .right
         img(src='{{ "pages/24hbg/past_image" | cd:"w_300,c_fill"}}')
@@ -68,7 +72,7 @@ app-main-menu
 .agenda
     .wrapper
         .top
-            h2 SCHEDULE
+            h2 HAVE A LOOK AT LAST YEAR'S SCHEDULE
             div.orange
                 span.bold @ECE Campus
                 br
@@ -110,89 +114,89 @@ app-main-menu
                         |Last Man Standing Networking
                     span.time 13:00 - 14:00
                    
-        .buttonHolder
-            button(type='submit')
-                a(href="#") Sign up
+        // .buttonHolder
+        //     button(type='submit')
+        //         a(href="#") Sign up
 
 .sponsors
     h2 PREVIOUS SPONSORS
     .row1
-        img(src='{{ "pages/24hbg/Asset_20" | cd:"w_250,c_fill"}}')
-        img(src='{{ "pages/24hbg/Asset_3" | cd:"w_150,c_fill"}}')
+        img(src='{{ "pages/24hbg/Asset_20" | cd:"w_500,c_fill"}}' width='250')
+        img(src='{{ "pages/24hbg/tonys" | cd:"w_300,c_fill"}}' width='150')
         img(src='{{ "pages/24hbg/Asset_16" | cd:"w_120,c_fill"}}')
-        img(src='{{ "pages/24hbg/Asset_14" | cd:"w_200,c_fill"}}')
+        img(src='{{ "pages/24hbg/Asset_14" | cd:"w_200,c_fill"}}' width='200')
     .row2
-        img(src='{{ "pages/24hbg/Asset_6" | cd:"w_250,c_fill"}}')
+        img(src='{{ "pages/24hbg/Asset_6" | cd:"w_250,c_fill"}}' width='250')
         img(src='{{ "pages/24hbg/Asset_9" | cd:"w_150,c_fill"}}')
-        img(src='{{ "pages/24hbg/Asset_7" | cd:"w_150,c_fill"}}')
+        img(src='{{ "pages/24hbg/eneco" | cd:"w_300,c_fill"}}' width='150')
         img(src='{{ "pages/24hbg/Asset_5" | cd:"w_150,c_fill"}}')
         img(src='{{ "pages/24hbg/Asset_15" | cd:"c_crop,g_north,h_223,w_307/w_200,c_fill"}}')
     .row3
         img(src='{{ "pages/24hbg/Asset_18" | cd:"w_250,c_fill"}}')
         img(src='{{ "pages/24hbg/Asset_12" | cd:"w_150,c_fill"}}')
-        img(src='{{ "pages/24hbg/Asset_13" | cd:"w_150,c_fill"}}')
+        img(src='{{ "pages/24hbg/queal" | cd:"w_150,c_fill"}}')
         img(src='{{ "pages/24hbg/Asset_11" | cd:"w_200,c_fill"}}')
     
 .speakers
     .wrapper
-        img.logo(src='{{ "pages/24hbg/24HBG_logo" | cd:"w_300,c_fill"}}')
+        img.logo(src='{{ "pages/24hbg/logo" | cd:"w_600,c_fill"}}')
         p 
             | The 2018 edition of the 
             span.bold 24 hour business game 
             | will take place in the Rotterdam Science Tower, heart of the Rotterdam's entrepreneurial spirit , on 
-            span.bol May 12th and 13th.
+            span.bold May 11th and 12th.
         
-        h2 SPEAKERS
-        .speakers-grid
-            .img
-                img(src='{{ "pages/24hbg/speaker" | cd:"w_100,c_fill"}}')
-            .text
-                | CHRIS
-                br
-                | OUT
-                br
-                span Managing Partner & Lead Growth Hacker
-                br
-                span RockBoost
-            .img
-                img(src='{{ "pages/24hbg/speaker" | cd:"w_100,c_fill"}}')
-            .text
-                | CHRIS
-                br
-                | OUT
-                br
-                span Managing Partner & Lead Growth Hacker
-                br
-                span RockBoost
-        h2 JUDGES
-        .speakers-grid
-            .img
-                img(src='{{ "pages/24hbg/speaker" | cd:"w_100,c_fill"}}')
-            .text
-                | CHRIS
-                br
-                | OUT
-                br
-                span Managing Partner & Lead Growth Hacker
-                br
-                span RockBoost
-            .img
-                img(src='{{ "pages/24hbg/speaker" | cd:"w_100,c_fill"}}')
-            .text
-                | CHRIS
-                br
-                | OUT
-                br
-                span Managing Partner & Lead Growth Hacker
-                br
-                span RockBoost
+        // h2 SPEAKERS
+        // .speakers-grid
+        //     .img
+        //         img(src='{{ "pages/24hbg/speaker" | cd:"w_100,c_fill"}}')
+        //     .text
+        //         | CHRIS
+        //         br
+        //         | OUT
+        //         br
+        //         span Managing Partner & Lead Growth Hacker
+        //         br
+        //         span RockBoost
+        //     .img
+        //         img(src='{{ "pages/24hbg/speaker" | cd:"w_100,c_fill"}}')
+        //     .text
+        //         | CHRIS
+        //         br
+        //         | OUT
+        //         br
+        //         span Managing Partner & Lead Growth Hacker
+        //         br
+        //         span RockBoost
+        // h2 JUDGES
+        // .speakers-grid
+        //     .img
+        //         img(src='{{ "pages/24hbg/speaker" | cd:"w_100,c_fill"}}')
+        //     .text
+        //         | CHRIS
+        //         br
+        //         | OUT
+        //         br
+        //         span Managing Partner & Lead Growth Hacker
+        //         br
+        //         span RockBoost
+        //     .img
+        //         img(src='{{ "pages/24hbg/speaker" | cd:"w_100,c_fill"}}')
+        //     .text
+        //         | CHRIS
+        //         br
+        //         | OUT
+        //         br
+        //         span Managing Partner & Lead Growth Hacker
+        //         br
+        //         span RockBoost
 //.video
-
+    
 .map
     iframe( src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9844.7878918995!2d4.429621!3d51.9121173!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60e0b212036d407a!2sErasmus+Centre+for+Entrepreneurship!5e0!3m2!1snl!2snl!4v1518377585049" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen )
-    .buttonHolder
-        button(type='submit')
-            a(href="#") SIGN UP
+    // .buttonHolder
+    //     button(type='submit')
+    //         a(href="#") SIGN UP
 
 .contact
     .wrapper

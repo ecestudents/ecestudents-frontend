@@ -48,8 +48,8 @@ app-main-menu {
         margin: 0;
         padding-top: ms(1);
         font-weight: 300;
-        font-size: ms(1.2);
-        color: $ece-orange;
+        font-size: ms(1.6);
+        color: white;
         @include bp(medium) {
             font-size: ms(2);
         }
@@ -115,11 +115,19 @@ app-main-menu {
         border-color: white;
         border-width: 2px;
         padding: 20px 50px;
+        webkit-transition: all 0.25s ease-out, color 0.25s ease-out;
+        transition: all 0.25s ease-out, color 0.25s ease-out;
         a {
             color: white;
             font-size: ms(2);
             font-weight: 200;
 
+        }
+        &:hover {
+            background-color: white;
+            a {
+                color: $ece-black;
+            }
         }
     }
     .under {
@@ -159,12 +167,20 @@ app-main-menu {
     color: white;
     padding-bottom: ms(0);
     border-bottom: 4px solid $ece-orange;
-
+    
+    .logo {
+        text-align: center;
+        padding: ms(1);
+        margin: ms(1) auto 0 auto;
+        display: block;
+        max-width: 400px;
+    }
+    
     h2 {
         font-weight: 400;
         font-size: ms(1.2);
         margin: 0;
-        padding: ms(2) 0;
+        padding: 0 0 ms(1) 0;
         text-align: center;
     }
 
@@ -249,7 +265,12 @@ app-main-menu {
         }
         &.studies {
             li {
-                margin-right: ms(0);
+                margin-right: ms(-1);
+                
+                &.big {
+                    font-size: ms(1);
+                    line-height: ms(1);
+                }
             }
         }
     }
@@ -379,6 +400,7 @@ app-main-menu {
         padding: ms(2);
         margin: ms(2) auto 0 auto;
         display: block;
+        max-width: 400px;
     }
     h2 {
         font-weight: 400;
@@ -402,6 +424,7 @@ app-main-menu {
         .img {
             justify-self: end;
             margin: ms(0);
+            
         }
         .text {
             width: 70%;
