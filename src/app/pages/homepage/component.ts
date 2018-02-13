@@ -3,7 +3,7 @@ declare var $: any
 
 @Component({
   selector: 'app-homepage',
-  templateUrl: './template.html',
+  templateUrl: './template.pug',
   styleUrls: ['./style.scss']
 })
 export class HomepageComponent implements OnInit {

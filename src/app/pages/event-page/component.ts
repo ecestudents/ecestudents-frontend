@@ -5,7 +5,7 @@ import { Router, ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'app-event-page',
-  templateUrl: './template.html',
+  templateUrl: './template.pug',
   styleUrls: ['./style.scss']
 })
 export class EventPageComponent {
