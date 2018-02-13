@@ -167,12 +167,20 @@ app-main-menu {
     color: white;
     padding-bottom: ms(0);
     border-bottom: 4px solid $ece-orange;
-
+    
+    .logo {
+        text-align: center;
+        padding: ms(1);
+        margin: ms(1) auto 0 auto;
+        display: block;
+        max-width: 400px;
+    }
+    
     h2 {
         font-weight: 400;
         font-size: ms(1.2);
         margin: 0;
-        padding: ms(2) 0;
+        padding: 0 0 ms(1) 0;
         text-align: center;
     }
 

@@ -2,7 +2,7 @@
 app-main-menu
 .container
     .wrapper
-        .lefts
+        .left
             h1 Business never sleeps.
             h3 THE 24 HOUR BUSINESS GAME START IN:
             countdown( [config]="{stopTime: 1526040000000}")
@@ -21,6 +21,7 @@ app-main-menu
 
 .about
     .wrapper
+        img.logo(src='{{ "pages/24hbg/logo" | cd:"w_600,c_fill"}}')
         h2 ECE STUDENTS’ 24 HOUR BUSINESS GAME IS BACK!
         p 24 Hour Business Game is a sleepless business competition where we aim at helping entrepreneurial students to conceptualize their business ideas. During the challenge, over 150 students, guided by experienced executives, form teams and create their own business plans for the final pitch. All in 24 hours! Judges select the best team, which will receive a grand prize! 
         p The event is taking place at THE Dutch entrepreneurial hub, the ECE Campus in the Rotterdam Science Tower.
@@ -120,14 +121,14 @@ app-main-menu
 .sponsors
     h2 PREVIOUS SPONSORS
     .row1
-        img(src='{{ "pages/24hbg/Asset_20" | cd:"w_250,c_fill"}}')
-        img(src='{{ "pages/24hbg/tonys" | cd:"w_150,c_fill"}}')
+        img(src='{{ "pages/24hbg/Asset_20" | cd:"w_500,c_fill"}}' width='250')
+        img(src='{{ "pages/24hbg/tonys" | cd:"w_300,c_fill"}}' width='150')
         img(src='{{ "pages/24hbg/Asset_16" | cd:"w_120,c_fill"}}')
-        img(src='{{ "pages/24hbg/Asset_14" | cd:"w_200,c_fill"}}')
+        img(src='{{ "pages/24hbg/Asset_14" | cd:"w_200,c_fill"}}' width='200')
     .row2
-        img(src='{{ "pages/24hbg/Asset_6" | cd:"w_250,c_fill"}}')
+        img(src='{{ "pages/24hbg/Asset_6" | cd:"w_250,c_fill"}}' width='250')
         img(src='{{ "pages/24hbg/Asset_9" | cd:"w_150,c_fill"}}')
-        img(src='{{ "pages/24hbg/eneco" | cd:"w_150,c_fill"}}')
+        img(src='{{ "pages/24hbg/eneco" | cd:"w_300,c_fill"}}' width='150')
         img(src='{{ "pages/24hbg/Asset_5" | cd:"w_150,c_fill"}}')
         img(src='{{ "pages/24hbg/Asset_15" | cd:"c_crop,g_north,h_223,w_307/w_200,c_fill"}}')
     .row3
@@ -190,7 +191,7 @@ app-main-menu
         //         br
         //         span RockBoost
 //.video
-
+    
 .map
     iframe( src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9844.7878918995!2d4.429621!3d51.9121173!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60e0b212036d407a!2sErasmus+Centre+for+Entrepreneurship!5e0!3m2!1snl!2snl!4v1518377585049" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen )
     // .buttonHolder
