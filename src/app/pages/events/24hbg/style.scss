@@ -392,6 +392,7 @@ app-main-menu {
         padding: ms(2);
         margin: ms(2) auto 0 auto;
         display: block;
+        max-width: 400px;
     }
     h2 {
         font-weight: 400;
@@ -415,6 +416,7 @@ app-main-menu {
         .img {
             justify-self: end;
             margin: ms(0);
+            
         }
         .text {
             width: 70%;
