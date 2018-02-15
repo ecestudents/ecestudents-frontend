@@ -171,7 +171,7 @@ app-main-menu {
     .logo {
         text-align: center;
         padding: ms(1);
-        margin: ms(1) auto 0 auto;
+        margin: 0 auto 0 auto;
         display: block;
         max-width: 400px;
     }
@@ -436,6 +436,10 @@ app-main-menu {
             }
         }
     }
+}
+
+.video {
+    background-color: black;
 }
 
 .map {
