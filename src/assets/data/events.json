@@ -254,13 +254,28 @@
                 "bottom_taglines": []
             },
             "signup": {
-                "color": "#049548",
+                "color": "#932158",
                 "tagline": "Sign up for here, LIMITED SPOTS!",
                 "link": "https://ecestudents2018.typeform.com/to/mOAO4P"
             },
             "about_2": false,
             "agenda": false,
-            "agenda_list": false,
+            "agenda_list": [{
+                    "time": "13:00 - 13:30",
+                    "event": [{ "text": "Walk in" }]
+                    },
+                    {
+                    "time": "13:30 - 14:00",
+                    "event": [{ "text": "Introduction & Matching" }]
+                    },
+                    {
+                    "time": "14:00 - 17:00",
+                    "event": [{ "text": "Getting your hands dirty" }]
+                    },
+                    {
+                    "time": "17:00 - 18:00",
+                    "event": [{ "text": " Drinks and burgers" }]
+                    }],
             "faq": false,
             "image_list": false
         }
