@@ -300,3 +300,28 @@ p {
         }
     }
 }
+
+.text_grid {
+    @include wrapper;
+    margin-bottom: ms(2);
+    h1 {
+        color: $ece-orange;
+        font-family: MuseoSans;
+        font-size: ms(1);
+    }
+
+    h2 {
+        color: $ece-orange;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-column-gap: ms(1);
+        //grid-row-gap: ms(0);
+
+        @include bp(large) {
+            grid-template-columns: repeat(2, auto);
+        }
+    }
+}

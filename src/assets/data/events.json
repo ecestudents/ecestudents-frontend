@@ -109,70 +109,6 @@
             "image_list": false
         }
     },
-    "unilever_business_challenge": {
-        "menu_label": "Unilever Business Challenge",
-        "eventspage": {
-            "img": false,
-            "text": false
-        },
-        "page": {
-            "header": {
-                "logo": false,
-                "background": "/pages/unilever/BackgroundUBC",
-                "taglines": [
-                    { "large": true, "text": "UNILEVER BUSINESS CHALLENGE" },
-                    { "large": false, "text": "Step Up. Make an Impact." }
-                ],
-                "subimg": "pages/unilever/top_logo",
-                "date": "February 9th",
-                "bottom_span": "Limited spots available."
-            },
-            "about_1": {
-                "topimage": "pages/unilever/UnileverxECES_1",
-                "title": "Bring your creativity & intellect to the real world.",
-                "img": "pages/unilever/desc_logo",
-                "paragraphs": [
-                    "ECE Students is here to offer you a fantastic opportunity - the chance to step up and apply your innovative skills to make an impact at Unilever, one of the world's premier global conglomerates. Work with your assigned team to formulate an ingenious solution to the presented business challenge. The winning team’s idea might be implemented by Unilever executives!",
-                    "The event will include: <ul><li>Informative presentations by Unilever;</li><li>Lunch with Unilever executives;</li><li>Business case solving and pitching sessions;</li><li>Networking drinks and possible job opportunities at Unilever</li></ul>",
-                    "Don’t miss this opportunity to establish yourself as a force to be reckoned with in one of the most sought after companies by employees. Good luck!"
-                ],
-                "bottom_taglines": [
-                    "Kick-off: February 9th | 09:00 - 17:00",
-                    "Unilever Headquarters Rotterdam, Weena 455, 3013 AL"
-                ]
-            },
-            "signup": {
-                "color": "#171845",
-                "tagline": "Deadline: 3rd of February - 23:59",
-                "link": "https://ecestudents2017.typeform.com/to/bPmDa9"
-            },
-            "agenda": false,
-            "agenda_list": [{
-                    "time": "09:00",
-                    "event": [
-                        { "text": "Reporting" },
-                        { "text": "Inspiring Presentations" },
-                        { "text": "Group Formation & Case Introduction" }
-                    ]
-                },
-                {
-                    "time": "13:00",
-                    "event": [
-                        { "text": "Lunch" },
-                        { "text": "Case Solving & Pitching" },
-                        { "text": "Results Announcement" }
-                    ]
-                },
-                { "time": "17:30", "event": [{ "text": "Networking Drinks at Weena Bar" }] }
-            ],
-            "about_2": false,
-            "faq": false,
-            "image_list": {
-                "label": "Unilever Case Brands",
-                "items": ["pages/unilever/amora", "pages/unilever/calve", "pages/unilever/hellmans", "pages/unilever/knorr", "pages/unilever/maille"]
-            }
-        }
-    },
     "start_summit": {
         "menu_label": "START Summit 2018",
         "eventspage": {
@@ -226,7 +162,7 @@
         "menu_label": "24 Hour Business Game"
     },
     "portxl": {
-        "menu_label": "PortXL",
+        "menu_label": "PortXL Business Challenge",
         "eventspage": {
             "img": false,
             "text": false
@@ -277,7 +213,23 @@
                     "event": [{ "text": " Drinks and burgers" }]
                     }],
             "faq": false,
-            "image_list": false
+            "image_list": false,
+            "text_grid":{"title":"Participating startups",  "list": [
+                {"title":"BDBGreenpower", "content":"A Vertical Axis Wind Turbine 60 meter high, tulip shaped airfoils, with a low noise level (no gearbox, no wings passing the tower) and small risk contour (expected 100 meter). Maintenance costs are low, allowing us to compete easily with solar power, thus offering a nice sustainable energy solution for industry, infrastructure, agriculture and private energy cooperations."},
+                {"title":"Bunker Connect", "content":"Bunker Connect has an in-house developed web application that allows the bunker buyer to start a bidding process among physical suppliers in any port around the world at any time of the day. The buyer receives all quotes in realtime while suppliers see competing prices. Bunker Connect manages the entire process from request to delivery and provides analytical insights about procurement performance. We charge all suppliers equally per delivered ton. In the near future, Bunker Connect will add additional services such as real-time market prices based on actual orders and artificial intelligence modules to make strategic procurement decisions."},
+                {"title":"CargoLedger", "content":"The shipper can create a trusted trade lane in our web-app by entering the required data of the lading, the players in the trade lane and the conditions for the transport of the goods (delivery times, h/w/l/, value, weight, temperature, humidity, etc.) in the blockchain. Relevant documents (bill of lading, certificates of origin, invoices etc.) are automatically generated with the entered data. A mobile app can be used by all players in the trade lane to check the state and accordingly accept or decline the lading. If a user accepts the lading, the previous player in the supply chain is paid."},
+                {"title":"DockTech", "content":"DockTech is a water depth analysis platform that gives the port authorities an all-in-one, user-friendly system that enables the port to plan the maintenance activities at the lowest possible costs. Our solution is based on connecting every echo-sounder carrying service vessel to a cloud-based service, collecting and combining depth data, and processing with image processing and AI algorithms. The processed data, as well as all the required data, is displayed to the dredging manager in order to reduce costs and maintain predictive maintenance methodologies."},
+                {"title":"Econcrete", "content":"ECOncrete®’s unique biological traits encourage biogenic buildup. They also provide substantial structural and economic advantages in terms of increased stability and longevity, as well as a reduction in maintenance costs. The Company’s products are adapted to specific environments with their typical fauna and flora. ECOncrete® maintains ongoing research and development activities for expanding the company’s product range, addressing needs of new geographical locations, and optimizing product structural and biological performance."},
+                {"title":"Explect", "content":"With our forwarding platform we make this an easy process for SME’s. In three steps they are prepared for importing or exporting, including costs. The process is fulfilled in just one Click. The next step is to connect the SME’s ERP systems, E-commerce systems or other SME’s to do the same. This gives every SME’s the chance to be a global player."},
+                {"title":"Ionada Incorporated", "content":"Ionada manufactures membrane scrubbers that allow power plants and ship owners to continue burning low cost heavy fuel oils and comply to emission regulations. Ionada is the first to market with membrane scrubbers, offering ship owners zero discharge and 30% higher efficiency than competitive seawater scrubbers. Ionada has in production sulfur dioxide (SOx) scrubbers and has developed a nitrogen dioxide (NOx) selective catalytic reduction (SCR) system as well as Carbon Dioxide (CO2) carbon capture and sequestering option for ship owners."},
+                {"title":"MapGage", "content":"MapGage has a cloud based solution that helps companies collect and manage geospatial data, visualize collected data on top of satellite or drone maps and take actions with it’s unique location based mobile process flow builder. MapGage increases the practical & operational value of drone acquired data. MapGage comes with powerful status and scheduling options, making it adaptable to any use case and workflow. Collect records in the field, schedule work plans, dispatch team members to a specific case or location and receive near-instant feedback through our mobile solution."},
+                {"title":"Marine Bubble Flow BV", "content":"Marine Bubble Flow retrofits commercial fleets with devices that emit controlled streams of micro-bubbles, to provide ‘air lubrication’ and reduce viscous drag by up to 30%. The devices use fluidics technology to create low-cost bubble arrays of minimal thickness, with no moving parts. Next steps to be taken: designing the arrays to generate the required bubble sizes and flows, translating that design into a robust, cost-effective and retrofit-table product and designing the right business model for product deployment, involving fleet owners, maritime service providers and Marine Bubble Flow BV."},
+                {"title":"Ondavia", "content":"The OndaVia analysis system consists of a small transportable instrument and a disposable chemical-specific cartridge. These two components, backed by twelve issued and seven pending patents, improves analysis time from days to minutes, while providing laboratory-grade detection capabilities in the field. This approach addresses our customer need for rapid, on-site chemical testing at the necessary accuracy and detection limits. Example applications include measuring tramp amines in refinery overhead water; identifying the selenium content from waste water at coal-fired power plants and oil refineries or monitoring hydrogen sulfide scavengers and their residuals during oil and gas production. Rapid, on-site testing is a powerful need for our customers, who have been uniformly impressed at the demonstrated power and simplicity of our system."},
+                {"title":"Shipskart Marine Private ltd.", "content":"ShipsKart is the first ever B2B e-marketplace for marine stores. A platform that streamlines the way marine stores are ordered, approved and received on board with the help of technology, ensuring transparency for everyone. We have created a Web portal and an Android based application which allows the captain of the ship to create an order (requisition) by choosing from the 22,000 listed products. The shipping company approves each order and edits the order if required and chooses a vendor, based on ratings/reviews and quotations. Each vendor is assigned a code and the name is kept anonymous so as to keep the process completely transparent."},
+                {"title":"The Big Smile", "content":"We have developed a machine that solves all current problems when releasing bulk carriers. We have built a prototype and successfully tested it in the practical environment. In accordance with the legislation in accordance with IMO - Marpol-BLU code - and IMSBC we also rewrote from separate procedure and adapted to the so-called Tuit trimming. Since there is no physical contact with the ship’s walls, and the ship, no damage is caused to the construction of the ship, the coating construction is not damaged. This results in more safety for ships and its passengers. With our machine and unloading procedure, we clean vessels in accordance with the current regulations and the current Ballast Water Management. This results in less sea pollution, increased safety for dock workers and less damage to the harbor receiving installation with our discharge procedure."},
+                {"title":"Threatspan", "content":"Our solution provides continuous cybersecurity in the form of a maritime cyber resilience platform, pentesting as a service, a rugged IDPS device, and forthcoming blockchain-based supply chain management solution."},
+                {"title":"WhaleWashing", "content":"WhaleWashing is a new and innovative technology designed to clean the hull of medium and large ships. The two most outstanding advantages are the speed of the cleaning, that can be performed in just two hours, and the low cleaning costs per linear meter. The net balance is a huge savings in the fuel costs and a considerable reduction of the carbon dioxide emissions. Scheduling quick pit-stops, will make possible to run the fleet at maximum efficiency, while avoiding to wait for RINA inspections to proceed with expensive maintenance and the rebuilding of protective and antifouling paints."}
+                ]}
         }
     }
 }

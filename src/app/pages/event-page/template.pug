@@ -98,4 +98,13 @@ ng-container(*ngIf="event?.image_list")
         ul
             li(*ngFor="let item of event.image_list.items")
                 img(src='{{ item | cd:"w_300,c_fill"}}')
+
+ng-container(*ngIf="event?.text_grid")
+    .text_grid
+        h1 {{event.text_grid.title}}
+        .list
+            .item(*ngFor="let item of event.text_grid.list")
+                h2 {{ item.title }}
+                .content {{ item.content }}
+
 app-footer
