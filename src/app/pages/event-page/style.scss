@@ -17,7 +17,11 @@ p {
 }
 
 .about {
-    @include event-about
+    @include event-about;
+    padding-top:ms(1);
+    .right p:first-child {
+    margin-top:0;
+}
 }
 
 .signup {

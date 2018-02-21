@@ -224,5 +224,45 @@
     },
     "24hbg": {
         "menu_label": "24 Hour Business Game"
+    },
+    "portxl": {
+        "menu_label": "PortXL",
+        "eventspage": {
+            "img": false,
+            "text": false
+        },
+        "page": {
+            "header": {
+                "logo": "pages/portxl/portxl",
+                "background": "/pages/portxl/background",
+                "taglines": [
+                    { "large": true, "text": "PortXL Business Challenge." }
+                ],
+                "subimg": false,
+                "date": "March 22, 2018",
+                "bottom_span": "13:00 - 18:00, including dinner & drinks"
+            },
+            "about_1": {
+                "topimage": false,
+                "title": false,
+                "img": "pages/portxl/portxl",
+                "paragraphs": [
+                    "The PortXL Business Challenge by ECE Students is an opportunity for students who are enthusiastic about entrepreneurship, to develop their skills in startup management by performing real market research jointly with our guest startup companies.",
+                    "Together with PortXL – (the first port accelerator program for early stage tech startups) we – ECE Students, host an interactive workshop, during which students team up into groups of 2 to 3 and collaborate with the startups, chosen from 50 enterprises from all over the world by experienced mentors, investors and industry experts throughout the PortXL tournament.",
+                    "Apart from gaining knowledge in market research, the participants of the event can seize the chance to: <ul> <li>Get internship and job opportunities</li> <li>Get relevant hands-on experience on real market-product fit cases.</li> <li>Help solve environmental, health & security issues</li> <li>Get a certificate of participation</li> </ul>"
+                ],
+                "bottom_taglines": []
+            },
+            "signup": {
+                "color": "#049548",
+                "tagline": "Sign up for here, LIMITED SPOTS!",
+                "link": "https://ecestudents2018.typeform.com/to/mOAO4P"
+            },
+            "about_2": false,
+            "agenda": false,
+            "agenda_list": false,
+            "faq": false,
+            "image_list": false
+        }
     }
 }

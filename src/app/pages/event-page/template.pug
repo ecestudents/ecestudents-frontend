@@ -14,7 +14,7 @@ ng-container(*ngIf="event?.header")
 ng-container(*ngIf="event?.about_1")
     .about
         img.topimage(*ngIf="event.about_1?.topimage" src='{{ event.about_1.topimage | cd:"c_fill"}}')
-        h2 {{ event.about_1.title }}
+        h2(*ngIf="event.about_1?.title") {{ event.about_1?.title }}
         div.left
             img(src='{{ event.about_1.img | cd:"w_300,c_fill"}}')
         div.right
