@@ -14,3 +14,6 @@
                 li(*ngFor="let item of data.preferred_skills") {{item}}
         .apply
             a(target="_blank" href="https://ecestudents2018.typeform.com/to/ruK1fY") Apply for {{data.name}}
+
+        .two
+            span(*ngIf="data.two") We have two open spots for this position!
