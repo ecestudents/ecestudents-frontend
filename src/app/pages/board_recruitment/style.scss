@@ -1,0 +1,64 @@
+@import 'mixins';
+
+app-main-menu {
+    display: none;
+    background: $ece-orange;
+}
+
+:host /deep/ {
+    nav {
+        margin-bottom: 0 !important;
+    }
+    footer {
+        background-color: $ece-orange !important;
+    }
+}
+
+@include bp(medium) {
+    :host /deep/ .nav {
+        height: $nav-height;
+        background: transparentize($ic-blue, .1);
+
+        li {
+            a {
+                line-height: $nav-height !important;
+                padding: 0 ms(1)!important;
+                color: white !important;
+            }
+        }
+    }
+    app-main-menu {
+        display: block;
+    }
+}
+
+.wrapper {
+    @include wrapper;
+
+    .tagline {
+        color: $ece-orange;
+        font-size: ms(3);
+        text-align: center;
+    }
+
+    .intro {
+       // text-align: center;
+    }
+
+    .cta {
+        .orange{
+            color: $ece-orange;
+        }
+    }
+    .lastyear {
+        h2 {
+            color: $ece-blue;
+        }
+        img {
+            width: 100%;
+        }
+        margin-bottom: ms(2);
+    }
+
+
+}
