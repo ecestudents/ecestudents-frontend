@@ -1,8 +1,11 @@
 .wrapper
-    h1 {{data.name}}: <i> {{data.tagline}}</i>
+    .head
+        h1 {{data.name}}: <i> {{data.tagline}}</i>
+        button(mat-button [mat-dialog-close]="true")
 
     .content
         p(*ngFor="let item of data.text") {{item}}
-        span Required skills:
+        .skills Required skills:
         ul
             li(*ngFor="let item of data.skills") {{item}}
+        .apply APPLY FOR <a target="_blank" href="https://ecestudents2018.typeform.com/to/ruK1fY"> {{data.name}} </a>
