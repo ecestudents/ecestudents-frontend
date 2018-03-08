@@ -12,4 +12,5 @@
             .skills Required skills:
             ul
                 li(*ngFor="let item of data.preferred_skills") {{item}}
-        .apply APPLY FOR <a target="_blank" href="https://ecestudents2018.typeform.com/to/ruK1fY"> {{data.name}} </a>
+        .apply
+            a(target="_blank" href="https://ecestudents2018.typeform.com/to/ruK1fY") Apply for {{data.name}}

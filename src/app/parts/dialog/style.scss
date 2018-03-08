@@ -1,21 +1,28 @@
 @import 'mixins';
 
-.wrapper {
-    max-width: ms(8);
+:host /deep/ nav {
+    .cdk-overlay-pane {
+        //max-width: 50vw;
+        //display: none;
+        max-height: 30%;
+    }
+}
 
+.wrapper {
+    max-width: 50vw; //max-height: 75% ;//ms(7);
+    max-height: 85vh;
     h1 {
-        color:$ece-orange;
-        float:left;
+        color: $ece-orange;
+        float: left;
         max-width: 90%;
     }
 
-    button{
-        @include fa("times", ms(1), $ece-orange)
-        float:right;
+    button {
+        @include fa("times", ms(1), $ece-orange) float: right;
     }
 
     .content {
-        clear:both;
+        clear: both;
     }
 
     .skills {
@@ -25,7 +32,18 @@
 
     .apply {
         text-align: center;
-        font-size: ms(1);
-        text-transform:uppercase;
+        margin-top: ms(1);
+        a {
+            text-align: center;
+            font-size: ms(1);
+            text-transform: uppercase;
+            background-color: $ece-blue;
+            padding: ms(0);
+            color: white;
+            &:hover {
+                box-shadow: 0 0 10px #515151;
+            }
+        }
+
     }
 }
