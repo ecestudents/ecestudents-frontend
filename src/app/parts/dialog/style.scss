@@ -14,7 +14,7 @@
     h1 {
         color: $ece-orange;
         float: left;
-        max-width: 90%;
+        //clear:both;
     }
 
     button {
@@ -37,11 +37,11 @@
     .apply {
         text-align: center;
         margin: ms(1) 0;
+        background-color: $ece-blue;
         a {
             text-align: center;
             font-size: ms(1);
             text-transform: uppercase;
-            background-color: $ece-blue;
             padding: ms(0);
             color: white;
             &:hover {

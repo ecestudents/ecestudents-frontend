@@ -1,7 +1,7 @@
 .wrapper
     .head
-        h1 {{data.name}}: <i> {{data.tagline}}</i>
         button(mat-button [mat-dialog-close]="true")
+        h1 {{data.name}}: <i> {{data.tagline}}</i>
 
     .content
         p(*ngFor="let item of data.text") {{item}}
