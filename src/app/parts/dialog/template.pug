@@ -9,7 +9,7 @@
         ul
             li(*ngFor="let item of data.required_skills") {{item}}
         ng-container(*ngIf="data.preferred_skills")
-            .skills Required skills:
+            .skills Preferred skills:
             ul
                 li(*ngFor="let item of data.preferred_skills") {{item}}
         .apply
