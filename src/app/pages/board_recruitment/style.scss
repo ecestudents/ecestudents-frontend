@@ -5,6 +5,7 @@
         a {
             color: $ece-orange !important;
         }
+        margin-bottom: $nav-height;
     }
 
     .logo {
@@ -14,19 +15,16 @@
     app-main-menu {
         display: none;
     }
-    margin-bottom: $nav-height;
 }
-
-
 .tagline {
     color: white;
     background-color: $ece-orange;
     padding: ms(2);
     font-size: ms(3);
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
     span {
-        font-weight:900;
+        font-weight: 700;
     }
      text-transform: uppercase;
 }
