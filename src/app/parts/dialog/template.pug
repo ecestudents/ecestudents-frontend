@@ -1,0 +1,8 @@
+.wrapper
+    h1 {{data.name}}: <i> {{data.tagline}}</i>
+
+    .content
+        p(*ngFor="let item of data.text") {{item}}
+        span Required skills:
+        ul
+            li(*ngFor="let item of data.skills") {{item}}

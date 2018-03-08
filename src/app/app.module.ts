@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { CountdownModule } from 'ngx-countdown';
+import { MatDialogModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 //pages
 import { AppComponent } from './app.component';
@@ -16,6 +19,8 @@ import { BoardRecruitmentComponent } from './pages/board_recruitment/component';
 //parts
 import { FooterComponent } from './parts/footer/component';
 import { MainMenuComponent } from './parts/main_menu/component';
+import { BasicDialog } from './parts/dialog/component';
+
 
 //helpers
 import { CloudinaryPipe } from './helpers/cloudinary/pipe';
@@ -43,14 +48,18 @@ const appRoutes: Routes = [
     JobportalComponent,
     EventPageComponent,
     HBGComponent,
-    BoardRecruitmentComponent
+    BoardRecruitmentComponent,
+    BasicDialog
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
-    CountdownModule
+    CountdownModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
+  entryComponents: [BasicDialog],
   providers: [DataService, HttpClientModule,],
   bootstrap: [AppComponent]
 })

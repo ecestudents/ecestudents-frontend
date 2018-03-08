@@ -3,10 +3,11 @@ app-main-menu
 h1.tagline Are you on <span>board?</span>
 
 .wrapper
+
     h2.intro Check out the open ECE Students Board positions for the academic year 2018-2019!
 
     .overview
-        .item(*ngFor="let item of positions")
+        .item(*ngFor="let item of positions", (click)="openDialog(item)")
             .imgwrap
                 img(src='{{ "pages/recruitment/"+ item.icon | cd:""}}')
             span {{item.name}}
