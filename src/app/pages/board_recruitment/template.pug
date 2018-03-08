@@ -5,6 +5,12 @@ app-main-menu
 
     h2.intro Check out the open ECE Students Board positions for the academic year 2018-2019!
 
+    .overview
+        .item(*ngFor="let item of positions")
+            .imgwrap
+                img(src='{{ "pages/recruitment/"+ item.icon | cd:""}}')
+            span {{item.name}}
+
     h2.cta You can <a class="blue" target="_blank" href="https://ecestudents2018.typeform.com/to/ruK1fY">apply directly</a> for a position or you can come have a chat with us <a class="orange"  target="_blank" href="https://ecestudents2018.typeform.com/to/e2Rfzh">over coffee</a>.
 
     .lastyear

@@ -42,14 +42,67 @@ app-main-menu {
     }
 
     .intro {
-       // text-align: center;
+        // text-align: center;
+    }
+
+    .overview {
+        .item {
+            @include card-container;
+            border: none;
+
+            max-width: ms(5);
+            margin: 0 ms(1);
+            margin-bottom: ms(2);
+            box-shadow: 0 0 5px #515151;
+            transition: box-shadow 0.3s;
+            border-radius: 10px;
+            text-align: center;
+            padding: ms(0);
+            &:hover {
+                box-shadow: 0 0 20px #515151;
+            }
+
+            .imgwrap {
+                height: ms(5);
+
+                img {
+                    //height: 60px;
+                    max-height: 90%;
+                    max-width: 90%;
+                    width:auto;
+                    margin: ms(0);
+                }
+            }
+            span {
+                color: $ece-orange;
+                font-size: ms(1);
+            }
+        }
+
+
+
+        margin: auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex: 0 0 calc(20%);
+
+        @include bp(medium) {
+            width: 80%;
+            .item {
+                flex: 0 0 calc(50% - 20px);
+            }
+
+        }
     }
 
     .cta {
-        .orange{
+        .orange {
             color: $ece-orange;
         }
     }
+
     .lastyear {
         h2 {
             color: $ece-blue;
