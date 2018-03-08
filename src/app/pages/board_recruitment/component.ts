@@ -13,7 +13,7 @@ export class BoardRecruitmentComponent {
     { name: "President", icon: "Lion", text: "" },
     { name: "Vice President", icon: "Rhino", text: "" },
     { name: "Programme Manager", icon: "Elephant", text: "" },
-    { name: "External Relations", icon: "Gorilla", text: "" },
-    { name: "Marketing & Tech", icon: "Giraffe", text: "" }
+    { name: "External Relations Manager", icon: "Gorilla", text: "" },
+    { name: "Marketing & Tech manager", icon: "Giraffe", text: "" }
   ]
 }

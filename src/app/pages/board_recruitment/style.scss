@@ -1,49 +1,42 @@
 @import 'mixins';
 
-app-main-menu {
-    display: none;
-    background: $ece-orange;
-}
-
-:host /deep/ {
-    nav {
-        margin-bottom: 0 !important;
-    }
-    footer {
-        background-color: $ece-orange !important;
-    }
-}
-
-@include bp(medium) {
-    :host /deep/ .nav {
-        height: $nav-height;
-        background: transparentize($ic-blue, .1);
-
-        li {
-            a {
-                line-height: $nav-height !important;
-                padding: 0 ms(1)!important;
-                color: white !important;
-            }
+:host /deep/ nav {
+    @include bp(medium) {
+        a {
+            color: $ece-orange !important;
         }
     }
-    app-main-menu {
-        display: block;
+
+    .logo {
+        filter: unset !important;
     }
+
+    app-main-menu {
+        display: none;
+    }
+    margin-bottom: $nav-height;
+}
+
+
+.tagline {
+    color: white;
+    background-color: $ece-orange;
+    padding: ms(2);
+    font-size: ms(3);
+    text-align: center;
+    font-weight: 700;
+    span {
+        font-weight:900;
+    }
+     text-transform: uppercase;
 }
 
 .wrapper {
     @include wrapper;
+text-align: center;
 
-    .tagline {
-        color: $ece-orange;
-        font-size: ms(3);
-        text-align: center;
-    }
 
-    .intro {
-        // text-align: center;
-    }
+
 
     .overview {
         .item {
@@ -72,13 +65,14 @@ app-main-menu {
                     max-height: 130px;
                     max-width: 130px;
                     margin: auto auto;
-                    grid-column:2/3;
-                    grid-row:2/3;
+                    grid-column: 2/3;
+                    grid-row: 2/3;
                 }
             }
             span {
+                 text-transform: uppercase;
                 color: $ece-orange;
-                font-size: ms(1);
+                font-size: ms(0.7);
             }
         }
 
