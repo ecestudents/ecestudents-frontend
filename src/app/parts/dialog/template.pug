@@ -7,5 +7,9 @@
         p(*ngFor="let item of data.text") {{item}}
         .skills Required skills:
         ul
-            li(*ngFor="let item of data.skills") {{item}}
+            li(*ngFor="let item of data.required_skills") {{item}}
+        ng-container(*ngIf="data.preferred_skills")
+            .skills Required skills:
+            ul
+                li(*ngFor="let item of data.preferred_skills") {{item}}
         .apply APPLY FOR <a target="_blank" href="https://ecestudents2018.typeform.com/to/ruK1fY"> {{data.name}} </a>
