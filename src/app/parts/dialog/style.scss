@@ -4,13 +4,17 @@
     .cdk-overlay-pane {
         //max-width: 50vw;
         //display: none;
-        max-height: 30%;
+        //max-height: 30%;
     }
 }
 
 .wrapper {
-    max-width: 50vw; //max-height: 75% ;//ms(7);
-    max-height: 85vh;
+    max-width: 90vw;
+    max-height: 70vh;
+    @include bp(medium) {
+        max-width: 50vw; //max-height: 75% ;//ms(7);
+        max-height: 85vh;
+    }
     h1 {
         color: $ece-orange;
         float: left; //clear:both;
