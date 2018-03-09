@@ -13,8 +13,7 @@
     max-height: 85vh;
     h1 {
         color: $ece-orange;
-        float: left;
-        //clear:both;
+        float: left; //clear:both;
     }
 
     button {
@@ -38,15 +37,16 @@
         text-align: center;
         margin: ms(1) 0;
         background-color: $ece-blue;
+        &:hover {
+            box-shadow: 0 0 10px #515151;
+        }
         a {
             text-align: center;
             font-size: ms(1);
             text-transform: uppercase;
             padding: ms(0);
             color: white;
-            &:hover {
-                box-shadow: 0 0 10px #515151;
-            }
+
         }
 
     }
