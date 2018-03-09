@@ -1,0 +1,54 @@
+@import 'mixins';
+
+:host /deep/ nav {
+    .cdk-overlay-pane {
+        //max-width: 50vw;
+        //display: none;
+        max-height: 30%;
+    }
+}
+
+.wrapper {
+    max-width: 50vw; //max-height: 75% ;//ms(7);
+    max-height: 85vh;
+    h1 {
+        color: $ece-orange;
+        float: left; //clear:both;
+    }
+
+    button {
+        @include fa("times", ms(1), $ece-orange) float: right;
+    }
+
+    .content {
+        clear: both;
+        .two {
+            text-align: center;
+            font-style: italic;
+        }
+    }
+
+    .skills {
+        font-weight: 1000;
+        font-size: ms(1);
+    }
+
+    .apply {
+        text-align: center;
+        margin: ms(1) 0;
+        background-color: $ece-blue;
+        &:hover {
+            box-shadow: 0 0 10px #515151;
+        }
+        a {
+            text-align: center;
+            font-size: ms(1);
+            text-transform: uppercase;
+            padding: ms(0);
+            color: white;
+
+        }
+
+    }
+
+}

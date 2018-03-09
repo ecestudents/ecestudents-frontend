@@ -4,16 +4,23 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { CountdownModule } from 'ngx-countdown';
+import { MatDialogModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 //pages
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './pages/homepage/component';
 import { JobportalComponent } from './pages/jobportal/component';
-import { EventPageComponent } from './pages/event-page/component'
-import { HBGComponent } from './pages/events/24hbg/component'
+import { EventPageComponent } from './pages/event-page/component';
+import { HBGComponent } from './pages/events/24hbg/component';
+import { BoardRecruitmentComponent } from './pages/board_recruitment/component';
+
 //parts
 import { FooterComponent } from './parts/footer/component';
 import { MainMenuComponent } from './parts/main_menu/component';
+import { BasicDialog } from './parts/dialog/component';
+
 
 //helpers
 import { CloudinaryPipe } from './helpers/cloudinary/pipe';
@@ -27,6 +34,7 @@ const appRoutes: Routes = [
   { path: 'events/24hbg', component: HBGComponent },
   { path: 'events/:id', component: EventPageComponent },
   { path: 'jobs', component: JobportalComponent },
+  { path: 'board2018', component: BoardRecruitmentComponent },
   { path: '**', redirectTo: '' }
 ];
 
@@ -39,14 +47,19 @@ const appRoutes: Routes = [
     CloudinaryPipe,
     JobportalComponent,
     EventPageComponent,
-    HBGComponent
+    HBGComponent,
+    BoardRecruitmentComponent,
+    BasicDialog
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
-    CountdownModule
+    CountdownModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
+  entryComponents: [BasicDialog],
   providers: [DataService, HttpClientModule,],
   bootstrap: [AppComponent]
 })

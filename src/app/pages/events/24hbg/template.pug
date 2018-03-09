@@ -1,4 +1,3 @@
-//put the menu somewhere in the page
 app-main-menu
 .container
     .wrapper
@@ -23,7 +22,7 @@ app-main-menu
     .wrapper
         img.logo(src='{{ "pages/24hbg/logo" | cd:"w_600,c_fill"}}')
         h2 ECE STUDENTS’ 24 HOUR BUSINESS GAME IS BACK!
-        p 24 Hour Business Game is a sleepless business competition where we aim at helping entrepreneurial students to conceptualize their business ideas. During the challenge, over 150 students, guided by experienced executives, form teams and create their own business plans for the final pitch. All in 24 hours! Judges select the best team, which will receive a grand prize! 
+        p 24 Hour Business Game is a sleepless business competition where we aim at helping entrepreneurial students to conceptualize their business ideas. During the challenge, over 150 students, guided by experienced executives, form teams and create their own business plans for the final pitch. All in 24 hours! Judges select the best team, which will receive a grand prize!
         p The event is taking place at THE Dutch entrepreneurial hub, the ECE Campus in the Rotterdam Science Tower.
         div.info
             span 11/12 MAY 2018 | 14:00
@@ -32,28 +31,28 @@ app-main-menu
         // .buttonHolder
         //     button(type='submit')
         //         a(href="https://ecestudents2017.typeform.com/to/t970kV") Sign Up
-        
+
 .past
     h2 PAST YEARS' NUMBERS:
     .left
         .numbers
             div
                 span.bold >30K
-                br 
+                br
                 | Reach on Social Media Channels
             div
                 span.bold > 50 Firms
-                br 
+                br
                 | Participated in 24HBG since 2013
             div
                 span.bold > 500 Students
-                br 
+                br
                 | Participated in 24HBG since 2013
         h3 In previous editions, we have welcomed participants from:
         ul.unis
-            li Erasmus University Rotterdam 
+            li Erasmus University Rotterdam
             li Rotterdam School of Management
-            li Hogeschool Rotterdam 
+            li Hogeschool Rotterdam
             li TU Delft
         h3 With a wide range of backgrounds:
         ul.studies
@@ -63,7 +62,7 @@ app-main-menu
             li.big ·
             li Economics
             li.big ·
-            li Entrepreneurship 
+            li Entrepreneurship
             li.big ·
             li Innovation
     .right
@@ -82,12 +81,12 @@ app-main-menu
                 br
                 | Rotterdam
         .left
-            h3 DAY 1 
+            h3 DAY 1
             ul
                 li(*ngFor="let item of agenda1")
                    span.event {{ item.event }}
                    span.time {{ item.time }}
-                   
+
         .right
             h3 DAY 2
             ul
@@ -113,7 +112,7 @@ app-main-menu
                         br
                         |Last Man Standing Networking
                     span.time 13:00 - 14:00
-                   
+
         // .buttonHolder
         //     button(type='submit')
         //         a(href="#") Sign up
@@ -136,16 +135,16 @@ app-main-menu
         img(src='{{ "pages/24hbg/Asset_12" | cd:"w_150,c_fill"}}')
         img(src='{{ "pages/24hbg/queal" | cd:"w_150,c_fill"}}')
         img(src='{{ "pages/24hbg/Asset_11" | cd:"w_200,c_fill"}}')
-    
+
 .speakers
     .wrapper
         img.logo(src='{{ "pages/24hbg/logo" | cd:"w_600,c_fill"}}')
-        p 
-            | The 2018 edition of the 
-            span.bold 24 hour business game 
-            | will take place in the Rotterdam Science Tower, heart of the Rotterdam's entrepreneurial spirit , on 
+        p
+            | The 2018 edition of the
+            span.bold 24 hour business game
+            | will take place in the Rotterdam Science Tower, heart of the Rotterdam's entrepreneurial spirit , on
             span.bold May 11th and 12th.
-        
+
         // h2 SPEAKERS
         // .speakers-grid
         //     .img
@@ -193,7 +192,7 @@ app-main-menu
 .video
     .wrapper
         iframe(width="100%", height="570", src="https://www.youtube-nocookie.com/embed/b-YbGq9HmXA?rel=0&amp;controls=0&amp;showinfo=0", frameborder="0", allow="autoplay; encrypted-media", allowfullscreen)
-    
+
 .map
     iframe( src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9844.7878918995!2d4.429621!3d51.9121173!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60e0b212036d407a!2sErasmus+Centre+for+Entrepreneurship!5e0!3m2!1snl!2snl!4v1518377585049" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen )
     // .buttonHolder
@@ -203,7 +202,7 @@ app-main-menu
 .contact
     .wrapper
         .left
-            h2 
+            h2
                 | Want to know  more?
                 br
                 | Get in touch.
@@ -216,7 +215,7 @@ app-main-menu
             a(href="mailto:christoph.dvorak@ecestudents.com") christoph.dvorak@ecestudents.com
             br
             span.light +43 650 86 44 450
-            
+
         .person
             img(src='{{ "pages/24hbg/asset_21" | cd:"w_150,c_fill"}}')
             br
@@ -225,9 +224,8 @@ app-main-menu
             a(href="mailto:maud.hascoet@ecestudents.com") maud.hascoet@ecestudents.com
             br
             span.light +31 6 10 81 21 97
-        
+
         .social
-            |Check our 
-            a.light(href="https://www.facebook.com/ECEStudents") Facebook page 
+            |Check our
+            a.light(href="https://www.facebook.com/ECEStudents") Facebook page
             | to know more about the previous editions of the event!
-app-footer

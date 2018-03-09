@@ -6,7 +6,7 @@
 $fa-font-path: '/font-awesome/';
 $fa-sass-asset-helper: false;
 @import '../node_modules/font-awesome-sass/assets/stylesheets/font-awesome/path';
-
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 //mixins
 @import 'mixins';
 

@@ -6,6 +6,7 @@ import { Router, NavigationEnd } from '@angular/router';
   template: `
       <app-main-menu></app-main-menu>
       <router-outlet></router-outlet>
+      <app-footer></app-footer>
   `,
 })
 export class AppComponent implements OnInit {

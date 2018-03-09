@@ -1,0 +1,113 @@
+@import 'mixins';
+
+
+
+
+:host /deep/ nav {
+    @include bp(medium) {
+        a {
+            color: $ece-orange !important;
+        }
+        margin-bottom: $nav-height;
+    }
+
+    .logo {
+        filter: unset !important;
+    }
+
+    app-main-menu {
+        display: none;
+    }
+}
+.tagline {
+    color: white;
+    background-color: $ece-orange;
+    padding: ms(2);
+    font-size: ms(3);
+    text-align: center;
+    font-weight: 500;
+    span {
+        font-weight: 700;
+    }
+     text-transform: uppercase;
+}
+
+.wrapper {
+    @include wrapper;
+text-align: center;
+
+
+
+
+    .overview {
+        .item {
+            @include card-container;
+            border: none;
+
+            max-width: ms(5);
+            margin: 0 ms(1);
+            margin-bottom: ms(2);
+            box-shadow: 0 0 5px #515151;
+            transition: box-shadow 0.3s;
+            border-radius: 10px;
+            text-align: center;
+            padding: ms(0);
+            &:hover {
+                box-shadow: 0 0 20px #515151;
+            }
+
+            .imgwrap {
+                height: ms(5);
+                display: grid;
+                grid-template-columns: 1fr auto 1fr;
+                grid-template-rows: 1fr auto 1fr;
+                img {
+                    //height: 60px;
+                    max-height: 130px;
+                    max-width: 130px;
+                    margin: auto auto;
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                }
+            }
+            span {
+                 text-transform: uppercase;
+                color: $ece-orange;
+                font-size: ms(0.7);
+            }
+        }
+
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex: 0 0 calc(20%);
+
+        @include bp(medium) {
+            width: 80%;
+            .item {
+                flex: 0 0 calc(50% - 20px);
+            }
+
+        }
+    }
+
+    .cta {
+        .orange {
+            color: $ece-orange;
+        }
+    }
+
+    .lastyear {
+        h2 {
+            color: $ece-blue;
+        }
+        img {
+            width: 100%;
+        }
+        margin-bottom: ms(2);
+        .description {
+            text-align: left;
+        }
+    }
+}
