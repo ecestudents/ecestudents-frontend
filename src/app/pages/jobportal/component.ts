@@ -16,6 +16,7 @@ export class JobportalComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
     var qs, js, q, s, d = document,
       gi = d.getElementById,
       ce = d.createElement,

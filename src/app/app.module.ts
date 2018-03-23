@@ -6,7 +6,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { CountdownModule } from 'ngx-countdown';
 import { MatDialogModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 //pages
 import { AppComponent } from './app.component';
@@ -57,7 +57,8 @@ const appRoutes: Routes = [
     HttpClientModule,
     CountdownModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ScrollToModule.forRoot()
   ],
   entryComponents: [BasicDialog],
   providers: [DataService, HttpClientModule,],

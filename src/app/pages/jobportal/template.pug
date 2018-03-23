@@ -3,7 +3,7 @@ app-main-menu
     h1 Welcome to ECE Students'
     h1.bold Job Portal
     img(src='{{ sphere | cd:"w_420,c_fill"}}')
-    a.button(href='https://ecestudents2017.typeform.com/to/h8Bpeg' target="_blank") Apply Now
+    a.button([ngx-scroll-to]="'typeform'", data-smooth-scroll) Apply Now
 
 .process
     h2 HOW IT WORKS
@@ -73,5 +73,6 @@ app-main-menu
 .typeform-widget( data-url='https://ecestudents2018.typeform.com/to/h8Bpeg',
                   data-transparency='50',
                   data-hide-headers='false',
-                  data-hide-footer='false')
+                  data-hide-footer='false'
+                  id="typeform")
 
