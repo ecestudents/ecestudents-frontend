@@ -27,6 +27,7 @@
     "@angular/platform-browser": "^5.2.1",
     "@angular/platform-browser-dynamic": "^5.2.1",
     "@angular/router": "^5.2.1",
+    "@nicky-lenaers/ngx-scroll-to": "0.6.0",
     "@types/jasmine": "~2.8.4",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~9.3.0",

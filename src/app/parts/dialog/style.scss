@@ -4,16 +4,20 @@
     .cdk-overlay-pane {
         //max-width: 50vw;
         //display: none;
-        max-height: 30%;
+        //max-height: 30%;
     }
 }
 
 .wrapper {
-    max-width: 50vw; //max-height: 75% ;//ms(7);
-    max-height: 85vh;
+    max-width: 90vw;
+    max-height: 70vh;
+    @include bp(medium) {
+        max-width: 50vw; //max-height: 75% ;//ms(7);
+        max-height: 85vh;
+    }
     h1 {
         color: $ece-orange;
-        float: left; //clear:both;
+        float: left;
     }
 
     button {
@@ -33,22 +37,39 @@
         font-size: ms(1);
     }
 
-    .apply {
+    .cta {
         text-align: center;
-        margin: ms(1) 0;
-        background-color: $ece-blue;
-        &:hover {
-            box-shadow: 0 0 10px #515151;
-        }
-        a {
-            text-align: center;
-            font-size: ms(1);
-            text-transform: uppercase;
-            padding: ms(0);
-            color: white;
+        margin: ms(1) 5%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        >div {
+            width: 40%;
+            &:hover {
+                box-shadow: 0 0 10px #515151;
+            }
 
+            display: grid;
+            grid-template-rows: 1fr auto 1fr;
+
+            a {
+                text-align: center;
+                font-size: ms(1);
+                text-transform: uppercase;
+                padding: ms(0);
+                color: white;
+                grid-row: 2/3;
+
+            }
         }
 
+        .apply {
+            background-color: $ece-blue;
+        }
+        .coffee {
+            background-color: $ece-orange;
+        }
     }
 
 }
