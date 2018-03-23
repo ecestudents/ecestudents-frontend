@@ -37,44 +37,34 @@
         font-size: ms(1);
     }
 
-    .apply {
+    .cta {
         text-align: center;
         margin: ms(1) 5%;
-        width: 40%;
-        float: left;
-        background-color: $ece-blue;
-        &:hover {
-            box-shadow: 0 0 10px #515151;
-        }
-        a {
-            text-align: center;
-            font-size: ms(1);
-            text-transform: uppercase;
-            padding: ms(0);
-            color: white;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        >div {
+            &:hover {
+                box-shadow: 0 0 10px #515151;
+            }
+            width: 40%;
+            a {
+                text-align: center;
+                font-size: ms(1);
+                text-transform: uppercase;
+                padding: ms(0);
+                color: white;
 
-        }
-
-    }
-
-    .coffee {
-        text-align: center;
-        margin: ms(1) 5%;
-        width: 40%;
-        float: left;
-        background-color: $ece-orange;
-        &:hover {
-            box-shadow: 0 0 10px #515151;
-        }
-        a {
-            text-align: center;
-            font-size: ms(1);
-            text-transform: uppercase;
-            padding: ms(0);
-            color: white;
-
+            }
         }
 
+        .apply {
+            background-color: $ece-blue;
+        }
+        .coffee {
+            background-color: $ece-orange;
+        }
     }
 
 }
