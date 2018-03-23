@@ -45,16 +45,21 @@
         flex-direction: row;
         justify-content: space-around;
         >div {
+            width: 40%;
             &:hover {
                 box-shadow: 0 0 10px #515151;
             }
-            width: 40%;
+
+            display: grid;
+            grid-template-rows: 1fr auto 1fr;
+
             a {
                 text-align: center;
                 font-size: ms(1);
                 text-transform: uppercase;
                 padding: ms(0);
                 color: white;
+                grid-row: 2/3;
 
             }
         }
