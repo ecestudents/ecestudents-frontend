@@ -19,22 +19,31 @@
         display: none;
     }
 }
+
 .tagline {
     color: white;
     background-color: $ece-orange;
     padding: ms(2);
-    font-size: ms(3);
+
     text-align: center;
     font-weight: 500;
     span {
         font-weight: 700;
     }
-     text-transform: uppercase;
+    h1 {
+        font-size: ms(3);
+         margin: 0;
+    }
+    h2 {
+        font-size: ms(1);
+        margin: 0;
+    }
+    text-transform: uppercase;
 }
 
 .wrapper {
     @include wrapper;
-text-align: center;
+    text-align: center;
 
 
 
@@ -71,7 +80,7 @@ text-align: center;
                 }
             }
             span {
-                 text-transform: uppercase;
+                text-transform: uppercase;
                 color: $ece-orange;
                 font-size: ms(0.7);
             }
