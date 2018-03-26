@@ -3,7 +3,7 @@ app-main-menu
     h1 Welcome to ECE Students'
     h1.bold Job Portal
     img(src='{{ sphere | cd:"w_420,c_fill"}}')
-    a.button([ngx-scroll-to]="'typeform'", data-smooth-scroll) Apply Now
+    a.button(href='https://ecestudents2017.typeform.com/to/h8Bpeg', target="_blank") Apply Now
 
 .process
     h2 HOW IT WORKS
@@ -66,13 +66,5 @@ app-main-menu
         p Travis recently had a few successes that make us proud:  we recently counted more than 50,000 users and were invited by StartupDelta to participate at CES, the world’s most famous technology fair in Las Vegas. I was given the opportunity to represent Travis at CES and it was an amazing experience. We are excited to improve the product and bridge more language barriers!
         p.italic Daphne, 20, Student at EUC and Part-Time employee at Travis the Translator
 
-//.match
-    a.button(href='https://ecestudents2017.typeform.com/to/h8Bpeg') Find your match!
-
-
-.typeform-widget( data-url='https://ecestudents2018.typeform.com/to/h8Bpeg',
-                  data-transparency='50',
-                  data-hide-headers='false',
-                  data-hide-footer='false'
-                  id="typeform")
-
+.match
+    a.button(href='https://ecestudents2017.typeform.com/to/h8Bpeg', target="_blank") Find your match!
