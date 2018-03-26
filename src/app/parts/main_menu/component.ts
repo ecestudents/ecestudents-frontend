@@ -46,8 +46,7 @@ export class MainMenuComponent implements OnInit {
 
   ngOnInit() {
     this.router.events.subscribe((event: NavigationEnd) => {
-      if (this.router.url == '/jobs') this.menuvisible = false
-      if (this.router.url == '/board2018') this.menuvisible = false
+      if (this.router.url == '/jobs' || this.router.url == '/board2018') this.menuvisible = false
       else this.menuvisible = true
     })
 
