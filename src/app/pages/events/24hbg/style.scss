@@ -167,7 +167,7 @@ app-main-menu {
     color: white;
     padding-bottom: ms(0);
     border-bottom: 4px solid $ece-orange;
-    
+
     .logo {
         text-align: center;
         padding: ms(1);
@@ -175,7 +175,7 @@ app-main-menu {
         display: block;
         max-width: 400px;
     }
-    
+
     h2 {
         font-weight: 400;
         font-size: ms(1.2);
@@ -266,7 +266,7 @@ app-main-menu {
         &.studies {
             li {
                 margin-right: ms(-1);
-                
+
                 &.big {
                     font-size: ms(1);
                     line-height: ms(1);
@@ -289,6 +289,7 @@ app-main-menu {
     .right {
         grid-area: right;
         justify-self: center;
+        margin-bottom: ms(1);
     }
 }
 
@@ -342,11 +343,11 @@ app-main-menu {
         grid-template-rows: auto auto auto auto;
         grid-template-areas: "title" "left" "right" "bottom";
         grid-column-gap: 25px;
-        
+
         @include bp(medium){
            grid-template-columns: 1fr 1fr;
             grid-template-rows: auto auto auto;
-            grid-template-areas: "title title" "left right" "bottom bottom"; 
+            grid-template-areas: "title title" "left right" "bottom bottom";
         }
 
         .top {
@@ -424,7 +425,7 @@ app-main-menu {
         .img {
             justify-self: end;
             margin: ms(0);
-            
+
         }
         .text {
             width: 70%;
