@@ -34,13 +34,10 @@ main {
         .event {
             @include card-container;
             border: none;
-
-            max-width: ms(7);
-            margin: 0 auto;
-            margin-bottom: ms(2);
             box-shadow: 0 0 5px #515151;
             transition: box-shadow 0.3s;
             border-radius: 15px;
+            padding-bottom: ms(1);
 
             &:hover {
                 box-shadow: 0 0 20px #515151;
@@ -56,9 +53,9 @@ main {
                 width: 100%;
             }
             .bottom {
-                padding-bottom: ms(0);
+
                 a {
-                    float: left;
+                    float: right;
                     text-decoration: none !important;
                     color: $ece-blue;
                     margin-top: (50px - 16px) / 2;
@@ -70,19 +67,10 @@ main {
         }
 
         @include bp(medium) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-gap: ms(1);
+            grid-template-columns: 1fr 1fr;
 
-            .event {
-                flex: 0 0 calc(50% - 20px);
-            }
-
-        }
-        @include bp(large) {
-            .event {
-                flex: 0 0 calc(33% - 20px;
-            }
         }
     }
 }

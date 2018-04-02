@@ -3,11 +3,10 @@ main
     h2 Events Calendar
     .overview
         .event(*ngFor="let event of events")
-            img.top(src='{{event.topimage | cd:"w_320,h_180,c_fill"}}')
+            img.top(src='{{event.topimage | cd:"w_320,h_120,c_fill"}}')
             h3 {{event.title}}
             .text {{event.text}}
-            .bottom
+            .bottom(*ngIf="event.link")
                 a(routerLink="{{'/'+event.link}}") Learn more
-                img(src='{{ event.icon | cd:"h_50,c_fill"}}')
-            
-            
+
+
