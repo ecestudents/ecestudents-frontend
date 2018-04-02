@@ -44,6 +44,19 @@ app-main-menu {
             width: 60%;
         }
 
+        button {
+            clear:both;
+            margin-top: ms(0);
+            background: $ece-orange;
+            border-radius: 5px;
+
+            a {
+            font-size: ms(2);
+            font-weight: 400;
+            color: white;
+            }
+        }
+
 
     }
     h1 {
@@ -115,22 +128,15 @@ app-main-menu {
     button {
         @include button;
         @include button-hollow;
-        border-color: white;
-        border-width: 2px;
-        padding: 20px 50px;
-        webkit-transition: all 0.25s ease-out, color 0.25s ease-out;
-        transition: all 0.25s ease-out, color 0.25s ease-out;
-        a {
-            color: white;
-            font-size: ms(2);
-            font-weight: 200;
 
-        }
-        &:hover {
-            background-color: white;
-            a {
-                color: $ece-black;
-            }
+        border-width: 2px;
+        padding: ms(1) ms(3);
+
+        color: white;
+        a {
+
+            font-size: ms(3);
+            font-weight: 400;
         }
     }
     .under {
