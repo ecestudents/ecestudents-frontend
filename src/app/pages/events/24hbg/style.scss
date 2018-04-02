@@ -12,15 +12,6 @@ app-main-menu {
     background: $color;
 }
 
-:host /deep/ {
-    nav {
-        margin-bottom: 0 !important;
-    }
-    footer {
-        background-color: $color !important;
-    }
-}
-
 .wrapper {
     @include wrapper;
 }
@@ -33,29 +24,28 @@ app-main-menu {
     font-weight: 600;
 }
 
+@include bp(medium) {
+.menublock {
+    height: $nav-margin;
+    background:$color;
+    width: 100%;
+}
+
+}
+
 .container {
-    width: 100%; //background: cd("pages/24hbg/avi-richards-183715", "c_crop,g_north_west,w_4100/c_scale,w_1920") center center no-repeat;
-    //background-position: 50% 40%;
-    .wrapper {
-        margin-top: -550px;
-        @include bp(medium) {
-            margin-top: -600px;
-        }
-    }
-    video {
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        min-height: 100%;
-    }
+    width: 100%;
+    background: cd("pages/24hbg/avi-richards-183715", "c_crop,g_north_west,w_4100/c_scale,w_1920") center center no-repeat;
+    background-position: 50% 40%;
+
     .left {
-        color: $ece-orange;
+
         width: 100%;
         @include bp(medium) {
             width: 60%;
-            margin-left: 40%;
         }
 
+        color: white;
         button {
             clear: both;
             margin-top: ms(2);
@@ -75,6 +65,7 @@ app-main-menu {
         margin: 0;
         padding-top: ms(1);
         font-weight: 700;
+        color: $color;
         font-size: ms(1.6); //color: $color;
         text-transform: uppercase;
         @include bp(medium) {

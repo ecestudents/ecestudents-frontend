@@ -1,5 +1,7 @@
 @import 'mixins';
 
+
+/*
 :host /deep/ nav {
     @include bp(medium) {
         a {
@@ -14,10 +16,11 @@
     app-main-menu {
         display: none;
     }
-}
+}*/
 
 .header {
-    @include wrapper h1 {
+    @include wrapper;
+    h1 {
         font-family: MuseoSans;
         text-align: center;
         color: $ece-orange;
@@ -52,7 +55,7 @@
     }
 
     @include bp(medium) {
-        margin-top: 130px;
+        //margin-top: 130px;
         margin-bottom: 50px;
         h1 {
             text-align: left;

@@ -2,6 +2,7 @@ import { Component, NgZone } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { MatDialog, MatDialogRef } from '@angular/material';
 import { BasicDialog } from '../../parts/dialog/component';
+import { StateService } from '../../helpers/stateservice/stateservice'
 
 @Component({
   selector: 'app-board-recruitment',
@@ -98,7 +99,9 @@ export class BoardRecruitmentComponent {
 
   dialogRef: MatDialogRef<BasicDialog>;
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog, private stateservice: StateService) {
+    stateservice.menu_color = true;
+  }
 
   openDialog(item) {
     console.log(item)

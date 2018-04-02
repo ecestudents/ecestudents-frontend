@@ -2,6 +2,7 @@ import { Component } from '@angular/core'
 import { Subscription } from 'rxjs'
 import { DataService } from '../../helpers/dataservice/dataservice'
 import { Router, ActivatedRoute } from '@angular/router'
+import { StateService } from '../../helpers/stateservice/stateservice'
 
 @Component({
   selector: 'app-event-page',
@@ -13,8 +14,11 @@ export class EventPageComponent {
   public event;
   constructor(
     private dataservice: DataService,
+    private stateservice: StateService,
     private activatedRoute: ActivatedRoute,
     private router: Router) {
+    stateservice.menu_color = false;
+
     this.event = {}
 
     this.activatedRoute.params.subscribe(params => {

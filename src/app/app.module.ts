@@ -25,6 +25,8 @@ import { BasicDialog } from './parts/dialog/component';
 //helpers
 import { CloudinaryPipe } from './helpers/cloudinary/pipe';
 import { DataService } from './helpers/dataservice/dataservice';
+import { StateService } from './helpers/stateservice/stateservice';
+
 
 
 //routes
@@ -61,7 +63,7 @@ const appRoutes: Routes = [
     ScrollToModule.forRoot()
   ],
   entryComponents: [BasicDialog],
-  providers: [DataService, HttpClientModule,],
+  providers: [DataService, HttpClientModule, StateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

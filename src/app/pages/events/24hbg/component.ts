@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StateService } from '../../../helpers/stateservice/stateservice'
 
 @Component({
   selector: 'app-24hbg',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./style.scss']
 })
 export class HBGComponent {
+  constructor(private stateservice: StateService) {
+    stateservice.menu_color = false;
+  }
 
   agenda1 = [
     { time: "14:00 - 15:15", event: "Ideation workshop" },
