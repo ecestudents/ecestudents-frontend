@@ -386,16 +386,11 @@ app-main-menu {
         color: $ece-blue;
         font-style: italic;
     }
-    .row1,
-    .row3 {
+    .content{
+        width: 100%;
+        margin:auto;
         display: grid;
-        grid-template-columns: repeat(4, auto);
-        justify-items: center;
-        align-items: center;
-    }
-    .row2 {
-        display: grid;
-        grid-template-columns: repeat(5, auto);
+        grid-template-columns: repeat(3, auto);
         justify-items: center;
         align-items: center;
     }
