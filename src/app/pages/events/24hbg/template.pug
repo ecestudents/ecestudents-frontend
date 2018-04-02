@@ -1,5 +1,9 @@
 app-main-menu
 .container
+    video(class="my-videos", autoplay muted )
+        source(src="https://res.cloudinary.com/ece/video/upload/c_crop,e_accelerate:-20,h_541,w_1280/v1522672963/pages/24hbg/IMG_1643.TRIM.webm", type="video/webm")
+        source(src="https://res.cloudinary.com/ece/video/upload/c_crop,e_accelerate:-20,h_541,w_1280/v1522672963/pages/24hbg/IMG_1643.TRIM.mp4", type="video/mp4")
+        source(src="https://res.cloudinary.com/ece/video/upload/c_crop,e_accelerate:-20,h_541,w_1280/v1522672963/pages/24hbg/IMG_1643.TRIM.ogv", type="video/ogg")
     .wrapper
         .left
             h1 Business never sleeps.
@@ -73,7 +77,7 @@ app-main-menu
 .agenda
     .wrapper
         .top
-            h2 HAVE A LOOK AT LAST YEAR'S SCHEDULE
+            h2 HAVE A LOOK AT THE PROGRAMME HIGHLIGHTS
             div.orange
                 span.bold @ECE Campus
                 br
@@ -87,11 +91,15 @@ app-main-menu
             ul
                 li(*ngFor="let item of agenda1")
                    span.event {{ item.event }}
-                   span.time {{ item.time }}
+                   //span.time {{ item.time }}
 
         .right
             h3 DAY 2
             ul
+                li(*ngFor="let item of agenda2")
+                   span.event {{ item.event }}
+                   //span.time {{ item.time }}
+            //ul
                 li
                     span.event
                         |Devil's Advocate

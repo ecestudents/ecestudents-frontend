@@ -8,21 +8,22 @@ import { Component } from '@angular/core';
 export class HBGComponent {
 
   agenda1 = [
-    { time: "13:00 - 13:30", event: "Welcome & Introduction" },
-    { time: "13:30 - 14:30", event: "Keynote speaker & Ideation Workshop" },
-    { time: "14:00 - 15:15", event: "Finance & marketing" },
-    { time: "15:15 - 18:00", event: "Market Research" },
-    { time: "18:00 - 19:30", event: "Dinner" },
-    { time: "19:00 - 20:30", event: "Pitching Workshop" },
-    { time: "20:30 - 21:15", event: "Growthhacking Workshop" },
-    { time: "21:15 - 00:00", event: "Free Working Time" }
+    { time: "14:00 - 15:15", event: "Ideation workshop" },
+    { time: "15:15 - 18:00", event: "Business Model Canvas Workshop" },
+    { time: "18:00 - 19:30", event: "Business development with Amazon Web Services" },
+    { time: "19:00 - 20:30", event: "Workshop by Maas & Kleiberg" },
+    { time: "20:30 - 21:15", event: "Venture Capital Acquisition Workshop by VenturesOne" },
+    { time: "21:15 - 00:00", event: "Pitching Workshop by Eldridge Labinjo" },
+    { time: "21:15 - 00:00", event: "Start-up Fair & Student Expert Workshops" }
   ];
 
   agenda2 = [
-    { time: "7:30 - 8:00", event: "Morning Energizer" },
-    { time: "8:00 - 8:30", event: "Breakfast" },
-    { time: "8:30 - 10:00", event: "Pitch Generation" },
-    { time: "10:00 - 11:30", event: "Knockout Rounds" },
+    { time: "7:30 - 8:00", event: "Student Expert Workshops" },
+    { time: "8:00 - 8:30", event: "Midnight Yoga" },
+    { time: "8:30 - 10:00", event: "Open bar & games" },
+    { time: "10:00 - 11:30", event: "Breakfast" },
+    { time: "10:00 - 11:30", event: "Knock-out Pitching Rounds" },
     { time: "11:30 - 13:00", event: "Final Pitch" },
+    { time: "11:30 - 13:00", event: "Winner Ceremony & Networking" }
   ];
 }

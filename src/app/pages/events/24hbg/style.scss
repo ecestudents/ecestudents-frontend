@@ -34,26 +34,38 @@ app-main-menu {
 }
 
 .container {
-    width: 100%;
-    background: cd("pages/24hbg/avi-richards-183715", "c_crop,g_north_west,w_4100/c_scale,w_1920") center center no-repeat;
-    background-position: 50% 40%;
-
+    width: 100%; //background: cd("pages/24hbg/avi-richards-183715", "c_crop,g_north_west,w_4100/c_scale,w_1920") center center no-repeat;
+    //background-position: 50% 40%;
+    .wrapper {
+        margin-top: -550px;
+        @include bp(medium) {
+            margin-top: -600px;
+        }
+    }
+    video {
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
     .left {
+        color: $ece-orange;
         width: 100%;
         @include bp(medium) {
             width: 60%;
+            margin-left: 40%;
         }
 
         button {
-            clear:both;
+            clear: both;
             margin-top: ms(2);
             background: $ece-orange;
             border-radius: 5px;
 
             a {
-            font-size: ms(2);
-            font-weight: 400;
-            color: white;
+                font-size: ms(2);
+                font-weight: 400;
+                color: white;
             }
         }
 
@@ -63,8 +75,7 @@ app-main-menu {
         margin: 0;
         padding-top: ms(1);
         font-weight: 700;
-        font-size: ms(1.6);
-        color: $color;
+        font-size: ms(1.6); //color: $color;
         text-transform: uppercase;
         @include bp(medium) {
             font-size: ms(2);
@@ -87,7 +98,7 @@ app-main-menu {
         padding-bottom: ms(1);
         font-weight: 400;
         font-size: ms(1);
-        color: white;
+
         @include bp(medium) {
             font-size: ms(1.2);
             padding-top: ms(2.5);
@@ -95,8 +106,7 @@ app-main-menu {
     }
 
     .count-down {
-        margin-bottom: ms(2);
-        color: white;
+        margin-bottom: ms(2); //color: white;
         display: grid !important;
         grid-template-columns: repeat(4, auto);
         grid-template-rows: repeat(2, auto);
@@ -352,9 +362,9 @@ app-main-menu {
         grid-template-rows: auto auto auto auto;
         grid-template-areas: "title" "left" "right" "bottom";
         grid-column-gap: 25px;
-
-        @include bp(medium){
-           grid-template-columns: 1fr 1fr;
+        margin-bottom: ms(1);
+        @include bp(medium) {
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: auto auto auto;
             grid-template-areas: "title title" "left right" "bottom bottom";
         }
@@ -368,6 +378,8 @@ app-main-menu {
         .right {
             grid-area: right;
         }
+
+
         .buttonHolder {
             grid-area: bottom;
             padding: ms(1) 0 ms(2) 0;
@@ -386,9 +398,9 @@ app-main-menu {
         color: $ece-blue;
         font-style: italic;
     }
-    .content{
+    .content {
         width: 100%;
-        margin:auto;
+        margin: auto;
         display: grid;
         grid-template-columns: repeat(3, auto);
         justify-items: center;
@@ -422,7 +434,7 @@ app-main-menu {
         grid-template-columns: 1fr 2fr;
         grid-template-rows: auto auto;
         align-items: center;
-        @include bp(medium){
+        @include bp(medium) {
             grid-template-columns: 1fr 2fr 1fr 2fr;
             grid-template-rows: auto;
         }
@@ -472,7 +484,7 @@ app-main-menu {
         grid-template-areas: "touch" "p1" "p2" "social";
         align-items: center;
         text-align: center;
-        @include bp(medium){
+        @include bp(medium) {
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto auto;
             grid-template-areas: "touch p1 p2" "social social social";
