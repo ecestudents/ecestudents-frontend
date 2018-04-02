@@ -1,2 +1,226 @@
-//put the menu somewhere in the page
-app-main-menu
+.menublock
+
+.container
+    .wrapper
+        .left
+            h1 Business never sleeps.
+            h3 THE 24 HOUR BUSINESS GAME STARTS IN:
+            countdown( [config]="{stopTime: 1526040000000}")
+                | $!d!
+                span.stamp days
+                | $!h!
+                span.stamp hours
+                | $!m!
+                span.stamp minutes
+                | $!s!
+                span.stamp seconds
+            // .buttonHolder
+            //     button(type='submit')
+            //         a(href="#") Sign up
+            .under Build your idea in 24 hours <br> Showcase your project! <br>
+                button
+                    a(href="https://ecestudents2018.typeform.com/to/fMzbJf", target="_blank") Sign Up
+
+.about
+    .wrapper
+        img.logo(src='{{ "pages/24hbg/logo" | cd:"w_600,c_fill"}}')
+        h2 ECE STUDENTS’ 24 HOUR BUSINESS GAME IS BACK!
+        p 24 Hour Business Game is a sleepless business competition where we aim at helping entrepreneurial students to conceptualize their business ideas. During the challenge, over 150 students, guided by experienced executives, form teams and create their own business plans for the final pitch. All in 24 hours! Judges select the best team, which will receive a grand prize!
+        p The event is taking place at THE Dutch entrepreneurial hub, the ECE Campus in the Rotterdam Science Tower.
+        div.info
+            span 11/12 MAY 2018 | 14:00
+            span MARCONISTRAAT 16
+            span ECE CAMPUS
+        // .buttonHolder
+        //     button(type='submit')
+        //         a(href="https://ecestudents2017.typeform.com/to/t970kV") Sign Up
+
+.past
+    h2 PAST YEARS' NUMBERS:
+    .left
+        .numbers
+            div
+                span.bold >30K
+                br
+                | Reach on Social Media Channels
+            div
+                span.bold > 50 Firms
+                br
+                | Participated in 24HBG since 2013
+            div
+                span.bold > 500 Students
+                br
+                | Participated in 24HBG since 2013
+        h3 In previous editions, we have welcomed participants from:
+        ul.unis
+            li Erasmus University Rotterdam
+            li Rotterdam School of Management
+            li Hogeschool Rotterdam
+            li TU Delft
+        h3 With a wide range of backgrounds:
+        ul.studies
+            li Engineering
+            li.big ·
+            li Business
+            li.big ·
+            li Economics
+            li.big ·
+            li Entrepreneurship
+            li.big ·
+            li Innovation
+    .right
+        img(src='{{ "pages/24hbg/past_image" | cd:"w_300,c_fill"}}')
+
+.agenda
+    .wrapper
+        .top
+            h2 HAVE A LOOK AT THE PROGRAMME HIGHLIGHTS
+            div.orange
+                span.bold @ECE Campus
+                br
+                | ROTTERDAM SCIENCE TOWER, 11th floor
+                br
+                | Marconistraat 16, 3029 AK
+                br
+                | Rotterdam
+        .left
+            h3 DAY 1
+            ul
+                li(*ngFor="let item of agenda1")
+                   span.event {{ item.event }}
+                   //span.time {{ item.time }}
+
+        .right
+            h3 DAY 2
+            ul
+                li(*ngFor="let item of agenda2")
+                   span.event {{ item.event }}
+                   //span.time {{ item.time }}
+            //ul
+                li
+                    span.event
+                        |Devil's Advocate
+                        br
+                        |(IT, Finance, Marketing Assistance)
+                    span.time 0:00 - 7:30
+                li
+                    span.event
+                        |Midnight Party
+                        br
+                        |Relaxing Yoga
+                        br
+                        |Kickboxing
+                li(*ngFor="let item of agenda2")
+                   span.event {{ item.event }}
+                   span.time {{ item.time }}
+                li
+                    span.event
+                        |Winner Ceremony
+                        br
+                        |Last Man Standing Networking
+                    span.time 13:00 - 14:00
+
+        // .buttonHolder
+        //     button(type='submit')
+        //         a(href="#") Sign up
+
+.sponsors
+    h2 THIS YEAR'S SPONSORS
+    .content
+        img(src='{{ "pages/24hbg/mk" | cd:"w_500,c_fill"}}')
+        img(src='{{ "pages/24hbg/aws" | cd:"w_500,c_fill"}}')
+        img(src='{{ "pages/24hbg/venturesone" | cd:"w_500,c_fill"}}')
+
+.speakers
+    .wrapper
+        img.logo(src='{{ "pages/24hbg/logo" | cd:"w_600,c_fill"}}')
+        p
+            | The 2018 edition of the
+            | <span class="bold"> 24 hour business game </span>
+            | will take place in the Rotterdam Science Tower, heart of the Rotterdam's entrepreneurial spirit , on
+            | <span class="bold"> May 11th and 12th.</span>
+
+        // h2 SPEAKERS
+        // .speakers-grid
+        //     .img
+        //         img(src='{{ "pages/24hbg/speaker" | cd:"w_100,c_fill"}}')
+        //     .text
+        //         | CHRIS
+        //         br
+        //         | OUT
+        //         br
+        //         span Managing Partner & Lead Growth Hacker
+        //         br
+        //         span RockBoost
+        //     .img
+        //         img(src='{{ "pages/24hbg/speaker" | cd:"w_100,c_fill"}}')
+        //     .text
+        //         | CHRIS
+        //         br
+        //         | OUT
+        //         br
+        //         span Managing Partner & Lead Growth Hacker
+        //         br
+        //         span RockBoost
+        // h2 JUDGES
+        // .speakers-grid
+        //     .img
+        //         img(src='{{ "pages/24hbg/speaker" | cd:"w_100,c_fill"}}')
+        //     .text
+        //         | CHRIS
+        //         br
+        //         | OUT
+        //         br
+        //         span Managing Partner & Lead Growth Hacker
+        //         br
+        //         span RockBoost
+        //     .img
+        //         img(src='{{ "pages/24hbg/speaker" | cd:"w_100,c_fill"}}')
+        //     .text
+        //         | CHRIS
+        //         br
+        //         | OUT
+        //         br
+        //         span Managing Partner & Lead Growth Hacker
+        //         br
+        //         span RockBoost
+.video
+    .wrapper
+        iframe(width="100%", height="570", src="https://www.youtube-nocookie.com/embed/b-YbGq9HmXA?rel=0&amp;controls=0&amp;showinfo=0", frameborder="0", allow="autoplay; encrypted-media", allowfullscreen)
+
+.map
+    iframe( src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9844.7878918995!2d4.429621!3d51.9121173!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60e0b212036d407a!2sErasmus+Centre+for+Entrepreneurship!5e0!3m2!1snl!2snl!4v1518377585049" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen )
+    // .buttonHolder
+    //     button(type='submit')
+    //         a(href="#") SIGN UP
+
+.contact
+    .wrapper
+        .left
+            h2
+                | Want to know  more?
+                br
+                | Get in touch.
+            .icon
+        .person
+            img(src='{{ "pages/24hbg/asset_22" | cd:"w_150,c_fill"}}')
+            br
+            span.orange Christoph Dvorak
+            br
+            a(href="mailto:christoph.dvorak@ecestudents.com") christoph.dvorak@ecestudents.com
+            br
+            span.light +43 650 86 44 450
+
+        .person
+            img(src='{{ "pages/24hbg/asset_21" | cd:"w_150,c_fill"}}')
+            br
+            span.orange Maud Hascoët
+            br
+            a(href="mailto:maud.hascoet@ecestudents.com") maud.hascoet@ecestudents.com
+            br
+            span.light +31 6 10 81 21 97
+
+        .social
+            |Check our
+            | <a class="light" href="https://www.facebook.com/ECEStudents"> Facebook page </a>
+            | to know more about the previous editions of the event!

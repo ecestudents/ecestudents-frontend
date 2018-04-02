@@ -1,57 +1,48 @@
-import { Component, OnInit,  NgZone } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
 import { DropdownMenu } from 'foundation-sites/js/foundation.dropdownMenu';
 import { Router, NavigationEnd } from '@angular/router';
+import { DataService } from '../../helpers/dataservice/dataservice'
+import { StateService } from '../../helpers/stateservice/stateservice'
 
 @Component({
   selector: 'app-main-menu',
-  templateUrl: './template.html',
+  templateUrl: './template.pug',
   styleUrls: ['./style.scss']
 })
 
+
 export class MainMenuComponent implements OnInit {
-  constructor(ngZone:NgZone, private router: Router) {
+  eventitems = [];
+
+  constructor(ngZone: NgZone, private router: Router, private dataservice: DataService, public stateservice: StateService) {
+    this.dataservice.getEvent(false).subscribe(events => {
+      Object.keys(events).forEach(key => this.eventitems.push({ label: events[key].menu_label, path: "events/" + key }))
+      console.log(events)
+    })
     this.breakpoint_switcher(window, ngZone)
   }
 
   menu = [
-            { label:"Home",                   path:""},
-            { label:"Events",                 path:"events", children: [
-                  //{ label:"Innovation Challenge",   path:"events/ic"},
-                  { label: "Unilever Business Challenge", path:"events/unilever_business_challenge"},
-                  { label:"IdeaLab",                path:"events/idealab"},
-                  { label:"SEM",                    path:"events/sem"},
-                  //{ label:"24 Hour Business Game",  path:"events/24hbg"},
-                  //{ label:"D Cube Summit",          path:"events/dcube"}
-                  ]},
-            //{ label:"Calendar",               path:"calendar"},
-            //{ label:"Committees",             path:"committees", children: [
-                  //{ label:"Innovation Challenge",   path:"committees/ic"},
-                  //{ label:"IdeaLab",                path:"committees/idealab"},
-                  //{ label:"SEM",                    path:"committees/sem"},
-                  //{ label:"24 Hour Business Game",  path:"committees/24hbg"},
-                  //{ label:"D Cube Summit",          path:"committees/dcube"}]},
-            { label:"Job Portal",             path:"jobs" }
-            ];
+    { label: "Home", path: "" },
+    {
+      label: "Events", path: "events", children: this.eventitems
+    },
+    { label: "Job Portal", path: "jobs" },
+    { label: "Board 2018/2019", path: "board2018" }
+  ];
 
-  //menu visible
-  menuvisible = true;
   //toggle based on resize
   toggleMenu = true;
   breakpoint_switcher = (window, ngZone) => {
-      const breakpoint = 640; //medium breakpoint
+    const breakpoint = 640; //medium breakpoint
 
-      let prev_size = breakpoint;
-      window.onresize = e => ngZone.run(() => {
-        if(window.innerWidth < breakpoint && prev_size >= breakpoint) this.toggleMenu = true
-        prev_size = window.innerWidth
+    let prev_size = breakpoint;
+    window.onresize = e => ngZone.run(() => {
+      if (window.innerWidth < breakpoint && prev_size >= breakpoint) this.toggleMenu = true
+      prev_size = window.innerWidth
     })
   }
 
-    ngOnInit() {
-      this.router.events.subscribe((event: NavigationEnd) => {
-            if(this.router.url == '/jobs') this.menuvisible = false
-            else this.menuvisible = true
-        })
-
+  ngOnInit() {
   }
 }

@@ -119,7 +119,11 @@
 }
 
 @mixin event-signup ($color) {
-    @include margin_vertical background-color: $color;
+    @include margin_vertical;
+    @if $color !=null {
+        background-color: $color;
+    }
+
     >div {
         @include wrapper;
 

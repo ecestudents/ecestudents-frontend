@@ -1,0 +1,109 @@
+ng-container(*ngIf="event?.header")
+    .container([style.background-image]="'url(https://res.cloudinary.com/ece/image/upload/f_auto,q_auto' + event.header.background + ')'")
+        .wrapper
+            img(*ngIf="event.header?.logo" src='{{ event.header.logo | cd:"w_1200,c_fill"}}')
+            ng-container(*ngFor="let tl of event.header.taglines")
+                h2(*ngIf="tl.large") {{tl.text}}
+                h4(*ngIf="!tl.large") {{tl.text}}
+            img(*ngIf="event.header?.subimg" src='{{ event.header.subimg | cd:"w_200,c_fill"}}')
+            h3 {{ event.header.date }}
+            ng-container(*ngIf="event.header?.bottom_span")
+                br
+                span.bottom_span {{ event.header.bottom_span }}
+
+ng-container(*ngIf="event?.about_1")
+    .about
+        img.topimage(*ngIf="event.about_1?.topimage" src='{{ event.about_1.topimage | cd:"c_fill"}}')
+        h2(*ngIf="event.about_1?.title") {{ event.about_1?.title }}
+        div.left
+            img(src='{{ event.about_1.img | cd:"w_300,c_fill"}}')
+        div.right
+            ng-container(*ngFor="let p of event.about_1.paragraphs")
+                p([innerHtml]="p")
+            span(*ngFor="let t of event.about_1.bottom_taglines") {{t}}
+                br
+
+ng-container(*ngIf="event?.signup")
+    .signup([style.background-color]="event.signup.color")
+        div
+            h2 {{ event.signup.tagline }}
+            .right(*ngIf="event?.signup.link")
+                a(href="{{ event.signup.link }}" target="_blank")
+                    button Sign Up
+
+ng-container(*ngIf="event?.about_2")
+    .about
+        img.topimage(*ngIf="event.about_2?.topimage" src='{{ event.about_2.topimage | cd:"c_fill"}}')
+        h2(*ngIf="event.about_2?.title") {{ event.about_2?.title }}
+        div.left
+            img(src='{{ event.about_2.img | cd:"w_300,c_fill"}}')
+        div.right
+            ng-container(*ngFor="let p of event.about_2.paragraphs")
+                p([innerHtml]="p")
+            span(*ngFor="let t of event.about_2.bottom_taglines") {{t}}
+                br
+
+ng-container(*ngIf="event?.agenda")
+    .schedule
+        h2 Agenda
+        i.full(*ngIf="event?.agenda.mainpdf") Check out the full outline of the programme <a href="{{event.agenda.mainpdf}}" target="_blank">here!</a>
+        ng-container(*ngFor="let item of event?.agenda.items; let i = index")
+            ng-container(*ngIf="i == 0")
+                input(id="tab{{i+1}}"  type="radio" name="tabs" checked)
+            ng-container(*ngIf="i != 0")
+                input(id="tab{{i+1}}"  type="radio" name="tabs")
+            label(for="tab{{i+1}}") {{ item.tab }}
+
+        ng-container(*ngFor="let item of event?.agenda.items; let i = index")
+            section(id="content{{i+1}}")
+                .left
+                    h3 {{ item.title }}
+                    .date
+                        | {{ item.date }}
+                        br
+                        | {{ item.time }}
+                        br
+                        | {{ item.location }}
+                    p {{ item.text }}
+                    i(*ngIf="item.pdf")  Check out the full {{item.tab}} agenda <a href="{{item.pdf}}" target="_blank">here!</a>
+                figure.tint
+                    img(src='{{ item.img | cd:"w_400,c_fill"}}')
+
+ng-container(*ngIf="event?.agenda_list")
+    .agenda
+        .left
+            h2 Agenda
+        .right
+            ul
+                li(*ngFor="let item of event.agenda_list")
+                    span.time {{ item.time }}
+                    br
+                    ng-container(*ngFor="let p of item.event") {{ p.text }}
+                        br
+
+ng-container(*ngIf="event?.faq")
+    .faq
+        .left
+            h2 F.A.Q.
+
+            .tab(*ngFor="let item of event.faq; let i = index")
+                input(type="checkbox" name="tabs" id="tab-{{ i }}")
+                label(for="tab-{{ i }}") {{ item.ask }}
+                .tab-content
+                    p {{ item.answer }}
+
+ng-container(*ngIf="event?.image_list")
+    #partners.container-fluid
+        h1 {{event.image_list.label}}
+        ul
+            li(*ngFor="let item of event.image_list.items")
+                img(src='{{ item | cd:"w_300,c_fill"}}')
+
+ng-container(*ngIf="event?.text_grid")
+    .text_grid
+        h1 {{event.text_grid.title}}
+        .list
+            .item(*ngFor="let item of event.text_grid.list")
+                h2 {{ item.title }}
+                .content {{ item.content }}
+

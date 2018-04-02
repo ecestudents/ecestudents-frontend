@@ -1,0 +1,23 @@
+.wrapper
+    .head
+        button(mat-button [mat-dialog-close]="true")
+        h1 {{data.name}}: <i> {{data.tagline}}</i>
+
+    .content
+        p(*ngFor="let item of data.text") {{item}}
+        .skills Required skills:
+        ul
+            li(*ngFor="let item of data.required_skills") {{item}}
+        ng-container(*ngIf="data.preferred_skills")
+            .skills Preferred skills:
+            ul
+                li(*ngFor="let item of data.preferred_skills") {{item}}
+
+        .cta
+            .coffee
+                a(target="_blank" href="https://ecestudents2018.typeform.com/to/e2Rfzh") Have a coffee!
+            .apply
+                a(target="_blank" href="https://ecestudents2018.typeform.com/to/ruK1fY") Apply for {{data.name}}
+
+        .two
+            span(*ngIf="data.two") We have two open spots for this position!

@@ -1,0 +1,235 @@
+{
+    "sem": {
+        "menu_label": "SEM",
+        "eventspage": {
+            "img": false,
+            "text": false
+        },
+        "page": {
+            "header": {
+                "logo": "pages/sem/SEMlogowhite",
+                "background": "/pages/sem/Asset",
+                "taglines": [
+                    { "large": true, "text": "Build your changemaking idea." },
+                    { "large": false, "text": "SEM 2018 Topics are Sustainability & Circular Economy, Sharing Economy, and Social Development & Challenges!" }
+                ],
+                "subimg": false,
+                "date": "February 7, 2018",
+                "bottom_span": false
+            },
+            "about_1": {
+                "topimage": false,
+                "title": "SEM 2018 Topics are Sustainability & Circular Economy, Sharing Economy, and Social Development & Challenges!",
+                "img": "pages/sem/SEM_logo",
+                "paragraphs": [
+                    "The Social Entrepreneurship Masterclass (SEM) is an event where you experience the thrill of being an entrepreneur while solving a social or sustainable issue!",
+                    "With practical workshops, speakers, and consulting from experts in areas such as sustainable innovation, marketing, and business modelling, you work to develop your social business plan for the final pitch in front of a professional jury.",
+                    "The winning team gets the exclusive opportunity of participating for free in ECE’s 12-week startup programme Get Started, worth 300 euros per student!"
+                ],
+                "bottom_taglines": [
+                    "Kick-off: February 7",
+                    "Theil CT-1 (C Building), Erasmus University Campus"
+                ]
+            },
+            "signup": {
+                "color": "#049548",
+                "tagline": "Sign up for free here.",
+                "link": "https://ecestudents2017.typeform.com/to/f8qAI4"
+            },
+            "about_2": false,
+            "agenda": {
+                "mainpdf": "/assets/sem/agenda_full.pdf",
+                "items": [{
+                        "tab": "Kick-off (Workshop 1)",
+                        "title": "Idea Generation",
+                        "date": "07/02/2018",
+                        "time": "15:00-18:00",
+                        "location:": "Theil CT-1 (C building)",
+                        "img": "pages/sem/ws1",
+                        "pdf": "/assets/sem/agenda_w1.pd",
+                        "text": "Listen to inspirational talks on our SEM themes: Circular Economy & Sustainability, Sharing Economy, Social Development & Challenges. After that, a workshop on idea generation will follow where you can learn about social innovation and build your changemaking idea."
+                    },
+                    {
+                        "tab": "Workshop 2",
+                        "title": "Social Business Model and Marketing",
+                        "date": "13/02/2018",
+                        "time": "15:00-17:30",
+                        "location:": "Theil CT-6 (C building)",
+                        "img": "pages/sem/ws2",
+                        "pdf": "/assets/sem/agenda_w2.pdf",
+                        "text": "Work on the most foundational tool for your enterprise: the social business model canvas. Identify your value proposition and develop a sustainable marketing strategy for your social enterprise idea."
+                    }, {
+                        "tab": "Workshop 3",
+                        "title": "Finance and Pitching",
+                        "date": "20/02/2018",
+                        "time": "15:00-17:30",
+                        "location:": "Theil CB-4 (C building)",
+                        "img": "pages/sem/ws3",
+                        "pdf": "/assets/sem/agenda_w3.pdf",
+                        "text": "Build the finance model of your enterprise by outlining your cost and revenue structure. Gain the tools that will help you craft that perfect pitch before the final of SEM."
+                    },
+                    {
+                        "tab": "Final",
+                        "title": "The Final Pitch",
+                        "date": "23/02/2018",
+                        "time": "15:00-18:00",
+                        "location:": "ECE Campus",
+                        "img": "pages/sem/ws4",
+                        "pdf": "/assets/sem/agenda_w4.pdf",
+                        "text": "Present your idea to a jury of experts. Compete in a final pitch battle between all teams to win the grand prize: free participation in ECE’s startup programme Get Started! Work with experienced entrepreneurs and investors there to grow your entrepreneurial skills."
+                    }
+                ]
+            },
+            "agenda_list": false,
+            "faq": [{
+                    "ask": "Do I (my team) need to attend all workshops?",
+                    "answer": "As our competition involves a series of workshops that build up on each other to develop your entrepreneurial idea, attending all workshops is highly advised. Also, the winning team in the final workshop will be determined additionally based on the progress they have made throughout the weeks."
+                },
+                {
+                    "ask": "I can’t attend a workshop, what should I do?",
+                    "answer": "In case you cannot come to one of our workshops, please send an email to asparuh.georgiev@ecestudents.com. It is best if at least the majority of your team is present in each workshop."
+                },
+                {
+                    "ask": "Can I sign up individually?",
+                    "answer": "Yes, you can! If you don’t have a team, we will find you one based on your indicated interest in the SEM themes. We will group you with participants who have the same preferred theme to work on during the event. "
+                },
+                {
+                    "ask": "How many people should be in a team?",
+                    "answer": "All teams should have 4 members to work together. If you have friends/people in mind you would like to work with, please write their names in our application form. All members of your team should fill out the SEM application form. Furthermore, if you do not have enough members for a full team, we will group you with other participants based on best fit. "
+                },
+                {
+                    "ask": "Is it only for master students?",
+                    "answer": "We welcome both bachelor and master students. "
+                },
+                {
+                    "ask": "Why do I need to upload my CV in the registration form?",
+                    "answer": "Uploading your CV is optional. We ask you to upload your CV if one of our sponsors or participating companies at SEM would like to know more about you."
+                }
+            ],
+            "image_list": false
+        }
+    },
+    "start_summit": {
+        "menu_label": "START Summit 2018",
+        "eventspage": {
+            "img": false,
+            "text": false
+        },
+        "page": {
+            "header": {
+                "background": ",c_crop,h_400,w_1106/pages/start/background",
+                "taglines": [
+                    { "large": true, "text": "Trip to START Summit 2018" },
+                    { "large": false, "text": "Be where innovation happens." }
+                ],
+                "subimg": false,
+                "date": "14 March - 17 March",
+                "bottom_span": "Deadline to apply 11 February"
+            },
+            "about_1": {
+                "topimage": false,
+                "title": "We are looking for 45 enthusiastic students and/or entrepreneurs, eager to meet industry leaders, founders, investors, and driven students from all over the world!",
+                "img": "pages/start/logo",
+                "paragraphs": [
+                    "START Summit 2018 is the leading student-run conference for entrepreneurship and technology in Europe, taking place on March in St. Gallen, Switzerland.",
+                    "Be where innovation happens and participate as one of the over 2000 ambitious students, visionary founders and high-profile investors, gathering for a two-day conference full of unique speakers, workshops and networking events.",
+                    "START Summit brings together innovative minds from tech and business side, while focusing on: <ul> <li>Blockchain</li> <li>Augmented & Virtual Reality</li> <li>Artificial Intelligence</li> <li>Internet of Things</li> <li>HealthTech</li> </ul>"
+                ],
+                "bottom_taglines": ["Find more information on the official website www.startsummit.ch"]
+            },
+            "signup": {
+                "color": "#2f4e63",
+                "tagline": "There are limited spots, so we ask you apply here as soon as possible, as the earliest applicants will be given priority",
+                "link": "https://ecestudents2017.typeform.com/to/Ha5m5P"
+            },
+            "about_2": {
+                "topimage": false,
+                "title": false,
+                "img": "pages/start/logo",
+                "paragraphs": [
+                    "For an all-inclusive price of only €169 ECE Students will bring you to St. Gallen from the 14th to the 17th of March 2018.",
+                    "The price includes: <ul> <li>Return tickets from Amsterdam Schiphol</li> <li>START Summit tickets</li> <li>Accommodation in St. Gallen</li> <li>Breakfast, lunch, and dinner in St. Gallen</li> <li>An amazing group to travel with!</li> </ul>"
+                ],
+                "bottom_taglines": []
+            },
+            "agenda": false,
+            "agenda_list": false,
+            "faq": false,
+            "image_list": false
+        }
+    },
+    "24hbg": {
+        "menu_label": "24 Hour Business Game"
+    },
+    "portxl": {
+        "menu_label": "PortXL Business Challenge",
+        "eventspage": {
+            "img": false,
+            "text": false
+        },
+        "page": {
+            "header": {
+                "logo": "pages/portxl/portxl",
+                "background": "/pages/portxl/background",
+                "taglines": [
+                    { "large": true, "text": "PortXL Business Challenge." }
+                ],
+                "subimg": false,
+                "date": "March 22, 2018",
+                "bottom_span": "13:00 - 18:00, including dinner & drinks"
+            },
+            "about_1": {
+                "topimage": false,
+                "title": false,
+                "img": "pages/portxl/portxl",
+                "paragraphs": [
+                    "The PortXL Business Challenge by ECE Students is an opportunity for students who are enthusiastic about entrepreneurship, to develop their skills in startup management by performing real market research jointly with our guest startup companies.",
+                    "Together with PortXL – (the first port accelerator program for early stage tech startups) we – ECE Students, host an interactive workshop, during which students team up into groups of 2 to 3 and collaborate with the startups, chosen from 50 enterprises from all over the world by experienced mentors, investors and industry experts throughout the PortXL tournament.",
+                    "Apart from gaining knowledge in market research, the participants of the event can seize the chance to: <ul> <li>Get internship and job opportunities</li> <li>Get relevant hands-on experience on real market-product fit cases.</li> <li>Help solve environmental, health & security issues</li> <li>Get a certificate of participation</li> </ul>"
+                ],
+                "bottom_taglines": []
+            },
+            "signup": {
+                "color": "#932158",
+                "tagline": "Sign up here, LIMITED SPOTS!",
+                "link": "https://ecestudents2018.typeform.com/to/mOAO4P"
+            },
+            "about_2": false,
+            "agenda": false,
+            "agenda_list": [{
+                    "time": "13:00 - 13:30",
+                    "event": [{ "text": "Walk in" }]
+                    },
+                    {
+                    "time": "13:30 - 14:00",
+                    "event": [{ "text": "Introduction & Matching" }]
+                    },
+                    {
+                    "time": "14:00 - 17:00",
+                    "event": [{ "text": "Getting your hands dirty" }]
+                    },
+                    {
+                    "time": "17:00 - 18:00",
+                    "event": [{ "text": " Drinks and burgers" }]
+                    }],
+            "faq": false,
+            "image_list": false,
+            "text_grid":{"title":"Participating startups",  "list": [
+                {"title":"BDBGreenpower", "content":"A Vertical Axis Wind Turbine 60 meter high, tulip shaped airfoils, with a low noise level (no gearbox, no wings passing the tower) and small risk contour (expected 100 meter). Maintenance costs are low, allowing us to compete easily with solar power, thus offering a nice sustainable energy solution for industry, infrastructure, agriculture and private energy cooperations."},
+                {"title":"Bunker Connect", "content":"Bunker Connect has an in-house developed web application that allows the bunker buyer to start a bidding process among physical suppliers in any port around the world at any time of the day. The buyer receives all quotes in realtime while suppliers see competing prices. Bunker Connect manages the entire process from request to delivery and provides analytical insights about procurement performance. We charge all suppliers equally per delivered ton. In the near future, Bunker Connect will add additional services such as real-time market prices based on actual orders and artificial intelligence modules to make strategic procurement decisions."},
+                {"title":"CargoLedger", "content":"The shipper can create a trusted trade lane in our web-app by entering the required data of the lading, the players in the trade lane and the conditions for the transport of the goods (delivery times, h/w/l/, value, weight, temperature, humidity, etc.) in the blockchain. Relevant documents (bill of lading, certificates of origin, invoices etc.) are automatically generated with the entered data. A mobile app can be used by all players in the trade lane to check the state and accordingly accept or decline the lading. If a user accepts the lading, the previous player in the supply chain is paid."},
+                {"title":"DockTech", "content":"DockTech is a water depth analysis platform that gives the port authorities an all-in-one, user-friendly system that enables the port to plan the maintenance activities at the lowest possible costs. Our solution is based on connecting every echo-sounder carrying service vessel to a cloud-based service, collecting and combining depth data, and processing with image processing and AI algorithms. The processed data, as well as all the required data, is displayed to the dredging manager in order to reduce costs and maintain predictive maintenance methodologies."},
+                {"title":"Econcrete", "content":"ECOncrete®’s unique biological traits encourage biogenic buildup. They also provide substantial structural and economic advantages in terms of increased stability and longevity, as well as a reduction in maintenance costs. The Company’s products are adapted to specific environments with their typical fauna and flora. ECOncrete® maintains ongoing research and development activities for expanding the company’s product range, addressing needs of new geographical locations, and optimizing product structural and biological performance."},
+                {"title":"Explect", "content":"With our forwarding platform we make this an easy process for SME’s. In three steps they are prepared for importing or exporting, including costs. The process is fulfilled in just one Click. The next step is to connect the SME’s ERP systems, E-commerce systems or other SME’s to do the same. This gives every SME’s the chance to be a global player."},
+                {"title":"Ionada Incorporated", "content":"Ionada manufactures membrane scrubbers that allow power plants and ship owners to continue burning low cost heavy fuel oils and comply to emission regulations. Ionada is the first to market with membrane scrubbers, offering ship owners zero discharge and 30% higher efficiency than competitive seawater scrubbers. Ionada has in production sulfur dioxide (SOx) scrubbers and has developed a nitrogen dioxide (NOx) selective catalytic reduction (SCR) system as well as Carbon Dioxide (CO2) carbon capture and sequestering option for ship owners."},
+                {"title":"MapGage", "content":"MapGage has a cloud based solution that helps companies collect and manage geospatial data, visualize collected data on top of satellite or drone maps and take actions with it’s unique location based mobile process flow builder. MapGage increases the practical & operational value of drone acquired data. MapGage comes with powerful status and scheduling options, making it adaptable to any use case and workflow. Collect records in the field, schedule work plans, dispatch team members to a specific case or location and receive near-instant feedback through our mobile solution."},
+                {"title":"Marine Bubble Flow BV", "content":"Marine Bubble Flow retrofits commercial fleets with devices that emit controlled streams of micro-bubbles, to provide ‘air lubrication’ and reduce viscous drag by up to 30%. The devices use fluidics technology to create low-cost bubble arrays of minimal thickness, with no moving parts. Next steps to be taken: designing the arrays to generate the required bubble sizes and flows, translating that design into a robust, cost-effective and retrofit-table product and designing the right business model for product deployment, involving fleet owners, maritime service providers and Marine Bubble Flow BV."},
+                {"title":"Ondavia", "content":"The OndaVia analysis system consists of a small transportable instrument and a disposable chemical-specific cartridge. These two components, backed by twelve issued and seven pending patents, improves analysis time from days to minutes, while providing laboratory-grade detection capabilities in the field. This approach addresses our customer need for rapid, on-site chemical testing at the necessary accuracy and detection limits. Example applications include measuring tramp amines in refinery overhead water; identifying the selenium content from waste water at coal-fired power plants and oil refineries or monitoring hydrogen sulfide scavengers and their residuals during oil and gas production. Rapid, on-site testing is a powerful need for our customers, who have been uniformly impressed at the demonstrated power and simplicity of our system."},
+                {"title":"Shipskart Marine Private ltd.", "content":"ShipsKart is the first ever B2B e-marketplace for marine stores. A platform that streamlines the way marine stores are ordered, approved and received on board with the help of technology, ensuring transparency for everyone. We have created a Web portal and an Android based application which allows the captain of the ship to create an order (requisition) by choosing from the 22,000 listed products. The shipping company approves each order and edits the order if required and chooses a vendor, based on ratings/reviews and quotations. Each vendor is assigned a code and the name is kept anonymous so as to keep the process completely transparent."},
+                {"title":"The Big Smile", "content":"We have developed a machine that solves all current problems when releasing bulk carriers. We have built a prototype and successfully tested it in the practical environment. In accordance with the legislation in accordance with IMO - Marpol-BLU code - and IMSBC we also rewrote from separate procedure and adapted to the so-called Tuit trimming. Since there is no physical contact with the ship’s walls, and the ship, no damage is caused to the construction of the ship, the coating construction is not damaged. This results in more safety for ships and its passengers. With our machine and unloading procedure, we clean vessels in accordance with the current regulations and the current Ballast Water Management. This results in less sea pollution, increased safety for dock workers and less damage to the harbor receiving installation with our discharge procedure."},
+                {"title":"Threatspan", "content":"Our solution provides continuous cybersecurity in the form of a maritime cyber resilience platform, pentesting as a service, a rugged IDPS device, and forthcoming blockchain-based supply chain management solution."},
+                {"title":"WhaleWashing", "content":"WhaleWashing is a new and innovative technology designed to clean the hull of medium and large ships. The two most outstanding advantages are the speed of the cleaning, that can be performed in just two hours, and the low cleaning costs per linear meter. The net balance is a huge savings in the fuel costs and a considerable reduction of the carbon dioxide emissions. Scheduling quick pit-stops, will make possible to run the fleet at maximum efficiency, while avoiding to wait for RINA inspections to proceed with expensive maintenance and the rebuilding of protective and antifouling paints."}
+                ]}
+        }
+    }
+}

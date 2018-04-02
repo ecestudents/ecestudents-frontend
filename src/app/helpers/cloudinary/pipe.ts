@@ -8,10 +8,10 @@ export class CloudinaryPipe implements PipeTransform {
   transform(id, options): any {
     let newurl = 'https://res.cloudinary.com/ece/image/upload/f_auto,q_auto';
 
-    if (options){
-      newurl += ','+options;
+    if (options) {
+      newurl += ',' + options;
     }
-    newurl += '/'+id
+    newurl += '/' + id
 
     return newurl;
   }
