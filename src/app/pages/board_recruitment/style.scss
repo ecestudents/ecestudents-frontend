@@ -1,25 +1,6 @@
 @import 'mixins';
 
 
-
-
-:host /deep/ nav {
-    @include bp(medium) {
-        a {
-            color: $ece-orange !important;
-        }
-        margin-bottom: $nav-height;
-    }
-
-    .logo {
-        filter: unset !important;
-    }
-
-    app-main-menu {
-        display: none;
-    }
-}
-
 .tagline {
     color: white;
     background-color: $ece-orange;

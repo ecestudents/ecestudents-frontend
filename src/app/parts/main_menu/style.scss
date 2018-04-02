@@ -1,9 +1,40 @@
 @import 'mixins';
 
+
+.color {
+    @include bp(medium) {
+        a {
+            color: $ece-orange !important;
+        }
+
+        .logo {
+            filter: unset !important;
+        }
+    }
+}
+
+.nocolor {
+    @include bp(medium) {
+        margin-bottom: -$nav-margin;
+    }
+}
+
+
+
+
+.container {
+    width: 100%;
+}
+
+.containerheight {
+    min-height: 132px;
+}
+
 nav {
     @include wrapper;
     padding-top: ms(-1);
     padding-bottom: ms(0);
+
     a,
     a:visited {
         color: $ece-black;
@@ -12,7 +43,6 @@ nav {
     @include bp(medium) {
         display: flex;
         justify-content: space-between;
-        margin-bottom: -126px;
         z-index: 2;
 
         a,
@@ -61,7 +91,6 @@ nav {
     }
 
     #menu {
-
         &.toggled {
             display: none;
         }

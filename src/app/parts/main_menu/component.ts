@@ -2,6 +2,7 @@ import { Component, OnInit, NgZone } from '@angular/core';
 import { DropdownMenu } from 'foundation-sites/js/foundation.dropdownMenu';
 import { Router, NavigationEnd } from '@angular/router';
 import { DataService } from '../../helpers/dataservice/dataservice'
+import { StateService } from '../../helpers/stateservice/stateservice'
 
 @Component({
   selector: 'app-main-menu',
@@ -13,7 +14,7 @@ import { DataService } from '../../helpers/dataservice/dataservice'
 export class MainMenuComponent implements OnInit {
   eventitems = [];
 
-  constructor(ngZone: NgZone, private router: Router, private dataservice: DataService) {
+  constructor(ngZone: NgZone, private router: Router, private dataservice: DataService, public stateservice: StateService) {
     this.dataservice.getEvent(false).subscribe(events => {
       Object.keys(events).forEach(key => this.eventitems.push({ label: events[key].menu_label, path: "events/" + key }))
       console.log(events)
@@ -30,8 +31,6 @@ export class MainMenuComponent implements OnInit {
     { label: "Board 2018/2019", path: "board2018" }
   ];
 
-  //menu visible
-  menuvisible = true;
   //toggle based on resize
   toggleMenu = true;
   breakpoint_switcher = (window, ngZone) => {
@@ -45,10 +44,5 @@ export class MainMenuComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.router.events.subscribe((event: NavigationEnd) => {
-      if (this.router.url == '/jobs' || this.router.url == '/board2018') this.menuvisible = false
-      else this.menuvisible = true
-    })
-
   }
 }

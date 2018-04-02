@@ -58,7 +58,8 @@
       background: linear-gradient(to right, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
 
       .wrapper {
-            @include wrapper padding-top: ms(0);
+            @include wrapper;
+            padding-top: ms(0);
             padding-bottom: ms(0);
             @include bp(medium) {
                   padding-top: ms(5);

@@ -1,9 +1,10 @@
-app-main-menu
+.menublock
+
 .container
     .wrapper
         .left
             h1 Business never sleeps.
-            h3 THE 24 HOUR BUSINESS GAME STARTs IN:
+            h3 THE 24 HOUR BUSINESS GAME STARTS IN:
             countdown( [config]="{stopTime: 1526040000000}")
                 | $!d!
                 span.stamp days
@@ -16,7 +17,9 @@ app-main-menu
             // .buttonHolder
             //     button(type='submit')
             //         a(href="#") Sign up
-            .under Build your idea in 24 hours <br> Showcase your project!
+            .under Build your idea in 24 hours <br> Showcase your project! <br>
+                button
+                    a(href="https://ecestudents2018.typeform.com/to/fMzbJf", target="_blank") Sign Up
 
 .about
     .wrapper
@@ -71,7 +74,7 @@ app-main-menu
 .agenda
     .wrapper
         .top
-            h2 HAVE A LOOK AT LAST YEAR'S SCHEDULE
+            h2 HAVE A LOOK AT THE PROGRAMME HIGHLIGHTS
             div.orange
                 span.bold @ECE Campus
                 br
@@ -85,11 +88,15 @@ app-main-menu
             ul
                 li(*ngFor="let item of agenda1")
                    span.event {{ item.event }}
-                   span.time {{ item.time }}
+                   //span.time {{ item.time }}
 
         .right
             h3 DAY 2
             ul
+                li(*ngFor="let item of agenda2")
+                   span.event {{ item.event }}
+                   //span.time {{ item.time }}
+            //ul
                 li
                     span.event
                         |Devil's Advocate
@@ -118,23 +125,11 @@ app-main-menu
         //         a(href="#") Sign up
 
 .sponsors
-    h2 PREVIOUS SPONSORS
-    .row1
-        img(src='{{ "pages/24hbg/Asset_20" | cd:"w_500,c_fill"}}' width='250')
-        img(src='{{ "pages/24hbg/tonys" | cd:"w_300,c_fill"}}' width='150')
-        img(src='{{ "pages/24hbg/Asset_16" | cd:"w_120,c_fill"}}')
-        img(src='{{ "pages/24hbg/Asset_14" | cd:"w_200,c_fill"}}' width='200')
-    .row2
-        img(src='{{ "pages/24hbg/Asset_6" | cd:"w_250,c_fill"}}' width='250')
-        img(src='{{ "pages/24hbg/Asset_9" | cd:"w_150,c_fill"}}')
-        img(src='{{ "pages/24hbg/eneco" | cd:"w_300,c_fill"}}' width='150')
-        img(src='{{ "pages/24hbg/Asset_5" | cd:"w_150,c_fill"}}')
-        img(src='{{ "pages/24hbg/Asset_15" | cd:"c_crop,g_north,h_223,w_307/w_200,c_fill"}}')
-    .row3
-        img(src='{{ "pages/24hbg/Asset_18" | cd:"w_250,c_fill"}}')
-        img(src='{{ "pages/24hbg/Asset_12" | cd:"w_150,c_fill"}}')
-        img(src='{{ "pages/24hbg/queal" | cd:"w_150,c_fill"}}')
-        img(src='{{ "pages/24hbg/Asset_11" | cd:"w_200,c_fill"}}')
+    h2 THIS YEAR'S SPONSORS
+    .content
+        img(src='{{ "pages/24hbg/mk" | cd:"w_500,c_fill"}}')
+        img(src='{{ "pages/24hbg/aws" | cd:"w_500,c_fill"}}')
+        img(src='{{ "pages/24hbg/venturesone" | cd:"w_500,c_fill"}}')
 
 .speakers
     .wrapper
