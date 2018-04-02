@@ -14,7 +14,7 @@ import { StateService } from '../../helpers/stateservice/stateservice'
 export class MainMenuComponent implements OnInit {
   eventitems = [];
 
-  constructor(ngZone: NgZone, private router: Router, private dataservice: DataService, private stateservice: StateService) {
+  constructor(ngZone: NgZone, private router: Router, private dataservice: DataService, public stateservice: StateService) {
     this.dataservice.getEvent(false).subscribe(events => {
       Object.keys(events).forEach(key => this.eventitems.push({ label: events[key].menu_label, path: "events/" + key }))
       console.log(events)
