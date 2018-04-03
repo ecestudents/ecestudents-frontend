@@ -15,12 +15,12 @@ import { JobportalComponent } from './pages/jobportal/component';
 import { EventPageComponent } from './pages/event-page/component';
 import { HBGComponent } from './pages/events/24hbg/component';
 import { BoardRecruitmentComponent } from './pages/board_recruitment/component';
+import { EventsOverviewComponent } from './pages/events-overview/component';
 
 //parts
 import { FooterComponent } from './parts/footer/component';
 import { MainMenuComponent } from './parts/main_menu/component';
 import { BasicDialog } from './parts/dialog/component';
-
 
 //helpers
 import { CloudinaryPipe } from './helpers/cloudinary/pipe';
@@ -33,6 +33,7 @@ import { StateService } from './helpers/stateservice/stateservice';
 
 const appRoutes: Routes = [
   { path: '', component: HomepageComponent },
+  { path: 'events', component: EventsOverviewComponent },
   { path: 'events/24hbg', component: HBGComponent },
   { path: 'events/:id', component: EventPageComponent },
   { path: 'jobs', component: JobportalComponent },
@@ -51,7 +52,8 @@ const appRoutes: Routes = [
     EventPageComponent,
     HBGComponent,
     BoardRecruitmentComponent,
-    BasicDialog
+    BasicDialog,
+    EventsOverviewComponent
   ],
   imports: [
     BrowserModule,
