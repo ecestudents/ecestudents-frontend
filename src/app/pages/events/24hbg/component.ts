@@ -62,7 +62,7 @@ export class HBGComponent {
     },
     {
       ask: "When is the deadline for signing up? ",
-      answer: "6th of May, 23:59h"
+      answer: "6th of May, 23:59"
     },
     {
       ask: "What should I bring to the event?",
