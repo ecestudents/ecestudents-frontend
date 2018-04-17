@@ -25,11 +25,11 @@ app-main-menu {
 }
 
 @include bp(medium) {
-.menublock {
-    height: $nav-margin;
-    background:$color;
-    width: 100%;
-}
+    .menublock {
+        height: $nav-margin;
+        background: $color;
+        width: 100%;
+    }
 
 }
 
@@ -58,7 +58,6 @@ app-main-menu {
                 color: white;
             }
         }
-
 
     }
     h1 {
@@ -146,10 +145,16 @@ app-main-menu {
         text-align: center;
         font-weight: 100;
         margin-top: ms(0);
+    }
+
+    .deadline {
+        font-size: ms(1);
+        text-align: center;
         padding-bottom: ms(2);
         @include bp(medium) {
             padding-bottom: ms(5);
         }
+
     }
 }
 
@@ -387,8 +392,7 @@ app-main-menu {
         font-size: ms(1.5);
         margin-top: ms(2);
         color: black;
-        text-align: center;
-        // font-style: italic;
+        text-align: center; // font-style: italic;
     }
     .content {
         width: 100%;
@@ -400,7 +404,7 @@ app-main-menu {
         align-items: center;
         img {
             //width:100%;
-            margin:0;
+            margin: 0;
         }
     }
 }
@@ -454,6 +458,91 @@ app-main-menu {
 
 .video {
     background-color: black;
+}
+
+
+.faq {
+    @include wrapper margin-bottom: ms(3);
+    h2 {
+        color: $ece-orange;
+        font-weight: 400;
+        margin: ms(0) 0 0 0;
+        font-family: MuseoSans;
+        font-size: ms(2);
+    }
+
+    .right {
+        border-left: 0px solid $ece-blue;
+        @include margin_vertical
+    }
+    .tab {
+        position: relative;
+        margin-bottom: 1px;
+        width: 100%;
+        color: white;
+        font: Aleo;
+        overflow: hidden;
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+    label {
+        position: relative;
+        display: block;
+        padding: 0 0 0 1em;
+        background: $color;
+        font-weight: bold;
+        line-height: 3;
+        cursor: pointer;
+    }
+
+    .tab-content {
+        max-height: 0;
+        overflow: hidden;
+        background: white;
+        color: $ece-black;
+        -webkit-transition: all .7s;
+        -o-transition: all .7s;
+        transition: all .7s;
+        border: 2px solid white;
+
+    }
+
+    .tab-content p {
+        margin: 1em;
+        font-size: 18px;
+        font-family: Aleo;
+        font-weight: 300;
+    }
+    /* :checked */
+    input:checked~.tab-content {
+        max-height: 20em;
+        border: 2px solid #ddd;
+    }
+    /* Icon */
+    label::after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        width: 3em;
+        height: 3em;
+        line-height: 3;
+        text-align: center;
+        -webkit-transition: all .7s;
+        -o-transition: all .7s;
+        transition: all .7s;
+    }
+    input[type=checkbox]+label::after {
+        content: "+";
+    }
+
+    input[type=checkbox]:checked+label::after {
+        transform: rotate(315deg);
+    }
+
 }
 
 .map {
