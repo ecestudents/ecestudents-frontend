@@ -25,11 +25,11 @@ app-main-menu {
 }
 
 @include bp(medium) {
-.menublock {
-    height: $nav-margin;
-    background:$color;
-    width: 100%;
-}
+    .menublock {
+        height: $nav-margin;
+        background: $color;
+        width: 100%;
+    }
 
 }
 
@@ -58,7 +58,6 @@ app-main-menu {
                 color: white;
             }
         }
-
 
     }
     h1 {
@@ -146,10 +145,16 @@ app-main-menu {
         text-align: center;
         font-weight: 100;
         margin-top: ms(0);
+    }
+
+    .deadline {
+        font-size: ms(1);
+        text-align: center;
         padding-bottom: ms(2);
         @include bp(medium) {
             padding-bottom: ms(5);
         }
+
     }
 }
 
@@ -387,8 +392,7 @@ app-main-menu {
         font-size: ms(1.5);
         margin-top: ms(2);
         color: black;
-        text-align: center;
-        // font-style: italic;
+        text-align: center; // font-style: italic;
     }
     .content {
         width: 100%;
@@ -400,7 +404,7 @@ app-main-menu {
         align-items: center;
         img {
             //width:100%;
-            margin:0;
+            margin: 0;
         }
     }
 }
