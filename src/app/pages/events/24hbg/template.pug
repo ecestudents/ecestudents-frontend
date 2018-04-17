@@ -187,7 +187,14 @@
 .video
     .wrapper
         iframe(width="100%", height="570", src="https://www.youtube-nocookie.com/embed/b-YbGq9HmXA?rel=0&amp;controls=0&amp;showinfo=0", frameborder="0", allow="autoplay; encrypted-media", allowfullscreen)
-
+.faq
+    .left
+        h2 F.A.Q.
+        .tab(*ngFor="let item of faq; let i = index")
+            input(type="checkbox" name="tabs" id="tab-{{ i }}")
+            label(for="tab-{{ i }}") {{ item.ask }}
+            .tab-content
+                p {{ item.answer }}
 .map
     iframe( src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9844.7878918995!2d4.429621!3d51.9121173!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60e0b212036d407a!2sErasmus+Centre+for+Entrepreneurship!5e0!3m2!1snl!2snl!4v1518377585049" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen )
     // .buttonHolder
