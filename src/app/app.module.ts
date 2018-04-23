@@ -14,7 +14,7 @@ import { HomepageComponent } from './pages/homepage/component';
 import { JobportalComponent } from './pages/jobportal/component';
 import { EventPageComponent } from './pages/event-page/component';
 import { HBGComponent } from './pages/events/24hbg/component';
-import { BoardRecruitmentComponent } from './pages/board_recruitment/component';
+//import { BoardRecruitmentComponent } from './pages/board_recruitment/component';
 import { EventsOverviewComponent } from './pages/events-overview/component';
 
 //parts
@@ -37,7 +37,7 @@ const appRoutes: Routes = [
   { path: 'events/24hbg', component: HBGComponent },
   { path: 'events/:id', component: EventPageComponent },
   { path: 'jobs', component: JobportalComponent },
-  { path: 'board2018', component: BoardRecruitmentComponent },
+  //{ path: 'board2018', component: BoardRecruitmentComponent },
   { path: '**', redirectTo: '' }
 ];
 
@@ -51,7 +51,7 @@ const appRoutes: Routes = [
     JobportalComponent,
     EventPageComponent,
     HBGComponent,
-    BoardRecruitmentComponent,
+    //BoardRecruitmentComponent,
     BasicDialog,
     EventsOverviewComponent
   ],

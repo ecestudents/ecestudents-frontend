@@ -28,7 +28,7 @@ export class MainMenuComponent implements OnInit {
       label: "Events", path: "events", children: this.eventitems
     },
     { label: "Job Portal", path: "jobs" },
-    { label: "Board 2018/2019", path: "board2018" }
+    // { label: "Board 2018/2019", path: "board2018" }
   ];
 
   //toggle based on resize
