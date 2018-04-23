@@ -37,7 +37,7 @@ const appRoutes: Routes = [
   { path: 'events/24hbg', component: HBGComponent },
   { path: 'events/:id', component: EventPageComponent },
   { path: 'jobs', component: JobportalComponent },
-  { path: 'board2018', component: BoardRecruitmentComponent },
+  //{ path: 'board2018', component: BoardRecruitmentComponent },
   { path: '**', redirectTo: '' }
 ];
 
