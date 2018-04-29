@@ -1,7 +1,13 @@
 @import 'mixins';
 
+.background {
+    @include background_container("pages/podcast/background.png");
+    background-size: 100%;
+}
+
 .content {
     @include wrapper;
+    overflow: auto;
     text-align: center;
     h1 {
         font-family: MuseoSans;
@@ -35,7 +41,7 @@
     }
     
     .text{
-        margin: 0 auto;
+        margin: 0 auto ms(1) auto;
         width: 60%;
         
         p{
