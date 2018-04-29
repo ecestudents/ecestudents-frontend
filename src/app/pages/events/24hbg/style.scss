@@ -398,7 +398,7 @@ app-main-menu {
         width: 100%;
         margin: auto;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: ms(1);
         justify-items: center;
         align-items: center;
@@ -707,7 +707,7 @@ app-main-menu {
         grid-template-columns: 1fr 2.5fr;
         grid-row-gap: ms(4);
         img {
-            max-width: 70%;
+            max-width: 60%;
             margin-top: ms(3);
         }
     }
