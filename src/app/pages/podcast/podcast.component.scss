@@ -1,0 +1,51 @@
+@import 'mixins';
+
+.background {
+    @include background_container("pages/podcast/background.png");
+    background-size: 100%;
+}
+
+.content {
+    @include wrapper;
+    overflow: auto;
+    text-align: center;
+    h1 {
+        font-family: MuseoSans;
+        text-align: center;
+        color: $ece-orange;
+        margin: ms(-3) auto 0 auto;
+        font-size: ms(2);
+        font-weight: 500;
+    }
+    h1.bold {
+        margin-top: 0;
+        font-size: ms(3);
+        font-weight: bold;
+    }
+    
+    h2 {
+        font-family: MuseoSans;
+        margin: 0 auto ms(-1) auto;
+        font-size: ms(2);
+        font-weight: 500;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    
+    iframe{
+        margin: ms(1) auto;
+    }
+    
+    .text{
+        margin: 0 auto ms(1) auto;
+        width: 60%;
+        
+        p{
+            text-align: left;
+        }
+    }
+}

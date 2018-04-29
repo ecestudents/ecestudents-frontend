@@ -26,6 +26,7 @@ import { BasicDialog } from './parts/dialog/component';
 import { CloudinaryPipe } from './helpers/cloudinary/pipe';
 import { DataService } from './helpers/dataservice/dataservice';
 import { StateService } from './helpers/stateservice/stateservice';
+import { PodcastComponent } from './pages/podcast/podcast.component';
 
 
 
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
   { path: 'events/24hbg', component: HBGComponent },
   { path: 'events/:id', component: EventPageComponent },
   { path: 'jobs', component: JobportalComponent },
+  { path: 'podcast', component: PodcastComponent },
   //{ path: 'board2018', component: BoardRecruitmentComponent },
   { path: '**', redirectTo: '' }
 ];
@@ -53,7 +55,8 @@ const appRoutes: Routes = [
     HBGComponent,
     BoardRecruitmentComponent,
     BasicDialog,
-    EventsOverviewComponent
+    EventsOverviewComponent,
+    PodcastComponent
   ],
   imports: [
     BrowserModule,
