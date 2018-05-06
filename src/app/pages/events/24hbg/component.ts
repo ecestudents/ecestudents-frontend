@@ -61,6 +61,10 @@ export class HBGComponent {
       answer: "We ask you to upload your CV if one of our sponsors or participating companies at 24HBG would like to know more about you."
     },
     {
+      ask: "Can I get a refund if I decide not to come anymore?",
+      answer: "We do not provide refunds if we are informed less than a week before the event."
+    },
+    {
       ask: "When is the deadline for signing up? ",
       answer: "6th of May, 23:59"
     },
