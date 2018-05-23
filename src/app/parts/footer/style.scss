@@ -28,7 +28,7 @@ footer {
     background-color: $ece-orange;
 
     .wrapper {
-        @include wrapper; 
+        @include wrapper;
         padding: ms(1) 0;
         display: grid;
         overflow: auto;
@@ -59,11 +59,13 @@ footer {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     align-items: center;
-    
+
     @include bp(large){
         grid-template-columns: 1fr auto;
     }
-
+    a {
+        display: inline;
+    }
     .fa {
         text-align: center;
     }
@@ -76,7 +78,7 @@ footer {
     grid-column-gap: 10px;
     align-items: center;
     margin-top: 5px;
-    
+
     @include bp(large){
         grid-template-columns: 1fr auto;
         margin-top: 0px;
@@ -136,4 +138,11 @@ footer {
 
 .mail {
     @include fa(envelope-o, ms(1));
+}
+
+.privacy {
+    @include fa(user, ms(1));
+}
+.terms {
+    @include fa(file, ms(1));
 }
