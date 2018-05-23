@@ -25,11 +25,10 @@ export class MainMenuComponent implements OnInit {
   menu = [
     { label: "Home", path: "" },
     {
-      label: "Events", path: "events", children: this.eventitems
+      label: "Events", path: "events"//, children: this.eventitems
     },
-    { label: "24HBG", path: "events/24hbg" },
     { label: "Job Portal", path: "jobs" },
-    { label: "Podcast", path: "podcast" },
+    { label: "Podcast", path: "podcast" }
     // { label: "Board 2018/2019", path: "board2018" }
   ];
 

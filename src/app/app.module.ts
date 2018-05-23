@@ -35,8 +35,8 @@ import { PodcastComponent } from './pages/podcast/podcast.component';
 const appRoutes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'events', component: EventsOverviewComponent },
-  { path: 'events/24hbg', component: HBGComponent },
-  { path: 'events/:id', component: EventPageComponent },
+  //{ path: 'events/24hbg', component: HBGComponent },
+  //{ path: 'events/:id', component: EventPageComponent },
   { path: 'jobs', component: JobportalComponent },
   { path: 'podcast', component: PodcastComponent },
   //{ path: 'board2018', component: BoardRecruitmentComponent },
