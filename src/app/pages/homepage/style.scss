@@ -215,12 +215,19 @@
             margin-bottom: 0;
             margin-top: ms(1);
       }
-      h2 {
-            font-family: MuseoSans;
-            color: $ece-black;
-            font-size: ms(2);
-            margin: 0;
-            font-weight: 200;
+      a {
+        @include button(false, #130ab4, $ece-orange, white, solid);
+        font-family: MuseoSans;
+        padding: 0.3em .3em;
+        font-size: ms(1.5);
+        background-color: $ece-orange;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 25px auto;
+        display: block;
+        width: 270px;
+        border-radius: 10px;
+        text-transform: uppercase;
       }
 }
 

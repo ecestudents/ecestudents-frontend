@@ -12,7 +12,7 @@ export class EventsOverviewComponent {
       topimage: "pages/events%20overview/24hbg-eov",
       title: "24 Hour Business Game",
       text: "24 Hour Business Game is an event where students enter with a start-up idea and walk out of with a well thought-out and constructed business plan. During the challenge, the young entrepreneurs, guided by IT, Marketing and Financial advisors, form teams and conceptualize their startup proposals for the final pitch while enjoying numerous energizing activities and delicious food provided by our partners. All in 24 hours! The winners of the challenge get a cash prize along with an opportunity to participate in the 12-week entrepreneurial programme Get Started.",
-      link: "events/24hbg"
+      link: false
     },
     {
       topimage: "pages/events%20overview/sem-eov",
