@@ -5,8 +5,8 @@ main
         .event(*ngFor="let event of events")
             img.top(src='{{event.topimage | cd:"w_640,h_240,c_fill"}}')
             h3 {{event.title}}
-            .text {{event.text}}
-            .bottom(*ngIf="event.link")
-                a(routerLink="{{'/'+event.link}}") Learn more
+            .text([innerHTML]="event.text")
+            // .bottom(*ngIf="event.link")
+            //     a(routerLink="{{'/'+event.link}}") Learn more
 
 
