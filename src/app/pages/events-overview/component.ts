@@ -16,20 +16,20 @@ export class EventsOverviewComponent {
              <p>Students in this committee will organize the 24HBG by innovating the event, inviting experts, obtaining partnerships and most importantly - aspiring entrepreneurs who will participate in the ‘game’. Students are required to bring their own creativity, and - as a future committee member - you will bring one of ECE Students’ largest signature events to life.</p>`
     },
     {
-      topimage: "pages/events%20overview/il-eov",
-      title: "IdeaLab",
-      text: `<p>Are you a natural problem-solver with exceptional networking skills? Search no further, we’ve got a perfect position for you in our IdeaLab committee!</p>
-             <p>IdeaLabs are interactive sessions that allow students to put their problem solving skills to the test through business cases brought in by a variety of exciting startups. As a committee member, you will be responsible for networking and collaborating with startups on the IdeaLab events, on top of finding speakers that can inspire and motivate young students to come up with solutions to cases that can disrupt the status quo.</p>
-             <p>Do you have what it takes to challenge students with the toughest real-life business challenges?</p>
-      `
-    },
-    {
       topimage: "pages/events%20overview/ic-eov",
       title: "Innovation Challenge",
       text: `<p>Do you want to challenge the status quo? Be an intrapreneur and solve corporate innovation challenges. Then join our Innovation Challenge committee!</p>
              <p>The Innovation Challenge is a series of events with the aim to challenge tough corporate positions by providing students with business cases featuring real-life corporate problems. Furthermore, in the upcoming academic year, ECE Students proudly presents its brand-new event called the Recruitment Challenge, in aim to give a twist to corporate recruitment processes. Teams of students will go through a series of challenges given by corporates, with the opportunity of win an internship.</p>
              <p>Students in the committee will be responsible for the networking with corporates to be participating in the Innovation Challenge and Recruitment Challenge events, on top of providing speakers, workshops, and think of any details that allows students at the events to be motivated and satisfied with the organization.</p>
              <p>Will you be able to disrupt the corporate environment?</p>
+      `
+    },
+    {
+      topimage: "pages/events%20overview/il-eov",
+      title: "IdeaLab",
+      text: `<p>Are you a natural problem-solver with exceptional networking skills? Search no further, we’ve got a perfect position for you in our IdeaLab committee!</p>
+             <p>IdeaLabs are interactive sessions that allow students to put their problem solving skills to the test through business cases brought in by a variety of exciting startups. As a committee member, you will be responsible for networking and collaborating with startups on the IdeaLab events, on top of finding speakers that can inspire and motivate young students to come up with solutions to cases that can disrupt the status quo.</p>
+             <p>Do you have what it takes to challenge students with the toughest real-life business challenges?</p>
       `
     },
     {
