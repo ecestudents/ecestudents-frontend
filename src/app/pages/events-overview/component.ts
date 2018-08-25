@@ -74,7 +74,7 @@ export class EventsOverviewComponent {
       `
     },
     {
-      topimage: "pages/events overview/Devsquad",
+      topimage: "pages/events overview/Devsquad-01_3",
       title: "DevSquad",
       text: `<p>Is your biggest weakness being too much of a perfectionist? Do you love coffee? Are you a night owl? If so, we are looking for you to join our developer team!</p>
              <p>ECE Students is looking for team players to develop, and improve our websites and to build an interactive platform for our association. And of course geek out on cool side projects.  Together with the Marketing Ninjas, you will be completely in charge of our website and content management tools for the other committees. If you want to learn how to get out of your bedroom and develop in a team, experiment and improve your coding skills, stubbornly argue about frameworks, while being surrounded by tech-, and innovation enthusiasts, look no further.</p>
