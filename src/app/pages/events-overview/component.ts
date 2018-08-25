@@ -83,9 +83,7 @@ export class EventsOverviewComponent {
     {
       topimage: "pages/events%20overview/ctc-eov",
       title: "CleanTech Challenge",
-      text: `<p></p>
-             <p></p>
-             <p></p>
+      text: `<p>CleanTech Challenge is a Master course elective, where we bring together students with an aspiration towards sustainability. During the challenge, the participants shape their own sterile technology business ideas, in favor of solving some of the most pressing environmental issues. CleanTech includes a set of events and workshops during which the students, supported by executives from business as well as engineering industries, will brainstorm potential solutions to improving environmental conditions and propose their final ideas to the judges to compete over the award at the finals!</p>
       `
     }
 
