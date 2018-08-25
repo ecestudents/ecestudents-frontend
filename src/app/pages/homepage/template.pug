@@ -39,12 +39,12 @@
     h1 Stay up-to-date!
     a.button(href='https://ecestudents2017.typeform.com/to/WTbHpY', target="_blank") Sign Up
 
-
 #partners.container-fluid
     h1 Our Partners & Collaborations include:
     ul
         li(*ngFor="let item of partners")
             img(src='{{ "pages/front/"+item+".svg" | cd:"w_300,c_fill"}}')
+            
 #love.container-fluid
 #follow.container-fluid
     .social
