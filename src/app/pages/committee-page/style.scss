@@ -1,0 +1,88 @@
+@import 'mixins';
+
+.header {
+
+    background: rgba(255, 126, 21, 1);
+    background: -moz-linear-gradient(left, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 126, 21, 1)), color-stop(100%, rgba(228, 87, 36, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
+    background: -o-linear-gradient(left, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
+    width: 100%;
+    height: 150px;
+    display: none;
+
+
+    @include bp(medium) {
+        display: block;
+
+    }
+}
+
+
+main {
+    @include wrapper;
+
+    text-align: justify;
+    padding: ms(1) 0;
+    @include bp(medium) {
+        display: grid;
+        grid-gap: ms(2);
+        grid-template-columns: 5fr 2fr;
+
+    }
+
+    .left {
+        img {
+            width: 100%;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 0 5px #515151;
+            transition: box-shadow 0.3s;
+        }
+    }
+
+    .right {
+        .positions {
+            h2 {
+                color: $ece-orange;
+                font-size: ms(2.5);
+                margin: 0;
+            }
+
+            ul {
+                margin: 0;
+                list-style-type: none;
+                color: white;
+                background: $ece-blue;
+                width: 100%;
+                border-radius: 10px;
+                padding: ms(0) ms(-1);
+                font-size: ms(0.5);
+
+                img {
+                    margin-right: 2px;
+                }
+            }
+        }
+
+        a.apply {
+            @include button(false, #130ab4, $ece-orange, white, solid);
+            font-family: MuseoSans;
+            padding: 0.3em .3em;
+            font-size: ms(1.5);
+            background-color: $ece-orange;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 25px auto;
+            display: block;
+            width: 270px;
+            border-radius: 10px;
+            text-transform: uppercase;
+
+        }
+
+    }
+
+}
