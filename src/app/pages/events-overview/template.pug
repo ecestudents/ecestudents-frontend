@@ -1,12 +1,6 @@
 .header
 main
-    h2 Committees Overview
+    h2 Committee Overview
     .overview
-        .event(*ngFor="let event of events")
+        a.event(*ngFor="let event of dataservice.committees", routerLink="{{ '/committees/'+event.link}}")
             img.top(src='{{event.topimage | cd:"w_640,h_240,c_fill"}}')
-            h3 {{event.title}}
-            .text([innerHTML]="event.text")
-            // .bottom(*ngIf="event.link")
-            //     a(routerLink="{{'/'+event.link}}") Learn more
-
-

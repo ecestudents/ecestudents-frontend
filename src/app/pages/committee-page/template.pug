@@ -1,0 +1,12 @@
+.header
+
+main
+    .left
+        img.top(src='{{data.topimage | cd:"w_800,c_fill"}}')
+        .description([innerHTML]="data.text")
+    .right
+        .positions
+            h2 Positions
+            ul
+                li(*ngFor="let position of data.positions") {{position}}
+        a.apply(href="https://ecestudents2018.typeform.com/to/qWrBTC", target="_blank") APPLY
