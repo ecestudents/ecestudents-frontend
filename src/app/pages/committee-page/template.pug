@@ -8,8 +8,5 @@ main
         .positions
             h2 Positions
             ul
-                li(*ngFor="let position of data.positions")
-                    img(src='{{"pages/committeepage/Hexagon_lichtblauwe-01-01-01"| cd:"w_15,c_fill"}}')
-
-                    | {{position}}
+                li(*ngFor="let position of data.positions") {{position}}
         a.apply(href="https://ecestudents2018.typeform.com/to/qWrBTC", target="_blank") APPLY

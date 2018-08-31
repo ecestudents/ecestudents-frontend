@@ -26,7 +26,7 @@ main {
 
 
     padding: ms(1) 0;
-    @include bp(medium) {
+    @include bp(large) {
         display: grid;
         grid-gap: ms(2);
         grid-template-columns: 5fr 2fr;
@@ -54,12 +54,14 @@ main {
 
             ul {
                 margin: 0;
-                list-style-type: none;
+                //list-style-type: none;
+                list-style-image: cd("pages/committeepage/Hexagon_lichtblauwe-01-01-01", "w_15,c_fill");
+                //img(src='{{"pages/committeepage/Hexagon_lichtblauwe-01-01-01"| cd:"w_15,c_fill"}}')
                 color: white;
                 background: $ece-blue;
                 width: 100%;
                 border-radius: 10px;
-                padding: ms(0) ms(-1);
+                padding: ms(0) ms(-1) ms(0) ms(1.5);
                 font-size: ms(0.5);
 
                 img {
