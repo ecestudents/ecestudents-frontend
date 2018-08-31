@@ -57,7 +57,6 @@
       background: -o-linear-gradient(left, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
       background: -ms-linear-gradient(left, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
       background: linear-gradient(to right, rgba(255, 126, 21, 1) 0%, rgba(228, 87, 36, 1) 100%);
-
       .wrapper {
             @include wrapper;
             padding-top: ms(0);
@@ -68,16 +67,13 @@
             }
             text-align: center;
             h1 {
-                  @include text(MuseoSans, 2, white, 600);
+                  @include text(MuseoSans, 2, #396ca0, 600);
                   margin: 0;
             }
             h2,
             span {
                   @include text(MuseoSans, 1.5, white, 600);
                   margin: 0;
-                  &.blue {
-                        color: $ece-blue;
-                  }
             }
 
       }
