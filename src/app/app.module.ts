@@ -53,7 +53,12 @@ const appRoutes: Routes = [
     BasicDialog,
     EventsOverviewComponent,
     PodcastComponent,
-    CommitteePageComponent
+    CommitteePageComponent,
+    EventPageComponent,
+    HBGComponent,
+    BoardRecruitmentComponent
+
+
   ],
   imports: [
     BrowserModule,
