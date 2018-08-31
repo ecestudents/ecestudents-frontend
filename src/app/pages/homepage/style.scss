@@ -67,7 +67,7 @@
             }
             text-align: center;
             h1 {
-                  @include text(MuseoSans, 2, $ece-black, 600);
+                  @include text(MuseoSans, 2, #396ca0, 600);
                   margin: 0;
             }
             h2,
