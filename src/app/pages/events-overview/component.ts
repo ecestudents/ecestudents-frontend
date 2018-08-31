@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DataService } from '../../helpers/dataservice/dataservice'
+import { StateService } from '../../helpers/stateservice/stateservice'
 
 
 @Component({
@@ -8,5 +9,9 @@ import { DataService } from '../../helpers/dataservice/dataservice'
   styleUrls: ['./style.scss']
 })
 export class EventsOverviewComponent {
-  constructor(private dataservice: DataService) { }
+  constructor(
+    private dataservice: DataService,
+    private stateservice: StateService) {
+    stateservice.menu_color = false;
+  }
 }

@@ -24,7 +24,7 @@
 main {
     @include wrapper;
 
-    text-align: justify;
+
     padding: ms(1) 0;
     @include bp(medium) {
         display: grid;
@@ -41,6 +41,7 @@ main {
             box-shadow: 0 0 5px #515151;
             transition: box-shadow 0.3s;
         }
+        text-align: justify;
     }
 
     .right {
