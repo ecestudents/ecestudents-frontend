@@ -10,7 +10,7 @@ import { StateService } from '../../helpers/stateservice/stateservice'
 })
 export class EventsOverviewComponent {
   constructor(
-    private dataservice: DataService,
+    public dataservice: DataService,
     private stateservice: StateService) {
     stateservice.menu_color = false;
   }
