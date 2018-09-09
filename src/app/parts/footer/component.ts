@@ -12,7 +12,7 @@ export class FooterComponent {
     { icon: "fb", href: "https://www.facebook.com/ECEStudents" },
     { icon: "ln", href: "https://www.linkedin.com/company/4997540/" },
     { icon: "insta", href: "https://www.instagram.com/ecestudents/" },
-    { icon: "twit", href: "https://twitter.com/ECEStudents" }
+    //  { icon: "twit", href: "https://twitter.com/ECEStudents" }
 
   ];
 

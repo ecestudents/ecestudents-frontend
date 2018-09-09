@@ -17,7 +17,8 @@ import { HBGComponent } from './pages/events/24hbg/component';
 import { BoardRecruitmentComponent } from './pages/board_recruitment/component';
 import { EventsOverviewComponent } from './pages/events-overview/component';
 import { CommitteePageComponent } from './pages/committee-page/component';
-
+import { ICComponent } from './pages/events/ic/component';
+import { IdeaLabComponent } from './pages/events/idealab/component';
 //parts
 import { FooterComponent } from './parts/footer/component';
 import { MainMenuComponent } from './parts/main_menu/component';
@@ -39,6 +40,10 @@ const appRoutes: Routes = [
   { path: 'jobs', component: JobportalComponent },
   { path: 'podcast', component: PodcastComponent },
   { path: 'committees/:id', component: CommitteePageComponent },
+  { path: 'events/24hbg', component: HBGComponent },
+  { path: 'events/ic', component: ICComponent },
+  { path: 'events/idealab', component: IdeaLabComponent },
+  { path: 'events/:id', component: EventPageComponent },
   { path: '**', redirectTo: '' }
 ];
 
@@ -56,9 +61,9 @@ const appRoutes: Routes = [
     CommitteePageComponent,
     EventPageComponent,
     HBGComponent,
-    BoardRecruitmentComponent
-
-
+    BoardRecruitmentComponent,
+    ICComponent,
+    IdeaLabComponent
   ],
   imports: [
     BrowserModule,
