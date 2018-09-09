@@ -15,14 +15,11 @@
 
 #construction {
       width: 100%;
-      height: ms(-2);
-      text-align: center;
-      font-family: MuseoSans;
-      font-size: ms(0);
-      color: white;
-      font-weight: 500;
+      //height: ms(-2);
+      @include text(MuseoSans, 2, white, 700);
       text-align: center;
       background: $ece-blue;
+      box-shadow: 0 0 5px 0px #888888;
 }
 
 :host /deep/ .nav {
@@ -63,7 +60,7 @@
             padding-bottom: ms(0);
             @include bp(medium) {
                   padding-top: ms(5);
-                  padding-bottom: ms(3);
+                  //padding-bottom: ms(3);
             }
             text-align: center;
             h1 {
