@@ -256,54 +256,34 @@
                     { "large": true, "text": "UNILEVER BUSINESS CHALLENGE" },
                     { "large": false, "text": "Step Up. Make an Impact." }
                 ],
-                "subimg": "pages/unilever/top_logo",
-                "date": "February 9th",
+                "date": "October 3rd",
                 "bottom_span": "Limited spots available."
             },
             "about_1": {
-                "topimage": "pages/unilever/UnileverxECES_1",
-                "title": "Bring your creativity & intellect to the real world.",
-                "img": "pages/unilever/desc_logo",
+                "topimage": "pages/unilever/beter",
+                "title": "Make our planet more plastic free.",
                 "paragraphs": [
-                    "ECE Students is here to offer you a fantastic opportunity - the chance to step up and apply your innovative skills to make an impact at Unilever, one of the world's premier global conglomerates. Work with your assigned team to formulate an ingenious solution to the presented business challenge. The winning team’s idea might be implemented by Unilever executives!",
-                    "The event will include: <ul><li>Informative presentations by Unilever;</li><li>Lunch with Unilever executives;</li><li>Business case solving and pitching sessions;</li><li>Networking drinks and possible job opportunities at Unilever</li></ul>",
-                    "Don’t miss this opportunity to establish yourself as a force to be reckoned with in one of the most sought after companies by employees. Good luck!"
-                ],
+                    "After last year’s success, our collaboration with Unilever – Unilever Business Challenge with ECE Students – is back! This time, we are looking for top students to come up with ideas that fit in well with Unilever’s ‘Save the Waves’ internal initiative, focusing on the reduction of plastic waste within and beyond Unilever’s product reach.",
+                    "If we caught your attention, read on to find out whether you are eligible to apply to the event. We are looking for top-talent candidates who are;<ul> <li> Enrolled in Bachelor 3 or Master’s programme </li><li> From Erasmus University Rotterdam, TU Delft, and Wageningen University & Research</li><li> Completing a study programme related to business, strategy, engineering, food technology, and sustainably. </li></ul>",
+                    "During the Business Challenge, you are assigned to a team consisting of 3 to 5 top talent students from Erasmus University Rotterdam, TU Delft, and Wageningen University & Research. Upon the formation of teams, you will start working on a solution to a business problem proposed by Unilever Marketers that approaches the reduction of plastic waste from three different angles, namely:<ul> <li>Packaging Innovation</li><li>Consumer Behavioural Changes, </li><li>Product/Campaign Activations. </li></ul>",
+                    "Events like these showcase the creativity and intellect, young minds bring to real world business problems. Your voice will be heard, and who knows, you might end up seeing your idea at @Albert Heijn in the near future! This is the perfect opportunity to finally implement what you have learned at university, for you to obtain street knowledge by encountering real business cases. This event will also include informative presentations, lunch with Unilever employees, pitching sessions, networking and might open doors for future careers!",
+                    "There are limited spots available that are chosen on an on-going basis, so make sure to submit your application below before the 26th of September, 23:59."
+                    ],
                 "bottom_taglines": [
-                    "Kick-off: February 9th | 09:00 - 17:00",
-                    "Unilever Headquarters Rotterdam, Weena 455, 3013 AL"
+                    "October 3rd | 08:30 - 19:30",
+                    "Rotterdam Science Tower, Marconistraat 16, 3029 AK"
                 ]
             },
             "signup": {
                 "color": "#171845",
-                "tagline": "Deadline: 3rd of February - 23:59",
-                "link": "https://ecestudents2017.typeform.com/to/bPmDa9"
+                "tagline": "DEADLINE: September 26th - 23:59",
+                "link": "https://ecestudents2018.typeform.com/to/jMbX7u"
             },
             "agenda": false,
-            "agenda_list": [{
-                    "time": "09:00",
-                    "event": [
-                        { "text": "Reporting" },
-                        { "text": "Inspiring Presentations" },
-                        { "text": "Group Formation & Case Introduction" }
-                    ]
-                },
-                {
-                    "time": "13:00",
-                    "event": [
-                        { "text": "Lunch" },
-                        { "text": "Case Solving & Pitching" },
-                        { "text": "Results Announcement" }
-                    ]
-                },
-                { "time": "17:30", "event": [{ "text": "Networking Drinks at Weena Bar" }] }
-            ],
+            "agenda_list": false,
             "about_2": false,
             "faq": false,
-            "image_list": {
-                "label": "Unilever Case Brands",
-                "items": ["pages/unilever/amora", "pages/unilever/calve", "pages/unilever/hellmans", "pages/unilever/knorr", "pages/unilever/maille"]
-            }
+            "image_list": false
         }
     }
 }

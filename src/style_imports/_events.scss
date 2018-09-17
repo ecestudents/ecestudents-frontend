@@ -84,8 +84,9 @@
 
         .topimage {
             grid-area: topimage;
-            margin: 0 auto;
-            max-width: 50%;
+            margin: 0 auto ms(0) auto;
+            max-width: 64%;
+
         }
 
         .left img {

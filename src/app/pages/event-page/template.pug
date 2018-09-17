@@ -15,13 +15,20 @@ ng-container(*ngIf="event?.about_1")
     .about
         img.topimage(*ngIf="event.about_1?.topimage" src='{{ event.about_1.topimage | cd:"c_fill"}}')
         h2(*ngIf="event.about_1?.title") {{ event.about_1?.title }}
-        div.left
-            img(src='{{ event.about_1.img | cd:"w_300,c_fill"}}')
-        div.right
-            ng-container(*ngFor="let p of event.about_1.paragraphs")
-                p([innerHtml]="p")
-            span(*ngFor="let t of event.about_1.bottom_taglines") {{t}}
-                br
+        ng-container(*ngIf="event.about_1.img")
+            div.left
+                img(src='{{ event.about_1.img | cd:"w_600,c_fill"}}')
+            div.right
+                ng-container(*ngFor="let p of event.about_1.paragraphs")
+                    p([innerHtml]="p")
+                span(*ngFor="let t of event.about_1.bottom_taglines") {{t}}
+                    br
+        ng-container(*ngIf="!event.about_1.img")
+            div
+                ng-container(*ngFor="let p of event.about_1.paragraphs")
+                    p([innerHtml]="p")
+                span(*ngFor="let t of event.about_1.bottom_taglines") {{t}}
+                    br
 
 ng-container(*ngIf="event?.signup")
     .signup([style.background-color]="event.signup.color")
