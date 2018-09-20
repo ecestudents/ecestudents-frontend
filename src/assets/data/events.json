@@ -257,7 +257,8 @@
                     { "large": false, "text": "Step Up. Make an Impact." }
                 ],
                 "date": "October 3rd",
-                "bottom_span": "Limited spots available."
+                "bottom_span": "Limited spots available.",
+                "button":"https://ecestudents2018.typeform.com/to/jMbX7"
             },
             "about_1": {
                 "topimage": "pages/unilever/beter",
@@ -274,11 +275,7 @@
                     "Rotterdam Science Tower, Marconistraat 16, 3029 AK"
                 ]
             },
-            "signup": {
-                "color": "#171845",
-                "tagline": "DEADLINE: September 26th - 23:59",
-                "link": "https://ecestudents2018.typeform.com/to/jMbX7u"
-            },
+            "signup": false,
             "agenda": false,
             "agenda_list": false,
             "about_2": false,
