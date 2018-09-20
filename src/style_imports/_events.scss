@@ -32,7 +32,19 @@
                 max-width: 600px;
             }
         }
-
+        .signupbutton button{
+            clear:both;
+            @include button(false, $ece-orange, darken($ece-orange, 8), white);
+            border-radius: 5px;
+            margin: ms(0) 0;
+            display: inline-block;
+            height: 50px;
+            font-size: ms(1.5);
+            padding: 0em 1em;
+            font-family: MuseoSans;
+            font-weight: 700;
+            text-transform:uppercase;
+        }
     }
 }
 

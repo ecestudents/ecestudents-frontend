@@ -10,6 +10,10 @@ ng-container(*ngIf="event?.header")
             ng-container(*ngIf="event.header?.bottom_span")
                 br
                 span.bottom_span {{ event.header.bottom_span }}
+            ng-container(*ngIf="event.header?.button")
+                br
+                a.signupbutton(href="{{ event.header.button }}" target="_blank")
+                    button Sign Up
 
 ng-container(*ngIf="event?.about_1")
     .about
