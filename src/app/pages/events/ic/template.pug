@@ -37,10 +37,9 @@
                br
                | {{ item.event }}
 
-.endorsements
+//.endorsements
     div
         h2 Endorsements
-
         div(*ngFor="let item of endorsements")
             //span.heart(*appTimes="item.number")
             .message "{{ item.message }}"
