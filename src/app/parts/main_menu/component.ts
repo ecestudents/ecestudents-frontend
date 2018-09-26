@@ -28,7 +28,7 @@ export class MainMenuComponent implements OnInit {
       label: "Committees", path: "committees"//, children: this.eventitems
     },
     {
-      label: "Events", path: "events/unilever_business_challenge", children: this.eventitems
+      label: "Unilever BC", path: "events/unilever_business_challenge"//, children: this.eventitems
     },
     { label: "Job Portal", path: "jobs" },
     { label: "Podcast", path: "podcast" }
