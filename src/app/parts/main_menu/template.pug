@@ -26,3 +26,5 @@ nav([ngClass]="stateservice.menu_color? 'color' : 'nocolor'")
                             li(*ngFor="let child of item.children")
                                 a(routerLink="{{'/'+child.path}}", (click)="this.toggleMenu = true") {{child.label}}
 
+                li.dropdown
+                    a.dropbtn(href="https://startup24.gribb.io/event/startup-24-rotterdam-1", target="_blank", (click)="this.toggleMenu = true") Startup 24
