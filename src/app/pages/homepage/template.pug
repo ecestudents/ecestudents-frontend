@@ -46,7 +46,9 @@
     ul
         li(*ngFor="let item of partners")
             img(src='{{ "pages/front/"+item+".svg" | cd:"w_300,c_fill"}}')
-
+        li
+            a(href="https://zapier.com/", target="_blank")
+                img(src='{{ "pages/front/_brand_assets_images_logos_zapier-logo-monochrome" | cd:"w_300,c_fill"}}')
 #love.container-fluid
 #follow.container-fluid
     .social
