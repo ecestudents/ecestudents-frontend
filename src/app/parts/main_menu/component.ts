@@ -23,7 +23,7 @@ export class MainMenuComponent implements OnInit {
   }
 
   menu = [
-    { label: "Home", path: "" },
+    { label: "Homes", path: "" },
     {
       label: "Committees", path: "committees"//, children: this.eventitems
     },
